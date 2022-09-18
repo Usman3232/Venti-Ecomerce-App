@@ -6,6 +6,8 @@ class CustomTextButton extends StatelessWidget {
   final double? width;
   final Color? colour, textcolour;
   final double? fontSize;
+  final FontWeight? fontWeight;
+
   final double? radius;
   VoidCallback callback;
 
@@ -18,7 +20,8 @@ class CustomTextButton extends StatelessWidget {
       this.height,
       this.width,
       this.fontSize,
-      this.radius})
+      this.radius,
+      this.fontWeight})
       : super(key: key);
 
   @override
@@ -34,7 +37,8 @@ class CustomTextButton extends StatelessWidget {
       },
       child: Text(
         title,
-        style: TextStyle(fontSize: fontSize, color: textcolour),
+        style: TextStyle(
+            fontSize: fontSize, color: textcolour, fontWeight: fontWeight),
       ),
     );
   }

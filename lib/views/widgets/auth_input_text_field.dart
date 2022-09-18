@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:get/get.dart';
 
 class AuthTextInputField extends StatefulWidget {
   final Color textColor, enabledbordercolor, focusedbordercolor;
@@ -19,12 +18,15 @@ class AuthTextInputField extends StatefulWidget {
   final prefixIcon;
   final enabled;
   final Function(String)? onChnage;
+  final TextInputAction inputAction;
   final String? Function(String? val)? validator;
   final List<TextInputFormatter>? inputformatter;
   final int? maxlength;
-  final EdgeInsetsGeometry? contentpadding;
+  final int? maxLine;
 
-  const AuthTextInputField({
+  final EdgeInsetsGeometry? contentpadding;
+  bool isoutline;
+  AuthTextInputField({
     Key? key,
     required this.hintText,
     this.textEditingController,
@@ -48,6 +50,9 @@ class AuthTextInputField extends StatefulWidget {
     this.validator,
     this.enabledbordercolor = Colors.black12,
     this.focusedbordercolor = Colors.black,
+    this.isoutline = false,
+    this.inputAction = TextInputAction.next,
+    this.maxLine,
   }) : super(key: key);
 
   @override
@@ -73,19 +78,31 @@ class _TextInputFieldViewState extends State<AuthTextInputField> {
       enabled: widget.enabled,
       obscureText: isObscure,
       onChanged: widget.onChnage,
+      maxLines: widget.maxLine,
       style: TextStyle(color: widget.textColor),
       controller: widget.textEditingController,
       keyboardType: widget.inputType,
+      textInputAction: widget.inputAction,
       decoration: InputDecoration(
         contentPadding: widget.contentpadding,
-        // errorText: "",
         helperText: "",
+        prefixIcon: widget.prefixIcon,
         filled: true,
         fillColor: widget.fillColor,
-        enabledBorder: UnderlineInputBorder(
-            borderSide: BorderSide(color: widget.enabledbordercolor)),
-        focusedBorder: UnderlineInputBorder(
-            borderSide: BorderSide(color: widget.focusedbordercolor)),
+        enabledBorder: widget.isoutline
+            ? OutlineInputBorder(
+                borderSide: BorderSide(color: widget.enabledbordercolor),
+                borderRadius: BorderRadius.circular(widget.radius),
+              )
+            : UnderlineInputBorder(
+                borderSide: BorderSide(color: widget.enabledbordercolor)),
+        focusedBorder: widget.isoutline
+            ? OutlineInputBorder(
+                borderSide: BorderSide(color: widget.enabledbordercolor),
+                borderRadius: BorderRadius.circular(widget.radius),
+              )
+            : UnderlineInputBorder(
+                borderSide: BorderSide(color: widget.enabledbordercolor)),
         hintText: widget.hintText,
         hintStyle:
             TextStyle(fontSize: widget.hintSize, color: widget.hintcolor),
