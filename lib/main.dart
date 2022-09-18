@@ -7,6 +7,9 @@ import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/confirmation_page.
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/curated%20store%20popular/curatedstorepopular.dart';
 import 'package:ecommerce_app/views/pages/CURATED%20STORES/curated%20search%20page/curatedsearchpage.dart';
 import 'package:ecommerce_app/views/pages/CURATED%20STORES/curated%20store/curatedstore.dart';
+import 'package:ecommerce_app/views/pages/livetracking/components/map_delivery_address.dart';
+import 'package:ecommerce_app/views/pages/livetracking/live_tracking.dart';
+import 'package:ecommerce_app/views/pages/livetracking/live_tracking_map.dart';
 import 'package:ecommerce_app/views/pages/mapLocation/map_location.dart';
 import 'package:ecommerce_app/views/pages/product%20tab%20page/producttabpage.dart';
 import 'package:flutter/material.dart';
@@ -19,6 +22,7 @@ import 'views/pages/CART & CHECKOUT/payment_checkout.dart';
 import 'views/pages/Home Page/homepage.dart';
 import 'views/pages/Login Page/loginpage.dart';
 import 'views/pages/Search Page/search.dart';
+import 'views/pages/bottom nav bar/bottom_nav_bar.dart';
 
 void main() => runApp(
     // DevicePreview(
@@ -47,7 +51,7 @@ class MyApp extends StatelessWidget {
                 scaffoldBackgroundColor: const Color(0xffFEFEFE),
               ),
               debugShowCheckedModeBanner: false,
-              // home: const LoginPage(),
+              home: const LoginPage(),
               // home: const HomePage(),
               // home: const SearchPage(),
               // home: const PositiveStatus(),
@@ -61,9 +65,10 @@ class MyApp extends StatelessWidget {
               // home: AvailableCartCheckout(),
               // home: Confirmation(),
               // home: AllCartsCheckOut(),
-              home: MapLocationPage(),
-              // home
-
+              // home: MapLocationPage(),
+              // home: LiveTrackingPage(),
+              // home: LiveTrackingMap(),
+              // home: BottomBar(),
             );
           },
         );

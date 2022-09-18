@@ -149,7 +149,6 @@ class _MapLocationPageState extends State<MapLocationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: const MyDrawer(),
       body: Stack(
         children: [
           GoogleMap(
@@ -256,26 +255,22 @@ class _MapLocationPageState extends State<MapLocationPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Builder(
-                    builder: (context) {
-                      return GestureDetector(
-                        onTap: () {
-                          Scaffold.of(context).openDrawer();
-                        },
-                        child: Container(
-                          height: SizeConfig.heightMultiplier * 10,
-                          width: SizeConfig.widthMultiplier * 10,
-                          decoration: const BoxDecoration(
-                              shape: BoxShape.circle, color: Colors.white),
-                          child: const Center(
-                            child: Icon(
-                              Icons.drag_handle,
-                              color: Colors.black,
-                            ),
-                          ),
-                        ),
-                      );
+                  GestureDetector(
+                    onTap: () {
+                      Scaffold.of(context).openDrawer();
                     },
+                    child: Container(
+                      height: SizeConfig.heightMultiplier * 10,
+                      width: SizeConfig.widthMultiplier * 10,
+                      decoration: const BoxDecoration(
+                          shape: BoxShape.circle, color: Colors.white),
+                      child: const Center(
+                        child: Icon(
+                          Icons.drag_handle,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
                   ),
                   SearchWidget(),
                   GestureDetector(

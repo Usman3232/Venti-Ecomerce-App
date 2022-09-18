@@ -1,5 +1,6 @@
 import 'package:country_picker/country_picker.dart';
 import 'package:ecommerce_app/constants/colors.dart';
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
@@ -67,12 +68,12 @@ class _MyProfileState extends State<MyProfile> {
                     height: SizeConfig.heightMultiplier * 20.6,
                     width: SizeConfig.widthMultiplier * double.infinity,
                     child: SvgPicture.asset(
-                      AppIcons.smalldrawerlogo,
+                      AppIcons.largedrawerlogo,
                       fit: BoxFit.fill,
                     ),
                   ),
                   Positioned(
-                    bottom: 20,
+                    bottom: AppHeights.height20,
                     left: 0,
                     right: 0,
                     child: Row(
@@ -86,9 +87,9 @@ class _MyProfileState extends State<MyProfile> {
                                   image: AssetImage(AppImages.drawerdp),
                                   fit: BoxFit.cover),
                               shape: BoxShape.circle,
-                              color: Colors.black,
-                              border:
-                                  Border.all(color: Colors.white, width: 3)),
+                              border: Border.all(
+                                  color: Colors.white,
+                                  width: SizeConfig.widthMultiplier * 1)),
                         )
                       ],
                     ),
@@ -157,7 +158,7 @@ class _MyProfileState extends State<MyProfile> {
                         fontSize: AppTexts.size14),
                   ),
                   SizedBox(
-                    height: SizeConfig.heightMultiplier * 1,
+                    height: SizeConfig.heightMultiplier * 0.8,
                   ),
                   AuthTextInputField(
                     radius: AppWidths.width15,
@@ -177,7 +178,7 @@ class _MyProfileState extends State<MyProfile> {
                         fontSize: AppTexts.size14),
                   ),
                   SizedBox(
-                    height: SizeConfig.heightMultiplier * 1,
+                    height: SizeConfig.heightMultiplier * 0.8,
                   ),
                   AuthTextInputField(
                     isoutline: true,
@@ -207,7 +208,7 @@ class _MyProfileState extends State<MyProfile> {
                     ),
                   ),
                   SizedBox(
-                    height: SizeConfig.heightMultiplier * 1,
+                    height: SizeConfig.heightMultiplier * 0.8,
                   ),
                   AuthTextInputField(
                     isoutline: true,
@@ -300,7 +301,7 @@ class _MyProfileState extends State<MyProfile> {
                         fontSize: AppTexts.size14),
                   ),
                   SizedBox(
-                    height: SizeConfig.heightMultiplier * 1,
+                    height: SizeConfig.heightMultiplier * 0.8,
                   ),
                   AuthTextInputField(
                     isoutline: true,
@@ -321,7 +322,7 @@ class _MyProfileState extends State<MyProfile> {
                         fontSize: AppTexts.size14),
                   ),
                   SizedBox(
-                    height: SizeConfig.heightMultiplier * 2,
+                    height: SizeConfig.heightMultiplier * 1.8,
                   ),
                   Row(
                     children: [
@@ -332,14 +333,15 @@ class _MyProfileState extends State<MyProfile> {
                               countryListTheme: CountryListThemeData(
                                 flagSize: 25,
                                 backgroundColor: Colors.white,
-                                textStyle: const TextStyle(
-                                    fontSize: 16, color: Colors.blueGrey),
-                                bottomSheetHeight:
-                                    500, // Optional. Country list modal height
+                                textStyle: TextStyle(
+                                    fontSize: AppTexts.size16,
+                                    color: Colors.blueGrey),
+                                bottomSheetHeight: SizeConfig.heightMultiplier *
+                                    50, // Optional. Country list modal height
                                 //Optional. Sets the border radius for the bottomsheet.
-                                borderRadius: const BorderRadius.only(
-                                  topLeft: Radius.circular(20.0),
-                                  topRight: Radius.circular(20.0),
+                                borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(AppRadius.radius20),
+                                  topRight: Radius.circular(AppRadius.radius20),
                                 ),
                                 //Optional. Styles the search field.
                                 inputDecoration: InputDecoration(

@@ -22,7 +22,7 @@ class AuthTextInputField extends StatefulWidget {
   final String? Function(String? val)? validator;
   final List<TextInputFormatter>? inputformatter;
   final int? maxlength;
-  final int? maxLine;
+  final int maxLine;
 
   final EdgeInsetsGeometry? contentpadding;
   bool isoutline;
@@ -52,7 +52,7 @@ class AuthTextInputField extends StatefulWidget {
     this.focusedbordercolor = Colors.black,
     this.isoutline = false,
     this.inputAction = TextInputAction.next,
-    this.maxLine,
+    this.maxLine = 1,
   }) : super(key: key);
 
   @override

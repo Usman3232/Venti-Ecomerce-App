@@ -54,51 +54,49 @@ class _LiveTrackingMapState extends State<LiveTrackingMap> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-          appBar: AppBar(
-            backgroundColor: Colors.white,
-            title: Text(
-              'Live Tracking',
-              style: GoogleFonts.poppins(
-                fontSize: AppTexts.size15,
-                color: AppColors.primarydarkColor,
-                fontWeight: FontWeight.w600,
-                letterSpacing: 1,
-              ),
+    return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.white,
+          title: Text(
+            'Live Tracking',
+            style: GoogleFonts.poppins(
+              fontSize: AppTexts.size15,
+              color: AppColors.primarydarkColor,
+              fontWeight: FontWeight.w600,
+              letterSpacing: 1,
             ),
-            centerTitle: true,
-            leading: IconButton(
-                onPressed: () {
-                  Get.back();
-                },
-                icon: Icon(
-                  Icons.arrow_back_ios,
-                  color: Colors.black,
-                  size: SizeConfig.imageSizeMultiplier * 5,
-                )),
-            elevation: 0,
           ),
-          body: Stack(
-            children: [
-              GoogleMap(
-                polylines: _polyline,
-                zoomControlsEnabled: false,
-                markers: _markers,
-                onMapCreated: (GoogleMapController controller) {
-                  _controller.complete(controller);
-                },
-                initialCameraPosition: _kGooglePlex,
-                mapType: MapType.normal,
-              ),
-              Positioned(
-                bottom: AppHeights.height24,
-                left: 0,
-                right: 0,
-                child: const MapDeliveryAddress(),
-              )
-            ],
-          )),
-    );
+          centerTitle: true,
+          leading: IconButton(
+              onPressed: () {
+                Get.back();
+              },
+              icon: Icon(
+                Icons.arrow_back_ios,
+                color: Colors.black,
+                size: SizeConfig.imageSizeMultiplier * 5,
+              )),
+          elevation: 0,
+        ),
+        body: Stack(
+          children: [
+            GoogleMap(
+              polylines: _polyline,
+              zoomControlsEnabled: false,
+              markers: _markers,
+              onMapCreated: (GoogleMapController controller) {
+                _controller.complete(controller);
+              },
+              initialCameraPosition: _kGooglePlex,
+              mapType: MapType.normal,
+            ),
+            Positioned(
+              bottom: AppHeights.height24,
+              left: 0,
+              right: 0,
+              child: const MapDeliveryAddress(),
+            )
+          ],
+        ));
   }
 }

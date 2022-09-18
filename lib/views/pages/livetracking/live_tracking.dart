@@ -91,8 +91,8 @@ class _LiveTrackingPageState extends State<LiveTrackingPage> {
                         count: pages.length,
                         effect: ExpandingDotsEffect(
                           activeDotColor: Colors.black,
-                          dotHeight: SizeConfig.heightMultiplier * 0.3,
-                          dotWidth: SizeConfig.widthMultiplier * 3.5,
+                          dotHeight: SizeConfig.heightMultiplier * 0.4,
+                          dotWidth: SizeConfig.widthMultiplier * 1.5,
                         ),
                       ),
                     ),

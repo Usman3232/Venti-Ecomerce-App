@@ -26,14 +26,9 @@ class AppIcons {
   static String scissors = "assets/icons/scissors.svg";
   static String filter = "assets/icons/filter.svg";
 
-
   //ICONS USED IN CART&CHECKOUT
   static String tickcircle = "assets/icons/tickcircle.svg";
   static String crosscircle = "assets/icons/crosscircle.svg";
-
-
-
-
 
 //ICONS FOR ORDER HISTORY
   static String transfer = "assets/icons/transfer.svg";
@@ -45,21 +40,31 @@ class AppIcons {
   static String location = "assets/icons/location.svg";
 
 // DRAWER
-  static String smalldrawerlogo='assets/icons/drawersmalllogo.svg';
-  static String person='assets/icons/person.svg';
-  static String history='assets/icons/history.svg';
-  static String deliveryStatus='assets/icons/delivery_status.svg';
-  static String paymentMethod='assets/icons/payment.svg';
-  static String address='assets/icons/address.svg';
-  static String settings='assets/icons/settings.svg';
-  static String logout='assets/icons/logout.svg';
+  static String smalldrawerlogo = 'assets/icons/drawersmalllogo.svg';
+  static String largedrawerlogo = 'assets/icons/drawerlargelogo.svg';
+
+  static String person = 'assets/icons/person.svg';
+  static String history = 'assets/icons/history.svg';
+  static String deliveryStatus = 'assets/icons/delivery_status.svg';
+  static String paymentMethod = 'assets/icons/payment.svg';
+  static String address = 'assets/icons/address.svg';
+  static String settings = 'assets/icons/settings.svg';
+  static String logout = 'assets/icons/logout.svg';
 
 // My PROFILE
-  static String camera='assets/icons/camera.svg';
-
+  static String camera = 'assets/icons/camera.svg';
 
   // CHECKOUT CART
-  static String home='assets/icons/home.svg';
-  static String trash='assets/icons/delete.svg';
+  static String home = 'assets/icons/home.svg';
+  static String trash = 'assets/icons/delete.svg';
 
+  //Bottom Bar Icons
+  static String bottomhomeicon = 'assets/icons/bottomhomeicon.png';
+  static String bottombagicon = 'assets/icons/bottombagicon.png';
+
+  static String bottomlocationicon = 'assets/icons/bottomlocationicon.png';
+
+  static String bottomsettingicon = 'assets/icons/bottomsettingicon.png';
+
+  static String bottomstaricon = 'assets/icons/bottomstaricon.png';
 }

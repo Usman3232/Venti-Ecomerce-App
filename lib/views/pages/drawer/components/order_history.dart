@@ -79,7 +79,7 @@ class _OrderHistoryState extends State<OrderHistory>
               indicatorSize: TabBarIndicatorSize.tab,
               indicatorColor: AppColors.primarydarkColor,
               indicatorWeight: 3,
-              padding: const EdgeInsets.only(bottom: 7),
+              padding: EdgeInsets.only(bottom: SizeConfig.heightMultiplier * 1),
             ),
             SizedBox(
               height: AppHeights.height8,

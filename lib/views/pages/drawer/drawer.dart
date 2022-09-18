@@ -2,6 +2,7 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
+import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/drawer/components/my_address.dart';
@@ -70,8 +71,9 @@ class _MyDrawerState extends State<MyDrawer> {
                                 image: AssetImage(AppImages.drawerdp),
                                 fit: BoxFit.cover),
                             shape: BoxShape.circle,
-                            color: Colors.black,
-                            border: Border.all(color: Colors.white, width: 3)),
+                            border: Border.all(
+                                color: Colors.white,
+                                width: SizeConfig.widthMultiplier * 1)),
                       )
                     ],
                   ),
@@ -94,7 +96,7 @@ class _MyDrawerState extends State<MyDrawer> {
             height: AppHeights.height48,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12),
+            padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding13),
             child: Column(
               children: [
                 DrawerTiles(

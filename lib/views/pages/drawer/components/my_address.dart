@@ -40,7 +40,7 @@ class _MyAddressState extends State<MyAddress> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
         title: Text(
           'My Address',
           style: GoogleFonts.poppins(
@@ -64,8 +64,8 @@ class _MyAddressState extends State<MyAddress> {
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(
-            horizontal: AppPaddings.padding24,
-            vertical: SizeConfig.heightMultiplier * 1),
+          horizontal: AppPaddings.padding24,
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -124,8 +124,8 @@ class _MyAddressState extends State<MyAddress> {
                             Row(
                               children: [
                                 Container(
-                                  height: 33,
-                                  width: 33,
+                                  height: AppHeights.height33,
+                                  width: SizeConfig.widthMultiplier * 8.5,
                                   decoration: BoxDecoration(
                                       color: const Color(0xff7496C2)
                                           .withOpacity(0.2),
@@ -227,8 +227,8 @@ class _MyAddressState extends State<MyAddress> {
                             Row(
                               children: [
                                 Container(
-                                  height: 33,
-                                  width: 33,
+                                  height: AppHeights.height33,
+                                  width: SizeConfig.widthMultiplier * 8.5,
                                   decoration: BoxDecoration(
                                       color: const Color(0xff7496C2)
                                           .withOpacity(0.2),

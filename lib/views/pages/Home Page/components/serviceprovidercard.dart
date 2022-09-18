@@ -35,7 +35,8 @@ class _ServiceProviderCardState extends State<ServiceProviderCard> {
       children: [
         Container(
           height: AppHeights.height224,
-          width: AppWidths.width150,
+          // width: AppWidths.width150,
+          width: SizeConfig.widthMultiplier * 39.5,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppRadius.radius20),
             image: DecorationImage(

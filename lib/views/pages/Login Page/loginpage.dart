@@ -5,10 +5,12 @@ import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
+import 'package:ecommerce_app/views/pages/bottom%20nav%20bar/bottom_nav_bar.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../widgets/custom_image_button.dart';
 
@@ -137,7 +139,9 @@ class LoginPage extends StatelessWidget {
                         height: SizeConfig.heightMultiplier * 2.3,
                       ),
                       CustomTextButton(
-                        callback: () {},
+                        callback: () {
+                          Get.to(BottomBar());
+                        },
                         radius: 90,
                         height: SizeConfig.heightMultiplier * 5.5,
                         // width: 273,

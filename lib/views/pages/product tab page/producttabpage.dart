@@ -2,8 +2,10 @@ import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/models/homemodels/anytimesellermodel.dart';
 import 'package:ecommerce_app/models/homemodels/trendingmodel.dart';
 import 'package:ecommerce_app/models/live_tracking_model/carousel_model.dart';
+import 'package:ecommerce_app/views/pages/CURATED%20STORES/curated%20store/curatedstore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../../constants/colors.dart';
@@ -47,7 +49,11 @@ class _ProductTabPageState extends State<ProductTabPage> {
         centerTitle: true,
         leading: Padding(
           padding: EdgeInsets.all(AppPaddings.padding15),
-          child: SvgPicture.asset(AppIcons.drawer),
+          child: GestureDetector(
+              onTap: () {
+                Scaffold.of(context).openDrawer();
+              },
+              child: SvgPicture.asset(AppIcons.drawer)),
         ),
         title: TextView(
           text: "Products",
@@ -125,7 +131,9 @@ class _ProductTabPageState extends State<ProductTabPage> {
                 child: SectionTitleAndSeeAll(
                   title: "From Our Curated Shops",
                   titlesize: AppTexts.size20,
-                  onpress: () {},
+                  onpress: () {
+                    Get.to(CuratedStore());
+                  },
                 ),
               ),
               SizedBox(

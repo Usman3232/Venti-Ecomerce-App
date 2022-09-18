@@ -7,10 +7,12 @@ import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/curated_store_models/categoriesmodel.dart';
 import 'package:ecommerce_app/models/homemodels/trendingmodel.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
+import 'package:ecommerce_app/views/pages/CURATED%20STORES/curated%20search%20page/curatedsearchpage.dart';
 import 'package:ecommerce_app/views/pages/Home%20Page/components/trendingcard.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 
 import 'components/curatedcomponentscard.dart';
 
@@ -23,9 +25,14 @@ class CuratedStore extends StatelessWidget {
       appBar: AppBar(
         leading: Padding(
           padding: EdgeInsets.all(SizeConfig.widthMultiplier * 4.8),
-          child: SvgPicture.asset(
-            AppIcons.back,
-            color: Color(0xff141325),
+          child: GestureDetector(
+            onTap: () {
+              Get.back();
+            },
+            child: SvgPicture.asset(
+              AppIcons.back,
+              color: Color(0xff141325),
+            ),
           ),
         ),
         title: TextView(
@@ -38,7 +45,11 @@ class CuratedStore extends StatelessWidget {
         actions: [
           Padding(
             padding: EdgeInsets.only(right: SizeConfig.widthMultiplier * 4),
-            child: SvgPicture.asset(AppIcons.search),
+            child: GestureDetector(
+                onTap: () {
+                  Get.to(CuratedSearch());
+                },
+                child: SvgPicture.asset(AppIcons.search)),
           )
         ],
         backgroundColor: Colors.transparent,

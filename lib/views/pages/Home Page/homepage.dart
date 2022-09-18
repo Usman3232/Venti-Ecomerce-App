@@ -8,10 +8,13 @@ import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/live_tracking_model/carousel_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
+import 'package:ecommerce_app/views/pages/CURATED%20STORES/curated%20store/curatedstore.dart';
+import 'package:ecommerce_app/views/pages/livetracking/live_tracking_map.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/sectiontitleandseeall.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../../../models/homemodels/anytimesellermodel.dart';
 import '../../../models/homemodels/categoriesmodel.dart';
@@ -54,7 +57,11 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
         leading: Padding(
           padding: EdgeInsets.all(AppPaddings.padding15),
-          child: SvgPicture.asset(AppIcons.drawer),
+          child: GestureDetector(
+              onTap: () {
+                Scaffold.of(context).openDrawer();
+              },
+              child: SvgPicture.asset(AppIcons.drawer)),
         ),
         title: TextView(
           text: "VENTI",
@@ -81,6 +88,7 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         child: SizedBox(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -155,112 +163,118 @@ class _HomePageState extends State<HomePage> {
                     SizedBox(
                       height: AppHeights.height8,
                     ),
-                    Container(
-                      height: AppHeights.height160,
-                      width: SizeConfig.widthMultiplier * 91,
-                      decoration: BoxDecoration(
-                          color: const Color(0xffE5EDF4),
-                          borderRadius: BorderRadius.circular(
-                              SizeConfig.widthMultiplier * 2.7)),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 14, horizontal: 16),
-                        child: Column(
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Column(
-                                  children: [
-                                    Row(
-                                      children: [
-                                        const Icon(
-                                          Icons.timer_outlined,
-                                          color: Colors.black,
-                                        ),
-                                        SizedBox(
-                                          width:
-                                              SizeConfig.widthMultiplier * 6.4,
-                                        ),
-                                        Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            TextView(
-                                              text: "8:50 PM",
-                                              size: AppTexts.size12,
-                                              fontWeight: FontWeight.w700,
-                                            ),
-                                            SizedBox(
-                                              height:
-                                                  SizeConfig.heightMultiplier *
-                                                      .5,
-                                            ),
-                                            TextView(
-                                              text: "Delivery Time",
-                                              size: AppTexts.size12,
-                                              fontWeight: FontWeight.w500,
-                                            ),
-                                          ],
-                                        )
-                                      ],
-                                    ),
-                                  ],
-                                ),
-                                Column(
-                                  children: [
-                                    Row(
-                                      children: [
-                                        const Icon(
-                                          Icons.location_on_outlined,
-                                          color: Colors.black,
-                                        ),
-                                        SizedBox(
-                                          width:
-                                              SizeConfig.widthMultiplier * 6.4,
-                                        ),
-                                        Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            TextView(
-                                              text: "Gaur City",
-                                              size: AppTexts.size12,
-                                              fontWeight: FontWeight.w700,
-                                            ),
-                                            SizedBox(
-                                              height:
-                                                  SizeConfig.heightMultiplier *
-                                                      .5,
-                                            ),
-                                            TextView(
-                                              text: "Delivery Place",
-                                              size: AppTexts.size12,
-                                              fontWeight: FontWeight.w500,
-                                            ),
-                                          ],
-                                        )
-                                      ],
-                                    ),
-                                  ],
-                                )
-                              ],
-                            ),
-                            Spacer(),
-                            Container(
-                              height: AppHeights.height73,
-                              // width: AppWidths.width303,
-                              width: SizeConfig.widthMultiplier * 88,
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius:
-                                    BorderRadius.circular(AppRadius.radius8),
-                                image: DecorationImage(
-                                    image: AssetImage(AppImages.googlemap),
-                                    fit: BoxFit.cover),
+                    GestureDetector(
+                      onTap: () {
+                        Get.to(LiveTrackingMap());
+                      },
+                      child: Container(
+                        height: AppHeights.height160,
+                        width: SizeConfig.widthMultiplier * 91,
+                        decoration: BoxDecoration(
+                            color: const Color(0xffE5EDF4),
+                            borderRadius: BorderRadius.circular(
+                                SizeConfig.widthMultiplier * 2.7)),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 14, horizontal: 16),
+                          child: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Column(
+                                    children: [
+                                      Row(
+                                        children: [
+                                          const Icon(
+                                            Icons.timer_outlined,
+                                            color: Colors.black,
+                                          ),
+                                          SizedBox(
+                                            width: SizeConfig.widthMultiplier *
+                                                6.4,
+                                          ),
+                                          Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              TextView(
+                                                text: "8:50 PM",
+                                                size: AppTexts.size12,
+                                                fontWeight: FontWeight.w700,
+                                              ),
+                                              SizedBox(
+                                                height: SizeConfig
+                                                        .heightMultiplier *
+                                                    .5,
+                                              ),
+                                              TextView(
+                                                text: "Delivery Time",
+                                                size: AppTexts.size12,
+                                                fontWeight: FontWeight.w500,
+                                              ),
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  Column(
+                                    children: [
+                                      Row(
+                                        children: [
+                                          const Icon(
+                                            Icons.location_on_outlined,
+                                            color: Colors.black,
+                                          ),
+                                          SizedBox(
+                                            width: SizeConfig.widthMultiplier *
+                                                6.4,
+                                          ),
+                                          Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              TextView(
+                                                text: "Gaur City",
+                                                size: AppTexts.size12,
+                                                fontWeight: FontWeight.w700,
+                                              ),
+                                              SizedBox(
+                                                height: SizeConfig
+                                                        .heightMultiplier *
+                                                    .5,
+                                              ),
+                                              TextView(
+                                                text: "Delivery Place",
+                                                size: AppTexts.size12,
+                                                fontWeight: FontWeight.w500,
+                                              ),
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                    ],
+                                  )
+                                ],
                               ),
-                            )
-                          ],
+                              Spacer(),
+                              Container(
+                                height: AppHeights.height73,
+                                // width: AppWidths.width303,
+                                width: SizeConfig.widthMultiplier * 88,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius:
+                                      BorderRadius.circular(AppRadius.radius8),
+                                  image: DecorationImage(
+                                      image: AssetImage(AppImages.googlemap),
+                                      fit: BoxFit.cover),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -269,7 +283,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                     SectionTitleAndSeeAll(
                         title: "Categories",
-                        onpress: () {},
+                        onpress: () {
+                          Get.to(CuratedStore());
+                        },
                         titlesize: AppTexts.size16),
                     SizedBox(
                       height: AppHeights.height20,
