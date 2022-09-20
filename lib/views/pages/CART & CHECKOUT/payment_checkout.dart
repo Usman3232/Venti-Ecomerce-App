@@ -6,6 +6,9 @@ import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
+import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/checkout_add_new_address.dart';
+import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/curated%20store%20popular/curatedstorepopular.dart';
+import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/order%20status/negativestatus.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -51,12 +54,17 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
             padding: EdgeInsets.only(
                 top: SizeConfig.heightMultiplier * 2,
                 right: SizeConfig.widthMultiplier * 4),
-            child: Text(
-              "Store Policy",
-              style: TextStyle(
-                color: AppColors.primarylightColor,
-                fontSize: AppTexts.size14,
-                fontWeight: FontWeight.w400,
+            child: InkWell(
+              onTap: () {
+                Get.to(CuratedStorePopular());
+              },
+              child: Text(
+                "Store Policy",
+                style: TextStyle(
+                  color: AppColors.primarylightColor,
+                  fontSize: AppTexts.size14,
+                  fontWeight: FontWeight.w400,
+                ),
               ),
             ),
           )
@@ -181,6 +189,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                             child: ElevatedButton(
                                 onPressed: () {
                                   // Navigator.of(context).push(MaterialPageRoute(builder: (_)=>const CARDACTIVATION()));
+                                  Get.to(AddNewAddressCheckOut());
                                 },
                                 style: ElevatedButton.styleFrom(
                                   shape: RoundedRectangleBorder(
@@ -306,7 +315,9 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                         height: AppHeights.height62,
                         width: AppWidths.widthFull,
                         child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Get.to(NegativeStatus());
+                            },
                             style: ElevatedButton.styleFrom(
                               shape: RoundedRectangleBorder(
                                   side: const BorderSide(

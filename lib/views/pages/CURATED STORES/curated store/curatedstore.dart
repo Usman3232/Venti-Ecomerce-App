@@ -5,10 +5,10 @@ import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/curated_store_models/categoriesmodel.dart';
-import 'package:ecommerce_app/models/homemodels/trendingmodel.dart';
+import 'package:ecommerce_app/models/homemodels/curatedshopmodel.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/CURATED%20STORES/curated%20search%20page/curatedsearchpage.dart';
-import 'package:ecommerce_app/views/pages/Home%20Page/components/trendingcard.dart';
+import 'package:ecommerce_app/views/pages/Home%20Page/components/curatedshopcard.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -107,7 +107,7 @@ class CuratedStore extends StatelessWidget {
                 child: GridView.builder(
               physics: BouncingScrollPhysics(),
               shrinkWrap: true,
-              itemCount: hometrending_model.length,
+              itemCount: curatedshop_model.length,
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   childAspectRatio: SizeConfig.heightMultiplier * .11,
                   mainAxisSpacing: SizeConfig.heightMultiplier * 2,
@@ -116,13 +116,13 @@ class CuratedStore extends StatelessWidget {
               itemBuilder: (context, index) {
                 return Padding(
                   padding: EdgeInsets.only(left: AppPaddings.padding25),
-                  child: HomeTrendingCard(
-                      image: hometrending_model[index].image,
-                      title: hometrending_model[index].title,
-                      location: hometrending_model[index].location,
-                      reviews: hometrending_model[index].reviews,
-                      rating: hometrending_model[index].rating,
-                      favourite: hometrending_model[index].favourite),
+                  child: CuratedShopCard(
+                      image: curatedshop_model[index].image,
+                      title: curatedshop_model[index].title,
+                      location: curatedshop_model[index].location,
+                      reviews: curatedshop_model[index].reviews,
+                      rating: curatedshop_model[index].rating,
+                      favourite: curatedshop_model[index].favourite),
                 );
               },
             ))

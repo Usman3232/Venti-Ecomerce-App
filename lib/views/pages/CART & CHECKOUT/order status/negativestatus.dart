@@ -5,10 +5,13 @@ import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
+import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/all_carts.dart';
+import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/curated%20store%20popular/curatedstorepopular.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 
 class NegativeStatus extends StatelessWidget {
   const NegativeStatus({Key? key}) : super(key: key);
@@ -22,7 +25,11 @@ class NegativeStatus extends StatelessWidget {
         centerTitle: true,
         leading: Padding(
           padding: EdgeInsets.all(AppPaddings.padding19),
-          child: SvgPicture.asset(AppIcons.back),
+          child: InkWell(
+              onTap: () {
+                Get.back();
+              },
+              child: SvgPicture.asset(AppIcons.back)),
         ),
         title: TextView(
           text: "Order Status",
@@ -35,11 +42,16 @@ class NegativeStatus extends StatelessWidget {
             padding: EdgeInsets.only(
                 top: SizeConfig.heightMultiplier * 2,
                 right: SizeConfig.widthMultiplier * 4),
-            child: TextView(
-              text: "Store Policy",
-              color: AppColors.primarydarkColor,
-              size: AppTexts.size14,
-              fontWeight: FontWeight.w400,
+            child: InkWell(
+              onTap: () {
+                Get.to(CuratedStorePopular());
+              },
+              child: TextView(
+                text: "Store Policy",
+                color: AppColors.primarydarkColor,
+                size: AppTexts.size14,
+                fontWeight: FontWeight.w400,
+              ),
             ),
           ),
         ],
@@ -73,7 +85,9 @@ class NegativeStatus extends StatelessWidget {
               height: AppHeights.height50,
             ),
             CustomTextButton(
-              callback: () {},
+              callback: () {
+                Get.to(AllCartsCheckOut(ischeckout: true));
+              },
               colour: AppColors.primarylightColor,
               height: AppHeights.height52,
               width: AppWidths.width284,

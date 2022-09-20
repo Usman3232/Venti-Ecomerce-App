@@ -13,6 +13,7 @@ class AppWidths {
   static double width93 = SizeConfig.widthMultiplier * 24; //checked
   static double width135 = SizeConfig.widthMultiplier * 34.5; //checked
   static double width150 = SizeConfig.widthMultiplier * 38.2; //checked
+  static double width258 = SizeConfig.widthMultiplier * 65.8; //checked
   static double width267 = SizeConfig.widthMultiplier * 68; //checked
   static double width284 = SizeConfig.widthMultiplier * 72.5; //checked
   static double width292 = SizeConfig.widthMultiplier * 74.35; //checked

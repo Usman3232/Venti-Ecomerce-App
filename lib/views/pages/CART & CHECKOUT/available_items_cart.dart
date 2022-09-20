@@ -7,12 +7,15 @@ import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/checkout_model/all_cart_checkout_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
+import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/checkout.dart';
+import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/curated%20store%20popular/curatedstorepopular.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 
 class AvailableCartCheckout extends StatefulWidget {
   const AvailableCartCheckout({Key? key}) : super(key: key);
@@ -30,7 +33,9 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
         elevation: 0,
         centerTitle: true,
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Get.back();
+          },
           icon: Icon(
             Icons.arrow_back_ios,
             size: SizeConfig.imageSizeMultiplier * 5,
@@ -50,12 +55,17 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
             padding: EdgeInsets.only(
                 top: SizeConfig.heightMultiplier * 2,
                 right: SizeConfig.widthMultiplier * 4),
-            child: Text(
-              'Store Policy',
-              style: TextStyle(
-                color: AppColors.primarydarkColor,
-                fontWeight: FontWeight.w400,
-                fontSize: AppTexts.size14,
+            child: InkWell(
+              onTap: () {
+                Get.to(CuratedStorePopular());
+              },
+              child: Text(
+                'Store Policy',
+                style: TextStyle(
+                  color: AppColors.primarydarkColor,
+                  fontWeight: FontWeight.w400,
+                  fontSize: AppTexts.size14,
+                ),
               ),
             ),
           ),
@@ -346,7 +356,9 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                             ),
                             const Spacer(),
                             CustomTextButton(
-                              callback: () {},
+                              callback: () {
+                                Get.to(CheckoutPage());
+                              },
                               title: 'CHECK OUT',
                               height: AppHeights.height50,
                               width: AppWidths.width150,

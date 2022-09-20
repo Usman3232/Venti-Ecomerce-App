@@ -7,10 +7,13 @@ import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
+import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/curated%20store%20popular/curatedstorepopular.dart';
+import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/payment_checkout.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 
 class CheckoutPage extends StatefulWidget {
   const CheckoutPage({Key? key}) : super(key: key);
@@ -28,13 +31,15 @@ class _CheckoutPageState extends State<CheckoutPage> {
         elevation: 0,
         centerTitle: true,
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Get.back();
+          },
           icon: Icon(
             Icons.arrow_back_ios,
             size: SizeConfig.imageSizeMultiplier * 5,
             color: Colors.black,
           ),
-        ), //size5
+        ),
         title: Text(
           'Cart',
           style: TextStyle(
@@ -48,12 +53,17 @@ class _CheckoutPageState extends State<CheckoutPage> {
             padding: EdgeInsets.only(
                 top: SizeConfig.heightMultiplier * 2,
                 right: SizeConfig.widthMultiplier * 4),
-            child: Text(
-              'Store Policy',
-              style: TextStyle(
-                color: AppColors.primarylightColor,
-                fontWeight: FontWeight.w400,
-                fontSize: AppTexts.size14,
+            child: InkWell(
+              onTap: () {
+                Get.to(CuratedStorePopular());
+              },
+              child: Text(
+                'Store Policy',
+                style: TextStyle(
+                  color: AppColors.primarylightColor,
+                  fontWeight: FontWeight.w400,
+                  fontSize: AppTexts.size14,
+                ),
               ),
             ),
           ),
@@ -427,7 +437,9 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           height: AppHeights.height8,
                         ),
                         CustomTextButton(
-                          callback: () {},
+                          callback: () {
+                            Get.to(PaymentCheckOut());
+                          },
                           title: 'PLACE ORDER',
                           height: AppHeights.height48,
                           width: AppWidths.width150,

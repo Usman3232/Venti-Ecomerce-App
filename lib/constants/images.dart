@@ -21,4 +21,15 @@ class AppImages {
   static String american = 'assets/images/american.png';
   static String timer = 'assets/images/timer.png';
   static String backgroundVisa = 'assets/images/visa_background.png';
+
+  //SELLER PANAL IMAGES
+  static String reports = 'assets/images/reports.png';
+  static String storePolicy = 'assets/images/storePolicy.png';
+
+  static String storeDetails = 'assets/images/storeDetails.png';
+
+  static String sellerOrder = 'assets/images/sellerOrder.png';
+
+  static String sellerAlarm = 'assets/images/sellerAlarm.png';
+  static String sellerHouse = 'assets/images/sellerHouse.png';
 }

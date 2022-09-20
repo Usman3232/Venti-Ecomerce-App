@@ -4,6 +4,8 @@ import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
+import 'package:ecommerce_app/controllers/button_controller.dart';
+import 'package:ecommerce_app/utils/root.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/bottom%20nav%20bar/bottom_nav_bar.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -140,7 +142,10 @@ class LoginPage extends StatelessWidget {
                       ),
                       CustomTextButton(
                         callback: () {
-                          Get.to(BottomBar());
+                          Get.put(ButtonsController());
+                          Future.delayed(
+                              Duration(seconds: 2), () => Get.to(() => Root()));
+                          // Get.to(BottomBar());
                         },
                         radius: 90,
                         height: SizeConfig.heightMultiplier * 5.5,

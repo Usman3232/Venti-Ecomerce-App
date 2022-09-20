@@ -11,14 +11,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
-class CuratedStorePopular extends StatefulWidget {
-  const CuratedStorePopular({Key? key}) : super(key: key);
-
-  @override
-  State<CuratedStorePopular> createState() => _CuratedStorePopularState();
-}
-
-class _CuratedStorePopularState extends State<CuratedStorePopular> {
+class ProductDetail extends StatelessWidget {
+  const ProductDetail({Key? key, required this.product}) : super(key: key);
+  final product;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,8 +29,7 @@ class _CuratedStorePopularState extends State<CuratedStorePopular> {
                 height: SizeConfig.heightMultiplier * 40.9,
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('assets/images/curatedpopular.png'),
-                        fit: BoxFit.cover)),
+                        image: AssetImage(product.image), fit: BoxFit.cover)),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 15.0),
                   child: Column(
@@ -117,10 +111,6 @@ class _CuratedStorePopularState extends State<CuratedStorePopular> {
               ),
             ),
             Positioned(
-              top: AppHeights.height110,
-              child: Image.asset("assets/images/RalphLauren.png"),
-            ),
-            Positioned(
               bottom: 0,
               left: 0,
               right: 0,
@@ -137,49 +127,7 @@ class _CuratedStorePopularState extends State<CuratedStorePopular> {
                       EdgeInsets.symmetric(horizontal: AppPaddings.padding17),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      SizedBox(
-                        height: SizeConfig.heightMultiplier * 4.3,
-                      ),
-                      TextView(
-                        text: "Ralph Lauren",
-                        size: AppTexts.size20,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      SizedBox(
-                        height: AppHeights.height10,
-                      ),
-                      TextView(
-                        text: "Store Policy",
-                        size: AppTexts.size16,
-                        fontWeight: FontWeight.w400,
-                      ),
-                      SizedBox(
-                        height: AppHeights.height37,
-                      ),
-                      Container(
-                        width: AppWidths.width325,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.all(
-                              Radius.circular(AppRadius.radius15)),
-                          border: Border.all(
-                            color: Color(0xffCFCFCF),
-                          ),
-                        ),
-                        child: Padding(
-                          padding:
-                              EdgeInsets.all(SizeConfig.widthMultiplier * 3),
-                          child: Text(
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique amet, maecenas sed vitae pretium. Nulla mattis et tortor, viverra mauris lacus. Tristique amet, maecenas sed vitae pretium. Nulla mattis et tortor",
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: AppTexts.size10,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
+                    children: [],
                   ),
                 ),
               ),

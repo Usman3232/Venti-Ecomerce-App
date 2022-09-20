@@ -4,6 +4,7 @@ import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
+import 'package:ecommerce_app/controllers/button_controller.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/drawer/components/my_address.dart';
 import 'package:ecommerce_app/views/pages/drawer/components/my_profile.dart';
@@ -25,7 +26,7 @@ class MyDrawer extends StatefulWidget {
 }
 
 class _MyDrawerState extends State<MyDrawer> {
-  bool isStatus = false;
+  final buttonCont = Get.find<ButtonsController>();
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -158,27 +159,28 @@ class _MyDrawerState extends State<MyDrawer> {
                     SizedBox(
                       width: SizeConfig.widthMultiplier * 3,
                     ),
-                    Neumorphic(
-                      style: NeumorphicStyle(
-                          color: Colors.white,
-                          depth: 2,
-                          boxShape: NeumorphicBoxShape.roundRect(
-                              BorderRadius.circular(20))),
-                      child: FlutterSwitch(
-                        activeColor: Colors.white,
-                        inactiveColor: Colors.white,
-                        activeToggleColor: AppColors.primarydarkColor,
-                        inactiveToggleColor: AppColors.primarylightColor,
-                        width: SizeConfig.widthMultiplier * 18,
-                        height: SizeConfig.heightMultiplier * 4,
-                        toggleSize: SizeConfig.widthMultiplier * 6,
-                        value: isStatus,
-                        borderRadius: 30.0,
-                        onToggle: (value) {
-                          setState(() {
-                            isStatus = value;
-                          });
-                        },
+                    Obx(
+                     ()=> Neumorphic(
+                        style: NeumorphicStyle(
+                            color: Colors.white,
+                            depth: 2,
+                            boxShape: NeumorphicBoxShape.roundRect(
+                                BorderRadius.circular(20))),
+                        child: FlutterSwitch(
+                          activeColor: Colors.white,
+                          inactiveColor: Colors.white,
+                          activeToggleColor: AppColors.primarydarkColor,
+                          inactiveToggleColor: AppColors.primarylightColor,
+                          width: SizeConfig.widthMultiplier * 18,
+                          height: SizeConfig.heightMultiplier * 4,
+                          toggleSize: SizeConfig.widthMultiplier * 6,
+                          value: buttonCont.isSellerPanel.value,
+                          borderRadius: 30.0,
+                          onToggle: (value) {
+                            // Get.back();
+                           buttonCont.isSellerPanel.value=value;
+                          },
+                        ),
                       ),
                     ),
                     SizedBox(

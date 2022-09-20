@@ -20,13 +20,13 @@ import '../../../models/homemodels/anytimesellermodel.dart';
 import '../../../models/homemodels/categoriesmodel.dart';
 import '../../../models/homemodels/circlemodel.dart';
 import '../../../models/homemodels/serviceprovidermodel.dart';
-import '../../../models/homemodels/trendingmodel.dart';
+import '../../../models/homemodels/curatedshopmodel.dart';
 import '../../widgets/carousel_card_widget.dart';
 import 'components/anytimesellercard.dart';
 import 'components/homecatogriescard.dart';
 import 'components/circlecard.dart';
 import 'components/serviceprovidercard.dart';
-import 'components/trendingcard.dart';
+import 'components/curatedshopcard.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -284,7 +284,7 @@ class _HomePageState extends State<HomePage> {
                     SectionTitleAndSeeAll(
                         title: "Categories",
                         onpress: () {
-                          Get.to(CuratedStore());
+                          // Get.to(CuratedStore());
                         },
                         titlesize: AppTexts.size16),
                     SizedBox(
@@ -421,20 +421,20 @@ class _HomePageState extends State<HomePage> {
               SizedBox(
                 height: SizeConfig.heightMultiplier * 27,
                 child: ListView.builder(
-                  itemCount: hometrending_model.length,
+                  itemCount: curatedshop_model.length,
                   scrollDirection: Axis.horizontal,
                   shrinkWrap: true,
                   physics: BouncingScrollPhysics(),
                   itemBuilder: (context, index) {
                     return Padding(
                       padding: EdgeInsets.only(left: AppPaddings.padding24),
-                      child: HomeTrendingCard(
-                          image: hometrending_model[index].image,
-                          title: hometrending_model[index].title,
-                          location: hometrending_model[index].location,
-                          reviews: hometrending_model[index].reviews,
-                          rating: hometrending_model[index].rating,
-                          favourite: hometrending_model[index].favourite),
+                      child: CuratedShopCard(
+                          image: curatedshop_model[index].image,
+                          title: curatedshop_model[index].title,
+                          location: curatedshop_model[index].location,
+                          reviews: curatedshop_model[index].reviews,
+                          rating: curatedshop_model[index].rating,
+                          favourite: curatedshop_model[index].favourite),
                     );
                   },
                 ),
@@ -457,20 +457,20 @@ class _HomePageState extends State<HomePage> {
               SizedBox(
                 height: SizeConfig.heightMultiplier * 29,
                 child: ListView.builder(
-                  itemCount: hometrending_model.length,
+                  itemCount: curatedshop_model.length,
                   scrollDirection: Axis.horizontal,
                   shrinkWrap: true,
                   physics: BouncingScrollPhysics(),
                   itemBuilder: (context, index) {
                     return Padding(
                       padding: EdgeInsets.only(left: AppPaddings.padding24),
-                      child: HomeTrendingCard(
-                          image: hometrending_model[index].image,
-                          title: hometrending_model[index].title,
-                          location: hometrending_model[index].location,
-                          reviews: hometrending_model[index].reviews,
-                          rating: hometrending_model[index].rating,
-                          favourite: hometrending_model[index].favourite),
+                      child: CuratedShopCard(
+                          image: curatedshop_model[index].image,
+                          title: curatedshop_model[index].title,
+                          location: curatedshop_model[index].location,
+                          reviews: curatedshop_model[index].reviews,
+                          rating: curatedshop_model[index].rating,
+                          favourite: curatedshop_model[index].favourite),
                     );
                   },
                 ),

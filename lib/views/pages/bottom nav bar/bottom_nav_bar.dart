@@ -3,11 +3,13 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/width.dart';
+import 'package:ecommerce_app/controllers/button_controller.dart';
 import 'package:ecommerce_app/views/pages/Home%20Page/homepage.dart';
 import 'package:ecommerce_app/views/pages/drawer/drawer.dart';
 import 'package:ecommerce_app/views/pages/mapLocation/map_location.dart';
 import 'package:ecommerce_app/views/pages/product%20tab%20page/producttabpage.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({Key? key}) : super(key: key);
@@ -37,10 +39,10 @@ class _BottomBarState extends State<BottomBar> {
     AppIcons.bottomstaricon,
   ];
   int currentindex = 4;
-
+  final buttonCont = Get.find<ButtonsController>();
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(
       drawer: const MyDrawer(),
       extendBodyBehindAppBar: true,
       body: screens[currentindex],
