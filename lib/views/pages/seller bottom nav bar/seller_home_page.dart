@@ -119,7 +119,7 @@ class _SellerHomePageState extends State<SellerHomePage> {
               height: AppHeights.height18,
             ),
             VentiSellerCardWidget(
-              image: AppImages.storeDetails,
+              image: AppImages.StoreDetails,
               title: 'Store Details',
               buttonText: 'ADD',
             ),

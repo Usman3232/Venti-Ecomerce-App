@@ -3,7 +3,7 @@ import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
-import 'package:ecommerce_app/views/pages/livetracking/live_tracking.dart';
+import 'package:ecommerce_app/views/pages/livetracking/live_tracking_detail.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -117,7 +117,7 @@ class MapDeliveryAddress extends StatelessWidget {
                         EdgeInsets.only(left: SizeConfig.widthMultiplier * 3.9),
                     child: TextButton(
                         onPressed: () {
-                          Get.to(LiveTrackingPage());
+                          Get.to(LiveTrackingDetail());
                         },
                         child: Text(
                           'View\nDetails',

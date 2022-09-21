@@ -13,6 +13,8 @@ class AppIcons {
   static String search = "assets/icons/search.svg";
   static String drawer = "assets/icons/drawer.svg";
   static String cart = "assets/icons/cart.svg";
+  static String addtocart = "assets/icons/addtocart.svg";
+
   static String coin = "assets/icons/coin.svg";
   static String star = "assets/icons/star.svg";
   static String back = "assets/icons/backbutton.svg";
@@ -20,9 +22,7 @@ class AppIcons {
   static String minuscircle = "assets/icons/minuscirlce.svg";
   static String message = "assets/icons/message.svg";
   static String clover = "assets/icons/clover.svg";
-
   static String food = "assets/icons/food.svg";
-
   static String scissors = "assets/icons/scissors.svg";
   static String filter = "assets/icons/filter.svg";
 
@@ -42,7 +42,8 @@ class AppIcons {
 // DRAWER
   static String smalldrawerlogo = 'assets/icons/drawersmalllogo.svg';
   static String largedrawerlogo = 'assets/icons/drawerlargelogo.svg';
-
+//INCONS USED IN MY PROFILE
+  static String camera = 'assets/icons/camera.svg';
   static String person = 'assets/icons/person.svg';
   static String history = 'assets/icons/history.svg';
   static String deliveryStatus = 'assets/icons/delivery_status.svg';
@@ -51,20 +52,14 @@ class AppIcons {
   static String settings = 'assets/icons/settings.svg';
   static String logout = 'assets/icons/logout.svg';
 
-// My PROFILE
-  static String camera = 'assets/icons/camera.svg';
-
   // CHECKOUT CART
   static String home = 'assets/icons/home.svg';
   static String trash = 'assets/icons/delete.svg';
 
-  //Bottom Bar Icons
+  //Buyer Bottom Bar Icons
   static String bottomhomeicon = 'assets/icons/bottomhomeicon.png';
   static String bottombagicon = 'assets/icons/bottombagicon.png';
-
   static String bottomlocationicon = 'assets/icons/bottomlocationicon.png';
-
   static String bottomsettingicon = 'assets/icons/bottomsettingicon.png';
-
   static String bottomstaricon = 'assets/icons/bottomstaricon.png';
 }

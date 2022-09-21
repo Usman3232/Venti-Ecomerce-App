@@ -26,7 +26,7 @@ class AppImages {
   static String reports = 'assets/images/reports.png';
   static String storePolicy = 'assets/images/storePolicy.png';
 
-  static String storeDetails = 'assets/images/storeDetails.png';
+  static String StoreDetails = 'assets/images/StoreDetails.png';
 
   static String sellerOrder = 'assets/images/sellerOrder.png';
 

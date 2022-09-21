@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/controllers/button_controller.dart';
-import 'package:ecommerce_app/views/pages/bottom%20nav%20bar/bottom_nav_bar.dart';
+import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/bottom_nav_bar.dart';
 import 'package:ecommerce_app/views/pages/seller%20bottom%20nav%20bar/seller_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -14,7 +14,7 @@ class Root extends StatelessWidget {
         if(cont.isSellerPanel.value){
           return SellerBottomNavBar();
         }else{
-          return BottomBar();
+          return BuyerBottomNavBar();
         }
       });
   }
