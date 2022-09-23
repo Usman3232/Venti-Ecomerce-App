@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -82,7 +82,7 @@ class _OrderHistoryState extends State<OrderHistory>
               padding: EdgeInsets.only(bottom: SizeConfig.heightMultiplier * 1),
             ),
             SizedBox(
-              height: AppHeights.height8,
+              height: SizeConfig.heightMultiplier * 1,
             ),
             Expanded(
               child: TabBarView(

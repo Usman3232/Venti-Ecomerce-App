@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -55,7 +55,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: AppHeights.height14,
+                height: SizeConfig.heightMultiplier * 1.75,
               ),
               Text(
                 "Order ID ",
@@ -66,7 +66,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                 ),
               ),
               SizedBox(
-                height: AppHeights.height8,
+                height: SizeConfig.heightMultiplier * 1,
               ),
               SizedBox(
                   width: double.infinity,
@@ -78,7 +78,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                     textEditingController: idController,
                   )),
               SizedBox(
-                height: AppHeights.height25,
+                height: SizeConfig.heightMultiplier * 3.1,
               ),
               SaveItemStatus
                   ? AddItemWidget(
@@ -89,7 +89,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                     )
                   : Container(),
               SizedBox(
-                height: AppHeights.height10,
+                height: SizeConfig.heightMultiplier * 1.2,
               ),
               GestureDetector(
                 onTap: () {
@@ -99,7 +99,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                 },
                 child: Status == false
                     ? Container(
-                        height: AppHeights.height62,
+                        height: SizeConfig.heightMultiplier * 7.7,
                         width: double.infinity,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(
@@ -131,7 +131,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               SizedBox(
-                                height: AppHeights.height23,
+                                height: SizeConfig.heightMultiplier * 2.85,
                               ),
                               Text(
                                 "Product Name",
@@ -142,7 +142,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                                 ),
                               ),
                               SizedBox(
-                                height: AppHeights.height8,
+                                height: SizeConfig.heightMultiplier * 1,
                               ),
                               AuthTextInputField(
                                   textEditingController: productNameController,
@@ -159,7 +159,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                                 ),
                               ),
                               SizedBox(
-                                height: AppHeights.height10,
+                                height: SizeConfig.heightMultiplier * 1.2,
                               ),
                               AuthTextInputField(
                                   textEditingController:
@@ -196,7 +196,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                                 ),
                               ),
                               SizedBox(
-                                height: AppHeights.height8,
+                                height: SizeConfig.heightMultiplier * 1,
                               ),
                               Row(
                                 mainAxisAlignment:
@@ -228,10 +228,10 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                                 ],
                               ),
                               SizedBox(
-                                height: AppHeights.height23,
+                                height: SizeConfig.heightMultiplier * 2.85,
                               ),
                               Container(
-                                height: AppHeights.height62,
+                                height: SizeConfig.heightMultiplier * 7.7,
                                 width: double.infinity,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.all(
@@ -252,7 +252,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                                 ),
                               ),
                               SizedBox(
-                                height: AppHeights.height23,
+                                height: SizeConfig.heightMultiplier * 2.85,
                               ),
                               Row(
                                 mainAxisAlignment:
@@ -264,7 +264,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                                         Status = false;
                                       });
                                     },
-                                    height: AppHeights.height38,
+                                    height: SizeConfig.heightMultiplier * 4.7,
                                     width: AppWidths.width135,
                                     radius: 100,
                                     title: 'Cancel',
@@ -278,7 +278,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                                         SaveItemStatus = true;
                                       });
                                     },
-                                    height: AppHeights.height38,
+                                    height: SizeConfig.heightMultiplier * 4.7,
                                     width: AppWidths.width135,
                                     radius: 100,
                                     title: 'Save Item',
@@ -288,14 +288,14 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                                 ],
                               ),
                               SizedBox(
-                                height: AppHeights.height23,
+                                height: SizeConfig.heightMultiplier * 2.85,
                               ),
                             ],
                           ),
                         )),
               ),
               SizedBox(
-                height: AppHeights.height14,
+                height: SizeConfig.heightMultiplier * 1.75,
               ),
             ],
           ),
@@ -443,7 +443,7 @@ class AddItemWidget extends StatelessWidget {
                         ),
                         Container(
                           width: double.infinity,
-                          height: AppHeights.height62,
+                          height: SizeConfig.heightMultiplier * 7.7,
                           decoration: BoxDecoration(
                               image: const DecorationImage(
                                   image: AssetImage(

@@ -11,7 +11,6 @@ import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../../../constants/colors.dart';
-import '../../../../constants/height.dart';
 import '../../../../constants/icons.dart';
 import '../../../../constants/padding.dart';
 import '../../../../utils/size_config.dart';
@@ -86,7 +85,7 @@ class _ProductPageState extends State<ProductPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: AppHeights.height10,
+                height: SizeConfig.heightMultiplier * 1.2,
               ),
               Padding(
                 padding:
@@ -123,7 +122,7 @@ class _ProductPageState extends State<ProductPage> {
                 ),
               ),
               SizedBox(
-                height: AppHeights.height35,
+                height: SizeConfig.heightMultiplier * 4.6,
               ),
               Padding(
                 padding:
@@ -140,7 +139,7 @@ class _ProductPageState extends State<ProductPage> {
                 ),
               ),
               SizedBox(
-                height: AppHeights.height10,
+                height: SizeConfig.heightMultiplier * 1.2,
               ),
               Padding(
                 padding:
@@ -152,7 +151,7 @@ class _ProductPageState extends State<ProductPage> {
                 ),
               ),
               SizedBox(
-                height: AppHeights.height10,
+                height: SizeConfig.heightMultiplier * 1.2,
               ),
               SizedBox(
                 height: SizeConfig.heightMultiplier * 27,
@@ -176,7 +175,7 @@ class _ProductPageState extends State<ProductPage> {
                 ),
               ),
               SizedBox(
-                height: AppHeights.height21,
+                height: SizeConfig.heightMultiplier * 2.65,
               ),
               Padding(
                 padding: EdgeInsets.only(left: AppPaddings.padding24),
@@ -188,7 +187,7 @@ class _ProductPageState extends State<ProductPage> {
                 ),
               ),
               SizedBox(
-                height: AppHeights.height18,
+                height: SizeConfig.heightMultiplier * 2.2,
               ),
               SizedBox(
                 height: SizeConfig.heightMultiplier * 29,
@@ -247,10 +246,10 @@ class _ProductPageState extends State<ProductPage> {
                       ),
                     ),
                     SizedBox(
-                      height: AppHeights.height26,
+                      height: SizeConfig.heightMultiplier * 3.25,
                     ),
                     SizedBox(
-                      height: AppHeights.height236,
+                      height: SizeConfig.heightMultiplier * 29.4,
                       child: ListView.builder(
                         itemCount: anytimeseller_model.length,
                         scrollDirection: Axis.horizontal,
@@ -278,7 +277,7 @@ class _ProductPageState extends State<ProductPage> {
                 ),
               ),
               SizedBox(
-                height: AppHeights.height50,
+                height: SizeConfig.heightMultiplier * 6.3,
               ),
             ],
           ),

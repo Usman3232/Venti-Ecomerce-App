@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
@@ -41,7 +41,7 @@ class _CuratedShopCardState extends State<CuratedShopCard> {
           Stack(
             children: [
               Container(
-                height: AppHeights.height151,
+                height: SizeConfig.heightMultiplier * 18.8,
                 width: AppWidths.width150,
                 decoration: BoxDecoration(
                     color: Colors.black,
@@ -53,7 +53,7 @@ class _CuratedShopCardState extends State<CuratedShopCard> {
                 top: SizeConfig.heightMultiplier * 1.9,
                 right: SizeConfig.widthMultiplier * 4.2,
                 child: Container(
-                    height: AppHeights.height25,
+                    height: SizeConfig.heightMultiplier * 3.1,
                     width: AppWidths.width25,
                     decoration: const BoxDecoration(
                         color: Colors.white, shape: BoxShape.circle),
@@ -79,7 +79,7 @@ class _CuratedShopCardState extends State<CuratedShopCard> {
             ],
           ),
           SizedBox(
-            height: AppHeights.height8,
+            height: SizeConfig.heightMultiplier * 1,
           ),
           TextView(
             text: widget.title,

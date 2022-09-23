@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/constants/width.dart';
@@ -56,10 +56,10 @@ class _DetailCartProductState extends State<DetailCartProduct> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: AppHeights.height14,
+                  height: SizeConfig.heightMultiplier * 1.75,
                 ),
                 Container(
-                  height: AppHeights.height151,
+                  height: SizeConfig.heightMultiplier * 18.8,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     borderRadius:
@@ -69,12 +69,12 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                   child: Center(
                       child: Image.asset(
                     "assets/images/detail_shoe.png",
-                    height: AppHeights.height120,
+                    height: SizeConfig.heightMultiplier * 14.9,
                     width: AppWidths.width258,
                   )),
                 ),
                 SizedBox(
-                  height: AppHeights.height14,
+                  height: SizeConfig.heightMultiplier * 1.75,
                 ),
                 Text(
                   "Jordan 1 Retro High Tie Dye",
@@ -88,7 +88,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                   ),
                 ),
                 SizedBox(
-                  height: AppHeights.height8,
+                  height: SizeConfig.heightMultiplier * 1,
                 ),
                 Text(
                   "Adidas . Grey . 42",
@@ -102,7 +102,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                   ),
                 ),
                 SizedBox(
-                  height: AppHeights.height10,
+                  height: SizeConfig.heightMultiplier * 1.2,
                 ),
                 Row(
                   children: [
@@ -145,7 +145,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                   ],
                 ),
                 SizedBox(
-                  height: AppHeights.height139,
+                  height: SizeConfig.heightMultiplier * 17.3,
                 ),
                 Align(
                   alignment: Alignment.center,
@@ -163,10 +163,10 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                       )),
                 ),
                 SizedBox(
-                  height: AppHeights.height48,
+                  height: SizeConfig.heightMultiplier * 5.95,
                 ),
                 Container(
-                  height: AppHeights.height120,
+                  height: SizeConfig.heightMultiplier * 14.9,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     borderRadius:
@@ -196,7 +196,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
             left: 0,
             right: 0,
             child: Container(
-                height: AppHeights.height110,
+                height: SizeConfig.heightMultiplier * 13.7,
                 width: double.infinity,
                 decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
@@ -210,7 +210,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                   child: Column(
                     children: [
                       SizedBox(
-                        height: AppHeights.height20,
+                        height: SizeConfig.heightMultiplier * 2.5,
                       ),
                       Row(
                         children: [
@@ -241,7 +241,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                           CustomTextButton(
                             callback: () {},
                             title: 'CHECK OUT',
-                            height: AppHeights.height50,
+                            height: SizeConfig.heightMultiplier * 6.3,
                             width: AppWidths.width150,
                             radius: AppRadius.radius30,
                             textcolour: Colors.white,

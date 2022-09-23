@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
@@ -59,7 +59,7 @@ class _AnyTimeSellerStoreDetailState extends State<AnyTimeSellerStoreDetail>
             ),
           ),
           Positioned(
-            top: AppHeights.height110,
+            top: SizeConfig.heightMultiplier * 13.7,
             child: Image.asset("assets/images/RalphLauren.png"),
           ),
           Positioned(
@@ -67,7 +67,7 @@ class _AnyTimeSellerStoreDetailState extends State<AnyTimeSellerStoreDetail>
             left: 0,
             right: 0,
             child: Container(
-              height: AppHeights.height525,
+              height: SizeConfig.heightMultiplier * 6.545,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
                     topRight: Radius.circular(AppRadius.radius30),
@@ -138,7 +138,7 @@ class _AnyTimeSellerStoreDetailState extends State<AnyTimeSellerStoreDetail>
                           ),
                           SizedBox(height: SizeConfig.heightMultiplier * 2),
                           SizedBox(
-                            height: AppHeights.height8,
+                            height: SizeConfig.heightMultiplier * 1,
                           ),
                         ],
                       ),

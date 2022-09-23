@@ -1,6 +1,6 @@
 import 'package:country_picker/country_picker.dart';
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
@@ -73,7 +73,7 @@ class _MyProfileState extends State<MyProfile> {
                     ),
                   ),
                   Positioned(
-                    bottom: AppHeights.height20,
+                    bottom: SizeConfig.heightMultiplier * 2.5,
                     left: 0,
                     right: 0,
                     child: Row(

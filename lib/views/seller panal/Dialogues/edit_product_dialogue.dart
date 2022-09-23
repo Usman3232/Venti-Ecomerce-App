@@ -7,7 +7,7 @@ import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../../constants/height.dart';
+
 import '../../../../constants/radius.dart';
 import '../../widgets/custom_text_button.dart';
 import '../Curated Store Seller/curated_store_seller.dart';
@@ -42,7 +42,7 @@ class EditProductDialogue extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(
-                        height: AppHeights.height10,
+                        height: SizeConfig.heightMultiplier * 1.2,
                       ),
                       Align(
                         alignment: Alignment.topRight,
@@ -59,7 +59,7 @@ class EditProductDialogue extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             SizedBox(
-                              height: AppHeights.height10,
+                              height: SizeConfig.heightMultiplier * 1.2,
                             ),
                             Align(
                               alignment: Alignment.center,
@@ -73,10 +73,10 @@ class EditProductDialogue extends StatelessWidget {
                               ),
                             ),
                             SizedBox(
-                              height: AppHeights.height20,
+                              height: SizeConfig.heightMultiplier * 2.5,
                             ),
                             Container(
-                              height: AppHeights.height96,
+                              height: SizeConfig.heightMultiplier * 11.9,
                               width: AppWidths.widthFull,
                               decoration: BoxDecoration(
                                 color: AppColors.primarylightColor
@@ -86,7 +86,7 @@ class EditProductDialogue extends StatelessWidget {
                               ),
                             ),
                             SizedBox(
-                              height: AppHeights.height20,
+                              height: SizeConfig.heightMultiplier * 2.5,
                             ),
                             Text(
                               "Name of Product",
@@ -98,20 +98,20 @@ class EditProductDialogue extends StatelessWidget {
                               ),
                             ),
                             SizedBox(
-                              height: AppHeights.height8,
+                              height: SizeConfig.heightMultiplier * 1,
                             ),
                             AuthTextInputField(
                               hintText: 'Product name',
                               textEditingController: productController,
                             ),
                             SizedBox(
-                              height: AppHeights.height8,
+                              height: SizeConfig.heightMultiplier * 1,
                             ),
                             PriceDiscount(
                                 priceController: priceController,
                                 discountController: discountController),
                             SizedBox(
-                              height: AppHeights.height14,
+                              height: SizeConfig.heightMultiplier * 1.75,
                             ),
                             Text(
                               "Category",
@@ -122,7 +122,7 @@ class EditProductDialogue extends StatelessWidget {
                               ),
                             ),
                             SizedBox(
-                              height: AppHeights.height8,
+                              height: SizeConfig.heightMultiplier * 1,
                             ),
                             ExpansionTile(
                                 textColor: Colors.black,
@@ -137,7 +137,7 @@ class EditProductDialogue extends StatelessWidget {
                                   ),
                                 )),
                             SizedBox(
-                              height: AppHeights.height8,
+                              height: SizeConfig.heightMultiplier * 1,
                             ),
                             Text("Discription",
                                 style: TextStyle(
@@ -146,7 +146,7 @@ class EditProductDialogue extends StatelessWidget {
                                   letterSpacing: 1,
                                 )),
                             SizedBox(
-                              height: AppHeights.height10,
+                              height: SizeConfig.heightMultiplier * 1.2,
                             ),
                             AuthTextInputField(
                               hintText: 'description',
@@ -155,7 +155,7 @@ class EditProductDialogue extends StatelessWidget {
                             ),
                             const CustomColorWidget(),
                             SizedBox(
-                              height: AppHeights.height57,
+                              height: SizeConfig.heightMultiplier * 7.1,
                             ),
                             CustomTextButton(
                               callback: () {},
@@ -163,11 +163,11 @@ class EditProductDialogue extends StatelessWidget {
                               textcolour: Colors.white,
                               colour: AppColors.primarylightColor,
                               radius: AppRadius.radius20,
-                              height: AppHeights.height45,
+                              height: SizeConfig.heightMultiplier * 5.65,
                               width: double.infinity,
                             ),
                             SizedBox(
-                              height: AppHeights.height23,
+                              height: SizeConfig.heightMultiplier * 2.85,
                             ),
                             CustomTextButton(
                               callback: () {},
@@ -175,11 +175,11 @@ class EditProductDialogue extends StatelessWidget {
                               textcolour: Colors.white,
                               colour: Colors.redAccent,
                               radius: AppRadius.radius20,
-                              height: AppHeights.height45,
+                              height: SizeConfig.heightMultiplier * 5.65,
                               width: double.infinity,
                             ),
                             SizedBox(
-                              height: AppHeights.height38,
+                              height: SizeConfig.heightMultiplier * 4.7,
                             ),
                           ],
                         ),

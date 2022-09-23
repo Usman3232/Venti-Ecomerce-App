@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
@@ -77,7 +77,7 @@ class _MyAddressState extends State<MyAddress> {
                 });
               },
               child: SizedBox(
-                height: AppHeights.height120,
+                height: SizeConfig.heightMultiplier * 14.9,
                 child: Card(
                   color: Colors.white,
                   elevation: card1 ? 3 : 0,
@@ -124,7 +124,7 @@ class _MyAddressState extends State<MyAddress> {
                             Row(
                               children: [
                                 Container(
-                                  height: AppHeights.height33,
+                                  height: SizeConfig.heightMultiplier * 4.1,
                                   width: SizeConfig.widthMultiplier * 8.5,
                                   decoration: BoxDecoration(
                                       color: const Color(0xff7496C2)
@@ -227,7 +227,7 @@ class _MyAddressState extends State<MyAddress> {
                             Row(
                               children: [
                                 Container(
-                                  height: AppHeights.height33,
+                                  height: SizeConfig.heightMultiplier * 4.1,
                                   width: SizeConfig.widthMultiplier * 8.5,
                                   decoration: BoxDecoration(
                                       color: const Color(0xff7496C2)
@@ -275,7 +275,7 @@ class _MyAddressState extends State<MyAddress> {
               ),
             ),
             SizedBox(
-              height: AppHeights.height20,
+              height: SizeConfig.heightMultiplier * 2.5,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -297,10 +297,10 @@ class _MyAddressState extends State<MyAddress> {
               ],
             ),
             SizedBox(
-              height: AppHeights.height8,
+              height: SizeConfig.heightMultiplier * 1,
             ),
             Container(
-              height: AppHeights.height289,
+              height: SizeConfig.heightMultiplier * 36,
               width: AppWidths.widthFull,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(AppRadius.radius15),
@@ -315,7 +315,7 @@ class _MyAddressState extends State<MyAddress> {
               ),
             ),
             SizedBox(
-              height: AppHeights.height24,
+              height: SizeConfig.heightMultiplier * 3,
             ),
             CustomTextButton(
                 title: 'Add new address',

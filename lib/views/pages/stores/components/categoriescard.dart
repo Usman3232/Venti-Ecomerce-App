@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -33,7 +33,7 @@ class _CategoriesCardState extends State<CategoriesCard> {
             });
           },
           child: Container(
-            height: AppHeights.height50,
+            height: SizeConfig.heightMultiplier * 6.3,
             width: AppWidths.width50,
             decoration: BoxDecoration(
                 shape: BoxShape.circle,
@@ -52,7 +52,7 @@ class _CategoriesCardState extends State<CategoriesCard> {
           ),
         ),
         SizedBox(
-          height: AppHeights.height10,
+          height: SizeConfig.heightMultiplier * 1.2,
         ),
         TextView(
           text: widget.title,

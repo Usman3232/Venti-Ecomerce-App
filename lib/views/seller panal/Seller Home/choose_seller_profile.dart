@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/width.dart';
@@ -133,7 +133,7 @@ class _ChooseSellerProfileState extends State<ChooseSellerProfile> {
                   fontWeight: FontWeight.w600,
                 ),
                 SizedBox(
-                  height: AppHeights.height20,
+                  height: SizeConfig.heightMultiplier * 2.5,
                 ),
                 ...List.generate(
                   buttons.length,
@@ -194,7 +194,7 @@ class ChooseSellerButton extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
-        height: AppHeights.height52,
+        height: SizeConfig.heightMultiplier * 6.54,
         decoration: BoxDecoration(
             color: color,
             borderRadius: BorderRadius.all(Radius.circular(AppRadius.radius10)),

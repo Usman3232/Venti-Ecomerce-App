@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/constants/width.dart';
@@ -70,7 +70,7 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
           child: Column(
             children: [
               SizedBox(
-                height: AppHeights.height218,
+                height: SizeConfig.heightMultiplier * 2.658,
                 width: AppWidths.widthFull,
                 child: Stack(
                   children: [
@@ -100,7 +100,7 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
                 ),
               ),
               SizedBox(
-                height: AppHeights.height45,
+                height: SizeConfig.heightMultiplier * 5.65,
               ),
               Align(
                 alignment: Alignment.topLeft,
@@ -156,11 +156,11 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
                 ],
               ),
               SizedBox(
-                height: AppHeights.height52,
+                height: SizeConfig.heightMultiplier * 6.54,
               ),
               const DliveryRiderCard(),
               SizedBox(
-                height: AppHeights.height38,
+                height: SizeConfig.heightMultiplier * 4.7,
               ),
               ListView.builder(
                   shrinkWrap: true,
@@ -243,7 +243,7 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
                       ],
                     ),
                     SizedBox(
-                      height: AppHeights.height35,
+                      height: SizeConfig.heightMultiplier * 4.6,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,

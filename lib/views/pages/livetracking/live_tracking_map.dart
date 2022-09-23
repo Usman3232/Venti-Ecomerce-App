@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
@@ -91,7 +91,7 @@ class _LiveTrackingMapState extends State<LiveTrackingMap> {
               mapType: MapType.normal,
             ),
             Positioned(
-              bottom: AppHeights.height24,
+              bottom: SizeConfig.heightMultiplier * 3,
               left: 0,
               right: 0,
               child: const MapDeliveryAddress(),

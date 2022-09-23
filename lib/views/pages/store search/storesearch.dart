@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
@@ -48,7 +48,7 @@ class _StoreSearchState extends State<StoreSearch> {
       body: Column(
         children: [
           SizedBox(
-            height: AppHeights.height62,
+            height: SizeConfig.heightMultiplier * 7.7,
           ),
           Row(
             children: [
@@ -107,7 +107,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                               size: AppTexts.size19,
                                             ),
                                             SizedBox(
-                                              height: AppHeights.height14,
+                                              height: SizeConfig.heightMultiplier * 1.75,
                                             ),
                                             TextView(
                                               text: "Price Range",
@@ -179,7 +179,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                               size: AppTexts.size16,
                                             ),
                                             SizedBox(
-                                              height: AppHeights.height20,
+                                              height: SizeConfig.heightMultiplier * 2.5,
                                             )
                                           ],
                                         ),
@@ -247,7 +247,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                         ),
                                       ),
                                       SizedBox(
-                                        height: AppHeights.height30,
+                                        height: SizeConfig.heightMultiplier * 3.8,
                                       ),
                                       TextView(
                                         text: "Gender",
@@ -255,7 +255,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                         size: AppTexts.size16,
                                       ),
                                       SizedBox(
-                                        height: AppHeights.height20,
+                                        height: SizeConfig.heightMultiplier * 2.5,
                                       ),
                                       SingleChildScrollView(
                                         scrollDirection: Axis.horizontal,
@@ -301,7 +301,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                         ),
                                       ),
                                       SizedBox(
-                                        height: AppHeights.height30,
+                                        height: SizeConfig.heightMultiplier * 3.8,
                                       ),
                                       TextView(
                                         text: "Categories",
@@ -309,7 +309,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                         size: AppTexts.size16,
                                       ),
                                       SizedBox(
-                                        height: AppHeights.height20,
+                                        height: SizeConfig.heightMultiplier * 2.5,
                                       ),
                                       SingleChildScrollView(
                                         scrollDirection: Axis.horizontal,
@@ -371,7 +371,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                       ),
                                       Spacer(),
                                       Container(
-                                        height: AppHeights.height50 * 2,
+                                        height: SizeConfig.heightMultiplier * 6.3 * 2,
                                         decoration: BoxDecoration(
                                             color: Colors.white,
                                             borderRadius: BorderRadius.vertical(
@@ -402,7 +402,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                                   });
                                                 },
                                                 radius: 90,
-                                                height: AppHeights.height50,
+                                                height: SizeConfig.heightMultiplier * 6.3,
                                                 width: AppWidths.width150,
                                                 colour: Colors.white,
                                                 title: "Reset (4)",
@@ -411,7 +411,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                               CustomTextButton(
                                                 callback: () {},
                                                 radius: 90,
-                                                height: AppHeights.height50,
+                                                height: SizeConfig.heightMultiplier * 6.3,
                                                 width: AppWidths.width150,
                                                 colour:
                                                     AppColors.primarylightColor,

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../constants/height.dart';
 import '../../../../../constants/padding.dart';
 import '../../../../../constants/width.dart';
 import '../../../../../models/curated_store_models/productmodel.dart';
@@ -31,7 +30,7 @@ class GalleryTab extends StatelessWidget {
         ) :  Container(
           margin:  EdgeInsets.only(
               left: AppPaddings.padding8,right: AppPaddings.padding8),
-          height: AppHeights.height151,
+          height: SizeConfig.heightMultiplier * 18.8,
           width: AppWidths.width150,
           decoration: BoxDecoration(
               color: Colors.black,

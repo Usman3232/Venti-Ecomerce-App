@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:country_picker/country_picker.dart';
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
@@ -219,7 +219,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                                   fontSize: AppTexts.size14),
                             ),
                             SizedBox(
-                              height: AppHeights.height8,
+                              height: SizeConfig.heightMultiplier * 1,
                             ),
                             AuthTextInputField(
                               isoutline: true,
@@ -333,7 +333,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                   ],
                 ),
                 SizedBox(
-                  height: AppHeights.height10,
+                  height: SizeConfig.heightMultiplier * 1.2,
                 ),
                 Container(
                   height: SizeConfig.heightMultiplier * 17.6,
@@ -350,7 +350,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                     mapType: MapType.normal,
                   ),
                 ),
-                SizedBox(height: AppHeights.height27),
+                SizedBox(height: SizeConfig.heightMultiplier * 3.4),
                 CustomTextButton(
                     title: 'Save',
                     colour: AppColors.primarylightColor,

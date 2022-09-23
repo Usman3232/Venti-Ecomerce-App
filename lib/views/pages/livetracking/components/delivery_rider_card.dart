@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
@@ -15,7 +15,7 @@ class DliveryRiderCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: AppHeights.height227,
+      height: SizeConfig.heightMultiplier * 28.3,
       width: SizeConfig.widthMultiplier * 100,
       child: Card(
         elevation: 3,
@@ -39,7 +39,7 @@ class DliveryRiderCard extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: AppHeights.height8,
+                height: SizeConfig.heightMultiplier * 1,
               ),
               Text(
                 'Joshua Gillani \n+91 888 888 8888',
@@ -50,7 +50,7 @@ class DliveryRiderCard extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: AppHeights.height38,
+                height: SizeConfig.heightMultiplier * 4.7,
               ),
               Text(
                 'Delivery Address',
@@ -61,7 +61,7 @@ class DliveryRiderCard extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: AppHeights.height8,
+                height: SizeConfig.heightMultiplier * 1,
               ),
               Text(
                 '27 Independence Street, Sukamulya, Cikembar, Sukabumi, Jawa Barat 43157',
@@ -72,7 +72,7 @@ class DliveryRiderCard extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: AppHeights.height8,
+                height: SizeConfig.heightMultiplier * 1,
               ),
               Text(
                 'Joshua Gillani, +91 888 888 8888',

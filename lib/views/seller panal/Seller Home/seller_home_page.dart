@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
@@ -52,7 +52,7 @@ class _SellerHomePageState extends State<SellerHomePage> {
               Get.to(ChooseSellerProfile());
             },
             child: Container(
-              height: AppHeights.height27,
+              height: SizeConfig.heightMultiplier * 3.4,
               width: AppWidths.width25,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
@@ -79,7 +79,7 @@ class _SellerHomePageState extends State<SellerHomePage> {
         child: Column(
           children: [
             SizedBox(
-              height: AppHeights.height21,
+              height: SizeConfig.heightMultiplier * 2.65,
             ),
             VentiSellerCardWidget(
               image: AppImages.sellerHouse,
@@ -92,7 +92,7 @@ class _SellerHomePageState extends State<SellerHomePage> {
               buttonTap: () {},
             ),
             SizedBox(
-              height: AppHeights.height18,
+              height: SizeConfig.heightMultiplier * 2.2,
             ),
             VentiSellerCardWidget(
               image: AppImages.sellerAlarm,
@@ -106,7 +106,7 @@ class _SellerHomePageState extends State<SellerHomePage> {
               },
             ),
             SizedBox(
-              height: AppHeights.height18,
+              height: SizeConfig.heightMultiplier * 2.2,
             ),
             VentiSellerCardWidget(
               image: AppImages.sellerOrder,
@@ -119,7 +119,7 @@ class _SellerHomePageState extends State<SellerHomePage> {
               },
             ),
             SizedBox(
-              height: AppHeights.height18,
+              height: SizeConfig.heightMultiplier * 2.2,
             ),
             VentiSellerCardWidget(
               image: AppImages.Storedetail,
@@ -128,7 +128,7 @@ class _SellerHomePageState extends State<SellerHomePage> {
               buttonTap: () {},
             ),
             SizedBox(
-              height: AppHeights.height18,
+              height: SizeConfig.heightMultiplier * 2.2,
             ),
             VentiSellerCardWidget(
               image: AppImages.storePolicy,
@@ -137,7 +137,7 @@ class _SellerHomePageState extends State<SellerHomePage> {
               buttonTap: () {},
             ),
             SizedBox(
-              height: AppHeights.height18,
+              height: SizeConfig.heightMultiplier * 2.2,
             ),
             VentiSellerCardWidget(
               image: AppImages.reports,
@@ -198,7 +198,7 @@ class _VentiSellerCardWidgetState extends State<VentiSellerCardWidget> {
           ),
           tileColor: Colors.white,
           leading: Container(
-            height: AppHeights.height50,
+            height: SizeConfig.heightMultiplier * 6.3,
             width: AppWidths.width50,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
@@ -208,7 +208,7 @@ class _VentiSellerCardWidgetState extends State<VentiSellerCardWidget> {
               padding: EdgeInsets.all(SizeConfig.widthMultiplier * 1.6),
               child: Image.asset(
                 widget.image,
-                height: AppHeights.height30,
+                height: SizeConfig.heightMultiplier * 3.8,
                 width: AppWidths.width30,
               ),
             ),
@@ -237,7 +237,7 @@ class _VentiSellerCardWidgetState extends State<VentiSellerCardWidget> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     SizedBox(
-                      height: AppHeights.height20,
+                      height: SizeConfig.heightMultiplier * 2.5,
                       width: SizeConfig.widthMultiplier * 9,
                       child: FlutterSwitch(
                         switchBorder:
@@ -258,13 +258,13 @@ class _VentiSellerCardWidgetState extends State<VentiSellerCardWidget> {
                       ),
                     ),
                     SizedBox(
-                      height: AppHeights.height10,
+                      height: SizeConfig.heightMultiplier * 1.2,
                     ),
                     Expanded(
                       child: CustomTextButton(
                         title: widget.buttonText,
                         callback: widget.buttonTap,
-                        height: AppHeights.height27,
+                        height: SizeConfig.heightMultiplier * 3.4,
                         colour: const Color(0xffE3EAF3),
                         textcolour: AppColors.primarydarkColor,
                         fontSize: widget.buttonSize,
@@ -277,7 +277,7 @@ class _VentiSellerCardWidgetState extends State<VentiSellerCardWidget> {
               : CustomTextButton(
                   title: widget.buttonText,
                   callback: widget.buttonTap,
-                  height: AppHeights.height27,
+                  height: SizeConfig.heightMultiplier * 3.4,
                   colour: const Color(0xffE3EAF3),
                   textcolour: AppColors.primarydarkColor,
                   fontSize: widget.buttonSize,

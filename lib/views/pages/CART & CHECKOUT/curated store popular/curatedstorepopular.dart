@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
@@ -41,7 +41,7 @@ class _CuratedStorePopularState extends State<CuratedStorePopular> {
                   child: Column(
                     children: [
                       SizedBox(
-                        height: AppHeights.height66,
+                        height: SizeConfig.heightMultiplier * 8.2,
                       ),
                       Row(
                         children: [
@@ -117,7 +117,7 @@ class _CuratedStorePopularState extends State<CuratedStorePopular> {
               ),
             ),
             Positioned(
-              top: AppHeights.height110,
+              top: SizeConfig.heightMultiplier * 13.7,
               child: Image.asset("assets/images/RalphLauren.png"),
             ),
             Positioned(
@@ -125,7 +125,7 @@ class _CuratedStorePopularState extends State<CuratedStorePopular> {
               left: 0,
               right: 0,
               child: Container(
-                height: AppHeights.height525,
+                height: SizeConfig.heightMultiplier * 6.545,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
                       topRight: Radius.circular(AppRadius.radius30),
@@ -147,7 +147,7 @@ class _CuratedStorePopularState extends State<CuratedStorePopular> {
                         fontWeight: FontWeight.w600,
                       ),
                       SizedBox(
-                        height: AppHeights.height10,
+                        height: SizeConfig.heightMultiplier * 1.2,
                       ),
                       TextView(
                         text: "Store Policy",
@@ -155,7 +155,7 @@ class _CuratedStorePopularState extends State<CuratedStorePopular> {
                         fontWeight: FontWeight.w400,
                       ),
                       SizedBox(
-                        height: AppHeights.height37,
+                        height: SizeConfig.heightMultiplier * 4.6,
                       ),
                       Container(
                         width: AppWidths.width325,

@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
@@ -67,7 +67,7 @@ class _CuratedStoreSellerDetailState extends State<CuratedStoreSellerDetail>
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(
-                      height: AppHeights.height66,
+                      height: SizeConfig.heightMultiplier * 8.2,
                     ),
                     GestureDetector(
                         onTap: () {
@@ -84,7 +84,7 @@ class _CuratedStoreSellerDetailState extends State<CuratedStoreSellerDetail>
             ),
           ),
           Positioned(
-            top: AppHeights.height110,
+            top: SizeConfig.heightMultiplier * 13.7,
             child: Image.asset("assets/images/RalphLauren.png"),
           ),
           Positioned(
@@ -92,7 +92,7 @@ class _CuratedStoreSellerDetailState extends State<CuratedStoreSellerDetail>
             left: 0,
             right: 0,
             child: Container(
-              height: AppHeights.height525,
+              height: SizeConfig.heightMultiplier * 6.545,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
                     topRight: Radius.circular(AppRadius.radius30),
@@ -139,7 +139,7 @@ class _CuratedStoreSellerDetailState extends State<CuratedStoreSellerDetail>
                             ],
                           ),
                           SizedBox(
-                            height: AppHeights.height10,
+                            height: SizeConfig.heightMultiplier * 1.2,
                           ),
                           Row(
                             children: [
@@ -177,7 +177,7 @@ class _CuratedStoreSellerDetailState extends State<CuratedStoreSellerDetail>
                             size: AppTexts.size13,
                           ),
                           SizedBox(
-                            height: AppHeights.height8,
+                            height: SizeConfig.heightMultiplier * 1,
                           )
                         ],
                       ),
@@ -337,7 +337,7 @@ class PriceDiscount extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: AppHeights.height8,
+              height: SizeConfig.heightMultiplier * 1,
             ),
             SizedBox(
               width: SizeConfig.widthMultiplier * 35,
@@ -346,7 +346,7 @@ class PriceDiscount extends StatelessWidget {
                 inputType: TextInputType.number,
                 hintText: 'price',
                 suffixIcon: Container(
-                  padding: EdgeInsets.only(top: AppHeights.height14),
+                  padding: EdgeInsets.only(top: SizeConfig.heightMultiplier * 1.75),
                   margin: EdgeInsets.only(left: AppPaddings.padding25),
                   child: Text(
                     '₹',
@@ -372,7 +372,7 @@ class PriceDiscount extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: AppHeights.height8,
+              height: SizeConfig.heightMultiplier * 1,
             ),
             SizedBox(
               width: SizeConfig.widthMultiplier * 35,
@@ -381,7 +381,7 @@ class PriceDiscount extends StatelessWidget {
                 inputType: TextInputType.number,
                 hintText: 'discount',
                 suffixIcon: Container(
-                  padding: EdgeInsets.only(top: AppHeights.height14),
+                  padding: EdgeInsets.only(top: SizeConfig.heightMultiplier * 1.75),
                   margin: EdgeInsets.only(left: AppPaddings.padding25),
                   child: Text(
                     '%',
@@ -417,12 +417,12 @@ class CustomColorWidget extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: AppHeights.height14,
+          height: SizeConfig.heightMultiplier * 1.75,
         ),
         Row(
           children: [
             Container(
-              height: AppHeights.height23,
+              height: SizeConfig.heightMultiplier * 2.85,
               width: AppWidths.width23,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
@@ -449,7 +449,7 @@ class CustomColorWidget extends StatelessWidget {
           ],
         ),
         SizedBox(
-          height: AppHeights.height10,
+          height: SizeConfig.heightMultiplier * 1.2,
         ),
         const ColorTile(color: Color(0xff505050), title: 'Slate'),
         const ColorTile(color: Colors.black, title: 'Black'),
@@ -484,7 +484,7 @@ class _ColorTileState extends State<ColorTile> {
       textColor: Colors.black,
       iconColor: Colors.black,
       leading: Container(
-        height: AppHeights.height23,
+        height: SizeConfig.heightMultiplier * 2.85,
         width: AppWidths.width23,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
@@ -510,7 +510,7 @@ class _ColorTileState extends State<ColorTile> {
           ),
         ),
         SizedBox(
-          height: AppHeights.height10,
+          height: SizeConfig.heightMultiplier * 1.2,
         ),
         Padding(
           padding: EdgeInsets.only(left: AppPaddings.padding25),
@@ -525,7 +525,7 @@ class _ColorTileState extends State<ColorTile> {
                           });
                         },
                         child: AnimatedContainer(
-                          height: AppHeights.height23,
+                          height: SizeConfig.heightMultiplier * 2.85,
                           width: AppWidths.width23,
                           margin: EdgeInsets.only(right: AppPaddings.padding8),
                           decoration: selectedSize == index
@@ -549,7 +549,7 @@ class _ColorTileState extends State<ColorTile> {
                         ),
                       )),
               Container(
-                height: AppHeights.height23,
+                height: SizeConfig.heightMultiplier * 2.85,
                 width: AppWidths.width23,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
@@ -565,7 +565,7 @@ class _ColorTileState extends State<ColorTile> {
           ),
         ),
         SizedBox(
-          height: AppHeights.height8,
+          height: SizeConfig.heightMultiplier * 1,
         ),
         Padding(
           padding: EdgeInsets.only(left: AppPaddings.padding25),
@@ -583,7 +583,7 @@ class _ColorTileState extends State<ColorTile> {
                 width: SizeConfig.widthMultiplier * 1,
               ),
               Container(
-                height: AppHeights.height14,
+                height: SizeConfig.heightMultiplier * 1.75,
                 width: AppWidths.width30,
                 decoration: BoxDecoration(
                   borderRadius:
@@ -608,7 +608,7 @@ class _ColorTileState extends State<ColorTile> {
                 callback: () {},
                 title: 'Remove Size',
                 textcolour: Colors.redAccent,
-                height: AppHeights.height14,
+                height: SizeConfig.heightMultiplier * 1.75,
                 radius: AppRadius.radius10,
                 fontSize: 8,
                 colour: const Color(0xffFFE2DF),
@@ -630,7 +630,7 @@ class SelectedImageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(left: SizeConfig.widthMultiplier * 0.5),
-      height: AppHeights.height96,
+      height: SizeConfig.heightMultiplier * 11.9,
       width: AppWidths.width93,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(AppRadius.radius10)),
@@ -647,7 +647,7 @@ class SelectedImageWidget extends StatelessWidget {
             top: 0,
             right: 0,
             child: Container(
-                height: AppHeights.height23,
+                height: SizeConfig.heightMultiplier * 2.85,
                 width: AppWidths.width23,
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
@@ -693,7 +693,7 @@ class _ProductCardState extends State<ProductCard> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          height: AppHeights.height160,
+          height: SizeConfig.heightMultiplier * 20,
           width: AppWidths.width150,
           decoration: BoxDecoration(
               color: Colors.black,
@@ -711,7 +711,7 @@ class _ProductCardState extends State<ProductCard> {
           ),
         ),
         SizedBox(
-          height: AppHeights.height10,
+          height: SizeConfig.heightMultiplier * 1.2,
         ),
         TextView(
           text: widget.title,

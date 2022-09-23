@@ -42,20 +42,16 @@ class LoginPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   TextView(
-                    text: "Login",
-                    color: Colors.white,
-                    fontWeight: FontWeight.w700,
-                    size: SizeConfig.textMultiplier * 3.8,
-                  ),
-                  SizedBox(
-                    height: SizeConfig.heightMultiplier * 1.3,
-                  ),
+                      text: "Login",
+                      color: Colors.white,
+                      fontWeight: FontWeight.w700,
+                      size: SizeConfig.textMultiplier * 3.8),
+                  SizedBox(height: SizeConfig.heightMultiplier * 1.3),
                   TextView(
-                    text: "Please sign up to your Venti Account",
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
-                    size: SizeConfig.textMultiplier * 1.8,
-                  ),
+                      text: "Please sign up to your Venti Account",
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
+                      size: SizeConfig.textMultiplier * 1.8),
                 ],
               ),
             ),
@@ -78,40 +74,29 @@ class LoginPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       TextView(
-                        text: "Email",
-                        color: AppColors.textColor,
-                        size: SizeConfig.textMultiplier * 1.8,
-                        fontWeight: FontWeight.w700,
-                      ),
-                      SizedBox(
-                        height: SizeConfig.heightMultiplier * 1.5,
-                      ),
+                          text: "Email",
+                          color: AppColors.textColor,
+                          size: SizeConfig.textMultiplier * 1.8,
+                          fontWeight: FontWeight.w700),
+                      SizedBox(height: SizeConfig.heightMultiplier * 1.5),
                       AuthTextInputField(
                         hintText: "Enter Your Email",
                         hintSize: SizeConfig.textMultiplier * 1.8,
                         textColor: Colors.black,
                       ),
-                      SizedBox(
-                        height: SizeConfig.heightMultiplier * 3.5,
-                      ),
+                      SizedBox(height: SizeConfig.heightMultiplier * 3.5),
                       TextView(
-                        text: "Password",
-                        color: AppColors.textColor,
-                        size: SizeConfig.textMultiplier * 1.8,
-                        fontWeight: FontWeight.w700,
-                      ),
-                      SizedBox(
-                        height: SizeConfig.heightMultiplier * 1.5,
-                      ),
+                          text: "Password",
+                          color: AppColors.textColor,
+                          size: SizeConfig.textMultiplier * 1.8,
+                          fontWeight: FontWeight.w700),
+                      SizedBox(height: SizeConfig.heightMultiplier * 1.5),
                       AuthTextInputField(
-                        hintText: "Enter Your Password",
-                        hintSize: SizeConfig.textMultiplier * 1.8,
-                        textColor: Colors.black,
-                        isPassword: true,
-                      ),
-                      SizedBox(
-                        height: SizeConfig.heightMultiplier * 14,
-                      ),
+                          hintText: "Enter Your Password",
+                          hintSize: SizeConfig.textMultiplier * 1.8,
+                          textColor: Colors.black,
+                          isPassword: true),
+                      SizedBox(height: SizeConfig.heightMultiplier * 14),
                       Align(
                         alignment: Alignment.center,
                         child: RichText(
@@ -133,48 +118,41 @@ class LoginPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
-                        height: SizeConfig.heightMultiplier * 2.3,
-                      ),
+                      SizedBox(height: SizeConfig.heightMultiplier * 2.3),
                       CustomTextButton(
-                        callback: () {
-                          Get.put(ButtonsController());
-                          Future.delayed(
-                              Duration(seconds: 2), () => Get.to(() => Root()));
-                          // Get.to(BuyerBottomNavBar());
-                        },
-                        radius: 90,
-                        height: SizeConfig.heightMultiplier * 5.5,
-                        // width: 273,
-                        width: SizeConfig.widthMultiplier * 74,
-                        colour: const Color(0xff7496C2),
-                        title: "LOGIN",
-                        textcolour: Colors.white,
-                        fontWeight: FontWeight.w700,
-                        fontSize: AppTexts.size13,
-                      ),
-                      SizedBox(
-                        height: SizeConfig.heightMultiplier * 2,
-                      ),
+                          callback: () {
+                            Get.put(ButtonsController());
+                            Future.delayed(Duration(seconds: 2),
+                                () => Get.to(() => Root()));
+                            // Get.to(BuyerBottomNavBar());
+                          },
+                          radius: 90,
+                          height: SizeConfig.heightMultiplier * 5.5,
+                          // width: 273,
+                          width: SizeConfig.widthMultiplier * 74,
+                          colour: const Color(0xff7496C2),
+                          title: "LOGIN",
+                          textcolour: Colors.white,
+                          fontWeight: FontWeight.w700,
+                          fontSize: AppTexts.size13),
+                      SizedBox(height: SizeConfig.heightMultiplier * 2),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           CustomImageButton(
-                            callback: () {},
-                            radius: 90,
-                            height: SizeConfig.heightMultiplier * 5.5,
-                            width: SizeConfig.widthMultiplier * 36,
-                            colour: const Color(0xffD3493C),
-                            image: AppIcons.google,
-                          ),
+                              callback: () {},
+                              radius: 90,
+                              height: SizeConfig.heightMultiplier * 5.5,
+                              width: SizeConfig.widthMultiplier * 36,
+                              colour: const Color(0xffD3493C),
+                              image: AppIcons.google),
                           CustomImageButton(
-                            callback: () {},
-                            radius: 90,
-                            height: SizeConfig.heightMultiplier * 5.5,
-                            width: SizeConfig.widthMultiplier * 36,
-                            colour: const Color(0xff1871E5),
-                            image: AppIcons.facebook,
-                          ),
+                              callback: () {},
+                              radius: 90,
+                              height: SizeConfig.heightMultiplier * 5.5,
+                              width: SizeConfig.widthMultiplier * 36,
+                              colour: const Color(0xff1871E5),
+                              image: AppIcons.facebook),
                         ],
                       )
                     ],

@@ -1,10 +1,11 @@
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/models/checkout_model/add_new_cards.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_multi_formatter/formatters/masked_input_formatter.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../constants/colors.dart';
 import '../../../constants/padding.dart';
@@ -43,7 +44,9 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
         backgroundColor: Colors.white,
         elevation: 0,
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Get.back();
+          },
           icon: Icon(
             Icons.arrow_back_ios,
             size: SizeConfig.imageSizeMultiplier * 5,
@@ -64,7 +67,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            height: AppHeights.height8,
+            height: SizeConfig.heightMultiplier * 1,
           ),
           SizedBox(
             height: SizeConfig.heightMultiplier * 22,
@@ -84,7 +87,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: AppHeights.height35,
+                  height: SizeConfig.heightMultiplier * 4.6,
                 ),
                 TextView(
                   text: 'Card Holder Name',
@@ -92,7 +95,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                   fontWeight: FontWeight.w600,
                 ),
                 SizedBox(
-                  height: AppHeights.height8,
+                  height: SizeConfig.heightMultiplier * 1,
                 ),
                 AuthTextInputField(
                   isoutline: true,
@@ -111,7 +114,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                   fontWeight: FontWeight.w600,
                 ),
                 SizedBox(
-                  height: AppHeights.height8,
+                  height: SizeConfig.heightMultiplier * 1,
                 ),
                 AuthTextInputField(
                   isoutline: true,
@@ -122,7 +125,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                     padding: EdgeInsets.all(AppRadius.radius8),
                     child: Image.asset(
                       'assets/images/card_logo.png',
-                      height: AppHeights.height8,
+                      height: SizeConfig.heightMultiplier * 1,
                       width: AppWidths.width15,
                     ),
                   ),
@@ -181,7 +184,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                                   fontSize: AppTexts.size14),
                             ),
                             SizedBox(
-                              height: AppHeights.height8,
+                              height: SizeConfig.heightMultiplier * 1,
                             ),
                             AuthTextInputField(
                               isoutline: true,
@@ -247,7 +250,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                                   fontSize: AppTexts.size14),
                             ),
                             SizedBox(
-                              height: AppHeights.height8,
+                              height: SizeConfig.heightMultiplier * 1,
                             ),
                             AuthTextInputField(
                               isoutline: true,
@@ -265,11 +268,11 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                   ],
                 ),
                 SizedBox(
-                  height: AppHeights.height21,
+                  height: SizeConfig.heightMultiplier * 2.65,
                 ),
                 CustomTextButton(
                   callback: () {},
-                  height: AppHeights.height52,
+                  height: SizeConfig.heightMultiplier * 6.54,
                   colour: AppColors.primarylightColor,
                   width: AppWidths.widthFull,
                   title: 'Save',
@@ -319,7 +322,7 @@ class AddNewCardsCarouselWidget extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                height: AppHeights.height88,
+                height: SizeConfig.heightMultiplier * 18,
               ),
               Row(
                 children: [
@@ -351,7 +354,7 @@ class AddNewCardsCarouselWidget extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: AppHeights.height25,
+                height: SizeConfig.heightMultiplier * 3.1,
               ),
               Row(
                 children: [

@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
@@ -115,7 +115,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                       padding: EdgeInsets.only(
                                           right: AppPaddings.padding15),
                                       child: Container(
-                                        height: AppHeights.height88,
+                                        height: SizeConfig.heightMultiplier * 18,
                                         width: AppWidths.width88,
                                         decoration: BoxDecoration(
                                             borderRadius: BorderRadius.all(
@@ -134,7 +134,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                           child: Align(
                                             alignment: Alignment.topRight,
                                             child: Container(
-                                              height: AppHeights.height23,
+                                              height: SizeConfig.heightMultiplier * 2.85,
                                               width: AppWidths.width23,
                                               decoration: const BoxDecoration(
                                                 shape: BoxShape.circle,
@@ -181,7 +181,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                             ),
                                           ),
                                           SizedBox(
-                                            height: AppHeights.height10,
+                                            height: SizeConfig.heightMultiplier * 1.2,
                                           ),
                                           Padding(
                                             padding: EdgeInsets.only(
@@ -255,7 +255,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                             );
                           }),
                       SizedBox(
-                        height: AppHeights.height23,
+                        height: SizeConfig.heightMultiplier * 2.85,
                       ),
                       Text(
                         "All Item(s) are available",
@@ -266,7 +266,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                         ),
                       ),
                       SizedBox(
-                        height: AppHeights.height50,
+                        height: SizeConfig.heightMultiplier * 6.3,
                       ),
                       Padding(
                         padding: EdgeInsets.only(right: AppPaddings.padding24),
@@ -294,7 +294,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                         ),
                       ),
                       SizedBox(
-                        height: AppHeights.height139,
+                        height: SizeConfig.heightMultiplier * 17.3,
                       )
                     ],
                   ),
@@ -304,7 +304,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
               left: 0,
               right: 0,
               child: Container(
-                  height: AppHeights.height120,
+                  height: SizeConfig.heightMultiplier * 14.9,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     boxShadow: [
@@ -327,7 +327,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                     child: Column(
                       children: [
                         SizedBox(
-                          height: AppHeights.height21,
+                          height: SizeConfig.heightMultiplier * 2.65,
                         ),
                         Row(
                           children: [
@@ -360,7 +360,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                 Get.to(CheckoutPage());
                               },
                               title: 'CHECK OUT',
-                              height: AppHeights.height50,
+                              height: SizeConfig.heightMultiplier * 6.3,
                               width: AppWidths.width150,
                               radius: AppRadius.radius30,
                               textcolour: Colors.white,

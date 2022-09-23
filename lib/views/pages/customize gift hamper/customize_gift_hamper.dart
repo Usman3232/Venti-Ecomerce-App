@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
@@ -50,7 +50,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                 child: Column(
                   children: [
                     SizedBox(
-                      height: AppHeights.height66,
+                      height: SizeConfig.heightMultiplier * 8.2,
                     ),
                     Row(
                       children: [

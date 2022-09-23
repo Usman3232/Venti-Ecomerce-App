@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
@@ -77,7 +77,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: AppHeights.height10,
+                  height: SizeConfig.heightMultiplier * 1.2,
                 ),
                 Text(
                   "Shipping Address",
@@ -87,10 +87,10 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       fontWeight: FontWeight.w600),
                 ),
                 SizedBox(
-                  height: AppHeights.height10,
+                  height: SizeConfig.heightMultiplier * 1.2,
                 ),
                 SizedBox(
-                  height: AppHeights.height235,
+                  height: SizeConfig.heightMultiplier * 2.855,
                   child: Card(
                     color: Colors.white,
                     elevation: 3,
@@ -107,7 +107,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           Row(
                             children: [
                               Container(
-                                height: AppHeights.height33,
+                                height: SizeConfig.heightMultiplier * 4.1,
                                 width: SizeConfig.widthMultiplier * 8.6,
                                 decoration: BoxDecoration(
                                   color: Colors.blueGrey.withOpacity(0.1),
@@ -162,7 +162,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             ),
                           ),
                           SizedBox(
-                            height: AppHeights.height20,
+                            height: SizeConfig.heightMultiplier * 2.5,
                           ),
                           Text(
                             "27 Independence Street, Sukamulya, Cikembar, Sukabumi, Jawa Barat 43157",
@@ -172,12 +172,12 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             ),
                           ),
                           SizedBox(
-                            height: AppHeights.height25,
+                            height: SizeConfig.heightMultiplier * 3.1,
                           ),
                           Align(
                             alignment: Alignment.center,
                             child: SizedBox(
-                              height: AppHeights.height50,
+                              height: SizeConfig.heightMultiplier * 6.3,
                               width: AppWidths.width267,
                               child: ElevatedButton(
                                   onPressed: () {},
@@ -204,7 +204,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                   ),
                 ),
                 SizedBox(
-                  height: AppHeights.height10,
+                  height: SizeConfig.heightMultiplier * 1.2,
                 ),
                 Text(
                   "Special Intruction",
@@ -214,7 +214,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       fontWeight: FontWeight.w600),
                 ),
                 SizedBox(
-                  height: AppHeights.height10,
+                  height: SizeConfig.heightMultiplier * 1.2,
                 ),
                 SizedBox(
                   width: AppWidths.widthFull,
@@ -239,7 +239,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       fontWeight: FontWeight.w600),
                 ),
                 SizedBox(
-                  height: AppHeights.height10,
+                  height: SizeConfig.heightMultiplier * 1.2,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -255,9 +255,9 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       ),
                     ),
                     Container(
-                      height: AppHeights.height50,
+                      height: SizeConfig.heightMultiplier * 6.3,
                       width: AppWidths.width64,
-                      margin: EdgeInsets.only(bottom: AppHeights.height20),
+                      margin: EdgeInsets.only(bottom: SizeConfig.heightMultiplier * 2.5),
                       child: ElevatedButton(
                           onPressed: () {},
                           style: ElevatedButton.styleFrom(
@@ -406,7 +406,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                     Column(
                       children: [
                         // SizedBox(
-                        //   height: AppHeights.height8,
+                        //   height: SizeConfig.heightMultiplier * 1,
                         // ),
                         Row(
                           children: [
@@ -434,14 +434,14 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           ],
                         ),
                         SizedBox(
-                          height: AppHeights.height8,
+                          height: SizeConfig.heightMultiplier * 1,
                         ),
                         CustomTextButton(
                           callback: () {
                             Get.to(PaymentCheckOut());
                           },
                           title: 'PLACE ORDER',
-                          height: AppHeights.height48,
+                          height: SizeConfig.heightMultiplier * 5.95,
                           width: AppWidths.width150,
                           radius: AppRadius.radius30,
                           textcolour: Colors.white,

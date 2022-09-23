@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
@@ -50,11 +50,11 @@ class PositiveStatus extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(
-              height: AppHeights.height57,
+              height: SizeConfig.heightMultiplier * 7.1,
             ),
             SvgPicture.asset(AppIcons.tickcircle),
             SizedBox(
-              height: AppHeights.height50,
+              height: SizeConfig.heightMultiplier * 6.3,
             ),
             TextView(
               text: "Congratulations! Your Order has been placed successfully",
@@ -63,7 +63,7 @@ class PositiveStatus extends StatelessWidget {
               size: AppTexts.size20,
             ),
             SizedBox(
-              height: AppHeights.height33,
+              height: SizeConfig.heightMultiplier * 4.1,
             ),
             TextView(
               text: "The Estimated Delivery time is 12 hours.",
@@ -72,12 +72,12 @@ class PositiveStatus extends StatelessWidget {
               size: AppTexts.size15,
             ),
             SizedBox(
-              height: AppHeights.height50,
+              height: SizeConfig.heightMultiplier * 6.3,
             ),
             CustomTextButton(
               callback: () {},
               colour: AppColors.primarylightColor,
-              height: AppHeights.height52,
+              height: SizeConfig.heightMultiplier * 6.54,
               width: AppWidths.width284,
               radius: 35,
               title: "Live Track",

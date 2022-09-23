@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
@@ -54,7 +54,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
-              height: AppHeights.height10,
+              height: SizeConfig.heightMultiplier * 1.2,
             ),
             Row(
               children: [
@@ -77,7 +77,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
                   activeToggleColor: AppColors.primarylightColor,
                   inactiveToggleColor: AppColors.primarylightColor,
                   width: AppWidths.width30,
-                  height: AppHeights.height18,
+                  height: SizeConfig.heightMultiplier * 2.2,
                   toggleSize:12,
                   padding: 2,
                   value: isStatus1,
@@ -91,7 +91,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
               ],
             ),
             SizedBox(
-              height: AppHeights.height40,
+              height: SizeConfig.heightMultiplier * 5,
             ),
             Text("Set your availabilty schedule",
               style: TextStyle(
@@ -102,14 +102,14 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
               ),
             ),
             SizedBox(
-              height: AppHeights.height18,
+              height: SizeConfig.heightMultiplier * 2.2,
             ),
             Container(
-              height: AppHeights.height235,
+              height: SizeConfig.heightMultiplier * 2.855,
               color: Colors.blueGrey,
             ),
             SizedBox(
-              height: AppHeights.height45,
+              height: SizeConfig.heightMultiplier * 5.65,
             ),
             Row(
               children: [
@@ -131,7 +131,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
               ],
             ),
             SizedBox(
-              height: AppHeights.height66,
+              height: SizeConfig.heightMultiplier * 8.2,
             ),
             Row(
               children: [
@@ -151,7 +151,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
                   activeToggleColor: AppColors.primarylightColor,
                   inactiveToggleColor:AppColors.primarylightColor,
                   width: AppWidths.width30,
-                  height: AppHeights.height18,
+                  height: SizeConfig.heightMultiplier * 2.2,
                   toggleSize:12,
                   padding: 2,
                   value: isStatus,
@@ -165,7 +165,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
               ],
             ),
             SizedBox(
-              height: AppHeights.height30,
+              height: SizeConfig.heightMultiplier * 3.8,
             ),
             Row(
               children: [
@@ -178,7 +178,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
                   ),
                 ),
                 Container(
-                  height: AppHeights.height14,
+                  height: SizeConfig.heightMultiplier * 1.75,
                   width: AppWidths.width15,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,

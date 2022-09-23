@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
@@ -61,11 +61,11 @@ class NegativeStatus extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(
-              height: AppHeights.height57,
+              height: SizeConfig.heightMultiplier * 7.1,
             ),
             SvgPicture.asset(AppIcons.crosscircle),
             SizedBox(
-              height: AppHeights.height50,
+              height: SizeConfig.heightMultiplier * 6.3,
             ),
             TextView(
               text: "Oops!",
@@ -73,7 +73,7 @@ class NegativeStatus extends StatelessWidget {
               fontWeight: FontWeight.w600,
               size: AppTexts.size20,
             ),
-            SizedBox(height: AppHeights.height40),
+            SizedBox(height: SizeConfig.heightMultiplier * 5),
             TextView(
               text:
                   "Sorry your order has been cancelled because of failure of payment!",
@@ -82,14 +82,14 @@ class NegativeStatus extends StatelessWidget {
               size: AppTexts.size15,
             ),
             SizedBox(
-              height: AppHeights.height50,
+              height: SizeConfig.heightMultiplier * 6.3,
             ),
             CustomTextButton(
               callback: () {
                 Get.to(AllCartsCheckOut());
               },
               colour: AppColors.primarylightColor,
-              height: AppHeights.height52,
+              height: SizeConfig.heightMultiplier * 6.54,
               width: AppWidths.width284,
               radius: 35,
               title: "Return to Cart",

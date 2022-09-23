@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -29,7 +29,7 @@ class PaymentMethodCard extends StatelessWidget {
         ),
         child: Padding(
           padding: EdgeInsets.symmetric(
-              horizontal: AppWidths.width25, vertical: AppHeights.height27),
+              horizontal: AppWidths.width25, vertical: SizeConfig.heightMultiplier * 3.4),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -41,7 +41,7 @@ class PaymentMethodCard extends StatelessWidget {
                     fontWeight: FontWeight.w700),
               ),
               SizedBox(
-                height: AppHeights.height27,
+                height: SizeConfig.heightMultiplier * 3.4,
               ),
               Row(
                 children: [

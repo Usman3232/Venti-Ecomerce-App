@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/constants/width.dart';
@@ -64,7 +64,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
               height: SizeConfig.heightMultiplier * 2,
             ),
             SizedBox(
-              height: AppHeights.height207,
+              height: SizeConfig.heightMultiplier * 2.57,
               child: PageView.builder(
                 physics: const BouncingScrollPhysics(),
                 controller: controller,
@@ -113,7 +113,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
                       },
                     ),
                   ),
-                  SizedBox(height: AppHeights.height27),
+                  SizedBox(height: SizeConfig.heightMultiplier * 3.4),
                   Text(
                     'Recent transactions',
                     style: GoogleFonts.sourceSansPro(

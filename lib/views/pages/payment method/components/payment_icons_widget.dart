@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -19,7 +19,7 @@ class PaymentIconsWidget extends StatelessWidget {
     return Column(
       children: [
         Container(
-          height: AppHeights.height62,
+          height: SizeConfig.heightMultiplier * 7.7,
           width: AppWidths.width64,
           decoration: BoxDecoration(
             color: Colors.blueGrey.withOpacity(0.1),

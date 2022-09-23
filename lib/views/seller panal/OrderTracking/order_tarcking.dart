@@ -6,7 +6,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../constants/colors.dart';
-import '../../../../constants/height.dart';
+
 import '../../../../constants/icons.dart';
 import '../../../../constants/padding.dart';
 import '../../../../constants/textsize.dart';
@@ -93,11 +93,11 @@ class _OrderTrackingState extends State<OrderTracking> {
                 ],
               ),
               SizedBox(
-                height: AppHeights.height52,
+                height: SizeConfig.heightMultiplier * 6.54,
               ),
               const DliveryRiderCard(),
               SizedBox(
-                height: AppHeights.height38,
+                height: SizeConfig.heightMultiplier * 4.7,
               ),
               ListView.builder(
                   shrinkWrap: true,

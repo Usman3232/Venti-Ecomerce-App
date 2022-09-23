@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
@@ -146,7 +146,7 @@ class _ChatState extends State<Chat> {
                     child: Row(
                       children: [
                         Container(
-                          height: AppHeights.height62,
+                          height: SizeConfig.heightMultiplier * 7.7,
                           width: AppWidths.width284,
                           decoration: BoxDecoration(
                               color: Color(0xffE3EAF3),
@@ -232,7 +232,7 @@ class _ChatState extends State<Chat> {
                   child: GestureDetector(
                     onTap: () {},
                     child: Container(
-                      height: AppHeights.height50,
+                      height: SizeConfig.heightMultiplier * 6.3,
                       width: AppWidths.width50,
                       decoration: BoxDecoration(
                           shape: BoxShape.circle,

@@ -2,7 +2,7 @@ import 'dart:typed_data';
 import 'dart:ui' as ui;
 import 'package:custom_info_window/custom_info_window.dart';
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
@@ -309,7 +309,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                               size: AppTexts.size19,
                                             ),
                                             SizedBox(
-                                              height: AppHeights.height23,
+                                              height: SizeConfig.heightMultiplier * 2.85,
                                             ),
                                             Row(
                                               children: [
@@ -358,7 +358,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                               ],
                                             ),
                                             SizedBox(
-                                              height: AppHeights.height25,
+                                              height: SizeConfig.heightMultiplier * 3.1,
                                             ),
                                             TextView(
                                               text: "Type",
@@ -366,7 +366,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                               size: AppTexts.size16,
                                             ),
                                             SizedBox(
-                                              height: AppHeights.height20,
+                                              height: SizeConfig.heightMultiplier * 2.5,
                                             )
                                           ],
                                         ),
@@ -431,7 +431,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                       ),
                                       Spacer(),
                                       Container(
-                                        height: AppHeights.height50 * 2,
+                                        height: SizeConfig.heightMultiplier * 6.3 * 2,
                                         decoration: BoxDecoration(
                                             color: Colors.white,
                                             borderRadius: BorderRadius.vertical(
@@ -457,7 +457,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                                   });
                                                 },
                                                 radius: 90,
-                                                height: AppHeights.height50,
+                                                height: SizeConfig.heightMultiplier * 6.3,
                                                 width: AppWidths.width150,
                                                 colour: Colors.white,
                                                 title: "Reset (4)",
@@ -466,7 +466,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                               CustomTextButton(
                                                 callback: () {},
                                                 radius: 90,
-                                                height: AppHeights.height50,
+                                                height: SizeConfig.heightMultiplier * 6.3,
                                                 width: AppWidths.width150,
                                                 colour:
                                                     AppColors.primarylightColor,

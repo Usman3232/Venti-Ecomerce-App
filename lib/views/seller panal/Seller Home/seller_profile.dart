@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:country_picker/country_picker.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
@@ -316,12 +316,12 @@ class MapUploadButtonWidget extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: AppHeights.height14,
+          height: SizeConfig.heightMultiplier * 1.75,
         ),
         InkWell(
           onTap: () {},
           child: Container(
-            height: AppHeights.height156,
+            height: SizeConfig.heightMultiplier * 19.5,
             width: AppWidths.widthFull,
             decoration: BoxDecoration(
               color: AppColors.primarylightColor.withOpacity(0.3),
@@ -337,7 +337,7 @@ class MapUploadButtonWidget extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: AppHeights.height20,
+          height: SizeConfig.heightMultiplier * 2.5,
         ),
         Text(
           'Upload Certificate of Completion',
@@ -347,12 +347,12 @@ class MapUploadButtonWidget extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: AppHeights.height14,
+          height: SizeConfig.heightMultiplier * 1.75,
         ),
         InkWell(
           onTap: () {},
           child: Container(
-            height: AppHeights.height110,
+            height: SizeConfig.heightMultiplier * 13.7,
             width: AppWidths.widthFull,
             decoration: BoxDecoration(
               color: AppColors.primarylightColor.withOpacity(0.3),
@@ -368,7 +368,7 @@ class MapUploadButtonWidget extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: AppHeights.height20,
+          height: SizeConfig.heightMultiplier * 2.5,
         ),
         Text(
           'Location',
@@ -378,7 +378,7 @@ class MapUploadButtonWidget extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: AppHeights.height10,
+          height: SizeConfig.heightMultiplier * 1.2,
         ),
         ClipRRect(
           borderRadius: BorderRadius.all(Radius.circular(AppRadius.radius20)),
@@ -395,11 +395,11 @@ class MapUploadButtonWidget extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(height: AppHeights.height27),
+        SizedBox(height: SizeConfig.heightMultiplier * 3.4),
         CustomTextButton(
             title: 'Save',
             colour: AppColors.primarylightColor,
-            height: AppHeights.height57,
+            height: SizeConfig.heightMultiplier * 7.1,
             width: AppWidths.widthFull,
             textcolour: Colors.white,
             fontSize: AppTexts.size14,

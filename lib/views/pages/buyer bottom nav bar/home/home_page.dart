@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
@@ -88,31 +88,12 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: SingleChildScrollView(
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         child: SizedBox(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // SizedBox(
-              //   height: SizeConfig.heightMultiplier * 3.4,
-              // ),
-              SizedBox(
-                height: SizeConfig.heightMultiplier * 9,
-                child: ListView.builder(
-                  itemCount: homecircle_model.length,
-                  shrinkWrap: true,
-                  scrollDirection: Axis.horizontal,
-                  physics: BouncingScrollPhysics(),
-                  itemBuilder: (context, index) {
-                    return Padding(
-                      padding: EdgeInsets.only(
-                          left: SizeConfig.widthMultiplier * 3.5),
-                      child: HomeCircleWidget(
-                          image: homecircle_model[index].image),
-                    );
-                  },
-                ),
-              ),
+              Stories(),
               Padding(
                 padding:
                     EdgeInsets.symmetric(horizontal: AppPaddings.padding18),
@@ -120,39 +101,11 @@ class _HomePageState extends State<HomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(
-                      height: AppHeights.height18,
+                      height: SizeConfig.heightMultiplier * 2.2,
                     ),
+                    NewAdds(controller: controller, pages: pages),
                     SizedBox(
-                      height: SizeConfig.heightMultiplier * 27.1,
-                      child: Stack(
-                        children: [
-                          PageView.builder(
-                            physics: const BouncingScrollPhysics(),
-                            padEnds: false,
-                            controller: controller,
-                            itemCount: pages.length,
-                            itemBuilder: (BuildContext context, index) {
-                              return pages[index];
-                            },
-                          ),
-                          Positioned(
-                            bottom: SizeConfig.heightMultiplier * 2.1,
-                            left: SizeConfig.widthMultiplier * 4,
-                            child: SmoothPageIndicator(
-                              controller: controller,
-                              count: pages.length,
-                              effect: ExpandingDotsEffect(
-                                activeDotColor: Colors.black,
-                                dotHeight: SizeConfig.heightMultiplier * 0.4,
-                                dotWidth: SizeConfig.widthMultiplier * 1.5,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      height: AppHeights.height26,
+                      height: SizeConfig.heightMultiplier * 3.25,
                     ),
                     TextView(
                       text: "Live Tracking",
@@ -161,14 +114,14 @@ class _HomePageState extends State<HomePage> {
                       size: AppTexts.size20,
                     ),
                     SizedBox(
-                      height: AppHeights.height8,
+                      height: SizeConfig.heightMultiplier * 1,
                     ),
                     GestureDetector(
                       onTap: () {
                         Get.to(LiveTrackingMap());
                       },
                       child: Container(
-                        height: AppHeights.height160,
+                        height: SizeConfig.heightMultiplier * 20,
                         width: SizeConfig.widthMultiplier * 91,
                         decoration: BoxDecoration(
                             color: const Color(0xffE5EDF4),
@@ -261,7 +214,7 @@ class _HomePageState extends State<HomePage> {
                               ),
                               Spacer(),
                               Container(
-                                height: AppHeights.height73,
+                                height: SizeConfig.heightMultiplier * 9.1,
                                 // width: AppWidths.width303,
                                 width: SizeConfig.widthMultiplier * 88,
                                 decoration: BoxDecoration(
@@ -279,7 +232,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     SizedBox(
-                      height: AppHeights.height20,
+                      height: SizeConfig.heightMultiplier * 2.5,
                     ),
                     SectionTitleAndSeeAll(
                         title: "Categories",
@@ -288,7 +241,7 @@ class _HomePageState extends State<HomePage> {
                         },
                         titlesize: AppTexts.size16),
                     SizedBox(
-                      height: AppHeights.height20,
+                      height: SizeConfig.heightMultiplier * 2.5,
                     ),
                   ],
                 ),
@@ -322,7 +275,7 @@ class _HomePageState extends State<HomePage> {
                       height: SizeConfig.heightMultiplier * 5.1,
                     ),
                     Container(
-                      height: AppHeights.height75,
+                      height: SizeConfig.heightMultiplier * 9.35,
                       // width: AppWidths.width336,
                       width: SizeConfig.widthMultiplier * 91,
                       decoration: BoxDecoration(
@@ -345,7 +298,7 @@ class _HomePageState extends State<HomePage> {
                                 horizontal: AppPaddings.padding15,
                                 vertical: AppPaddings.padding13),
                             child: Container(
-                              height: AppHeights.height50,
+                              height: SizeConfig.heightMultiplier * 6.3,
                               width: AppWidths.width50,
                               decoration: const BoxDecoration(
                                 shape: BoxShape.circle,
@@ -398,14 +351,14 @@ class _HomePageState extends State<HomePage> {
                         ],
                       ),
                     ),
-                    SizedBox(height: AppHeights.height35),
+                    SizedBox(height: SizeConfig.heightMultiplier * 4.6),
                     TextView(
                       text: "Curated Stores",
                       fontWeight: FontWeight.w700,
                       size: AppTexts.size20,
                     ),
                     SizedBox(
-                      height: AppHeights.height8,
+                      height: SizeConfig.heightMultiplier * 1,
                     ),
                     TextView(
                       text: "Trending",
@@ -413,7 +366,7 @@ class _HomePageState extends State<HomePage> {
                       size: AppTexts.size16,
                     ),
                     SizedBox(
-                      height: AppHeights.height18,
+                      height: SizeConfig.heightMultiplier * 2.2,
                     ),
                   ],
                 ),
@@ -445,7 +398,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(
-                height: AppHeights.height21,
+                height: SizeConfig.heightMultiplier * 2.65,
               ),
               Padding(
                 padding: EdgeInsets.only(left: AppPaddings.padding24),
@@ -457,7 +410,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(
-                height: AppHeights.height18,
+                height: SizeConfig.heightMultiplier * 2.2,
               ),
               SizedBox(
                 height: SizeConfig.heightMultiplier * 29,
@@ -497,10 +450,10 @@ class _HomePageState extends State<HomePage> {
                           titlesize: AppTexts.size20),
                     ),
                     SizedBox(
-                      height: AppHeights.height26,
+                      height: SizeConfig.heightMultiplier * 3.25,
                     ),
                     SizedBox(
-                      height: AppHeights.height236,
+                      height: SizeConfig.heightMultiplier * 29.4,
                       child: ListView.builder(
                         itemCount: anytimeseller_model.length,
                         scrollDirection: Axis.horizontal,
@@ -526,7 +479,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(
-                height: AppHeights.height25,
+                height: SizeConfig.heightMultiplier * 3.1,
               ),
               Padding(
                   padding:
@@ -536,10 +489,10 @@ class _HomePageState extends State<HomePage> {
                       onpress: () {},
                       titlesize: AppTexts.size20)),
               SizedBox(
-                height: AppHeights.height21,
+                height: SizeConfig.heightMultiplier * 2.65,
               ),
               SizedBox(
-                height: AppHeights.height224,
+                height: SizeConfig.heightMultiplier * 27.9,
                 child: ListView.builder(
                   itemCount: homeserviceprovider_model.length,
                   scrollDirection: Axis.horizontal,
@@ -565,6 +518,75 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class NewAdds extends StatelessWidget {
+  const NewAdds({
+    Key? key,
+    required this.controller,
+    required this.pages,
+  }) : super(key: key);
+
+  final PageController controller;
+  final List<CarouselCard> pages;
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: SizeConfig.heightMultiplier * 27.1,
+      child: Stack(
+        children: [
+          PageView.builder(
+            physics: const BouncingScrollPhysics(),
+            padEnds: false,
+            controller: controller,
+            itemCount: pages.length,
+            itemBuilder: (BuildContext context, index) {
+              return pages[index];
+            },
+          ),
+          Positioned(
+            bottom: SizeConfig.heightMultiplier * 2.1,
+            left: SizeConfig.widthMultiplier * 4,
+            child: SmoothPageIndicator(
+              controller: controller,
+              count: pages.length,
+              effect: ExpandingDotsEffect(
+                activeDotColor: Colors.black,
+                dotHeight: SizeConfig.heightMultiplier * 0.4,
+                dotWidth: SizeConfig.widthMultiplier * 1.5,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Stories extends StatelessWidget {
+  const Stories({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: SizeConfig.heightMultiplier * 9,
+      child: ListView.builder(
+        itemCount: homecircle_model.length,
+        shrinkWrap: true,
+        scrollDirection: Axis.horizontal,
+        physics: const BouncingScrollPhysics(),
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 3.5),
+            child: HomeCircleWidget(image: homecircle_model[index].image),
+          );
+        },
       ),
     );
   }

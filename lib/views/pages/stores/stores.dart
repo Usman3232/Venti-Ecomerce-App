@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
@@ -86,7 +86,7 @@ class Stores extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: AppHeights.height14,
+              height: SizeConfig.heightMultiplier * 1.75,
             ),
             SizedBox(
               height: SizeConfig.heightMultiplier * 10,

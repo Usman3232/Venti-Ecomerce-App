@@ -1,6 +1,7 @@
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/width.dart';
+import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import '../../../../constants/icons.dart';
@@ -36,7 +37,7 @@ class _OrdersDeliveredState extends State<OrdersDelivered> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: AppHeights.height10,
+                height: SizeConfig.heightMultiplier * 1.2,
               ),
               ListView.builder(
                   physics: const NeverScrollableScrollPhysics(),
@@ -47,7 +48,7 @@ class _OrdersDeliveredState extends State<OrdersDelivered> {
                 return Padding(
                   padding: const EdgeInsets.symmetric(vertical: 8.0),
                   child: Container(
-                    height: AppHeights.height88,
+                    height: SizeConfig.heightMultiplier * 18,
                     width: double.infinity,
                     decoration: const BoxDecoration(
                       color: Colors.white,
@@ -58,7 +59,7 @@ class _OrdersDeliveredState extends State<OrdersDelivered> {
                       child: Row(
                         children: [
                           Container(
-                            height: AppHeights.height57,
+                            height: SizeConfig.heightMultiplier * 7.1,
                             width: AppWidths.width64,
                             decoration: BoxDecoration(
                               borderRadius: const BorderRadius.all(Radius.circular(10)),
@@ -148,7 +149,7 @@ class _OrdersDeliveredState extends State<OrdersDelivered> {
                 );
                   }),
               SizedBox(
-                height: AppHeights.height10,
+                height: SizeConfig.heightMultiplier * 1.2,
               ),
             ],
           ),

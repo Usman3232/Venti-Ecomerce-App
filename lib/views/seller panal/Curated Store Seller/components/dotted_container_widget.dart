@@ -1,7 +1,6 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/cupertino.dart';
 import '../../../../../constants/colors.dart';
-import '../../../../../constants/height.dart';
 import '../../../../../constants/radius.dart';
 import '../../../../../constants/textsize.dart';
 import '../../../../../utils/size_config.dart';
@@ -37,7 +36,7 @@ class DottedContainerWidget extends StatelessWidget {
                   )
                 : Text(''),
             SizedBox(
-              height: AppHeights.height8,
+              height: SizeConfig.heightMultiplier * 1,
             ),
             TextView(
               text: text,

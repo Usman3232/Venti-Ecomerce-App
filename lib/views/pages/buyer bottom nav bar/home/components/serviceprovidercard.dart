@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
@@ -33,7 +33,7 @@ class _ServiceProviderCardState extends State<ServiceProviderCard> {
     return Stack(
       children: [
         Container(
-          height: AppHeights.height224,
+          height: SizeConfig.heightMultiplier * 27.9,
           // width: AppWidths.width150,
           width: SizeConfig.widthMultiplier * 39.5,
           decoration: BoxDecoration(
@@ -84,7 +84,7 @@ class _ServiceProviderCardState extends State<ServiceProviderCard> {
           top: SizeConfig.heightMultiplier * 1.9,
           right: SizeConfig.widthMultiplier * 4.2,
           child: Container(
-              height: AppHeights.height25,
+              height: SizeConfig.heightMultiplier * 3.1,
               width: AppWidths.width25,
               decoration: const BoxDecoration(
                   color: Colors.white, shape: BoxShape.circle),

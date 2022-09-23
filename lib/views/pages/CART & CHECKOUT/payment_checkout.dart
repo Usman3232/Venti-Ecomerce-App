@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
@@ -102,7 +102,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                           ListTile(
                             leading: Image.asset(
                               AppImages.cardLogo,
-                              height: AppHeights.height27,
+                              height: SizeConfig.heightMultiplier * 3.4,
                               width: SizeConfig.widthMultiplier * 9,
                             ),
                             title: Text(
@@ -129,7 +129,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                           ListTile(
                             leading: Image.asset(
                               AppImages.visa,
-                              height: AppHeights.height27,
+                              height: SizeConfig.heightMultiplier * 3.4,
                               width: SizeConfig.widthMultiplier * 9,
                             ),
                             title: Text(
@@ -156,7 +156,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                           ListTile(
                             leading: Image.asset(
                               AppImages.american,
-                              height: AppHeights.height27,
+                              height: SizeConfig.heightMultiplier * 3.4,
                               width: SizeConfig.widthMultiplier * 9,
                             ),
                             title: Text(
@@ -181,10 +181,10 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                             ),
                           ),
                           SizedBox(
-                            height: AppHeights.height8,
+                            height: SizeConfig.heightMultiplier * 1,
                           ),
                           SizedBox(
-                            height: AppHeights.height50,
+                            height: SizeConfig.heightMultiplier * 6.3,
                             width: AppWidths.width267,
                             child: ElevatedButton(
                                 onPressed: () {
@@ -222,7 +222,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                                 )),
                           ),
                           SizedBox(
-                            height: AppHeights.height27,
+                            height: SizeConfig.heightMultiplier * 3.4,
                           ),
                         ],
                       )
@@ -230,7 +230,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                   ),
                 ),
                 SizedBox(
-                  height: AppHeights.height20,
+                  height: SizeConfig.heightMultiplier * 2.5,
                 ),
                 SizedBox(
                   width: AppWidths.widthFull,
@@ -253,7 +253,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                   ),
                 ),
                 SizedBox(
-                  height: AppHeights.height18,
+                  height: SizeConfig.heightMultiplier * 2.2,
                 ),
               ],
             ),
@@ -285,7 +285,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                   child: Column(
                     children: [
                       SizedBox(
-                        height: AppHeights.height20,
+                        height: SizeConfig.heightMultiplier * 2.5,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -309,10 +309,10 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                         ],
                       ),
                       SizedBox(
-                        height: AppHeights.height20,
+                        height: SizeConfig.heightMultiplier * 2.5,
                       ),
                       SizedBox(
-                        height: AppHeights.height62,
+                        height: SizeConfig.heightMultiplier * 7.7,
                         width: AppWidths.widthFull,
                         child: ElevatedButton(
                             onPressed: () {

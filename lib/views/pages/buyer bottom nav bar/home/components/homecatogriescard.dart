@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -22,7 +22,7 @@ class HomeCategoriesWidget extends StatelessWidget {
     return Column(
       children: [
         Container(
-          height: AppHeights.height50,
+          height: SizeConfig.heightMultiplier * 6.3,
           width: AppWidths.width50,
           decoration: const BoxDecoration(
               color: Color(0xffF1F4F9), shape: BoxShape.circle),
@@ -32,7 +32,7 @@ class HomeCategoriesWidget extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: AppHeights.height10,
+          height: SizeConfig.heightMultiplier * 1.2,
         ),
         TextView(
           text: title,

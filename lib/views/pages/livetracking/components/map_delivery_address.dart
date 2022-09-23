@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -20,7 +20,7 @@ class MapDeliveryAddress extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: AppHeights.height38,
+            height: SizeConfig.heightMultiplier * 4.7,
             width: SizeConfig.widthMultiplier * double.infinity,
             decoration: BoxDecoration(
               color: Colors.white,
@@ -49,7 +49,7 @@ class MapDeliveryAddress extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: AppHeights.height10),
+          SizedBox(height: SizeConfig.heightMultiplier * 1.2),
           Container(
             height: 154,
             width: SizeConfig.widthMultiplier * double.infinity,
@@ -84,7 +84,7 @@ class MapDeliveryAddress extends StatelessWidget {
                               fontWeight: FontWeight.w400),
                         ),
                         SizedBox(
-                          height: AppHeights.height8,
+                          height: SizeConfig.heightMultiplier * 1,
                         ),
                         Text(
                           'Expected Delivery Time: 8:50 PM',
@@ -94,7 +94,7 @@ class MapDeliveryAddress extends StatelessWidget {
                               fontWeight: FontWeight.w400),
                         ),
                         SizedBox(
-                          height: AppHeights.height8,
+                          height: SizeConfig.heightMultiplier * 1,
                         ),
                         Text(
                           '₹3500',

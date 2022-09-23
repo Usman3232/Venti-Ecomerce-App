@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/constants/width.dart';
@@ -29,7 +29,7 @@ class DrawerTiles extends StatelessWidget {
           minLeadingWidth: AppWidths.width23,
           leading: SvgPicture.asset(
             icon,
-            height: AppHeights.height24,
+            height: SizeConfig.heightMultiplier * 3,
             width: AppWidths.width23,
           ),
           title: Text(

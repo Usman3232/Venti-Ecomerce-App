@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
@@ -116,7 +116,7 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                               Padding(
                                 padding: const EdgeInsets.only(right: 15),
                                 child: Container(
-                                  height: AppHeights.height88,
+                                  height: SizeConfig.heightMultiplier * 18,
                                   width: AppWidths.width88,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.all(
@@ -126,7 +126,7 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                                   ),
                                   child: Image.asset(
                                     listAllCart[index].image,
-                                    height: AppHeights.height50,
+                                    height: SizeConfig.heightMultiplier * 6.3,
                                     width: AppWidths.width64,
                                   ),
                                 ),
@@ -158,7 +158,7 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                                       ),
                                     ),
                                     SizedBox(
-                                      height: AppHeights.height10,
+                                      height: SizeConfig.heightMultiplier * 1.2,
                                     ),
                                     Padding(
                                       padding: EdgeInsets.only(
@@ -234,7 +234,7 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                 left: 0,
                 right: 0,
                 child: Container(
-                    height: AppHeights.height120,
+                    height: SizeConfig.heightMultiplier * 14.9,
                     width: double.infinity,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.only(
@@ -249,7 +249,7 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                         child: Column(
                           children: [
                             SizedBox(
-                              height: AppHeights.height21,
+                              height: SizeConfig.heightMultiplier * 2.65,
                             ),
                             Row(
                               children: [
@@ -282,7 +282,7 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                                     Get.to(AvailableCartCheckout());
                                   },
                                   title: 'CHECK OUT',
-                                  height: AppHeights.height50,
+                                  height: SizeConfig.heightMultiplier * 6.3,
                                   width: AppWidths.width150,
                                   radius: AppRadius.radius30,
                                   textcolour: Colors.white,
@@ -316,7 +316,7 @@ class AcceptButton extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: AppHeights.height50,
+        height: SizeConfig.heightMultiplier * 6.3,
         width: AppWidths.width150,
         decoration: BoxDecoration(
           border:

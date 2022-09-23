@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/height.dart';
+
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -16,7 +16,7 @@ class SearchPage extends StatelessWidget {
       body: Column(
         children: [
           SizedBox(
-            height: AppHeights.height62,
+            height: SizeConfig.heightMultiplier * 7.7,
           ),
           Row(
             children: [
