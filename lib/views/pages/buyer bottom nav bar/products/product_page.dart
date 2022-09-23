@@ -231,7 +231,11 @@ class _ProductPageState extends State<ProductPage> {
                             fontWeight: FontWeight.w700,
                           ),
                           InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Get.to(Stores(
+                                  title: "Anytime Sellers",
+                                  isstore: "isanytime"));
+                            },
                             child: TextView(
                               text: "See ALL",
                               size: AppTexts.size12,

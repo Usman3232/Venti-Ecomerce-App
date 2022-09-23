@@ -86,7 +86,7 @@ class NegativeStatus extends StatelessWidget {
             ),
             CustomTextButton(
               callback: () {
-                Get.to(AllCartsCheckOut(ischeckout: true));
+                Get.to(AllCartsCheckOut());
               },
               colour: AppColors.primarylightColor,
               height: AppHeights.height52,

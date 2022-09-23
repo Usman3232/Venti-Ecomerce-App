@@ -6,15 +6,16 @@ import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
-import 'package:ecommerce_app/views/pages/seller%20bottom%20nav%20bar/choose_seller_profile.dart';
-import 'package:ecommerce_app/views/pages/seller%20bottom%20nav%20bar/seller_availability.dart';
+import 'package:ecommerce_app/views/seller%20panal/OrderTracking/orders.dart';
+import 'package:ecommerce_app/views/seller%20panal/Seller%20Home/choose_seller_profile.dart';
+import 'package:ecommerce_app/views/seller%20panal/Seller%20Home/seller_availability.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_switch/flutter_switch.dart';
 import 'package:get/get.dart';
 
-import '../../../constants/colors.dart';
+import '../../../../constants/colors.dart';
 
 class SellerHomePage extends StatefulWidget {
   const SellerHomePage({Key? key}) : super(key: key);
@@ -88,22 +89,21 @@ class _SellerHomePageState extends State<SellerHomePage> {
               subtitle: 'Type - Curated Store',
               subtitleColor: AppColors.primarydarkColor,
               buttonSize: 7,
+              buttonTap: () {},
             ),
             SizedBox(
               height: AppHeights.height18,
             ),
-            InkWell(
-              onTap: () {
+            VentiSellerCardWidget(
+              image: AppImages.sellerAlarm,
+              title: 'Availabilty Times',
+              buttonText: 'EDIT',
+              isSubtitle: true,
+              subtitle: '2:00 - 6:00 PM',
+              isSwitch: true,
+              buttonTap: () {
                 Get.to(SellerAvailability());
               },
-              child: VentiSellerCardWidget(
-                image: AppImages.sellerAlarm,
-                title: 'Availabilty Times',
-                buttonText: 'EDIT',
-                isSubtitle: true,
-                subtitle: '2:00 - 6:00 PM',
-                isSwitch: true,
-              ),
             ),
             SizedBox(
               height: AppHeights.height18,
@@ -114,14 +114,18 @@ class _SellerHomePageState extends State<SellerHomePage> {
               buttonText: 'VIEW',
               isSubtitle: true,
               subtitle: '0 Orders',
+              buttonTap: () {
+                Get.to(OrdersDelivered());
+              },
             ),
             SizedBox(
               height: AppHeights.height18,
             ),
             VentiSellerCardWidget(
-              image: AppImages.StoreDetails,
+              image: AppImages.Storedetail,
               title: 'Store Details',
               buttonText: 'ADD',
+              buttonTap: () {},
             ),
             SizedBox(
               height: AppHeights.height18,
@@ -130,6 +134,7 @@ class _SellerHomePageState extends State<SellerHomePage> {
               image: AppImages.storePolicy,
               title: 'Store Policy',
               buttonText: 'ADD',
+              buttonTap: () {},
             ),
             SizedBox(
               height: AppHeights.height18,
@@ -138,6 +143,7 @@ class _SellerHomePageState extends State<SellerHomePage> {
               image: AppImages.reports,
               title: 'Reports',
               buttonText: 'ADD',
+              buttonTap: () {},
             ),
           ],
         ),
@@ -155,6 +161,7 @@ class VentiSellerCardWidget extends StatefulWidget {
   final bool isSwitch;
   final Color subtitleColor;
   final double buttonSize;
+  final VoidCallback buttonTap;
   const VentiSellerCardWidget({
     Key? key,
     required this.image,
@@ -165,6 +172,7 @@ class VentiSellerCardWidget extends StatefulWidget {
     this.isSwitch = false,
     this.subtitleColor = Colors.grey,
     this.buttonSize = 10,
+    required this.buttonTap,
   }) : super(key: key);
 
   @override
@@ -255,7 +263,7 @@ class _VentiSellerCardWidgetState extends State<VentiSellerCardWidget> {
                     Expanded(
                       child: CustomTextButton(
                         title: widget.buttonText,
-                        callback: () {},
+                        callback: widget.buttonTap,
                         height: AppHeights.height27,
                         colour: const Color(0xffE3EAF3),
                         textcolour: AppColors.primarydarkColor,
@@ -268,7 +276,7 @@ class _VentiSellerCardWidgetState extends State<VentiSellerCardWidget> {
                 )
               : CustomTextButton(
                   title: widget.buttonText,
-                  callback: () {},
+                  callback: widget.buttonTap,
                   height: AppHeights.height27,
                   colour: const Color(0xffE3EAF3),
                   textcolour: AppColors.primarydarkColor,

@@ -13,6 +13,7 @@ import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -20,10 +21,8 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      backgroundColor: Color(0xffFAFAFA),
       body: SizedBox(
         height: SizeConfig.heightMultiplier * 100,
-        // width: SizeConfig.widthMultiplier * 100,
         child: Stack(
           children: [
             Container(

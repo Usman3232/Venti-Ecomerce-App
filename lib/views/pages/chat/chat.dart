@@ -7,6 +7,7 @@ import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/chat_model/chat_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
+import 'package:ecommerce_app/views/pages/view%20invoice/view_invoice.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
 import 'package:flutter/material.dart';
@@ -181,7 +182,9 @@ class _ChatState extends State<Chat> {
                           width: AppWidths.width15,
                         ),
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Get.to(ViewInvoice());
+                          },
                           child: TextView(
                             text: "Click to\nview",
                             fontWeight: FontWeight.w400,

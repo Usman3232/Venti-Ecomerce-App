@@ -2,18 +2,19 @@ import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/width.dart';
-import 'package:ecommerce_app/views/pages/seller%20bottom%20nav%20bar/seller_profile.dart';
+import 'package:ecommerce_app/views/seller%20panal/Anytime%20Sellers/any_time_seller_store.dart';
+import 'package:ecommerce_app/views/seller%20panal/Curated%20Store%20Seller/curated_store_seller.dart';
+import 'package:ecommerce_app/views/seller%20panal/Seller%20Home/seller_profile.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
-import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../../constants/colors.dart';
-import '../../../constants/icons.dart';
-import '../../../constants/images.dart';
-import '../../../constants/textsize.dart';
-import '../../../utils/size_config.dart';
+import '../../../../constants/colors.dart';
+import '../../../../constants/icons.dart';
+import '../../../../constants/images.dart';
+import '../../../../constants/textsize.dart';
+import '../../../../utils/size_config.dart';
 
 class ChooseSellerProfile extends StatefulWidget {
   const ChooseSellerProfile({Key? key}) : super(key: key);
@@ -23,6 +24,12 @@ class ChooseSellerProfile extends StatefulWidget {
 }
 
 class _ChooseSellerProfileState extends State<ChooseSellerProfile> {
+  int selected = 0;
+  List<String> buttons = [
+    'Anytime Seller',
+    'Service Provider',
+    'Curated Product Seller'
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -128,46 +135,37 @@ class _ChooseSellerProfileState extends State<ChooseSellerProfile> {
                 SizedBox(
                   height: AppHeights.height20,
                 ),
-                ChooseSellerButton(
-                  text: 'AnyTime Seller',
-                  onTap: () {
-                    Get.to(SellerProfile());
-                  },
-                ),
-                SizedBox(
-                  height: AppHeights.height23,
-                ),
-                Container(
-                  height: AppHeights.height52,
-                  decoration: BoxDecoration(
-                      borderRadius:
-                          BorderRadius.all(Radius.circular(AppRadius.radius10)),
-                      border: Border.all(
-                          color: AppColors.primarylightColor, width: 1)),
-                  child: Padding(
-                    padding: const EdgeInsets.all(2.0),
-                    child: CustomTextButton(
-                      title: 'Service Provider',
-                      callback: () {
-                        Get.to(SellerProfile());
+                ...List.generate(
+                  buttons.length,
+                  (index) => Container(
+                    margin: EdgeInsets.only(bottom: AppPaddings.padding22),
+                    padding: selected == index ? const EdgeInsets.all(2) : null,
+                    decoration: selected == index
+                        ? BoxDecoration(
+                            border:
+                                Border.all(color: AppColors.primarylightColor),
+                            borderRadius: BorderRadius.circular(10))
+                        : null,
+                    child: ChooseSellerButton(
+                      text: buttons[index],
+                      onTap: () {
+                        setState(() {
+                          selected = index;
+                          if (selected == 0) {
+                            Get.to(AnyTimeSellerStoreDetail());
+                          } else if (selected == 2) {
+                            Get.to(CuratedStoreSellerDetail());
+                          }
+                        });
                       },
-                      width: AppWidths.widthFull,
-                      height: AppHeights.height50,
-                      colour: AppColors.primarylightColor,
-                      textcolour: Colors.white,
-                      fontWeight: FontWeight.w600,
-                      radius: AppRadius.radius10,
+                      color: selected == index
+                          ? AppColors.primarylightColor
+                          : Colors.white,
+                      textColor: selected == index
+                          ? Colors.white
+                          : const Color(0xff757589),
                     ),
                   ),
-                ),
-                SizedBox(
-                  height: AppHeights.height23,
-                ),
-                ChooseSellerButton(
-                  text: 'Curated Product Seller',
-                  onTap: () {
-                    Get.to(SellerProfile());
-                  },
                 ),
               ],
             ),
@@ -181,10 +179,14 @@ class _ChooseSellerProfileState extends State<ChooseSellerProfile> {
 class ChooseSellerButton extends StatelessWidget {
   final String text;
   final VoidCallback onTap;
+  final Color color;
+  final Color textColor;
   const ChooseSellerButton({
     Key? key,
     required this.text,
     required this.onTap,
+    required this.color,
+    required this.textColor,
   }) : super(key: key);
 
   @override
@@ -194,6 +196,7 @@ class ChooseSellerButton extends StatelessWidget {
       child: Container(
         height: AppHeights.height52,
         decoration: BoxDecoration(
+            color: color,
             borderRadius: BorderRadius.all(Radius.circular(AppRadius.radius10)),
             border: Border.all(
               color: Colors.black12,
@@ -201,7 +204,7 @@ class ChooseSellerButton extends StatelessWidget {
         child: Center(
           child: TextView(
             text: text,
-            color: const Color(0xff757589),
+            color: textColor,
             size: AppTexts.size12,
           ),
         ),

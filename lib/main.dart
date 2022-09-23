@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/utils/size_config.dart';
+import 'package:ecommerce_app/views/pages/customize%20gift%20hamper/customize_gift_hamper.dart';
 import 'package:ecommerce_app/views/pages/order%20history/order_history.dart';
 import 'package:ecommerce_app/views/pages/payment%20method/payment_method.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/all_carts.dart';
@@ -11,9 +12,10 @@ import 'package:ecommerce_app/views/pages/livetracking/components/map_delivery_a
 import 'package:ecommerce_app/views/pages/livetracking/live_tracking_detail.dart';
 import 'package:ecommerce_app/views/pages/livetracking/live_tracking_map.dart';
 import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/products/product_page.dart';
-import 'package:ecommerce_app/views/pages/seller%20bottom%20nav%20bar/seller_bottom_nav_bar.dart';
 import 'package:ecommerce_app/views/pages/splash/splash.dart';
-import 'package:ecommerce_app/views/pages/store_detail/storedetail.dart';
+import 'package:ecommerce_app/views/seller%20panal/Chat%20Invoice/coustmer_invoice.dart';
+import 'package:ecommerce_app/views/seller%20panal/OrderTracking/orders.dart';
+import 'package:ecommerce_app/views/seller%20panal/Seller%20Home/seller_home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -45,7 +47,7 @@ class MyApp extends StatelessWidget {
             SizeConfig().init(constraints, orientation);
             return GetMaterialApp(
               theme: ThemeData(
-                scaffoldBackgroundColor: const Color(0xffFEFEFE),
+                scaffoldBackgroundColor: const Color(0xffFAFAFA),
               ),
               debugShowCheckedModeBanner: false,
               // home: const LoginPage(),
@@ -77,7 +79,8 @@ class MyApp extends StatelessWidget {
               // home: AllCartsCheckOut(ischeckout: true),
               // home: PaymentCheckOut(),
               // home: SellerBottomNavBar(),
-              // home: SplashPage(),
+              home: SplashPage(),
+              // home: CustomizeGiftHamper(),
               // home: AddNewAddressCheckOut(),
               // home: PaymentMethod(),
               // home: MapLocationPage(),
@@ -85,7 +88,11 @@ class MyApp extends StatelessWidget {
               //   title: "Curated Stores",
               //   isstore: "iscurated",
               // ),
-              home: StoreDetail(),
+              // home: CuratedStoreDetail(),
+              // home: Stores(title: "Anytime seller", isstore: "isanytime"),
+              // home: SellerHomePage(),
+              // home: OrdersDelivered(),
+              // home: CustomerInvoiceSeller(),
             );
           },
         );

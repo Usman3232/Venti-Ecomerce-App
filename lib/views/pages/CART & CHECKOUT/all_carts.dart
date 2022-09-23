@@ -20,9 +20,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 
 class AllCartsCheckOut extends StatefulWidget {
-  const AllCartsCheckOut({Key? key, required this.ischeckout})
-      : super(key: key);
-  final bool ischeckout;
+  const AllCartsCheckOut({Key? key}) : super(key: key);
 
   @override
   State<AllCartsCheckOut> createState() => _AllCartsCheckOutState();
@@ -246,76 +244,56 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                       color: Colors.white,
                     ),
                     child: Padding(
-                      padding: EdgeInsets.symmetric(
-                          horizontal: AppPaddings.padding24),
-                      child: widget.ischeckout
-                          ? Column(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: AppPaddings.padding24),
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: AppHeights.height21,
+                            ),
+                            Row(
                               children: [
-                                SizedBox(
-                                  height: AppHeights.height21,
-                                ),
-                                Row(
+                                Column(
                                   children: [
-                                    Column(
-                                      children: [
-                                        Text(
-                                          "Grand Total",
-                                          style: TextStyle(
-                                            color: Colors.grey,
-                                            fontSize: AppTexts.size12,
-                                            fontWeight: FontWeight.w400,
-                                          ),
-                                        ),
-                                        SizedBox(
-                                          height:
-                                              SizeConfig.heightMultiplier * 0.5,
-                                        ),
-                                        Text(
-                                          "\$705.00",
-                                          style: TextStyle(
-                                            color: Colors.grey,
-                                            fontSize: AppTexts.size20,
-                                            fontWeight: FontWeight.w700,
-                                          ),
-                                        ),
-                                      ],
+                                    Text(
+                                      "Grand Total",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        fontSize: AppTexts.size12,
+                                        fontWeight: FontWeight.w400,
+                                      ),
                                     ),
-                                    const Spacer(),
-                                    CustomTextButton(
-                                      callback: () {
-                                        Get.to(AvailableCartCheckout());
-                                      },
-                                      title: 'CHECK OUT',
-                                      height: AppHeights.height50,
-                                      width: AppWidths.width150,
-                                      radius: AppRadius.radius30,
-                                      textcolour: Colors.white,
-                                      fontSize: AppTexts.size14,
-                                      colour: AppColors.primarylightColor,
-                                      fontWeight: FontWeight.w700,
+                                    SizedBox(
+                                      height: SizeConfig.heightMultiplier * 0.5,
+                                    ),
+                                    Text(
+                                      "\$705.00",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        fontSize: AppTexts.size20,
+                                        fontWeight: FontWeight.w700,
+                                      ),
                                     ),
                                   ],
                                 ),
-                              ],
-                            )
-                          : Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                AcceptButton(
-                                  isBorder: false,
-                                  text: "Accept",
-                                  onTap: () {
-                                    Get.to(CheckoutPage());
+                                const Spacer(),
+                                CustomTextButton(
+                                  callback: () {
+                                    Get.to(AvailableCartCheckout());
                                   },
-                                ),
-                                AcceptButton(
-                                  isBorder: true,
-                                  text: "REJECT",
-                                  onTap: () {},
+                                  title: 'CHECK OUT',
+                                  height: AppHeights.height50,
+                                  width: AppWidths.width150,
+                                  radius: AppRadius.radius30,
+                                  textcolour: Colors.white,
+                                  fontSize: AppTexts.size14,
+                                  colour: AppColors.primarylightColor,
+                                  fontWeight: FontWeight.w700,
                                 ),
                               ],
                             ),
-                    ))),
+                          ],
+                        )))),
           ],
         ),
       ),

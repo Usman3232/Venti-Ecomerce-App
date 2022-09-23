@@ -7,7 +7,6 @@ class CustomTextButton extends StatelessWidget {
   final Color? colour, textcolour;
   final double? fontSize;
   final FontWeight? fontWeight;
-  final bool? isBorder;
   final double? radius;
   VoidCallback callback;
 
@@ -16,7 +15,6 @@ class CustomTextButton extends StatelessWidget {
       this.title = "",
       required this.callback,
       this.colour,
-      this.isBorder=false,
       this.textcolour = Colors.white,
       this.height,
       this.width,
@@ -30,8 +28,9 @@ class CustomTextButton extends StatelessWidget {
     return MaterialButton(
       height: height,
       minWidth: width,
-      shape:
-          RoundedRectangleBorder(borderRadius: BorderRadius.circular(radius!),),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(radius!),
+      ),
       color: colour,
       onPressed: () {
         callback();

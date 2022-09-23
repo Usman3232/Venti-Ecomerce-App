@@ -12,6 +12,7 @@ import 'package:flutter_switch/flutter_switch.dart';
 import '../../../constants/textsize.dart';
 import '../../widgets/TextView.dart';
 
+
 class SellerAvailability extends StatefulWidget {
   const SellerAvailability({Key? key}) : super(key: key);
 
@@ -20,10 +21,10 @@ class SellerAvailability extends StatefulWidget {
 }
 
 class _SellerAvailabilityState extends State<SellerAvailability> {
-  bool value = false;
-  bool isStatus = false;
-  bool isStatus1 = false;
-  int val = 0;
+  bool value=false;
+  bool isStatus=false;
+  bool isStatus1=false;
+  int val=0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,13 +32,8 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
         centerTitle: true,
         backgroundColor: Colors.white,
         elevation: 0,
-        leading: Icon(
-          Icons.menu,
-          color: Colors.black,
-          size: SizeConfig.imageSizeMultiplier * 5,
-        ),
-        title: Text(
-          "VENTI - Seller AVAILABILITY",
+        leading: Icon(Icons.menu,color: Colors.black,size: SizeConfig.imageSizeMultiplier*5,),
+        title:  Text("VENTI - Seller AVAILABILITY",
           style: TextStyle(
             color: AppColors.primarydarkColor,
             fontSize: AppTexts.size14,
@@ -53,7 +49,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
         ],
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding15),
+        padding:  EdgeInsets.symmetric(horizontal: AppPaddings.padding15),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -63,9 +59,8 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
             Row(
               children: [
                 SizedBox(
-                  width: SizeConfig.widthMultiplier * 68,
-                  child: Text(
-                    "Turn Your Shop On and Make Your Sales ",
+                  width: SizeConfig.widthMultiplier*68,
+                  child: Text("Turn Your Shop On and Make Your Sales ",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: AppTexts.size16,
@@ -76,14 +71,14 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
                 ),
                 const Spacer(),
                 FlutterSwitch(
-                  switchBorder: Border.all(color: AppColors.primarydarkColor),
+                  switchBorder: Border.all(color:AppColors.primarydarkColor),
                   activeColor: Colors.white,
                   inactiveColor: Colors.white,
                   activeToggleColor: AppColors.primarylightColor,
                   inactiveToggleColor: AppColors.primarylightColor,
                   width: AppWidths.width30,
                   height: AppHeights.height18,
-                  toggleSize: 12,
+                  toggleSize:12,
                   padding: 2,
                   value: isStatus1,
                   borderRadius: 30.0,
@@ -98,8 +93,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
             SizedBox(
               height: AppHeights.height40,
             ),
-            Text(
-              "Set your availabilty schedule",
+            Text("Set your availabilty schedule",
               style: TextStyle(
                 color: Colors.black,
                 fontSize: AppTexts.size16,
@@ -119,16 +113,14 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
             ),
             Row(
               children: [
-                Checkbox(
-                    value: value,
+                Checkbox(value: value,
                     activeColor: AppColors.primarylightColor,
-                    onChanged: (val) {
+                    onChanged:( val) {
                       setState(() {
                         value = val!;
                       });
                     }),
-                Text(
-                  "Set this store timing availabilty for everyday",
+                Text("Set this store timing availabilty for everyday",
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: AppTexts.size11,
@@ -143,8 +135,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
             ),
             Row(
               children: [
-                Text(
-                  "Turn Your Distance Settings",
+                Text("Turn Your Distance Settings",
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: AppTexts.size15,
@@ -152,16 +143,16 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
                     letterSpacing: 1,
                   ),
                 ),
-                const Spacer(),
+               const Spacer(),
                 FlutterSwitch(
-                  switchBorder: Border.all(color: AppColors.primarydarkColor),
+                  switchBorder: Border.all(color:AppColors.primarydarkColor),
                   activeColor: Colors.white,
                   inactiveColor: Colors.white,
                   activeToggleColor: AppColors.primarylightColor,
-                  inactiveToggleColor: AppColors.primarylightColor,
+                  inactiveToggleColor:AppColors.primarylightColor,
                   width: AppWidths.width30,
                   height: AppHeights.height18,
-                  toggleSize: 12,
+                  toggleSize:12,
                   padding: 2,
                   value: isStatus,
                   borderRadius: 30.0,
@@ -178,8 +169,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
             ),
             Row(
               children: [
-                Text(
-                  "Distance (Radius)",
+                Text("Distance (Radius)",
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: AppTexts.size16,
@@ -207,12 +197,14 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
                         }
                       });
                     },
-                    child: SvgPicture.asset(AppIcons.minuscircle)),
+                    child: SvgPicture.asset(
+                        AppIcons.minuscircle)),
                 Padding(
-                  padding:
-                      EdgeInsets.symmetric(horizontal: AppPaddings.padding8),
+                  padding: EdgeInsets.symmetric(
+                      horizontal: AppPaddings.padding8),
                   child: TextView(
-                    text: val.toString(),
+                    text:val
+                        .toString(),
                     size: AppTexts.size14,
                     fontWeight: FontWeight.w700,
                   ),
@@ -223,7 +215,8 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
                         val = val + 1;
                       });
                     },
-                    child: SvgPicture.asset(AppIcons.addcircle))
+                    child: SvgPicture.asset(
+                        AppIcons.addcircle))
               ],
             )
           ],

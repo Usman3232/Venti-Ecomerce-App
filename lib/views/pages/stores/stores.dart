@@ -4,11 +4,14 @@ import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/models/curated_store_models/categoriesmodel.dart';
+import 'package:ecommerce_app/models/homemodels/anytimesellermodel.dart';
 import 'package:ecommerce_app/models/homemodels/curatedshopmodel.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
+import 'package:ecommerce_app/views/pages/anytime%20seller%20store%20detail/anytime_store_detail.dart';
+import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/home/components/anytimesellercard.dart';
 import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/home/components/curatedshopcard.dart';
+import 'package:ecommerce_app/views/pages/curated_store_detail/curated_store_detail.dart';
 import 'package:ecommerce_app/views/pages/store%20search/storesearch.dart';
-import 'package:ecommerce_app/views/pages/store_detail/storedetail.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -126,13 +129,40 @@ class Stores extends StatelessWidget {
                           rating: curatedshop_model[index].rating,
                           favourite: curatedshop_model[index].favourite,
                           onpressed: () {
-                            Get.to(StoreDetail());
+                            Get.to(CuratedStoreDetail());
                           },
                         ),
                       );
                     },
                   ))
-                : SizedBox()
+                : isstore == "isanytime"
+                    ? Expanded(
+                        child: ListView.builder(
+                        itemCount: anytimeseller_model.length,
+                        shrinkWrap: true,
+                        physics: BouncingScrollPhysics(),
+                        itemBuilder: (context, index) {
+                          return Padding(
+                            padding: EdgeInsets.only(
+                                left: AppPaddings.padding24,
+                                right: AppPaddings.padding24,
+                                bottom: SizeConfig.heightMultiplier * 2),
+                            child: AnyTimeSellerCard(
+                                image: anytimeseller_model[index].image,
+                                favourite: anytimeseller_model[index].favourite,
+                                title: anytimeseller_model[index].title,
+                                location: anytimeseller_model[index].location,
+                                islocation: true,
+                                time: anytimeseller_model[index].time,
+                                reviews: anytimeseller_model[index].reviews,
+                                onpressed: () {
+                                  Get.to(AnytimeSellerStoreDetail());
+                                },
+                                rating: anytimeseller_model[index].rating),
+                          );
+                        },
+                      ))
+                    : SizedBox()
           ],
         ),
       ),

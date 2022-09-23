@@ -14,12 +14,17 @@ class AppIcons {
   static String drawer = "assets/icons/drawer.svg";
   static String cart = "assets/icons/cart.svg";
   static String addtocart = "assets/icons/addtocart.svg";
+  static String cancel = "assets/icons/cancel.svg";
 
   static String coin = "assets/icons/coin.svg";
   static String star = "assets/icons/star.svg";
   static String back = "assets/icons/backbutton.svg";
-  static String addcircle = "assets/icons/addcircle.svg";
+  static String addbluecircle = "assets/icons/addbluecircle.svg";
+  static String minusbluecircle = "assets/icons/minusbluecircle.svg";
+  static String addcircle = "assets/icons/addcirlce.svg";
+
   static String minuscircle = "assets/icons/minuscirlce.svg";
+
   static String message = "assets/icons/message.svg";
   static String clover = "assets/icons/clover.svg";
   static String food = "assets/icons/food.svg";
@@ -62,4 +67,10 @@ class AppIcons {
   static String bottomlocationicon = 'assets/icons/bottomlocationicon.png';
   static String bottomsettingicon = 'assets/icons/bottomsettingicon.png';
   static String bottomstaricon = 'assets/icons/bottomstaricon.png';
+
+  //SELLER BOTTOM BAR ICONS
+  static String sellerbottomhome = 'assets/icons/sellerhome.png';
+  static String sellerbottomcomponents = 'assets/icons/sellercomponents.png';
+  static String sellerbottomlocate = 'assets/icons/sellerlocate.png';
+  static String sellerbottomwallet = 'assets/icons/sellerwallet.png';
 }

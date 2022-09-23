@@ -8,31 +8,22 @@ import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/curated_store_models/productmodel.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/all_carts.dart';
-import 'package:ecommerce_app/views/pages/product%20detail/productdetail.dart';
+import 'package:ecommerce_app/views/pages/curated%20product%20detail/curated_product_detail.dart';
 import 'package:ecommerce_app/views/pages/chat/chat.dart';
+import 'package:ecommerce_app/views/pages/curated_store_detail/components/product_card.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
-class StoreDetail extends StatefulWidget {
-  const StoreDetail({
-    Key? key,
-  }) : super(key: key);
+class CuratedStoreDetail extends StatefulWidget {
+  const CuratedStoreDetail({Key? key}) : super(key: key);
 
   @override
-  State<StoreDetail> createState() => _StoreDetailState();
+  State<CuratedStoreDetail> createState() => _CuratedStoreDetailState();
 }
 
-class _StoreDetailState extends State<StoreDetail>
-    with TickerProviderStateMixin {
-  late TabController _tabController;
-  @override
-  void initState() {
-    _tabController = TabController(length: 3, vsync: this);
-    super.initState();
-  }
-
+class _CuratedStoreDetailState extends State<CuratedStoreDetail> {
   List<String> tags = ["4.7 km", "Clothes", "Deliverable"];
   List<String> tabs = ["Popular", "New", "By Categories"];
   int selectedTab = 0;
@@ -107,7 +98,7 @@ class _StoreDetailState extends State<StoreDetail>
                           ),
                           GestureDetector(
                             onTap: () {
-                              Get.to(AllCartsCheckOut(ischeckout: true));
+                              Get.to(AllCartsCheckOut());
                             },
                             child: Container(
                               height: SizeConfig.heightMultiplier * 3.8,
@@ -497,142 +488,6 @@ class _ByCategoriesTabState extends State<ByCategoriesTab> {
             );
           },
         ),
-      ],
-    );
-  }
-}
-
-class ProductCard extends StatefulWidget {
-  ProductCard(
-      {Key? key,
-      required this.image,
-      required this.title,
-      required this.location,
-      required this.reviews,
-      required this.rating,
-      required this.favourite,
-      required this.price,
-      required this.onTap})
-      : super(key: key);
-  final String image, title, location, price;
-  final int reviews;
-  final double rating;
-  bool favourite;
-  final VoidCallback onTap;
-
-  @override
-  State<ProductCard> createState() => _ProductCardState();
-}
-
-class _ProductCardState extends State<ProductCard> {
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Stack(
-          children: [
-            Container(
-              height: AppHeights.height151,
-              width: AppWidths.width150,
-              decoration: BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.circular(AppRadius.radius20),
-                  image: DecorationImage(
-                      image: AssetImage(widget.image), fit: BoxFit.cover)),
-            ),
-            Positioned(
-              top: SizeConfig.heightMultiplier * 1.9,
-              left: SizeConfig.widthMultiplier * 4.2,
-              child: Container(
-                  height: AppHeights.height25,
-                  width: AppWidths.width25,
-                  decoration: const BoxDecoration(
-                      color: Colors.white, shape: BoxShape.circle),
-                  child: InkWell(
-                      onTap: widget.onTap,
-                      child: Padding(
-                        padding: EdgeInsets.all(SizeConfig.widthMultiplier * .8),
-                        child: SvgPicture.asset(AppIcons.addtocart),
-                      ))),
-            ),
-            Positioned(
-              top: SizeConfig.heightMultiplier * 1.9,
-              right: SizeConfig.widthMultiplier * 4.2,
-              child: Container(
-                  height: AppHeights.height25,
-                  width: AppWidths.width25,
-                  decoration: const BoxDecoration(
-                      color: Colors.white, shape: BoxShape.circle),
-                  child: InkWell(
-                    onTap: () {
-                      setState(() {
-                        widget.favourite = !widget.favourite;
-                      });
-                    },
-                    child: widget.favourite
-                        ? Icon(
-                            Icons.favorite_rounded,
-                            color: AppColors.primarylightColor,
-                            size: SizeConfig.imageSizeMultiplier * 5,
-                          )
-                        : Icon(
-                            Icons.favorite_outline_rounded,
-                            color: AppColors.primarylightColor,
-                            size: SizeConfig.imageSizeMultiplier * 5,
-                          ),
-                  )),
-            )
-          ],
-        ),
-        SizedBox(
-          height: AppHeights.height8,
-        ),
-        TextView(
-          text: widget.title,
-          fontWeight: FontWeight.w600,
-          size: AppTexts.size12,
-        ),
-        SizedBox(
-          height: SizeConfig.heightMultiplier * .4,
-        ),
-        TextView(
-          text: widget.location,
-          fontWeight: FontWeight.w400,
-          size: AppTexts.size10,
-          color: AppColors.primarylightColor,
-        ),
-        SizedBox(
-          height: SizeConfig.heightMultiplier * .4,
-        ),
-        Row(
-          children: [
-            SvgPicture.asset(AppIcons.star),
-            SizedBox(
-              width: SizeConfig.widthMultiplier * 1.6,
-            ),
-            TextView(
-              text: widget.rating.toString(),
-              fontWeight: FontWeight.w700,
-              size: AppTexts.size11,
-            ),
-            SizedBox(
-              width: SizeConfig.widthMultiplier * 1.6,
-            ),
-            TextView(
-              text: "(" + widget.reviews.toString() + " Reviews)",
-              fontWeight: FontWeight.w400,
-              size: AppTexts.size11,
-              color: Color(0xff7E7C7C),
-            ),
-          ],
-        ),
-        // SizedBox(height: SizeConfig.heightMultiplier*.5,),
-        TextView(
-          text: "₹" + widget.price,
-          fontWeight: FontWeight.w700,
-          size: AppTexts.size14,
-        )
       ],
     );
   }
