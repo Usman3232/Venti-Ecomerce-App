@@ -1,7 +1,7 @@
 
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -71,7 +71,7 @@ class _OrderStatusSellerState extends State<OrderStatusSeller> {
                             children: [
                               Container(
                                 height: SizeConfig.heightMultiplier * 7.1,
-                                width: AppWidths.width64,
+                                width: SizeConfig.widthMultiplier * 16.5,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
                                   color: Colors.grey.withOpacity(0.4),
@@ -84,7 +84,7 @@ class _OrderStatusSellerState extends State<OrderStatusSeller> {
                                 ),
                               ),
                               SizedBox(
-                                width: AppWidths.width15,
+                                width: SizeConfig.widthMultiplier * 3.8,
                               ),
                               Expanded(
                                 child: Column(

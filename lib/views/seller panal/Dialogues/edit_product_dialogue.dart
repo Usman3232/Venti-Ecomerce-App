@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
 import 'package:flutter/cupertino.dart';
@@ -77,7 +77,7 @@ class EditProductDialogue extends StatelessWidget {
                             ),
                             Container(
                               height: SizeConfig.heightMultiplier * 11.9,
-                              width: AppWidths.widthFull,
+                              width: SizeConfig.widthMultiplier * 100,
                               decoration: BoxDecoration(
                                 color: AppColors.primarylightColor
                                     .withOpacity(0.3),

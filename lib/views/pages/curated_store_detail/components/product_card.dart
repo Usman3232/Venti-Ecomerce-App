@@ -3,7 +3,7 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:flutter/material.dart';
@@ -41,7 +41,7 @@ class _ProductCardState extends State<ProductCard> {
           children: [
             Container(
               height: SizeConfig.heightMultiplier * 18.8,
-              width: AppWidths.width150,
+              width: SizeConfig.widthMultiplier * 3.80,
               decoration: BoxDecoration(
                   color: Colors.black,
                   borderRadius: BorderRadius.circular(AppRadius.radius20),
@@ -53,7 +53,7 @@ class _ProductCardState extends State<ProductCard> {
               left: SizeConfig.widthMultiplier * 4.2,
               child: Container(
                   height: SizeConfig.heightMultiplier * 3.1,
-                  width: AppWidths.width25,
+                  width: SizeConfig.widthMultiplier * 6.5,
                   decoration: const BoxDecoration(
                       color: Colors.white, shape: BoxShape.circle),
                   child: InkWell(
@@ -69,7 +69,7 @@ class _ProductCardState extends State<ProductCard> {
               right: SizeConfig.widthMultiplier * 4.2,
               child: Container(
                   height: SizeConfig.heightMultiplier * 3.1,
-                  width: AppWidths.width25,
+                  width: SizeConfig.widthMultiplier * 6.5,
                   decoration: const BoxDecoration(
                       color: Colors.white, shape: BoxShape.circle),
                   child: InkWell(

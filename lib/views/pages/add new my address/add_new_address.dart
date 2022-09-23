@@ -6,7 +6,7 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
@@ -91,7 +91,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                 ),
                 AuthTextInputField(
                   isoutline: true,
-                  radius: AppWidths.width15,
+                  radius: SizeConfig.widthMultiplier * 3.8,
                   hintText: 'Title Address',
                   contentpadding: EdgeInsets.all(
                     AppPaddings.padding15,
@@ -110,7 +110,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                   height: SizeConfig.heightMultiplier * 1,
                 ),
                 AuthTextInputField(
-                  radius: AppWidths.width15,
+                  radius: SizeConfig.widthMultiplier * 3.8,
                   hintText: 'Full Name',
                   isoutline: true,
                   contentpadding: EdgeInsets.all(
@@ -132,7 +132,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                 ),
                 AuthTextInputField(
                   isoutline: true,
-                  radius: AppWidths.width15,
+                  radius: SizeConfig.widthMultiplier * 3.8,
                   hintText: 'Street Address',
                   contentpadding: EdgeInsets.all(
                     AppPaddings.padding15,
@@ -152,7 +152,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                 ),
                 AuthTextInputField(
                   isoutline: true,
-                  radius: AppWidths.width15,
+                  radius: SizeConfig.widthMultiplier * 3.8,
                   hintText: 'B 206',
                   inputType: TextInputType.text,
                   contentpadding: EdgeInsets.all(
@@ -337,7 +337,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                 ),
                 Container(
                   height: SizeConfig.heightMultiplier * 17.6,
-                  width: AppWidths.widthFull,
+                  width: SizeConfig.widthMultiplier * 100,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(AppRadius.radius15),
                   ),

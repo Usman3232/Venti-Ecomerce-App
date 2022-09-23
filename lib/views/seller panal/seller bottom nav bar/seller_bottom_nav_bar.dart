@@ -1,7 +1,7 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/controllers/button_controller.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/drawer/drawer.dart';
@@ -53,7 +53,7 @@ class _SellerBottomNavBarState extends State<SellerBottomNavBar> {
           final image = isActive ? images[index] : unselectedImages[index];
           return SizedBox(
             height: SizeConfig.heightMultiplier * 3,
-            width: AppWidths.width25,
+            width: SizeConfig.widthMultiplier * 6.5,
             child: Image.asset(
               image,
               color: color,

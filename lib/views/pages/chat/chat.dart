@@ -4,7 +4,7 @@ import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/models/chat_model/chat_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/view%20invoice/view_invoice.dart';
@@ -147,7 +147,7 @@ class _ChatState extends State<Chat> {
                       children: [
                         Container(
                           height: SizeConfig.heightMultiplier * 7.7,
-                          width: AppWidths.width284,
+                          width: SizeConfig.widthMultiplier * 72.5,
                           decoration: BoxDecoration(
                               color: Color(0xffE3EAF3),
                               borderRadius:
@@ -179,7 +179,7 @@ class _ChatState extends State<Chat> {
                           ),
                         ),
                         SizedBox(
-                          width: AppWidths.width15,
+                          width: SizeConfig.widthMultiplier * 3.8,
                         ),
                         GestureDetector(
                           onTap: () {
@@ -233,7 +233,7 @@ class _ChatState extends State<Chat> {
                     onTap: () {},
                     child: Container(
                       height: SizeConfig.heightMultiplier * 6.3,
-                      width: AppWidths.width50,
+                      width: SizeConfig.widthMultiplier * 12.5,
                       decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           color: AppColors.primarylightColor),

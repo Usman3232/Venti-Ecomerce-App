@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +34,7 @@ class _CategoriesCardState extends State<CategoriesCard> {
           },
           child: Container(
             height: SizeConfig.heightMultiplier * 6.3,
-            width: AppWidths.width50,
+            width: SizeConfig.widthMultiplier * 12.5,
             decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: widget.onpressed

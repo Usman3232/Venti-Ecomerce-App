@@ -3,7 +3,7 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/all_carts.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/curated%20store%20popular/curatedstorepopular.dart';
@@ -90,7 +90,7 @@ class NegativeStatus extends StatelessWidget {
               },
               colour: AppColors.primarylightColor,
               height: SizeConfig.heightMultiplier * 6.54,
-              width: AppWidths.width284,
+              width: SizeConfig.widthMultiplier * 72.5,
               radius: 35,
               title: "Return to Cart",
               fontSize: AppTexts.size16,

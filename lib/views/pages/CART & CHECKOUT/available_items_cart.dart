@@ -4,7 +4,7 @@ import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/models/checkout_model/all_cart_checkout_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/checkout.dart';
@@ -116,7 +116,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                           right: AppPaddings.padding15),
                                       child: Container(
                                         height: SizeConfig.heightMultiplier * 18,
-                                        width: AppWidths.width88,
+                                        width: SizeConfig.widthMultiplier * 22.2,
                                         decoration: BoxDecoration(
                                             borderRadius: BorderRadius.all(
                                                 Radius.circular(
@@ -135,7 +135,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                             alignment: Alignment.topRight,
                                             child: Container(
                                               height: SizeConfig.heightMultiplier * 2.85,
-                                              width: AppWidths.width23,
+                                              width: SizeConfig.widthMultiplier * 5.9,
                                               decoration: const BoxDecoration(
                                                 shape: BoxShape.circle,
                                                 color: Color(0xff4CD964),
@@ -271,7 +271,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                       Padding(
                         padding: EdgeInsets.only(right: AppPaddings.padding24),
                         child: Container(
-                          width: AppWidths.widthFull,
+                          width: SizeConfig.widthMultiplier * 100,
                           decoration: BoxDecoration(
                             color: AppColors.primarydarkColor.withOpacity(0.15),
                             borderRadius:
@@ -361,7 +361,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                               },
                               title: 'CHECK OUT',
                               height: SizeConfig.heightMultiplier * 6.3,
-                              width: AppWidths.width150,
+                              width: SizeConfig.widthMultiplier * 3.80,
                               radius: AppRadius.radius30,
                               textcolour: Colors.white,
                               fontSize: AppTexts.size14,

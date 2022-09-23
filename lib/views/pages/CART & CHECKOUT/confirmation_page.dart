@@ -3,7 +3,7 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -115,7 +115,7 @@ class _ConfirmationState extends State<Confirmation> {
               ),
               SizedBox(
                 height: SizeConfig.heightMultiplier * 6.3,
-                width: AppWidths.width150,
+                width: SizeConfig.widthMultiplier * 3.80,
                 child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(

@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 
 import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
@@ -265,7 +265,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                                       });
                                     },
                                     height: SizeConfig.heightMultiplier * 4.7,
-                                    width: AppWidths.width135,
+                                    width: SizeConfig.widthMultiplier * 34.5,
                                     radius: 100,
                                     title: 'Cancel',
                                     colour: const Color(0xffFF7971),
@@ -279,7 +279,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                                       });
                                     },
                                     height: SizeConfig.heightMultiplier * 4.7,
-                                    width: AppWidths.width135,
+                                    width: SizeConfig.widthMultiplier * 34.5,
                                     radius: 100,
                                     title: 'Save Item',
                                     colour: AppColors.primarydarkColor,

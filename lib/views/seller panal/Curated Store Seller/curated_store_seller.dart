@@ -4,7 +4,7 @@ import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/models/curated_store_models/productmodel.dart';
 import 'package:ecommerce_app/models/homemodels/curatedshopmodel.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -423,7 +423,7 @@ class CustomColorWidget extends StatelessWidget {
           children: [
             Container(
               height: SizeConfig.heightMultiplier * 2.85,
-              width: AppWidths.width23,
+              width: SizeConfig.widthMultiplier * 5.9,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: const Color(0xff7496C2).withOpacity(0.2),
@@ -435,7 +435,7 @@ class CustomColorWidget extends StatelessWidget {
               )),
             ),
             SizedBox(
-              width: AppWidths.width15,
+              width: SizeConfig.widthMultiplier * 3.8,
             ),
             Text(
               "Add New Color",
@@ -485,7 +485,7 @@ class _ColorTileState extends State<ColorTile> {
       iconColor: Colors.black,
       leading: Container(
         height: SizeConfig.heightMultiplier * 2.85,
-        width: AppWidths.width23,
+        width: SizeConfig.widthMultiplier * 5.9,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           color: widget.color,
@@ -526,7 +526,7 @@ class _ColorTileState extends State<ColorTile> {
                         },
                         child: AnimatedContainer(
                           height: SizeConfig.heightMultiplier * 2.85,
-                          width: AppWidths.width23,
+                          width: SizeConfig.widthMultiplier * 5.9,
                           margin: EdgeInsets.only(right: AppPaddings.padding8),
                           decoration: selectedSize == index
                               ? BoxDecoration(
@@ -550,7 +550,7 @@ class _ColorTileState extends State<ColorTile> {
                       )),
               Container(
                 height: SizeConfig.heightMultiplier * 2.85,
-                width: AppWidths.width23,
+                width: SizeConfig.widthMultiplier * 5.9,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: Colors.blueGrey.withOpacity(0.2),
@@ -584,7 +584,7 @@ class _ColorTileState extends State<ColorTile> {
               ),
               Container(
                 height: SizeConfig.heightMultiplier * 1.75,
-                width: AppWidths.width30,
+                width: SizeConfig.widthMultiplier * 7.7,
                 decoration: BoxDecoration(
                   borderRadius:
                       BorderRadius.all(Radius.circular(AppRadius.radius10)),
@@ -631,7 +631,7 @@ class SelectedImageWidget extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(left: SizeConfig.widthMultiplier * 0.5),
       height: SizeConfig.heightMultiplier * 11.9,
-      width: AppWidths.width93,
+      width: SizeConfig.widthMultiplier * 24,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(AppRadius.radius10)),
       ),
@@ -648,7 +648,7 @@ class SelectedImageWidget extends StatelessWidget {
             right: 0,
             child: Container(
                 height: SizeConfig.heightMultiplier * 2.85,
-                width: AppWidths.width23,
+                width: SizeConfig.widthMultiplier * 5.9,
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                   color: Colors.redAccent,
@@ -694,7 +694,7 @@ class _ProductCardState extends State<ProductCard> {
       children: [
         Container(
           height: SizeConfig.heightMultiplier * 20,
-          width: AppWidths.width150,
+          width: SizeConfig.widthMultiplier * 3.80,
           decoration: BoxDecoration(
               color: Colors.black,
               borderRadius: BorderRadius.circular(AppRadius.radius20),

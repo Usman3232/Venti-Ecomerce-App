@@ -2,7 +2,7 @@ import 'package:ecommerce_app/constants/colors.dart';
 
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
@@ -70,7 +70,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                       child: Image.asset(
                     "assets/images/detail_shoe.png",
                     height: SizeConfig.heightMultiplier * 14.9,
-                    width: AppWidths.width258,
+                    width: SizeConfig.widthMultiplier * 6.58,
                   )),
                 ),
                 SizedBox(
@@ -242,7 +242,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                             callback: () {},
                             title: 'CHECK OUT',
                             height: SizeConfig.heightMultiplier * 6.3,
-                            width: AppWidths.width150,
+                            width: SizeConfig.widthMultiplier * 3.80,
                             radius: AppRadius.radius30,
                             textcolour: Colors.white,
                             fontSize: AppTexts.size14,

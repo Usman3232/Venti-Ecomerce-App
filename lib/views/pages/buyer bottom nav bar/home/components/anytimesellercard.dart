@@ -4,7 +4,7 @@ import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:flutter/material.dart';
@@ -41,7 +41,7 @@ class _AnyTimeSellerCardState extends State<AnyTimeSellerCard> {
       onTap: widget.onpressed,
       child: Container(
         height: SizeConfig.heightMultiplier * 29.4,
-        width: AppWidths.width292,
+        width: SizeConfig.widthMultiplier * 74.35,
         decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(AppRadius.radius15)),
@@ -52,7 +52,7 @@ class _AnyTimeSellerCardState extends State<AnyTimeSellerCard> {
               children: [
                 Container(
                   height: SizeConfig.heightMultiplier * 19.5,
-                  // width: AppWidths.width292,
+                  // width: SizeConfig.widthMultiplier * 74.35,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(AppRadius.radius15),
@@ -67,7 +67,7 @@ class _AnyTimeSellerCardState extends State<AnyTimeSellerCard> {
                   right: SizeConfig.widthMultiplier * 4.2,
                   child: Container(
                       height: SizeConfig.heightMultiplier * 3.1,
-                      width: AppWidths.width25,
+                      width: SizeConfig.widthMultiplier * 6.5,
                       decoration: const BoxDecoration(
                           color: Colors.white, shape: BoxShape.circle),
                       child: InkWell(

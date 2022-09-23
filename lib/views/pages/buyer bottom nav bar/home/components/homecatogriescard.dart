@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +23,7 @@ class HomeCategoriesWidget extends StatelessWidget {
       children: [
         Container(
           height: SizeConfig.heightMultiplier * 6.3,
-          width: AppWidths.width50,
+          width: SizeConfig.widthMultiplier * 12.5,
           decoration: const BoxDecoration(
               color: Color(0xffF1F4F9), shape: BoxShape.circle),
           child: Padding(

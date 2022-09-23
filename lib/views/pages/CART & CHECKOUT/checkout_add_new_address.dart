@@ -1,4 +1,3 @@
-
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/models/checkout_model/add_new_cards.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -10,7 +9,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../../constants/colors.dart';
 import '../../../constants/padding.dart';
 import '../../../constants/textsize.dart';
-import '../../../constants/width.dart';
+
 import '../../../utils/size_config.dart';
 import '../../widgets/auth_input_text_field.dart';
 
@@ -99,7 +98,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                 ),
                 AuthTextInputField(
                   isoutline: true,
-                  radius: AppWidths.width15,
+                  radius: SizeConfig.widthMultiplier * 3.8,
                   hintText: '',
                   inputType: TextInputType.text,
                   contentpadding: EdgeInsets.symmetric(
@@ -118,7 +117,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                 ),
                 AuthTextInputField(
                   isoutline: true,
-                  radius: AppWidths.width15,
+                  radius: SizeConfig.widthMultiplier * 3.8,
                   hintText: '',
                   inputType: TextInputType.number,
                   suffixIcon: Padding(
@@ -126,7 +125,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                     child: Image.asset(
                       'assets/images/card_logo.png',
                       height: SizeConfig.heightMultiplier * 1,
-                      width: AppWidths.width15,
+                      width: SizeConfig.widthMultiplier * 3.8,
                     ),
                   ),
                   contentpadding: EdgeInsets.symmetric(
@@ -274,7 +273,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                   callback: () {},
                   height: SizeConfig.heightMultiplier * 6.54,
                   colour: AppColors.primarylightColor,
-                  width: AppWidths.widthFull,
+                  width: SizeConfig.widthMultiplier * 100,
                   title: 'Save',
                   textcolour: Colors.white,
                   radius: AppRadius.radius30,
@@ -364,7 +363,7 @@ class AddNewCardsCarouselWidget extends StatelessWidget {
                         fontSize: AppTexts.size12, color: Colors.white),
                   ),
                   SizedBox(
-                    width: AppWidths.width30,
+                    width: SizeConfig.widthMultiplier * 7.7,
                   ),
                   Text(
                     '12/21',

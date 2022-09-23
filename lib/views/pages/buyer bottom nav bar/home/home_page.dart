@@ -5,7 +5,7 @@ import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/models/live_tracking_model/carousel_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/home/components/circlecard.dart';
@@ -215,7 +215,7 @@ class _HomePageState extends State<HomePage> {
                               Spacer(),
                               Container(
                                 height: SizeConfig.heightMultiplier * 9.1,
-                                // width: AppWidths.width303,
+                                // width: SizeConfig.widthMultiplier * 7.73,
                                 width: SizeConfig.widthMultiplier * 88,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
@@ -276,7 +276,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     Container(
                       height: SizeConfig.heightMultiplier * 9.35,
-                      // width: AppWidths.width336,
+                      // width: SizeConfig.widthMultiplier * 85.5,
                       width: SizeConfig.widthMultiplier * 91,
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -299,7 +299,7 @@ class _HomePageState extends State<HomePage> {
                                 vertical: AppPaddings.padding13),
                             child: Container(
                               height: SizeConfig.heightMultiplier * 6.3,
-                              width: AppWidths.width50,
+                              width: SizeConfig.widthMultiplier * 12.5,
                               decoration: const BoxDecoration(
                                 shape: BoxShape.circle,
                                 color: Color(0xffFFF7CC),
@@ -333,7 +333,7 @@ class _HomePageState extends State<HomePage> {
                             padding: EdgeInsets.all(AppPaddings.padding24),
                             child: Container(
                               height: SizeConfig.heightMultiplier * 3.4,
-                              width: AppWidths.width93,
+                              width: SizeConfig.widthMultiplier * 24,
                               decoration: BoxDecoration(
                                   color: Color(0xffFFF7CC),
                                   borderRadius: BorderRadius.circular(

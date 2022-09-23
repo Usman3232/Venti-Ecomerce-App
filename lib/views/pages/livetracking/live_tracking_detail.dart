@@ -2,7 +2,7 @@ import 'package:ecommerce_app/constants/colors.dart';
 
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/models/live_tracking_model/carousel_model.dart';
 import 'package:ecommerce_app/models/live_tracking_model/live_tracking_cart_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -71,7 +71,7 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
             children: [
               SizedBox(
                 height: SizeConfig.heightMultiplier * 2.658,
-                width: AppWidths.widthFull,
+                width: SizeConfig.widthMultiplier * 100,
                 child: Stack(
                   children: [
                     PageView.builder(

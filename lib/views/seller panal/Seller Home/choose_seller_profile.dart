@@ -1,7 +1,7 @@
 
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/views/seller%20panal/Anytime%20Sellers/any_time_seller_store.dart';
 import 'package:ecommerce_app/views/seller%20panal/Curated%20Store%20Seller/curated_store_seller.dart';
 import 'package:ecommerce_app/views/seller%20panal/Seller%20Home/seller_profile.dart';
@@ -38,7 +38,7 @@ class _ChooseSellerProfileState extends State<ChooseSellerProfile> {
         children: [
           SizedBox(
             height: SizeConfig.heightMultiplier * 27,
-            width: AppWidths.widthFull,
+            width: SizeConfig.widthMultiplier * 100,
             child: Stack(
               children: [
                 SizedBox(

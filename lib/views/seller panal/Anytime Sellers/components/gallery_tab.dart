@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../constants/padding.dart';
-import '../../../../../constants/width.dart';
+
 import '../../../../../models/curated_store_models/productmodel.dart';
 import '../../../../../utils/size_config.dart';
 import '../../Curated Store Seller/components/dotted_container_widget.dart';
 import '../../Curated Store Seller/curated_store_seller.dart';
+
 class GalleryTab extends StatelessWidget {
   const GalleryTab({Key? key}) : super(key: key);
 
@@ -22,22 +23,28 @@ class GalleryTab extends StatelessWidget {
       itemBuilder: (context, index) {
         return index == 0
             ? Padding(
-          padding:  EdgeInsets.only(left: AppPaddings.padding8,right: AppPaddings.padding8),
-          child: GestureDetector(
-            onTap: () {},
-            child:   DottedContainerWidget(text: 'Add Pictures',icon: false,),
-          ),
-        ) :  Container(
-          margin:  EdgeInsets.only(
-              left: AppPaddings.padding8,right: AppPaddings.padding8),
-          height: SizeConfig.heightMultiplier * 18.8,
-          width: AppWidths.width150,
-          decoration: BoxDecoration(
-              color: Colors.black,
-              borderRadius: BorderRadius.circular(20),
-              image: const DecorationImage(
-                  image: AssetImage('assets/images/product.png'), fit: BoxFit.fill)),
-        );
+                padding: EdgeInsets.only(
+                    left: AppPaddings.padding8, right: AppPaddings.padding8),
+                child: GestureDetector(
+                  onTap: () {},
+                  child: DottedContainerWidget(
+                    text: 'Add Pictures',
+                    icon: false,
+                  ),
+                ),
+              )
+            : Container(
+                margin: EdgeInsets.only(
+                    left: AppPaddings.padding8, right: AppPaddings.padding8),
+                height: SizeConfig.heightMultiplier * 18.8,
+                width: SizeConfig.widthMultiplier * 3.80,
+                decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(20),
+                    image: const DecorationImage(
+                        image: AssetImage('assets/images/product.png'),
+                        fit: BoxFit.fill)),
+              );
       },
     );
   }

@@ -6,7 +6,7 @@ import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
@@ -161,7 +161,7 @@ class _MyProfileState extends State<MyProfile> {
                     height: SizeConfig.heightMultiplier * 0.8,
                   ),
                   AuthTextInputField(
-                    radius: AppWidths.width15,
+                    radius: SizeConfig.widthMultiplier * 3.8,
                     hintText: 'Full Name',
                     isoutline: true,
                     contentpadding: EdgeInsets.all(
@@ -182,7 +182,7 @@ class _MyProfileState extends State<MyProfile> {
                   ),
                   AuthTextInputField(
                     isoutline: true,
-                    radius: AppWidths.width15,
+                    radius: SizeConfig.widthMultiplier * 3.8,
                     hintText: 'Date of birth',
                     suffixIcon: IconButton(
                       icon: const Icon(
@@ -212,7 +212,7 @@ class _MyProfileState extends State<MyProfile> {
                   ),
                   AuthTextInputField(
                     isoutline: true,
-                    radius: AppWidths.width15,
+                    radius: SizeConfig.widthMultiplier * 3.8,
                     hintText: 'Select Gender',
                     contentpadding: EdgeInsets.all(
                       AppPaddings.padding15,
@@ -305,7 +305,7 @@ class _MyProfileState extends State<MyProfile> {
                   ),
                   AuthTextInputField(
                     isoutline: true,
-                    radius: AppWidths.width15,
+                    radius: SizeConfig.widthMultiplier * 3.8,
                     hintText: 'john12@gmail.com',
                     inputType: TextInputType.emailAddress,
                     contentpadding: EdgeInsets.all(

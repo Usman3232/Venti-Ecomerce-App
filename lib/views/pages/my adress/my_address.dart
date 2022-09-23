@@ -6,7 +6,7 @@ import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/add%20new%20my%20address/add_new_address.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
@@ -301,7 +301,7 @@ class _MyAddressState extends State<MyAddress> {
             ),
             Container(
               height: SizeConfig.heightMultiplier * 36,
-              width: AppWidths.widthFull,
+              width: SizeConfig.widthMultiplier * 100,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(AppRadius.radius15),
               ),

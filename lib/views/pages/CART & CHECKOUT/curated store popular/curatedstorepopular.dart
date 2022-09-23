@@ -4,7 +4,7 @@ import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:flutter/material.dart';
@@ -158,7 +158,7 @@ class _CuratedStorePopularState extends State<CuratedStorePopular> {
                         height: SizeConfig.heightMultiplier * 4.6,
                       ),
                       Container(
-                        width: AppWidths.width325,
+                        width: SizeConfig.widthMultiplier * 82.6,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(
                               Radius.circular(AppRadius.radius15)),

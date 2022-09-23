@@ -1,6 +1,6 @@
 
 import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -60,7 +60,7 @@ class _OrdersDeliveredState extends State<OrdersDelivered> {
                         children: [
                           Container(
                             height: SizeConfig.heightMultiplier * 7.1,
-                            width: AppWidths.width64,
+                            width: SizeConfig.widthMultiplier * 16.5,
                             decoration: BoxDecoration(
                               borderRadius: const BorderRadius.all(Radius.circular(10)),
                               color: Colors.grey.withOpacity(0.4),
@@ -71,7 +71,7 @@ class _OrdersDeliveredState extends State<OrdersDelivered> {
                             ),
                           ),
                           SizedBox(
-                            width: AppWidths.width15,
+                            width: SizeConfig.widthMultiplier * 3.8,
                           ),
                           Expanded(
                             child: Column(

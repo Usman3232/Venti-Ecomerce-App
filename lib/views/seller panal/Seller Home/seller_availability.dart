@@ -3,7 +3,7 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -44,7 +44,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
         actions: [
           SvgPicture.asset(AppIcons.message),
           SizedBox(
-            width: AppWidths.width15,
+            width: SizeConfig.widthMultiplier * 3.8,
           ),
         ],
       ),
@@ -76,7 +76,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
                   inactiveColor: Colors.white,
                   activeToggleColor: AppColors.primarylightColor,
                   inactiveToggleColor: AppColors.primarylightColor,
-                  width: AppWidths.width30,
+                  width: SizeConfig.widthMultiplier * 7.7,
                   height: SizeConfig.heightMultiplier * 2.2,
                   toggleSize:12,
                   padding: 2,
@@ -150,7 +150,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
                   inactiveColor: Colors.white,
                   activeToggleColor: AppColors.primarylightColor,
                   inactiveToggleColor:AppColors.primarylightColor,
-                  width: AppWidths.width30,
+                  width: SizeConfig.widthMultiplier * 7.7,
                   height: SizeConfig.heightMultiplier * 2.2,
                   toggleSize:12,
                   padding: 2,
@@ -179,7 +179,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
                 ),
                 Container(
                   height: SizeConfig.heightMultiplier * 1.75,
-                  width: AppWidths.width15,
+                  width: SizeConfig.widthMultiplier * 3.8,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     color: const Color(0xff607FA9).withOpacity(0.5),

@@ -5,7 +5,7 @@ import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/curated%20store%20popular/curatedstorepopular.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/payment_checkout.dart';
@@ -178,7 +178,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             alignment: Alignment.center,
                             child: SizedBox(
                               height: SizeConfig.heightMultiplier * 6.3,
-                              width: AppWidths.width267,
+                              width: SizeConfig.widthMultiplier * 68,
                               child: ElevatedButton(
                                   onPressed: () {},
                                   style: ElevatedButton.styleFrom(
@@ -217,9 +217,9 @@ class _CheckoutPageState extends State<CheckoutPage> {
                   height: SizeConfig.heightMultiplier * 1.2,
                 ),
                 SizedBox(
-                  width: AppWidths.widthFull,
+                  width: SizeConfig.widthMultiplier * 100,
                   child: AuthTextInputField(
-                    radius: AppWidths.width15,
+                    radius: SizeConfig.widthMultiplier * 3.8,
                     bordercolor: Colors.black,
                     maxLine: 2,
                     contentpadding: EdgeInsets.only(
@@ -247,7 +247,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                     SizedBox(
                       width: SizeConfig.widthMultiplier * 62,
                       child: AuthTextInputField(
-                        radius: AppWidths.width15,
+                        radius: SizeConfig.widthMultiplier * 3.8,
                         bordercolor: Colors.black,
                         hintText: 'Enter your code',
                         isoutline: true,
@@ -256,7 +256,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                     ),
                     Container(
                       height: SizeConfig.heightMultiplier * 6.3,
-                      width: AppWidths.width64,
+                      width: SizeConfig.widthMultiplier * 16.5,
                       margin: EdgeInsets.only(bottom: SizeConfig.heightMultiplier * 2.5),
                       child: ElevatedButton(
                           onPressed: () {},
@@ -442,7 +442,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           },
                           title: 'PLACE ORDER',
                           height: SizeConfig.heightMultiplier * 5.95,
-                          width: AppWidths.width150,
+                          width: SizeConfig.widthMultiplier * 3.80,
                           radius: AppRadius.radius30,
                           textcolour: Colors.white,
                           fontSize: AppTexts.size14,

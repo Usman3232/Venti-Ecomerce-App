@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/models/drawer_models/order_history_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +32,7 @@ class OrderHistoryListView extends StatelessWidget {
                           listOrderHistory[i].image,
                         ),
                         fit: BoxFit.fill),
-                    borderRadius: BorderRadius.circular(AppWidths.width15),
+                    borderRadius: BorderRadius.circular(SizeConfig.widthMultiplier * 3.8),
                   ),
                 ),
                 Padding(

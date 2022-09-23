@@ -7,7 +7,7 @@ import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
@@ -458,7 +458,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                                 },
                                                 radius: 90,
                                                 height: SizeConfig.heightMultiplier * 6.3,
-                                                width: AppWidths.width150,
+                                                width: SizeConfig.widthMultiplier * 3.80,
                                                 colour: Colors.white,
                                                 title: "Reset (4)",
                                                 textcolour: Colors.black,
@@ -467,7 +467,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                                 callback: () {},
                                                 radius: 90,
                                                 height: SizeConfig.heightMultiplier * 6.3,
-                                                width: AppWidths.width150,
+                                                width: SizeConfig.widthMultiplier * 3.80,
                                                 colour:
                                                     AppColors.primarylightColor,
                                                 title: "Apply",

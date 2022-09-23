@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../constants/padding.dart';
-import '../../../../constants/width.dart';
+
 import '../../../../models/checkout_model/all_cart_checkout_model.dart';
 import '../../../../utils/size_config.dart';
 
@@ -23,7 +23,7 @@ class _ViewInvoiceState extends State<ViewInvoice> {
     return Scaffold(
       bottomSheet: Container(
         height: SizeConfig.heightMultiplier * 13.7,
-        width: AppWidths.widthFull,
+        width: SizeConfig.widthMultiplier * 100,
         color: Colors.white,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -34,7 +34,7 @@ class _ViewInvoiceState extends State<ViewInvoice> {
               radius: 20,
               title: 'ACCEPT',
               height: SizeConfig.heightMultiplier * 5.65,
-              width: AppWidths.width135,
+              width: SizeConfig.widthMultiplier * 34.5,
               colour: AppColors.primarylightColor,
             ),
             CustomTextButton(
@@ -43,7 +43,7 @@ class _ViewInvoiceState extends State<ViewInvoice> {
               title: 'Reject',
               textcolour: AppColors.primarydarkColor,
               height: SizeConfig.heightMultiplier * 5.65,
-              width: AppWidths.width135,
+              width: SizeConfig.widthMultiplier * 34.5,
               colour: const Color(0xffF1F4F9),
             ),
           ],
@@ -94,7 +94,7 @@ class _ViewInvoiceState extends State<ViewInvoice> {
                               padding: const EdgeInsets.only(right: 15),
                               child: Container(
                                 height: SizeConfig.heightMultiplier * 18,
-                                width: AppWidths.width88,
+                                width: SizeConfig.widthMultiplier * 22.2,
                                 decoration: BoxDecoration(
                                   borderRadius: const BorderRadius.all(
                                       Radius.circular(20)),
@@ -104,7 +104,7 @@ class _ViewInvoiceState extends State<ViewInvoice> {
                                 child: Image.asset(
                                   listAllCart[index].image,
                                   height: SizeConfig.heightMultiplier * 6.3,
-                                  width: AppWidths.width64,
+                                  width: SizeConfig.widthMultiplier * 16.5,
                                 ),
                               ),
                             ),

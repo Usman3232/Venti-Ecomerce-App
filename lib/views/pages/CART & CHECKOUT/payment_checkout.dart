@@ -4,7 +4,7 @@ import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/checkout_add_new_address.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/curated%20store%20popular/curatedstorepopular.dart';
@@ -77,7 +77,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
             Column(
               children: [
                 Container(
-                  width: AppWidths.widthFull,
+                  width: SizeConfig.widthMultiplier * 100,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(
                       Radius.circular(AppRadius.radius15),
@@ -185,7 +185,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                           ),
                           SizedBox(
                             height: SizeConfig.heightMultiplier * 6.3,
-                            width: AppWidths.width267,
+                            width: SizeConfig.widthMultiplier * 68,
                             child: ElevatedButton(
                                 onPressed: () {
                                   // Navigator.of(context).push(MaterialPageRoute(builder: (_)=>const CARDACTIVATION()));
@@ -233,9 +233,9 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                   height: SizeConfig.heightMultiplier * 2.5,
                 ),
                 SizedBox(
-                  width: AppWidths.widthFull,
+                  width: SizeConfig.widthMultiplier * 100,
                   child: AuthTextInputField(
-                    radius: AppWidths.width15,
+                    radius: SizeConfig.widthMultiplier * 3.8,
                     bordercolor: Colors.black,
                     hintText: 'COD/Pay at Premises',
                     isoutline: true,
@@ -243,9 +243,9 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                   ),
                 ),
                 SizedBox(
-                  width: AppWidths.widthFull,
+                  width: SizeConfig.widthMultiplier * 100,
                   child: AuthTextInputField(
-                    radius: AppWidths.width15,
+                    radius: SizeConfig.widthMultiplier * 3.8,
                     bordercolor: Colors.black,
                     hintText: 'Paypal',
                     isoutline: true,
@@ -263,7 +263,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
               left: 0,
               child: Container(
                 height: 150,
-                width: AppWidths.widthFull,
+                width: SizeConfig.widthMultiplier * 100,
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
@@ -313,7 +313,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                       ),
                       SizedBox(
                         height: SizeConfig.heightMultiplier * 7.7,
-                        width: AppWidths.widthFull,
+                        width: SizeConfig.widthMultiplier * 100,
                         child: ElevatedButton(
                             onPressed: () {
                               Get.to(NegativeStatus());

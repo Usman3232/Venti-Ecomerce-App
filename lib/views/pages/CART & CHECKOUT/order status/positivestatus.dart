@@ -4,7 +4,7 @@ import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
@@ -78,7 +78,7 @@ class PositiveStatus extends StatelessWidget {
               callback: () {},
               colour: AppColors.primarylightColor,
               height: SizeConfig.heightMultiplier * 6.54,
-              width: AppWidths.width284,
+              width: SizeConfig.widthMultiplier * 72.5,
               radius: 35,
               title: "Live Track",
               fontSize: AppTexts.size16,

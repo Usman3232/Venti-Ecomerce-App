@@ -4,7 +4,7 @@ import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-import 'package:ecommerce_app/constants/width.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/seller%20panal/OrderTracking/orders.dart';
 import 'package:ecommerce_app/views/seller%20panal/Seller%20Home/choose_seller_profile.dart';
@@ -53,7 +53,7 @@ class _SellerHomePageState extends State<SellerHomePage> {
             },
             child: Container(
               height: SizeConfig.heightMultiplier * 3.4,
-              width: AppWidths.width25,
+              width: SizeConfig.widthMultiplier * 6.5,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: AppColors.primarydarkColor.withOpacity(0.15),
@@ -199,7 +199,7 @@ class _VentiSellerCardWidgetState extends State<VentiSellerCardWidget> {
           tileColor: Colors.white,
           leading: Container(
             height: SizeConfig.heightMultiplier * 6.3,
-            width: AppWidths.width50,
+            width: SizeConfig.widthMultiplier * 12.5,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: const Color(0xff7496C2).withOpacity(0.3),
@@ -209,7 +209,7 @@ class _VentiSellerCardWidgetState extends State<VentiSellerCardWidget> {
               child: Image.asset(
                 widget.image,
                 height: SizeConfig.heightMultiplier * 3.8,
-                width: AppWidths.width30,
+                width: SizeConfig.widthMultiplier * 7.7,
               ),
             ),
           ),
