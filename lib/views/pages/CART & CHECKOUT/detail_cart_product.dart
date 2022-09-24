@@ -1,14 +1,10 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
-
-
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-
 import '../../../constants/icons.dart';
-
 import '../../../utils/size_config.dart';
 import '../../widgets/TextView.dart';
 import '../../widgets/custom_text_button.dart';

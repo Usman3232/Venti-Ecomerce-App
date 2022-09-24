@@ -1,21 +1,19 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/images.dart';
-
-
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class Confirmation extends StatefulWidget {
-  const Confirmation({Key? key}) : super(key: key);
+class MerchantConfirmation extends StatefulWidget {
+  const MerchantConfirmation({Key? key}) : super(key: key);
 
   @override
-  State<Confirmation> createState() => _ConfirmationState();
+  State<MerchantConfirmation> createState() => _MerchantConfirmationState();
 }
 
-class _ConfirmationState extends State<Confirmation> {
+class _MerchantConfirmationState extends State<MerchantConfirmation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -89,7 +87,7 @@ class _ConfirmationState extends State<Confirmation> {
               TextButton(
                 onPressed: () {},
                 child: Text(
-                  "Confirmation Time",
+                  "MerchantConfirmation Time",
                   style: TextStyle(
                     fontSize: SizeConfig.textMultiplier * 1.92,
                     fontWeight: FontWeight.w600,
@@ -120,8 +118,7 @@ class _ConfirmationState extends State<Confirmation> {
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.all(
-                              Radius.circular(30))),
+                          borderRadius: BorderRadius.all(Radius.circular(30))),
                       primary: const Color(0xffFFEDEF),
                     ),
                     child: Text(

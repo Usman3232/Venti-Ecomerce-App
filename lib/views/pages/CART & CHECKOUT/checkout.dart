@@ -2,13 +2,10 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
-
-
-
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
-import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/curated%20store%20popular/curatedstorepopular.dart';
-import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/payment_checkout.dart';
+import 'package:ecommerce_app/views/pages/payment%20checkout/payment_checkout.dart';
+import 'package:ecommerce_app/views/pages/store%20policy/store_policy.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
@@ -55,7 +52,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                 right: SizeConfig.widthMultiplier * 4),
             child: InkWell(
               onTap: () {
-                Get.to(CuratedStorePopular());
+                Get.to(StorePolicy());
               },
               child: Text(
                 'Store Policy',
@@ -72,7 +69,8 @@ class _CheckoutPageState extends State<CheckoutPage> {
       body: Stack(
         children: [
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
+            padding: EdgeInsets.symmetric(
+                horizontal: SizeConfig.widthMultiplier * 6.13),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -96,8 +94,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                     elevation: 3,
                     shadowColor: Colors.blueGrey.withOpacity(0.4),
                     shape: RoundedRectangleBorder(
-                        borderRadius:
-                            BorderRadius.circular(15)),
+                        borderRadius: BorderRadius.circular(15)),
                     child: Padding(
                       padding: EdgeInsets.symmetric(
                           horizontal: SizeConfig.widthMultiplier * 3.9),
@@ -111,8 +108,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                 width: SizeConfig.widthMultiplier * 8.6,
                                 decoration: BoxDecoration(
                                   color: Colors.blueGrey.withOpacity(0.1),
-                                  borderRadius:
-                                      BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8),
                                 ),
                                 child: Center(
                                   child: SvgPicture.asset(AppIcons.home),
@@ -136,7 +132,8 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                   child: Text(
                                     'Edit',
                                     style: TextStyle(
-                                      fontSize: SizeConfig.textMultiplier * 1.53,
+                                      fontSize:
+                                          SizeConfig.textMultiplier * 1.53,
                                       color: Colors.black,
                                       fontWeight: FontWeight.w400,
                                       letterSpacing: 1,
@@ -185,7 +182,8 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                     shape: RoundedRectangleBorder(
                                         borderRadius: BorderRadius.all(
                                             Radius.circular(
-                                                SizeConfig.widthMultiplier * 3.9))),
+                                                SizeConfig.widthMultiplier *
+                                                    3.9))),
                                     primary: AppColors.primarylightColor,
                                   ),
                                   child: Text(
@@ -262,8 +260,8 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           onPressed: () {},
                           style: ElevatedButton.styleFrom(
                             shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.all(
-                                    Radius.circular(15))),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(15))),
                             primary: AppColors.primarylightColor,
                           ),
                           child: Text(
@@ -374,21 +372,22 @@ class _CheckoutPageState extends State<CheckoutPage> {
                         height: SizeConfig.heightMultiplier * 14,
                         width: SizeConfig.widthMultiplier * 34.5,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(
-                                Radius.circular(10)),
+                            borderRadius: BorderRadius.all(Radius.circular(10)),
                             color: const Color(0xff7496C2).withOpacity(0.1),
                             image: DecorationImage(
                                 image: AssetImage(AppImages.backgroundVisa))),
                         child: Align(
                           alignment: Alignment.bottomCenter,
                           child: Padding(
-                            padding: EdgeInsets.all(SizeConfig.heightMultiplier * 1),
+                            padding:
+                                EdgeInsets.all(SizeConfig.heightMultiplier * 1),
                             child: Row(
                               children: [
                                 Text(
                                   'Last 4 digits : ',
                                   style: TextStyle(
-                                      fontSize: SizeConfig.textMultiplier * 1.28,
+                                      fontSize:
+                                          SizeConfig.textMultiplier * 1.28,
                                       color: Colors.black),
                                 ),
                                 Text(
@@ -396,7 +395,8 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                   style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.w600,
-                                      fontSize: SizeConfig.textMultiplier * 1.53),
+                                      fontSize:
+                                          SizeConfig.textMultiplier * 1.53),
                                 )
                               ],
                             ),

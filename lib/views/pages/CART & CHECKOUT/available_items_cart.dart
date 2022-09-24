@@ -2,13 +2,11 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 
-
-
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/checkout_model/all_cart_checkout_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/checkout.dart';
-import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/curated%20store%20popular/curatedstorepopular.dart';
+import 'package:ecommerce_app/views/pages/store%20policy/store_policy.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/cupertino.dart';
@@ -57,7 +55,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                 right: SizeConfig.widthMultiplier * 4),
             child: InkWell(
               onTap: () {
-                Get.to(CuratedStorePopular());
+                Get.to(StorePolicy());
               },
               child: Text(
                 'Store Policy',
@@ -77,7 +75,8 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
           children: [
             Padding(
                 padding: EdgeInsets.only(
-                    left: SizeConfig.widthMultiplier * 6.13, top: SizeConfig.heightMultiplier * 1.6),
+                    left: SizeConfig.widthMultiplier * 6.13,
+                    top: SizeConfig.heightMultiplier * 1.6),
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
@@ -98,10 +97,8 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                   children: [
                                     SlidableAction(
                                       borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(
-                                              20),
-                                          bottomLeft: Radius.circular(
-                                              20)),
+                                          topLeft: Radius.circular(20),
+                                          bottomLeft: Radius.circular(20)),
                                       onPressed: null,
                                       backgroundColor: const Color(0xffFF4C5E),
                                       foregroundColor: Colors.white,
@@ -113,14 +110,14 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                   children: [
                                     Padding(
                                       padding: EdgeInsets.only(
-                                          right: SizeConfig.widthMultiplier * 3.9),
+                                          right:
+                                              SizeConfig.widthMultiplier * 3.9),
                                       child: Container(
                                         height: AppHeights.height88,
                                         width: AppWidths.width88,
                                         decoration: BoxDecoration(
                                             borderRadius: BorderRadius.all(
-                                                Radius.circular(
-                                                    20)),
+                                                Radius.circular(20)),
                                             color: AppColors.primarydarkColor
                                                 .withOpacity(0.1),
                                             image: DecorationImage(
@@ -163,7 +160,9 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                             maxLines: 1,
                                             style: TextStyle(
                                               color: Colors.black,
-                                              fontSize: SizeConfig.textMultiplier * 1.8,
+                                              fontSize:
+                                                  SizeConfig.textMultiplier *
+                                                      1.8,
                                               fontWeight: FontWeight.w600,
                                             ),
                                           ),
@@ -176,7 +175,9 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                             '${listAllCart[index].company} . ${listAllCart[index].color} . ${listAllCart[index].size}',
                                             style: TextStyle(
                                               color: Colors.grey,
-                                              fontSize: SizeConfig.textMultiplier * 1.53,
+                                              fontSize:
+                                                  SizeConfig.textMultiplier *
+                                                      1.53,
                                               fontWeight: FontWeight.w400,
                                             ),
                                           ),
@@ -185,7 +186,9 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                           ),
                                           Padding(
                                             padding: EdgeInsets.only(
-                                                right: SizeConfig.heightMultiplier * 1.6),
+                                                right: SizeConfig
+                                                        .heightMultiplier *
+                                                    1.6),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.min,
                                               children: [
@@ -193,7 +196,9 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                                   '\$${listAllCart[index].price}',
                                                   style: TextStyle(
                                                     color: Colors.black,
-                                                    fontSize: SizeConfig.textMultiplier * 1.8,
+                                                    fontSize: SizeConfig
+                                                            .textMultiplier *
+                                                        1.8,
                                                     fontWeight: FontWeight.w700,
                                                   ),
                                                 ),
@@ -221,13 +226,16 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                                         AppIcons.minuscircle)),
                                                 Padding(
                                                   padding: EdgeInsets.symmetric(
-                                                      horizontal:
-                                                          SizeConfig.heightMultiplier * 1),
+                                                      horizontal: SizeConfig
+                                                              .heightMultiplier *
+                                                          1),
                                                   child: TextView(
                                                     text: listAllCart[index]
                                                         .value
                                                         .toString(),
-                                                    size: SizeConfig.textMultiplier * 1.8,
+                                                    size: SizeConfig
+                                                            .textMultiplier *
+                                                        1.8,
                                                     fontWeight: FontWeight.w700,
                                                   ),
                                                 ),
@@ -269,16 +277,17 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                         height: AppHeights.height50,
                       ),
                       Padding(
-                        padding: EdgeInsets.only(right: SizeConfig.widthMultiplier * 6.13),
+                        padding: EdgeInsets.only(
+                            right: SizeConfig.widthMultiplier * 6.13),
                         child: Container(
                           width: AppWidths.widthFull,
                           decoration: BoxDecoration(
                             color: AppColors.primarydarkColor.withOpacity(0.15),
-                            borderRadius:
-                                BorderRadius.circular(8),
+                            borderRadius: BorderRadius.circular(8),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(SizeConfig.heightMultiplier * 1),
+                            padding:
+                                EdgeInsets.all(SizeConfig.heightMultiplier * 1),
                             child: Text(
                               "Kindly make the payment once you collect the product from the seller as the order will be collected from the provided address!",
                               textAlign: TextAlign.center,
@@ -322,8 +331,8 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                     color: Colors.white,
                   ),
                   child: Padding(
-                    padding:
-                        EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
+                    padding: EdgeInsets.symmetric(
+                        horizontal: SizeConfig.widthMultiplier * 6.13),
                     child: Column(
                       children: [
                         SizedBox(

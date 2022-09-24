@@ -1,26 +1,22 @@
 import 'package:ecommerce_app/constants/height.dart';
-
 import 'package:ecommerce_app/models/checkout_model/add_new_cards.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_multi_formatter/formatters/masked_input_formatter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../../constants/colors.dart';
-
-
 import '../../../constants/width.dart';
 import '../../../utils/size_config.dart';
 import '../../widgets/auth_input_text_field.dart';
 
-class AddNewAddressCheckOut extends StatefulWidget {
-  const AddNewAddressCheckOut({Key? key}) : super(key: key);
+class AddNewCard extends StatefulWidget {
+  const AddNewCard({Key? key}) : super(key: key);
 
   @override
-  State<AddNewAddressCheckOut> createState() => _AddNewAddressCheckOutState();
+  State<AddNewCard> createState() => _AddNewCardState();
 }
 
-class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
+class _AddNewCardState extends State<AddNewCard> {
   final controller = PageController(viewportFraction: 0.88, keepPage: false);
   final pages = List.generate(
       listAddNewCard.length,
@@ -79,7 +75,8 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.35),
+            padding: EdgeInsets.symmetric(
+                horizontal: SizeConfig.widthMultiplier * 6.35),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -154,8 +151,8 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                           ),
                           AuthTextInputField(
                             isoutline: true,
-                            contentpadding:
-                                EdgeInsets.all(SizeConfig.widthMultiplier * 3.9),
+                            contentpadding: EdgeInsets.all(
+                                SizeConfig.widthMultiplier * 3.9),
                             radius: SizeConfig.widthMultiplier * 4,
                             hintText: '',
                             textEditingController: dateController,
@@ -326,27 +323,32 @@ class AddNewCardsCarouselWidget extends StatelessWidget {
                   Text(
                     '•••• ',
                     style: TextStyle(
-                        fontSize: SizeConfig.textMultiplier * 2.85, color: Colors.white),
+                        fontSize: SizeConfig.textMultiplier * 2.85,
+                        color: Colors.white),
                   ),
                   Text(
                     '•••• ',
                     style: TextStyle(
-                        fontSize: SizeConfig.textMultiplier * 2.85, color: Colors.white),
+                        fontSize: SizeConfig.textMultiplier * 2.85,
+                        color: Colors.white),
                   ),
                   Text(
                     '•••• ',
                     style: TextStyle(
-                        fontSize: SizeConfig.textMultiplier * 2.85, color: Colors.white),
+                        fontSize: SizeConfig.textMultiplier * 2.85,
+                        color: Colors.white),
                   ),
                   Text(
                     '•••• ',
                     style: TextStyle(
-                        fontSize: SizeConfig.textMultiplier * 2.85, color: Colors.white),
+                        fontSize: SizeConfig.textMultiplier * 2.85,
+                        color: Colors.white),
                   ),
                   Text(
                     ' $number',
                     style: TextStyle(
-                        fontSize: SizeConfig.textMultiplier * 1.53, color: Colors.white),
+                        fontSize: SizeConfig.textMultiplier * 1.53,
+                        color: Colors.white),
                   ),
                 ],
               ),
@@ -358,7 +360,8 @@ class AddNewCardsCarouselWidget extends StatelessWidget {
                   Text(
                     title,
                     style: TextStyle(
-                        fontSize: SizeConfig.textMultiplier * 1.53, color: Colors.white),
+                        fontSize: SizeConfig.textMultiplier * 1.53,
+                        color: Colors.white),
                   ),
                   SizedBox(
                     width: AppWidths.width30,
@@ -366,7 +369,8 @@ class AddNewCardsCarouselWidget extends StatelessWidget {
                   Text(
                     '12/21',
                     style: TextStyle(
-                        fontSize: SizeConfig.textMultiplier * 1.53, color: Colors.white),
+                        fontSize: SizeConfig.textMultiplier * 1.53,
+                        color: Colors.white),
                   ),
                 ],
               ),

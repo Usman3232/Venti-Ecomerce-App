@@ -1,12 +1,10 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-
-
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/all_carts.dart';
-import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/curated%20store%20popular/curatedstorepopular.dart';
+import 'package:ecommerce_app/views/pages/store%20policy/store_policy.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
@@ -44,7 +42,7 @@ class NegativeStatus extends StatelessWidget {
                 right: SizeConfig.widthMultiplier * 4),
             child: InkWell(
               onTap: () {
-                Get.to(CuratedStorePopular());
+                Get.to(StorePolicy());
               },
               child: TextView(
                 text: "Store Policy",
@@ -57,7 +55,8 @@ class NegativeStatus extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 4.55),
+        padding:
+            EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 4.55),
         child: Column(
           children: [
             SizedBox(

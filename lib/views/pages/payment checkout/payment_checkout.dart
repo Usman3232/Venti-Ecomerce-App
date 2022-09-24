@@ -2,13 +2,11 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/images.dart';
 
-
-
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
-import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/checkout_add_new_address.dart';
-import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/curated%20store%20popular/curatedstorepopular.dart';
-import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/order%20status/negativestatus.dart';
+import 'package:ecommerce_app/views/pages/add%20new%20card/add_new_card.dart';
+import 'package:ecommerce_app/views/pages/order%20status/negativestatus.dart';
+import 'package:ecommerce_app/views/pages/store%20policy/store_policy.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -27,7 +25,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: true,
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.white,
@@ -56,7 +54,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                 right: SizeConfig.widthMultiplier * 4),
             child: InkWell(
               onTap: () {
-                Get.to(CuratedStorePopular());
+                Get.to(StorePolicy());
               },
               child: Text(
                 "Store Policy",
@@ -71,7 +69,8 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
         ],
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
+        padding:
+            EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
         child: Stack(
           children: [
             Column(
@@ -189,7 +188,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                             child: ElevatedButton(
                                 onPressed: () {
                                   // Navigator.of(context).push(MaterialPageRoute(builder: (_)=>const CARDACTIVATION()));
-                                  Get.to(AddNewAddressCheckOut());
+                                  Get.to(AddNewCard());
                                 },
                                 style: ElevatedButton.styleFrom(
                                   shape: RoundedRectangleBorder(
@@ -214,7 +213,8 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                                       'Add new card',
                                       style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: SizeConfig.textMultiplier * 1.53,
+                                        fontSize:
+                                            SizeConfig.textMultiplier * 1.53,
                                         fontWeight: FontWeight.w400,
                                       ),
                                     ),
@@ -280,8 +280,8 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                   ),
                 ),
                 child: Padding(
-                  padding:
-                      EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
+                  padding: EdgeInsets.symmetric(
+                      horizontal: SizeConfig.widthMultiplier * 6.13),
                   child: Column(
                     children: [
                       SizedBox(
@@ -323,8 +323,8 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                                   side: const BorderSide(
                                     style: BorderStyle.none,
                                   ),
-                                  borderRadius: BorderRadius.all(
-                                      Radius.circular(30))),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(30))),
                               primary: AppColors.primarylightColor,
                             ),
                             child: Text(
