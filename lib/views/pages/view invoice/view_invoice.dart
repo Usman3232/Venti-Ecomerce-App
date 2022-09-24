@@ -4,9 +4,9 @@ import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
+import '../../../../constants/height.dart';
 import '../../../../constants/padding.dart';
-
+import '../../../../constants/width.dart';
 import '../../../../models/checkout_model/all_cart_checkout_model.dart';
 import '../../../../utils/size_config.dart';
 
@@ -22,8 +22,8 @@ class _ViewInvoiceState extends State<ViewInvoice> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomSheet: Container(
-        height: SizeConfig.heightMultiplier * 13.7,
-        width: SizeConfig.widthMultiplier * 100,
+        height: AppHeights.height110,
+        width: AppWidths.widthFull,
         color: Colors.white,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -33,8 +33,8 @@ class _ViewInvoiceState extends State<ViewInvoice> {
               callback: () {},
               radius: 20,
               title: 'ACCEPT',
-              height: SizeConfig.heightMultiplier * 5.65,
-              width: SizeConfig.widthMultiplier * 34.5,
+              height: AppHeights.height45,
+              width: AppWidths.width135,
               colour: AppColors.primarylightColor,
             ),
             CustomTextButton(
@@ -42,8 +42,8 @@ class _ViewInvoiceState extends State<ViewInvoice> {
               radius: 20,
               title: 'Reject',
               textcolour: AppColors.primarydarkColor,
-              height: SizeConfig.heightMultiplier * 5.65,
-              width: SizeConfig.widthMultiplier * 34.5,
+              height: AppHeights.height45,
+              width: AppWidths.width135,
               colour: const Color(0xffF1F4F9),
             ),
           ],
@@ -93,8 +93,8 @@ class _ViewInvoiceState extends State<ViewInvoice> {
                             Padding(
                               padding: const EdgeInsets.only(right: 15),
                               child: Container(
-                                height: SizeConfig.heightMultiplier * 18,
-                                width: SizeConfig.widthMultiplier * 22.2,
+                                height: AppHeights.height88,
+                                width: AppWidths.width88,
                                 decoration: BoxDecoration(
                                   borderRadius: const BorderRadius.all(
                                       Radius.circular(20)),
@@ -103,8 +103,8 @@ class _ViewInvoiceState extends State<ViewInvoice> {
                                 ),
                                 child: Image.asset(
                                   listAllCart[index].image,
-                                  height: SizeConfig.heightMultiplier * 6.3,
-                                  width: SizeConfig.widthMultiplier * 16.5,
+                                  height: AppHeights.height50,
+                                  width: AppWidths.width64,
                                 ),
                               ),
                             ),
@@ -145,7 +145,7 @@ class _ViewInvoiceState extends State<ViewInvoice> {
                                     ],
                                   ),
                                   SizedBox(
-                                    height: SizeConfig.heightMultiplier * 1.2,
+                                    height: AppHeights.height10,
                                   ),
                                   Text(
                                     '\$${listAllCart[index].price}',

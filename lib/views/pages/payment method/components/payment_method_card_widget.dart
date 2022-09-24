@@ -1,6 +1,6 @@
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -21,7 +21,7 @@ class PaymentMethodCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 3.8),
+      padding: EdgeInsets.only(left: AppWidths.width15),
       child: Container(
         decoration: BoxDecoration(
           image: DecorationImage(image: AssetImage(image), fit: BoxFit.fill),
@@ -29,7 +29,7 @@ class PaymentMethodCard extends StatelessWidget {
         ),
         child: Padding(
           padding: EdgeInsets.symmetric(
-              horizontal: SizeConfig.widthMultiplier * 6.5, vertical: SizeConfig.heightMultiplier * 3.4),
+              horizontal: AppWidths.width25, vertical: AppHeights.height27),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -41,7 +41,7 @@ class PaymentMethodCard extends StatelessWidget {
                     fontWeight: FontWeight.w700),
               ),
               SizedBox(
-                height: SizeConfig.heightMultiplier * 3.4,
+                height: AppHeights.height27,
               ),
               Row(
                 children: [
@@ -51,7 +51,7 @@ class PaymentMethodCard extends StatelessWidget {
                         color: Colors.white, fontSize: AppTexts.size30),
                   ),
                   SizedBox(
-                    width: SizeConfig.widthMultiplier * 5.1,
+                    width: AppWidths.width20,
                   ),
                   Text(
                     '••••',
@@ -59,7 +59,7 @@ class PaymentMethodCard extends StatelessWidget {
                         color: Colors.white, fontSize: AppTexts.size30),
                   ),
                   SizedBox(
-                    width: SizeConfig.widthMultiplier * 5.1,
+                    width: AppWidths.width20,
                   ),
                   Text(
                     '••••',
@@ -67,7 +67,7 @@ class PaymentMethodCard extends StatelessWidget {
                         color: Colors.white, fontSize: AppTexts.size30),
                   ),
                   SizedBox(
-                    width: SizeConfig.widthMultiplier * 5.1,
+                    width: AppWidths.width20,
                   ),
                   Text(
                     num.toString(),

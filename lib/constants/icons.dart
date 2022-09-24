@@ -21,9 +21,9 @@ class AppIcons {
   static String back = "assets/icons/backbutton.svg";
   static String addbluecircle = "assets/icons/addbluecircle.svg";
   static String minusbluecircle = "assets/icons/minusbluecircle.svg";
-  static String addcircle = "assets/icons/addcirlce.svg";
+  static String addcircle = "assets/icons/addcircle.svg";
 
-  static String minuscircle = "assets/icons/minuscirlce.svg";
+  static String minuscircle = "assets/icons/minuscircle.svg";
 
   static String message = "assets/icons/message.svg";
   static String clover = "assets/icons/clover.svg";

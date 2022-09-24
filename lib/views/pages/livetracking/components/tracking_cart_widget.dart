@@ -1,4 +1,4 @@
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -79,7 +79,7 @@ class TrackingCartWidget extends StatelessWidget {
                         fontWeight: FontWeight.w400,
                       ),
                     ),
-                    SizedBox(height: SizeConfig.heightMultiplier * 1),
+                    SizedBox(height: AppHeights.height8),
                     Text(
                       '₹$price',
                       style: GoogleFonts.sourceSansPro(
@@ -98,7 +98,7 @@ class TrackingCartWidget extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: SizeConfig.heightMultiplier * 2.5,
+            height: AppHeights.height20,
           )
         ],
       ),

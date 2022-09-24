@@ -1,8 +1,7 @@
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
-import 'package:ecommerce_app/utils/size_config.dart';
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../../../../constants/padding.dart';
@@ -57,7 +56,7 @@ class _OrderStatusSellerState extends State<OrderStatusSeller> {
                     return Padding(
                       padding: const EdgeInsets.symmetric(vertical: 8.0),
                       child: Container(
-                        height: SizeConfig.heightMultiplier * 18,
+                        height: AppHeights.height88,
                         width: double.infinity,
                         decoration: const BoxDecoration(
                           color: Colors.white,
@@ -70,8 +69,8 @@ class _OrderStatusSellerState extends State<OrderStatusSeller> {
                           child: Row(
                             children: [
                               Container(
-                                height: SizeConfig.heightMultiplier * 7.1,
-                                width: SizeConfig.widthMultiplier * 16.5,
+                                height: AppHeights.height57,
+                                width: AppWidths.width64,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
                                   color: Colors.grey.withOpacity(0.4),
@@ -84,7 +83,7 @@ class _OrderStatusSellerState extends State<OrderStatusSeller> {
                                 ),
                               ),
                               SizedBox(
-                                width: SizeConfig.widthMultiplier * 3.8,
+                                width: AppWidths.width15,
                               ),
                               Expanded(
                                 child: Column(
@@ -202,7 +201,7 @@ class _OrderStatusSellerState extends State<OrderStatusSeller> {
                     );
                   }),
               SizedBox(
-                height: SizeConfig.heightMultiplier * 1,
+                height: AppHeights.height8,
               ),
             ],
           ),

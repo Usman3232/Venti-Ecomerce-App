@@ -1,9 +1,9 @@
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -63,7 +63,7 @@ class _ConfirmationState extends State<Confirmation> {
           child: Column(
             children: [
               SizedBox(
-                height: SizeConfig.heightMultiplier * 1.2,
+                height: AppHeights.height10,
               ),
               Text(
                 'Hi there, we have received your order! We’re just checking with the seller and will let you know as soon as the seller confirms! ',
@@ -76,7 +76,7 @@ class _ConfirmationState extends State<Confirmation> {
                 ),
               ),
               SizedBox(
-                height: SizeConfig.heightMultiplier * 5.65,
+                height: AppHeights.height45,
               ),
               Image.asset(
                 AppImages.timer,
@@ -84,7 +84,7 @@ class _ConfirmationState extends State<Confirmation> {
                 width: SizeConfig.widthMultiplier * 67,
               ),
               SizedBox(
-                height: SizeConfig.heightMultiplier * 5.95,
+                height: AppHeights.height48,
               ),
               TextButton(
                 onPressed: () {},
@@ -99,7 +99,7 @@ class _ConfirmationState extends State<Confirmation> {
                 ),
               ),
               SizedBox(
-                height: SizeConfig.heightMultiplier * 1,
+                height: AppHeights.height8,
               ),
               Text(
                 "02:39",
@@ -111,11 +111,11 @@ class _ConfirmationState extends State<Confirmation> {
                 ),
               ),
               SizedBox(
-                height: SizeConfig.heightMultiplier * 5.95,
+                height: AppHeights.height48,
               ),
               SizedBox(
-                height: SizeConfig.heightMultiplier * 6.3,
-                width: SizeConfig.widthMultiplier * 3.80,
+                height: AppHeights.height50,
+                width: AppWidths.width150,
                 child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(

@@ -2,11 +2,11 @@ import 'dart:async';
 
 import 'package:country_picker/country_picker.dart';
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
@@ -91,7 +91,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                 ),
                 AuthTextInputField(
                   isoutline: true,
-                  radius: SizeConfig.widthMultiplier * 3.8,
+                  radius: AppWidths.width15,
                   hintText: 'Title Address',
                   contentpadding: EdgeInsets.all(
                     AppPaddings.padding15,
@@ -110,7 +110,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                   height: SizeConfig.heightMultiplier * 1,
                 ),
                 AuthTextInputField(
-                  radius: SizeConfig.widthMultiplier * 3.8,
+                  radius: AppWidths.width15,
                   hintText: 'Full Name',
                   isoutline: true,
                   contentpadding: EdgeInsets.all(
@@ -132,7 +132,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                 ),
                 AuthTextInputField(
                   isoutline: true,
-                  radius: SizeConfig.widthMultiplier * 3.8,
+                  radius: AppWidths.width15,
                   hintText: 'Street Address',
                   contentpadding: EdgeInsets.all(
                     AppPaddings.padding15,
@@ -152,7 +152,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                 ),
                 AuthTextInputField(
                   isoutline: true,
-                  radius: SizeConfig.widthMultiplier * 3.8,
+                  radius: AppWidths.width15,
                   hintText: 'B 206',
                   inputType: TextInputType.text,
                   contentpadding: EdgeInsets.all(
@@ -219,7 +219,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                                   fontSize: AppTexts.size14),
                             ),
                             SizedBox(
-                              height: SizeConfig.heightMultiplier * 1,
+                              height: AppHeights.height8,
                             ),
                             AuthTextInputField(
                               isoutline: true,
@@ -333,11 +333,11 @@ class _AddNewAddressState extends State<AddNewAddress> {
                   ],
                 ),
                 SizedBox(
-                  height: SizeConfig.heightMultiplier * 1.2,
+                  height: AppHeights.height10,
                 ),
                 Container(
                   height: SizeConfig.heightMultiplier * 17.6,
-                  width: SizeConfig.widthMultiplier * 100,
+                  width: AppWidths.widthFull,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(AppRadius.radius15),
                   ),
@@ -350,7 +350,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                     mapType: MapType.normal,
                   ),
                 ),
-                SizedBox(height: SizeConfig.heightMultiplier * 3.4),
+                SizedBox(height: AppHeights.height27),
                 CustomTextButton(
                     title: 'Save',
                     colour: AppColors.primarylightColor,

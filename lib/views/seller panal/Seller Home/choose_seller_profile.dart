@@ -1,7 +1,7 @@
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/views/seller%20panal/Anytime%20Sellers/any_time_seller_store.dart';
 import 'package:ecommerce_app/views/seller%20panal/Curated%20Store%20Seller/curated_store_seller.dart';
 import 'package:ecommerce_app/views/seller%20panal/Seller%20Home/seller_profile.dart';
@@ -38,7 +38,7 @@ class _ChooseSellerProfileState extends State<ChooseSellerProfile> {
         children: [
           SizedBox(
             height: SizeConfig.heightMultiplier * 27,
-            width: SizeConfig.widthMultiplier * 100,
+            width: AppWidths.widthFull,
             child: Stack(
               children: [
                 SizedBox(
@@ -133,7 +133,7 @@ class _ChooseSellerProfileState extends State<ChooseSellerProfile> {
                   fontWeight: FontWeight.w600,
                 ),
                 SizedBox(
-                  height: SizeConfig.heightMultiplier * 2.5,
+                  height: AppHeights.height20,
                 ),
                 ...List.generate(
                   buttons.length,
@@ -152,6 +152,8 @@ class _ChooseSellerProfileState extends State<ChooseSellerProfile> {
                         setState(() {
                           selected = index;
                           if (selected == 0) {
+                            Get.to(AnyTimeSellerStoreDetail());
+                          } else if (selected == 1) {
                             Get.to(AnyTimeSellerStoreDetail());
                           } else if (selected == 2) {
                             Get.to(CuratedStoreSellerDetail());
@@ -194,7 +196,7 @@ class ChooseSellerButton extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
-        height: SizeConfig.heightMultiplier * 6.54,
+        height: AppHeights.height52,
         decoration: BoxDecoration(
             color: color,
             borderRadius: BorderRadius.all(Radius.circular(AppRadius.radius10)),

@@ -1,11 +1,11 @@
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/live_tracking_model/carousel_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/home/components/circlecard.dart';
@@ -88,12 +88,31 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: SingleChildScrollView(
-        physics: const BouncingScrollPhysics(),
+        physics: BouncingScrollPhysics(),
         child: SizedBox(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Stories(),
+              // SizedBox(
+              //   height: SizeConfig.heightMultiplier * 3.4,
+              // ),
+              SizedBox(
+                height: SizeConfig.heightMultiplier * 9,
+                child: ListView.builder(
+                  itemCount: homecircle_model.length,
+                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
+                  physics: BouncingScrollPhysics(),
+                  itemBuilder: (context, index) {
+                    return Padding(
+                      padding: EdgeInsets.only(
+                          left: SizeConfig.widthMultiplier * 3.5),
+                      child: HomeCircleWidget(
+                          image: homecircle_model[index].image),
+                    );
+                  },
+                ),
+              ),
               Padding(
                 padding:
                     EdgeInsets.symmetric(horizontal: AppPaddings.padding18),
@@ -101,11 +120,39 @@ class _HomePageState extends State<HomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(
-                      height: SizeConfig.heightMultiplier * 2.2,
+                      height: AppHeights.height18,
                     ),
-                    NewAdds(controller: controller, pages: pages),
                     SizedBox(
-                      height: SizeConfig.heightMultiplier * 3.25,
+                      height: SizeConfig.heightMultiplier * 27.1,
+                      child: Stack(
+                        children: [
+                          PageView.builder(
+                            physics: const BouncingScrollPhysics(),
+                            padEnds: false,
+                            controller: controller,
+                            itemCount: pages.length,
+                            itemBuilder: (BuildContext context, index) {
+                              return pages[index];
+                            },
+                          ),
+                          Positioned(
+                            bottom: SizeConfig.heightMultiplier * 2.1,
+                            left: SizeConfig.widthMultiplier * 4,
+                            child: SmoothPageIndicator(
+                              controller: controller,
+                              count: pages.length,
+                              effect: ExpandingDotsEffect(
+                                activeDotColor: Colors.black,
+                                dotHeight: SizeConfig.heightMultiplier * 0.4,
+                                dotWidth: SizeConfig.widthMultiplier * 1.5,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: AppHeights.height26,
                     ),
                     TextView(
                       text: "Live Tracking",
@@ -114,14 +161,14 @@ class _HomePageState extends State<HomePage> {
                       size: AppTexts.size20,
                     ),
                     SizedBox(
-                      height: SizeConfig.heightMultiplier * 1,
+                      height: AppHeights.height8,
                     ),
                     GestureDetector(
                       onTap: () {
                         Get.to(LiveTrackingMap());
                       },
                       child: Container(
-                        height: SizeConfig.heightMultiplier * 20,
+                        height: AppHeights.height160,
                         width: SizeConfig.widthMultiplier * 91,
                         decoration: BoxDecoration(
                             color: const Color(0xffE5EDF4),
@@ -214,8 +261,8 @@ class _HomePageState extends State<HomePage> {
                               ),
                               Spacer(),
                               Container(
-                                height: SizeConfig.heightMultiplier * 9.1,
-                                // width: SizeConfig.widthMultiplier * 7.73,
+                                height: AppHeights.height73,
+                                // width: AppWidths.width303,
                                 width: SizeConfig.widthMultiplier * 88,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
@@ -232,7 +279,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     SizedBox(
-                      height: SizeConfig.heightMultiplier * 2.5,
+                      height: AppHeights.height20,
                     ),
                     SectionTitleAndSeeAll(
                         title: "Categories",
@@ -241,7 +288,7 @@ class _HomePageState extends State<HomePage> {
                         },
                         titlesize: AppTexts.size16),
                     SizedBox(
-                      height: SizeConfig.heightMultiplier * 2.5,
+                      height: AppHeights.height20,
                     ),
                   ],
                 ),
@@ -275,8 +322,8 @@ class _HomePageState extends State<HomePage> {
                       height: SizeConfig.heightMultiplier * 5.1,
                     ),
                     Container(
-                      height: SizeConfig.heightMultiplier * 9.35,
-                      // width: SizeConfig.widthMultiplier * 85.5,
+                      height: AppHeights.height75,
+                      // width: AppWidths.width336,
                       width: SizeConfig.widthMultiplier * 91,
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -298,8 +345,8 @@ class _HomePageState extends State<HomePage> {
                                 horizontal: AppPaddings.padding15,
                                 vertical: AppPaddings.padding13),
                             child: Container(
-                              height: SizeConfig.heightMultiplier * 6.3,
-                              width: SizeConfig.widthMultiplier * 12.5,
+                              height: AppHeights.height50,
+                              width: AppWidths.width50,
                               decoration: const BoxDecoration(
                                 shape: BoxShape.circle,
                                 color: Color(0xffFFF7CC),
@@ -333,7 +380,7 @@ class _HomePageState extends State<HomePage> {
                             padding: EdgeInsets.all(AppPaddings.padding24),
                             child: Container(
                               height: SizeConfig.heightMultiplier * 3.4,
-                              width: SizeConfig.widthMultiplier * 24,
+                              width: AppWidths.width93,
                               decoration: BoxDecoration(
                                   color: Color(0xffFFF7CC),
                                   borderRadius: BorderRadius.circular(
@@ -351,14 +398,14 @@ class _HomePageState extends State<HomePage> {
                         ],
                       ),
                     ),
-                    SizedBox(height: SizeConfig.heightMultiplier * 4.6),
+                    SizedBox(height: AppHeights.height35),
                     TextView(
                       text: "Curated Stores",
                       fontWeight: FontWeight.w700,
                       size: AppTexts.size20,
                     ),
                     SizedBox(
-                      height: SizeConfig.heightMultiplier * 1,
+                      height: AppHeights.height8,
                     ),
                     TextView(
                       text: "Trending",
@@ -366,7 +413,7 @@ class _HomePageState extends State<HomePage> {
                       size: AppTexts.size16,
                     ),
                     SizedBox(
-                      height: SizeConfig.heightMultiplier * 2.2,
+                      height: AppHeights.height18,
                     ),
                   ],
                 ),
@@ -398,7 +445,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(
-                height: SizeConfig.heightMultiplier * 2.65,
+                height: AppHeights.height21,
               ),
               Padding(
                 padding: EdgeInsets.only(left: AppPaddings.padding24),
@@ -410,7 +457,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(
-                height: SizeConfig.heightMultiplier * 2.2,
+                height: AppHeights.height18,
               ),
               SizedBox(
                 height: SizeConfig.heightMultiplier * 29,
@@ -428,6 +475,10 @@ class _HomePageState extends State<HomePage> {
                           location: curatedshop_model[index].location,
                           reviews: curatedshop_model[index].reviews,
                           rating: curatedshop_model[index].rating,
+                          onpressed: () {
+                            Get.to(Stores(
+                                title: "Curated Stores", isstore: "iscurated"));
+                          },
                           favourite: curatedshop_model[index].favourite),
                     );
                   },
@@ -446,14 +497,17 @@ class _HomePageState extends State<HomePage> {
                           horizontal: AppPaddings.padding24),
                       child: SectionTitleAndSeeAll(
                           title: "AnyTime Sellers",
-                          onpress: () {},
+                          onpress: () {
+                            Get.to(Stores(
+                                title: "AnyTime Seller", isstore: "isanytime"));
+                          },
                           titlesize: AppTexts.size20),
                     ),
                     SizedBox(
-                      height: SizeConfig.heightMultiplier * 3.25,
+                      height: AppHeights.height26,
                     ),
                     SizedBox(
-                      height: SizeConfig.heightMultiplier * 29.4,
+                      height: AppHeights.height236,
                       child: ListView.builder(
                         itemCount: anytimeseller_model.length,
                         scrollDirection: Axis.horizontal,
@@ -470,6 +524,11 @@ class _HomePageState extends State<HomePage> {
                                 location: anytimeseller_model[index].location,
                                 time: anytimeseller_model[index].time,
                                 reviews: anytimeseller_model[index].reviews,
+                                onpressed: () {
+                                  Get.to(Stores(
+                                      title: "AnyTime Seller",
+                                      isstore: "isanytime"));
+                                },
                                 rating: anytimeseller_model[index].rating),
                           );
                         },
@@ -479,20 +538,23 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(
-                height: SizeConfig.heightMultiplier * 3.1,
+                height: AppHeights.height25,
               ),
               Padding(
                   padding:
                       EdgeInsets.symmetric(horizontal: AppPaddings.padding24),
                   child: SectionTitleAndSeeAll(
                       title: "Service Providers",
-                      onpress: () {},
+                      onpress: () {
+                        Get.to(Stores(
+                            title: "AnyTime Seller", isstore: "isanytime"));
+                      },
                       titlesize: AppTexts.size20)),
               SizedBox(
-                height: SizeConfig.heightMultiplier * 2.65,
+                height: AppHeights.height21,
               ),
               SizedBox(
-                height: SizeConfig.heightMultiplier * 27.9,
+                height: AppHeights.height224,
                 child: ListView.builder(
                   itemCount: homeserviceprovider_model.length,
                   scrollDirection: Axis.horizontal,
@@ -502,12 +564,16 @@ class _HomePageState extends State<HomePage> {
                     return Padding(
                       padding: EdgeInsets.only(left: AppPaddings.padding18),
                       child: ServiceProviderCard(
-                          image: homeserviceprovider_model[index].image,
-                          title: homeserviceprovider_model[index].title,
-                          reviews: homeserviceprovider_model[index].reviews,
-                          rating: homeserviceprovider_model[index].rating,
-                          favourite:
-                              homeserviceprovider_model[index].favourite),
+                        image: homeserviceprovider_model[index].image,
+                        title: homeserviceprovider_model[index].title,
+                        reviews: homeserviceprovider_model[index].reviews,
+                        rating: homeserviceprovider_model[index].rating,
+                        favourite: homeserviceprovider_model[index].favourite,
+                        onpressed: () {
+                          Get.to(Stores(
+                              title: "AnyTime Seller", isstore: "isanytime"));
+                        },
+                      ),
                     );
                   },
                 ),
@@ -518,75 +584,6 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
         ),
-      ),
-    );
-  }
-}
-
-class NewAdds extends StatelessWidget {
-  const NewAdds({
-    Key? key,
-    required this.controller,
-    required this.pages,
-  }) : super(key: key);
-
-  final PageController controller;
-  final List<CarouselCard> pages;
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: SizeConfig.heightMultiplier * 27.1,
-      child: Stack(
-        children: [
-          PageView.builder(
-            physics: const BouncingScrollPhysics(),
-            padEnds: false,
-            controller: controller,
-            itemCount: pages.length,
-            itemBuilder: (BuildContext context, index) {
-              return pages[index];
-            },
-          ),
-          Positioned(
-            bottom: SizeConfig.heightMultiplier * 2.1,
-            left: SizeConfig.widthMultiplier * 4,
-            child: SmoothPageIndicator(
-              controller: controller,
-              count: pages.length,
-              effect: ExpandingDotsEffect(
-                activeDotColor: Colors.black,
-                dotHeight: SizeConfig.heightMultiplier * 0.4,
-                dotWidth: SizeConfig.widthMultiplier * 1.5,
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class Stories extends StatelessWidget {
-  const Stories({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: SizeConfig.heightMultiplier * 9,
-      child: ListView.builder(
-        itemCount: homecircle_model.length,
-        shrinkWrap: true,
-        scrollDirection: Axis.horizontal,
-        physics: const BouncingScrollPhysics(),
-        itemBuilder: (context, index) {
-          return Padding(
-            padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 3.5),
-            child: HomeCircleWidget(image: homecircle_model[index].image),
-          );
-        },
       ),
     );
   }

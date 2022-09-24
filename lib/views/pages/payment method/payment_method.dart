@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/drawer_models/order_history_model.dart';
 import 'package:ecommerce_app/models/drawer_models/payment_method_card_model.dart';
 import 'package:ecommerce_app/models/drawer_models/payment_method_categories_model.dart';
@@ -64,7 +64,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
               height: SizeConfig.heightMultiplier * 2,
             ),
             SizedBox(
-              height: SizeConfig.heightMultiplier * 2.57,
+              height: AppHeights.height207,
               child: PageView.builder(
                 physics: const BouncingScrollPhysics(),
                 controller: controller,
@@ -91,7 +91,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
               height: SizeConfig.heightMultiplier * 2,
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.5),
+              padding: EdgeInsets.symmetric(horizontal: AppWidths.width25),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -113,7 +113,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
                       },
                     ),
                   ),
-                  SizedBox(height: SizeConfig.heightMultiplier * 3.4),
+                  SizedBox(height: AppHeights.height27),
                   Text(
                     'Recent transactions',
                     style: GoogleFonts.sourceSansPro(
@@ -141,7 +141,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
                                       ),
                                       fit: BoxFit.fill),
                                   borderRadius:
-                                      BorderRadius.circular(SizeConfig.widthMultiplier * 3.8),
+                                      BorderRadius.circular(AppWidths.width15),
                                 ),
                               ),
                               Padding(

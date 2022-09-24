@@ -1,12 +1,12 @@
 import 'dart:async';
 
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/add%20new%20my%20address/add_new_address.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
@@ -77,7 +77,7 @@ class _MyAddressState extends State<MyAddress> {
                 });
               },
               child: SizedBox(
-                height: SizeConfig.heightMultiplier * 14.9,
+                height: AppHeights.height120,
                 child: Card(
                   color: Colors.white,
                   elevation: card1 ? 3 : 0,
@@ -124,7 +124,7 @@ class _MyAddressState extends State<MyAddress> {
                             Row(
                               children: [
                                 Container(
-                                  height: SizeConfig.heightMultiplier * 4.1,
+                                  height: AppHeights.height33,
                                   width: SizeConfig.widthMultiplier * 8.5,
                                   decoration: BoxDecoration(
                                       color: const Color(0xff7496C2)
@@ -227,7 +227,7 @@ class _MyAddressState extends State<MyAddress> {
                             Row(
                               children: [
                                 Container(
-                                  height: SizeConfig.heightMultiplier * 4.1,
+                                  height: AppHeights.height33,
                                   width: SizeConfig.widthMultiplier * 8.5,
                                   decoration: BoxDecoration(
                                       color: const Color(0xff7496C2)
@@ -275,7 +275,7 @@ class _MyAddressState extends State<MyAddress> {
               ),
             ),
             SizedBox(
-              height: SizeConfig.heightMultiplier * 2.5,
+              height: AppHeights.height20,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -297,11 +297,11 @@ class _MyAddressState extends State<MyAddress> {
               ],
             ),
             SizedBox(
-              height: SizeConfig.heightMultiplier * 1,
+              height: AppHeights.height8,
             ),
             Container(
-              height: SizeConfig.heightMultiplier * 36,
-              width: SizeConfig.widthMultiplier * 100,
+              height: AppHeights.height289,
+              width: AppWidths.widthFull,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(AppRadius.radius15),
               ),
@@ -315,7 +315,7 @@ class _MyAddressState extends State<MyAddress> {
               ),
             ),
             SizedBox(
-              height: SizeConfig.heightMultiplier * 3,
+              height: AppHeights.height24,
             ),
             CustomTextButton(
                 title: 'Add new address',

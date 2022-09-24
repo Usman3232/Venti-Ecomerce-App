@@ -1,13 +1,14 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:ecommerce_app/constants/colors.dart';
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/controllers/button_controller.dart';
-import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/drawer/drawer.dart';
 import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/home/home_page.dart';
 import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/map/map_location_page.dart';
 import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/products/product_page.dart';
+import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/settings/settingscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -21,7 +22,7 @@ class BuyerBottomNavBar extends StatefulWidget {
 class _BuyerBottomNavBarState extends State<BuyerBottomNavBar> {
   List<Widget> screens = [
     ProductPage(),
-    Center(child: Text("SettingPage")),
+    SettingScreen(),
     MapLocationPage(),
     Center(child: Text("3")),
     HomePage(),
@@ -55,8 +56,8 @@ class _BuyerBottomNavBarState extends State<BuyerBottomNavBar> {
           });
         },
         child: Container(
-          height: SizeConfig.heightMultiplier * 3,
-          width: SizeConfig.widthMultiplier * 6.5,
+          height: AppHeights.height24,
+          width: AppWidths.width25,
           decoration: BoxDecoration(),
           child: Image.asset(
             AppIcons.bottomhomeicon,
@@ -70,8 +71,8 @@ class _BuyerBottomNavBarState extends State<BuyerBottomNavBar> {
           final color = isActive ? Colors.blue : Colors.grey;
           final image = isActive ? images[index] : unselectedImages[index];
           return SizedBox(
-            height: SizeConfig.heightMultiplier * 3,
-            width: SizeConfig.widthMultiplier * 6.5,
+            height: AppHeights.height24,
+            width: AppWidths.width25,
             child: Image.asset(
               image,
               color: color,

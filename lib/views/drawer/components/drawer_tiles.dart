@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -26,11 +26,11 @@ class DrawerTiles extends StatelessWidget {
         ListTile(
           dense: true,
           onTap: onTap,
-          minLeadingWidth: SizeConfig.widthMultiplier * 5.9,
+          minLeadingWidth: AppWidths.width23,
           leading: SvgPicture.asset(
             icon,
-            height: SizeConfig.heightMultiplier * 3,
-            width: SizeConfig.widthMultiplier * 5.9,
+            height: AppHeights.height24,
+            width: AppWidths.width23,
           ),
           title: Text(
             title,

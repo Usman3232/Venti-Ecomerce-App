@@ -1,9 +1,9 @@
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/all_carts.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/curated%20store%20popular/curatedstorepopular.dart';
@@ -61,11 +61,11 @@ class NegativeStatus extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(
-              height: SizeConfig.heightMultiplier * 7.1,
+              height: AppHeights.height57,
             ),
             SvgPicture.asset(AppIcons.crosscircle),
             SizedBox(
-              height: SizeConfig.heightMultiplier * 6.3,
+              height: AppHeights.height50,
             ),
             TextView(
               text: "Oops!",
@@ -73,7 +73,7 @@ class NegativeStatus extends StatelessWidget {
               fontWeight: FontWeight.w600,
               size: AppTexts.size20,
             ),
-            SizedBox(height: SizeConfig.heightMultiplier * 5),
+            SizedBox(height: AppHeights.height40),
             TextView(
               text:
                   "Sorry your order has been cancelled because of failure of payment!",
@@ -82,15 +82,15 @@ class NegativeStatus extends StatelessWidget {
               size: AppTexts.size15,
             ),
             SizedBox(
-              height: SizeConfig.heightMultiplier * 6.3,
+              height: AppHeights.height50,
             ),
             CustomTextButton(
               callback: () {
                 Get.to(AllCartsCheckOut());
               },
               colour: AppColors.primarylightColor,
-              height: SizeConfig.heightMultiplier * 6.54,
-              width: SizeConfig.widthMultiplier * 72.5,
+              height: AppHeights.height52,
+              width: AppWidths.width284,
               radius: 35,
               title: "Return to Cart",
               fontSize: AppTexts.size16,

@@ -11,6 +11,7 @@ import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../../../constants/colors.dart';
+import '../../../../constants/height.dart';
 import '../../../../constants/icons.dart';
 import '../../../../constants/padding.dart';
 import '../../../../utils/size_config.dart';
@@ -85,7 +86,7 @@ class _ProductPageState extends State<ProductPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: SizeConfig.heightMultiplier * 1.2,
+                height: AppHeights.height10,
               ),
               Padding(
                 padding:
@@ -122,7 +123,7 @@ class _ProductPageState extends State<ProductPage> {
                 ),
               ),
               SizedBox(
-                height: SizeConfig.heightMultiplier * 4.6,
+                height: AppHeights.height35,
               ),
               Padding(
                 padding:
@@ -139,7 +140,7 @@ class _ProductPageState extends State<ProductPage> {
                 ),
               ),
               SizedBox(
-                height: SizeConfig.heightMultiplier * 1.2,
+                height: AppHeights.height10,
               ),
               Padding(
                 padding:
@@ -151,7 +152,7 @@ class _ProductPageState extends State<ProductPage> {
                 ),
               ),
               SizedBox(
-                height: SizeConfig.heightMultiplier * 1.2,
+                height: AppHeights.height10,
               ),
               SizedBox(
                 height: SizeConfig.heightMultiplier * 27,
@@ -169,13 +170,19 @@ class _ProductPageState extends State<ProductPage> {
                           location: curatedshop_model[index].location,
                           reviews: curatedshop_model[index].reviews,
                           rating: curatedshop_model[index].rating,
+                          onpressed: () {
+                            Get.to(Stores(
+                              title: "Curated Stores",
+                              isstore: "iscurated",
+                            ));
+                          },
                           favourite: curatedshop_model[index].favourite),
                     );
                   },
                 ),
               ),
               SizedBox(
-                height: SizeConfig.heightMultiplier * 2.65,
+                height: AppHeights.height21,
               ),
               Padding(
                 padding: EdgeInsets.only(left: AppPaddings.padding24),
@@ -187,7 +194,7 @@ class _ProductPageState extends State<ProductPage> {
                 ),
               ),
               SizedBox(
-                height: SizeConfig.heightMultiplier * 2.2,
+                height: AppHeights.height18,
               ),
               SizedBox(
                 height: SizeConfig.heightMultiplier * 29,
@@ -205,6 +212,12 @@ class _ProductPageState extends State<ProductPage> {
                           location: curatedshop_model[index].location,
                           reviews: curatedshop_model[index].reviews,
                           rating: curatedshop_model[index].rating,
+                          onpressed: () {
+                            Get.to(Stores(
+                              title: "Curated Stores",
+                              isstore: "iscurated",
+                            ));
+                          },
                           favourite: curatedshop_model[index].favourite),
                     );
                   },
@@ -246,10 +259,10 @@ class _ProductPageState extends State<ProductPage> {
                       ),
                     ),
                     SizedBox(
-                      height: SizeConfig.heightMultiplier * 3.25,
+                      height: AppHeights.height26,
                     ),
                     SizedBox(
-                      height: SizeConfig.heightMultiplier * 29.4,
+                      height: AppHeights.height236,
                       child: ListView.builder(
                         itemCount: anytimeseller_model.length,
                         scrollDirection: Axis.horizontal,
@@ -267,6 +280,12 @@ class _ProductPageState extends State<ProductPage> {
                               time: anytimeseller_model[index].time,
                               reviews: anytimeseller_model[index].reviews,
                               rating: anytimeseller_model[index].rating,
+                              onpressed: () {
+                                Get.to(Stores(
+                                  title: "AnyTime Seller",
+                                  isstore: "isanytime",
+                                ));
+                              },
                               islocation: true,
                             ),
                           );
@@ -277,7 +296,7 @@ class _ProductPageState extends State<ProductPage> {
                 ),
               ),
               SizedBox(
-                height: SizeConfig.heightMultiplier * 6.3,
+                height: AppHeights.height50,
               ),
             ],
           ),

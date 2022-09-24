@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
@@ -83,7 +83,7 @@ class _MyDrawerState extends State<MyDrawer> {
             ),
           ),
           SizedBox(
-            height: SizeConfig.heightMultiplier * 1,
+            height: AppHeights.height8,
           ),
           Text(
             'Joshuna Gillani',
@@ -94,7 +94,7 @@ class _MyDrawerState extends State<MyDrawer> {
             ),
           ),
           SizedBox(
-            height: SizeConfig.heightMultiplier * 5.95,
+            height: AppHeights.height48,
           ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding13),

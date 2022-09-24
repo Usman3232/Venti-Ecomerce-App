@@ -1,10 +1,10 @@
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/curated_store_models/productmodel.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/all_carts.dart';
@@ -50,7 +50,7 @@ class _CuratedStoreDetailState extends State<CuratedStoreDetail> {
                   child: Column(
                     children: [
                       SizedBox(
-                        height: SizeConfig.heightMultiplier * 8.2,
+                        height: AppHeights.height66,
                       ),
                       Row(
                         children: [
@@ -136,7 +136,7 @@ class _CuratedStoreDetailState extends State<CuratedStoreDetail> {
               ),
             ),
             Positioned(
-              top: SizeConfig.heightMultiplier * 13.7,
+              top: AppHeights.height110,
               child: Image.asset("assets/images/RalphLauren.png"),
             ),
             Positioned(
@@ -144,7 +144,7 @@ class _CuratedStoreDetailState extends State<CuratedStoreDetail> {
               left: 0,
               right: 0,
               child: Container(
-                height: SizeConfig.heightMultiplier * 6.545,
+                height: AppHeights.height525,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
                       topRight: Radius.circular(AppRadius.radius30),
@@ -167,7 +167,7 @@ class _CuratedStoreDetailState extends State<CuratedStoreDetail> {
                               size: AppTexts.size20,
                             ),
                             SizedBox(
-                              height: SizeConfig.heightMultiplier * 1.2,
+                              height: AppHeights.height10,
                             ),
                             Row(
                               children: [
@@ -246,7 +246,7 @@ class _CuratedStoreDetailState extends State<CuratedStoreDetail> {
                               height: SizeConfig.heightMultiplier * 2,
                             ),
                             SizedBox(
-                              height: SizeConfig.heightMultiplier * 1,
+                              height: AppHeights.height8,
                             ),
                           ],
                         ),

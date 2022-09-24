@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:country_picker/country_picker.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
@@ -15,7 +15,7 @@ import '../../../../constants/icons.dart';
 import '../../../../constants/images.dart';
 import '../../../../constants/radius.dart';
 import '../../../../constants/textsize.dart';
-
+import '../../../../constants/width.dart';
 import '../../../../utils/size_config.dart';
 
 class SellerProfile extends StatefulWidget {
@@ -65,7 +65,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     height: SizeConfig.heightMultiplier * 1,
                   ),
                   AuthTextInputField(
-                    radius: SizeConfig.widthMultiplier * 3.8,
+                    radius: AppWidths.width15,
                     hintText: 'Full Name',
                     isoutline: true,
                     contentpadding: EdgeInsets.symmetric(
@@ -85,7 +85,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     height: SizeConfig.heightMultiplier * 1,
                   ),
                   AuthTextInputField(
-                    radius: SizeConfig.widthMultiplier * 3.8,
+                    radius: AppWidths.width15,
                     hintText: 'Select category',
                     isoutline: true,
                     suffixIcon: IconButton(
@@ -109,7 +109,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     height: SizeConfig.heightMultiplier * 1,
                   ),
                   AuthTextInputField(
-                    radius: SizeConfig.widthMultiplier * 3.8,
+                    radius: AppWidths.width15,
                     hintText: 'Enter Store Description',
                     isoutline: true,
                     maxLine: 4,
@@ -130,7 +130,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     height: SizeConfig.heightMultiplier * 1,
                   ),
                   AuthTextInputField(
-                    radius: SizeConfig.widthMultiplier * 3.8,
+                    radius: AppWidths.width15,
                     hintText: 'Enter your website',
                     isoutline: true,
                     contentpadding: EdgeInsets.symmetric(
@@ -150,7 +150,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     height: SizeConfig.heightMultiplier * 1,
                   ),
                   AuthTextInputField(
-                    radius: SizeConfig.widthMultiplier * 3.8,
+                    radius: AppWidths.width15,
                     hintText: 'Social Media Links',
                     isoutline: true,
                     contentpadding: EdgeInsets.symmetric(
@@ -170,7 +170,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     height: SizeConfig.heightMultiplier * 1,
                   ),
                   AuthTextInputField(
-                    radius: SizeConfig.widthMultiplier * 3.8,
+                    radius: AppWidths.width15,
                     hintText: 'Enter GST',
                     isoutline: true,
                     contentpadding: EdgeInsets.symmetric(
@@ -190,7 +190,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     height: SizeConfig.heightMultiplier * 1,
                   ),
                   AuthTextInputField(
-                    radius: SizeConfig.widthMultiplier * 3.8,
+                    radius: AppWidths.width15,
                     hintText: 'Email',
                     isoutline: true,
                     inputType: TextInputType.emailAddress,
@@ -316,13 +316,13 @@ class MapUploadButtonWidget extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: SizeConfig.heightMultiplier * 1.75,
+          height: AppHeights.height14,
         ),
         InkWell(
           onTap: () {},
           child: Container(
-            height: SizeConfig.heightMultiplier * 19.5,
-            width: SizeConfig.widthMultiplier * 100,
+            height: AppHeights.height156,
+            width: AppWidths.widthFull,
             decoration: BoxDecoration(
               color: AppColors.primarylightColor.withOpacity(0.3),
               borderRadius: BorderRadius.circular(15),
@@ -337,7 +337,7 @@ class MapUploadButtonWidget extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: SizeConfig.heightMultiplier * 2.5,
+          height: AppHeights.height20,
         ),
         Text(
           'Upload Certificate of Completion',
@@ -347,13 +347,13 @@ class MapUploadButtonWidget extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: SizeConfig.heightMultiplier * 1.75,
+          height: AppHeights.height14,
         ),
         InkWell(
           onTap: () {},
           child: Container(
-            height: SizeConfig.heightMultiplier * 13.7,
-            width: SizeConfig.widthMultiplier * 100,
+            height: AppHeights.height110,
+            width: AppWidths.widthFull,
             decoration: BoxDecoration(
               color: AppColors.primarylightColor.withOpacity(0.3),
               borderRadius: BorderRadius.circular(15),
@@ -368,7 +368,7 @@ class MapUploadButtonWidget extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: SizeConfig.heightMultiplier * 2.5,
+          height: AppHeights.height20,
         ),
         Text(
           'Location',
@@ -378,13 +378,13 @@ class MapUploadButtonWidget extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: SizeConfig.heightMultiplier * 1.2,
+          height: AppHeights.height10,
         ),
         ClipRRect(
           borderRadius: BorderRadius.all(Radius.circular(AppRadius.radius20)),
           child: SizedBox(
             height: SizeConfig.heightMultiplier * 12.6,
-            width: SizeConfig.widthMultiplier * 100,
+            width: AppWidths.widthFull,
             child: GoogleMap(
               zoomControlsEnabled: false,
               onMapCreated: (GoogleMapController controller) {
@@ -395,12 +395,12 @@ class MapUploadButtonWidget extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(height: SizeConfig.heightMultiplier * 3.4),
+        SizedBox(height: AppHeights.height27),
         CustomTextButton(
             title: 'Save',
             colour: AppColors.primarylightColor,
-            height: SizeConfig.heightMultiplier * 7.1,
-            width: SizeConfig.widthMultiplier * 100,
+            height: AppHeights.height57,
+            width: AppWidths.widthFull,
             textcolour: Colors.white,
             fontSize: AppTexts.size14,
             radius: AppRadius.radius15,
@@ -422,7 +422,7 @@ class LeadingProfileWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: SizeConfig.heightMultiplier * 27,
-      width: SizeConfig.widthMultiplier * 100,
+      width: AppWidths.widthFull,
       child: Stack(
         children: [
           SizedBox(

@@ -1,10 +1,10 @@
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:flutter/material.dart';
@@ -41,7 +41,7 @@ class _CuratedStorePopularState extends State<CuratedStorePopular> {
                   child: Column(
                     children: [
                       SizedBox(
-                        height: SizeConfig.heightMultiplier * 8.2,
+                        height: AppHeights.height66,
                       ),
                       Row(
                         children: [
@@ -117,7 +117,7 @@ class _CuratedStorePopularState extends State<CuratedStorePopular> {
               ),
             ),
             Positioned(
-              top: SizeConfig.heightMultiplier * 13.7,
+              top: AppHeights.height110,
               child: Image.asset("assets/images/RalphLauren.png"),
             ),
             Positioned(
@@ -125,7 +125,7 @@ class _CuratedStorePopularState extends State<CuratedStorePopular> {
               left: 0,
               right: 0,
               child: Container(
-                height: SizeConfig.heightMultiplier * 6.545,
+                height: AppHeights.height525,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
                       topRight: Radius.circular(AppRadius.radius30),
@@ -147,7 +147,7 @@ class _CuratedStorePopularState extends State<CuratedStorePopular> {
                         fontWeight: FontWeight.w600,
                       ),
                       SizedBox(
-                        height: SizeConfig.heightMultiplier * 1.2,
+                        height: AppHeights.height10,
                       ),
                       TextView(
                         text: "Store Policy",
@@ -155,10 +155,10 @@ class _CuratedStorePopularState extends State<CuratedStorePopular> {
                         fontWeight: FontWeight.w400,
                       ),
                       SizedBox(
-                        height: SizeConfig.heightMultiplier * 4.6,
+                        height: AppHeights.height37,
                       ),
                       Container(
-                        width: SizeConfig.widthMultiplier * 82.6,
+                        width: AppWidths.width325,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(
                               Radius.circular(AppRadius.radius15)),

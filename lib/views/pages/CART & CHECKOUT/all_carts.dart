@@ -1,10 +1,10 @@
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/checkout_model/all_cart_checkout_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/available_items_cart.dart';
@@ -116,8 +116,8 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                               Padding(
                                 padding: const EdgeInsets.only(right: 15),
                                 child: Container(
-                                  height: SizeConfig.heightMultiplier * 18,
-                                  width: SizeConfig.widthMultiplier * 22.2,
+                                  height: AppHeights.height88,
+                                  width: AppWidths.width88,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.all(
                                         Radius.circular(AppRadius.radius20)),
@@ -126,8 +126,8 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                                   ),
                                   child: Image.asset(
                                     listAllCart[index].image,
-                                    height: SizeConfig.heightMultiplier * 6.3,
-                                    width: SizeConfig.widthMultiplier * 16.5,
+                                    height: AppHeights.height50,
+                                    width: AppWidths.width64,
                                   ),
                                 ),
                               ),
@@ -158,7 +158,7 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                                       ),
                                     ),
                                     SizedBox(
-                                      height: SizeConfig.heightMultiplier * 1.2,
+                                      height: AppHeights.height10,
                                     ),
                                     Padding(
                                       padding: EdgeInsets.only(
@@ -234,7 +234,7 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                 left: 0,
                 right: 0,
                 child: Container(
-                    height: SizeConfig.heightMultiplier * 14.9,
+                    height: AppHeights.height120,
                     width: double.infinity,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.only(
@@ -249,7 +249,7 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                         child: Column(
                           children: [
                             SizedBox(
-                              height: SizeConfig.heightMultiplier * 2.65,
+                              height: AppHeights.height21,
                             ),
                             Row(
                               children: [
@@ -282,8 +282,8 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                                     Get.to(AvailableCartCheckout());
                                   },
                                   title: 'CHECK OUT',
-                                  height: SizeConfig.heightMultiplier * 6.3,
-                                  width: SizeConfig.widthMultiplier * 3.80,
+                                  height: AppHeights.height50,
+                                  width: AppWidths.width150,
                                   radius: AppRadius.radius30,
                                   textcolour: Colors.white,
                                   fontSize: AppTexts.size14,
@@ -316,8 +316,8 @@ class AcceptButton extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: SizeConfig.heightMultiplier * 6.3,
-        width: SizeConfig.widthMultiplier * 3.80,
+        height: AppHeights.height50,
+        width: AppWidths.width150,
         decoration: BoxDecoration(
           border:
               isBorder ? Border.all(color: AppColors.primarydarkColor) : null,

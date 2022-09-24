@@ -2,12 +2,12 @@ import 'dart:typed_data';
 import 'dart:ui' as ui;
 import 'package:custom_info_window/custom_info_window.dart';
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
@@ -309,7 +309,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                               size: AppTexts.size19,
                                             ),
                                             SizedBox(
-                                              height: SizeConfig.heightMultiplier * 2.85,
+                                              height: AppHeights.height23,
                                             ),
                                             Row(
                                               children: [
@@ -358,7 +358,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                               ],
                                             ),
                                             SizedBox(
-                                              height: SizeConfig.heightMultiplier * 3.1,
+                                              height: AppHeights.height25,
                                             ),
                                             TextView(
                                               text: "Type",
@@ -366,7 +366,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                               size: AppTexts.size16,
                                             ),
                                             SizedBox(
-                                              height: SizeConfig.heightMultiplier * 2.5,
+                                              height: AppHeights.height20,
                                             )
                                           ],
                                         ),
@@ -431,7 +431,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                       ),
                                       Spacer(),
                                       Container(
-                                        height: SizeConfig.heightMultiplier * 6.3 * 2,
+                                        height: AppHeights.height50 * 2,
                                         decoration: BoxDecoration(
                                             color: Colors.white,
                                             borderRadius: BorderRadius.vertical(
@@ -457,8 +457,8 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                                   });
                                                 },
                                                 radius: 90,
-                                                height: SizeConfig.heightMultiplier * 6.3,
-                                                width: SizeConfig.widthMultiplier * 3.80,
+                                                height: AppHeights.height50,
+                                                width: AppWidths.width150,
                                                 colour: Colors.white,
                                                 title: "Reset (4)",
                                                 textcolour: Colors.black,
@@ -466,8 +466,8 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                               CustomTextButton(
                                                 callback: () {},
                                                 radius: 90,
-                                                height: SizeConfig.heightMultiplier * 6.3,
-                                                width: SizeConfig.widthMultiplier * 3.80,
+                                                height: AppHeights.height50,
+                                                width: AppWidths.width150,
                                                 colour:
                                                     AppColors.primarylightColor,
                                                 title: "Apply",

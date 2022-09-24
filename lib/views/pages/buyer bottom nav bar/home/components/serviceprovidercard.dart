@@ -1,9 +1,9 @@
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:flutter/material.dart';
@@ -17,11 +17,13 @@ class ServiceProviderCard extends StatefulWidget {
     required this.reviews,
     required this.rating,
     required this.favourite,
+    this.onpressed,
   }) : super(key: key);
   final String image, title;
   final int reviews;
   final double rating;
   bool favourite;
+  VoidCallback? onpressed;
 
   @override
   State<ServiceProviderCard> createState() => _ServiceProviderCardState();
@@ -32,51 +34,54 @@ class _ServiceProviderCardState extends State<ServiceProviderCard> {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Container(
-          height: SizeConfig.heightMultiplier * 27.9,
-          // width: SizeConfig.widthMultiplier * 3.80,
-          width: SizeConfig.widthMultiplier * 39.5,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadius.radius20),
-            image: DecorationImage(
-                image: AssetImage(widget.image), fit: BoxFit.cover),
-          ),
-          child: Padding(
-            padding: EdgeInsets.only(bottom: 10, left: 10),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                TextView(
-                  text: widget.title,
-                  fontWeight: FontWeight.w600,
-                  size: AppTexts.size13,
-                  color: Colors.white,
-                ),
-                Row(
-                  children: [
-                    SvgPicture.asset(AppIcons.star),
-                    SizedBox(
-                      width: SizeConfig.widthMultiplier * 1.6,
-                    ),
-                    TextView(
-                      text: widget.rating.toString(),
-                      size: AppTexts.size13,
-                      fontWeight: FontWeight.w700,
-                      color: Colors.white,
-                    ),
-                    SizedBox(
-                      width: SizeConfig.widthMultiplier * 1.6,
-                    ),
-                    TextView(
-                      text: widget.reviews.toString() + "( Reviews)",
-                      size: AppTexts.size13,
-                      fontWeight: FontWeight.w400,
-                      color: Color(0xffE9E8E8),
-                    ),
-                  ],
-                )
-              ],
+        GestureDetector(
+          onTap: widget.onpressed,
+          child: Container(
+            height: AppHeights.height224,
+            // width: AppWidths.width150,
+            width: SizeConfig.widthMultiplier * 39.5,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(AppRadius.radius20),
+              image: DecorationImage(
+                  image: AssetImage(widget.image), fit: BoxFit.cover),
+            ),
+            child: Padding(
+              padding: EdgeInsets.only(bottom: 10, left: 10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  TextView(
+                    text: widget.title,
+                    fontWeight: FontWeight.w600,
+                    size: AppTexts.size13,
+                    color: Colors.white,
+                  ),
+                  Row(
+                    children: [
+                      SvgPicture.asset(AppIcons.star),
+                      SizedBox(
+                        width: SizeConfig.widthMultiplier * 1.6,
+                      ),
+                      TextView(
+                        text: widget.rating.toString(),
+                        size: AppTexts.size13,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                      ),
+                      SizedBox(
+                        width: SizeConfig.widthMultiplier * 1.6,
+                      ),
+                      TextView(
+                        text: widget.reviews.toString() + "( Reviews)",
+                        size: AppTexts.size13,
+                        fontWeight: FontWeight.w400,
+                        color: Color(0xffE9E8E8),
+                      ),
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
         ),
@@ -84,8 +89,8 @@ class _ServiceProviderCardState extends State<ServiceProviderCard> {
           top: SizeConfig.heightMultiplier * 1.9,
           right: SizeConfig.widthMultiplier * 4.2,
           child: Container(
-              height: SizeConfig.heightMultiplier * 3.1,
-              width: SizeConfig.widthMultiplier * 6.5,
+              height: AppHeights.height25,
+              width: AppWidths.width25,
               decoration: const BoxDecoration(
                   color: Colors.white, shape: BoxShape.circle),
               child: InkWell(

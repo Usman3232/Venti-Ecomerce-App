@@ -1,10 +1,10 @@
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/checkout_add_new_address.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/curated%20store%20popular/curatedstorepopular.dart';
@@ -77,7 +77,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
             Column(
               children: [
                 Container(
-                  width: SizeConfig.widthMultiplier * 100,
+                  width: AppWidths.widthFull,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(
                       Radius.circular(AppRadius.radius15),
@@ -102,7 +102,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                           ListTile(
                             leading: Image.asset(
                               AppImages.cardLogo,
-                              height: SizeConfig.heightMultiplier * 3.4,
+                              height: AppHeights.height27,
                               width: SizeConfig.widthMultiplier * 9,
                             ),
                             title: Text(
@@ -129,7 +129,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                           ListTile(
                             leading: Image.asset(
                               AppImages.visa,
-                              height: SizeConfig.heightMultiplier * 3.4,
+                              height: AppHeights.height27,
                               width: SizeConfig.widthMultiplier * 9,
                             ),
                             title: Text(
@@ -156,7 +156,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                           ListTile(
                             leading: Image.asset(
                               AppImages.american,
-                              height: SizeConfig.heightMultiplier * 3.4,
+                              height: AppHeights.height27,
                               width: SizeConfig.widthMultiplier * 9,
                             ),
                             title: Text(
@@ -181,11 +181,11 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                             ),
                           ),
                           SizedBox(
-                            height: SizeConfig.heightMultiplier * 1,
+                            height: AppHeights.height8,
                           ),
                           SizedBox(
-                            height: SizeConfig.heightMultiplier * 6.3,
-                            width: SizeConfig.widthMultiplier * 68,
+                            height: AppHeights.height50,
+                            width: AppWidths.width267,
                             child: ElevatedButton(
                                 onPressed: () {
                                   // Navigator.of(context).push(MaterialPageRoute(builder: (_)=>const CARDACTIVATION()));
@@ -222,7 +222,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                                 )),
                           ),
                           SizedBox(
-                            height: SizeConfig.heightMultiplier * 3.4,
+                            height: AppHeights.height27,
                           ),
                         ],
                       )
@@ -230,12 +230,12 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                   ),
                 ),
                 SizedBox(
-                  height: SizeConfig.heightMultiplier * 2.5,
+                  height: AppHeights.height20,
                 ),
                 SizedBox(
-                  width: SizeConfig.widthMultiplier * 100,
+                  width: AppWidths.widthFull,
                   child: AuthTextInputField(
-                    radius: SizeConfig.widthMultiplier * 3.8,
+                    radius: AppWidths.width15,
                     bordercolor: Colors.black,
                     hintText: 'COD/Pay at Premises',
                     isoutline: true,
@@ -243,9 +243,9 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                   ),
                 ),
                 SizedBox(
-                  width: SizeConfig.widthMultiplier * 100,
+                  width: AppWidths.widthFull,
                   child: AuthTextInputField(
-                    radius: SizeConfig.widthMultiplier * 3.8,
+                    radius: AppWidths.width15,
                     bordercolor: Colors.black,
                     hintText: 'Paypal',
                     isoutline: true,
@@ -253,7 +253,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                   ),
                 ),
                 SizedBox(
-                  height: SizeConfig.heightMultiplier * 2.2,
+                  height: AppHeights.height18,
                 ),
               ],
             ),
@@ -263,7 +263,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
               left: 0,
               child: Container(
                 height: 150,
-                width: SizeConfig.widthMultiplier * 100,
+                width: AppWidths.widthFull,
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
@@ -285,7 +285,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                   child: Column(
                     children: [
                       SizedBox(
-                        height: SizeConfig.heightMultiplier * 2.5,
+                        height: AppHeights.height20,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -309,11 +309,11 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                         ],
                       ),
                       SizedBox(
-                        height: SizeConfig.heightMultiplier * 2.5,
+                        height: AppHeights.height20,
                       ),
                       SizedBox(
-                        height: SizeConfig.heightMultiplier * 7.7,
-                        width: SizeConfig.widthMultiplier * 100,
+                        height: AppHeights.height62,
+                        width: AppWidths.widthFull,
                         child: ElevatedButton(
                             onPressed: () {
                               Get.to(NegativeStatus());

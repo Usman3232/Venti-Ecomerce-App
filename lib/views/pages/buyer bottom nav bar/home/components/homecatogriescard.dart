@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:flutter/material.dart';
@@ -22,8 +22,8 @@ class HomeCategoriesWidget extends StatelessWidget {
     return Column(
       children: [
         Container(
-          height: SizeConfig.heightMultiplier * 6.3,
-          width: SizeConfig.widthMultiplier * 12.5,
+          height: AppHeights.height50,
+          width: AppWidths.width50,
           decoration: const BoxDecoration(
               color: Color(0xffF1F4F9), shape: BoxShape.circle),
           child: Padding(
@@ -32,7 +32,7 @@ class HomeCategoriesWidget extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: SizeConfig.heightMultiplier * 1.2,
+          height: AppHeights.height10,
         ),
         TextView(
           text: title,

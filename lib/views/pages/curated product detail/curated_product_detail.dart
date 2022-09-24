@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
@@ -50,7 +50,7 @@ class _ProductDetailState extends State<ProductDetail> {
                     child: Column(
                       children: [
                         SizedBox(
-                          height: SizeConfig.heightMultiplier * 8.2,
+                          height: AppHeights.height66,
                         ),
                         Row(
                           children: [
@@ -391,7 +391,7 @@ class _ProductCustomizationState extends State<ProductCustomization> {
               moreStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
             ),
             SizedBox(
-              height: SizeConfig.heightMultiplier * 1.2,
+              height: AppHeights.height10,
             ),
             TextView(
               text: "Color",

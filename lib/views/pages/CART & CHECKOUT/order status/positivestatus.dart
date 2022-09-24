@@ -1,10 +1,10 @@
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
@@ -50,11 +50,11 @@ class PositiveStatus extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(
-              height: SizeConfig.heightMultiplier * 7.1,
+              height: AppHeights.height57,
             ),
             SvgPicture.asset(AppIcons.tickcircle),
             SizedBox(
-              height: SizeConfig.heightMultiplier * 6.3,
+              height: AppHeights.height50,
             ),
             TextView(
               text: "Congratulations! Your Order has been placed successfully",
@@ -63,7 +63,7 @@ class PositiveStatus extends StatelessWidget {
               size: AppTexts.size20,
             ),
             SizedBox(
-              height: SizeConfig.heightMultiplier * 4.1,
+              height: AppHeights.height33,
             ),
             TextView(
               text: "The Estimated Delivery time is 12 hours.",
@@ -72,13 +72,13 @@ class PositiveStatus extends StatelessWidget {
               size: AppTexts.size15,
             ),
             SizedBox(
-              height: SizeConfig.heightMultiplier * 6.3,
+              height: AppHeights.height50,
             ),
             CustomTextButton(
               callback: () {},
               colour: AppColors.primarylightColor,
-              height: SizeConfig.heightMultiplier * 6.54,
-              width: SizeConfig.widthMultiplier * 72.5,
+              height: AppHeights.height52,
+              width: AppWidths.width284,
               radius: 35,
               title: "Live Track",
               fontSize: AppTexts.size16,

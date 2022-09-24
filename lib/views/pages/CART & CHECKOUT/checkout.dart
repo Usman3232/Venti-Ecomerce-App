@@ -1,11 +1,11 @@
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/curated%20store%20popular/curatedstorepopular.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/payment_checkout.dart';
@@ -77,7 +77,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: SizeConfig.heightMultiplier * 1.2,
+                  height: AppHeights.height10,
                 ),
                 Text(
                   "Shipping Address",
@@ -87,10 +87,10 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       fontWeight: FontWeight.w600),
                 ),
                 SizedBox(
-                  height: SizeConfig.heightMultiplier * 1.2,
+                  height: AppHeights.height10,
                 ),
                 SizedBox(
-                  height: SizeConfig.heightMultiplier * 2.855,
+                  height: AppHeights.height235,
                   child: Card(
                     color: Colors.white,
                     elevation: 3,
@@ -107,7 +107,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           Row(
                             children: [
                               Container(
-                                height: SizeConfig.heightMultiplier * 4.1,
+                                height: AppHeights.height33,
                                 width: SizeConfig.widthMultiplier * 8.6,
                                 decoration: BoxDecoration(
                                   color: Colors.blueGrey.withOpacity(0.1),
@@ -162,7 +162,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             ),
                           ),
                           SizedBox(
-                            height: SizeConfig.heightMultiplier * 2.5,
+                            height: AppHeights.height20,
                           ),
                           Text(
                             "27 Independence Street, Sukamulya, Cikembar, Sukabumi, Jawa Barat 43157",
@@ -172,13 +172,13 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             ),
                           ),
                           SizedBox(
-                            height: SizeConfig.heightMultiplier * 3.1,
+                            height: AppHeights.height25,
                           ),
                           Align(
                             alignment: Alignment.center,
                             child: SizedBox(
-                              height: SizeConfig.heightMultiplier * 6.3,
-                              width: SizeConfig.widthMultiplier * 68,
+                              height: AppHeights.height50,
+                              width: AppWidths.width267,
                               child: ElevatedButton(
                                   onPressed: () {},
                                   style: ElevatedButton.styleFrom(
@@ -204,7 +204,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                   ),
                 ),
                 SizedBox(
-                  height: SizeConfig.heightMultiplier * 1.2,
+                  height: AppHeights.height10,
                 ),
                 Text(
                   "Special Intruction",
@@ -214,12 +214,12 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       fontWeight: FontWeight.w600),
                 ),
                 SizedBox(
-                  height: SizeConfig.heightMultiplier * 1.2,
+                  height: AppHeights.height10,
                 ),
                 SizedBox(
-                  width: SizeConfig.widthMultiplier * 100,
+                  width: AppWidths.widthFull,
                   child: AuthTextInputField(
-                    radius: SizeConfig.widthMultiplier * 3.8,
+                    radius: AppWidths.width15,
                     bordercolor: Colors.black,
                     maxLine: 2,
                     contentpadding: EdgeInsets.only(
@@ -239,7 +239,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       fontWeight: FontWeight.w600),
                 ),
                 SizedBox(
-                  height: SizeConfig.heightMultiplier * 1.2,
+                  height: AppHeights.height10,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -247,7 +247,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                     SizedBox(
                       width: SizeConfig.widthMultiplier * 62,
                       child: AuthTextInputField(
-                        radius: SizeConfig.widthMultiplier * 3.8,
+                        radius: AppWidths.width15,
                         bordercolor: Colors.black,
                         hintText: 'Enter your code',
                         isoutline: true,
@@ -255,9 +255,9 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       ),
                     ),
                     Container(
-                      height: SizeConfig.heightMultiplier * 6.3,
-                      width: SizeConfig.widthMultiplier * 16.5,
-                      margin: EdgeInsets.only(bottom: SizeConfig.heightMultiplier * 2.5),
+                      height: AppHeights.height50,
+                      width: AppWidths.width64,
+                      margin: EdgeInsets.only(bottom: AppHeights.height20),
                       child: ElevatedButton(
                           onPressed: () {},
                           style: ElevatedButton.styleFrom(
@@ -406,7 +406,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                     Column(
                       children: [
                         // SizedBox(
-                        //   height: SizeConfig.heightMultiplier * 1,
+                        //   height: AppHeights.height8,
                         // ),
                         Row(
                           children: [
@@ -434,15 +434,15 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           ],
                         ),
                         SizedBox(
-                          height: SizeConfig.heightMultiplier * 1,
+                          height: AppHeights.height8,
                         ),
                         CustomTextButton(
                           callback: () {
                             Get.to(PaymentCheckOut());
                           },
                           title: 'PLACE ORDER',
-                          height: SizeConfig.heightMultiplier * 5.95,
-                          width: SizeConfig.widthMultiplier * 3.80,
+                          height: AppHeights.height48,
+                          width: AppWidths.width150,
                           radius: AppRadius.radius30,
                           textcolour: Colors.white,
                           fontSize: AppTexts.size14,

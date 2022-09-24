@@ -1,10 +1,10 @@
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
@@ -48,7 +48,7 @@ class _StoreSearchState extends State<StoreSearch> {
       body: Column(
         children: [
           SizedBox(
-            height: SizeConfig.heightMultiplier * 7.7,
+            height: AppHeights.height62,
           ),
           Row(
             children: [
@@ -107,7 +107,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                               size: AppTexts.size19,
                                             ),
                                             SizedBox(
-                                              height: SizeConfig.heightMultiplier * 1.75,
+                                              height: AppHeights.height14,
                                             ),
                                             TextView(
                                               text: "Price Range",
@@ -179,7 +179,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                               size: AppTexts.size16,
                                             ),
                                             SizedBox(
-                                              height: SizeConfig.heightMultiplier * 2.5,
+                                              height: AppHeights.height20,
                                             )
                                           ],
                                         ),
@@ -247,7 +247,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                         ),
                                       ),
                                       SizedBox(
-                                        height: SizeConfig.heightMultiplier * 3.8,
+                                        height: AppHeights.height30,
                                       ),
                                       TextView(
                                         text: "Gender",
@@ -255,7 +255,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                         size: AppTexts.size16,
                                       ),
                                       SizedBox(
-                                        height: SizeConfig.heightMultiplier * 2.5,
+                                        height: AppHeights.height20,
                                       ),
                                       SingleChildScrollView(
                                         scrollDirection: Axis.horizontal,
@@ -301,7 +301,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                         ),
                                       ),
                                       SizedBox(
-                                        height: SizeConfig.heightMultiplier * 3.8,
+                                        height: AppHeights.height30,
                                       ),
                                       TextView(
                                         text: "Categories",
@@ -309,7 +309,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                         size: AppTexts.size16,
                                       ),
                                       SizedBox(
-                                        height: SizeConfig.heightMultiplier * 2.5,
+                                        height: AppHeights.height20,
                                       ),
                                       SingleChildScrollView(
                                         scrollDirection: Axis.horizontal,
@@ -371,7 +371,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                       ),
                                       Spacer(),
                                       Container(
-                                        height: SizeConfig.heightMultiplier * 6.3 * 2,
+                                        height: AppHeights.height50 * 2,
                                         decoration: BoxDecoration(
                                             color: Colors.white,
                                             borderRadius: BorderRadius.vertical(
@@ -402,8 +402,8 @@ class _StoreSearchState extends State<StoreSearch> {
                                                   });
                                                 },
                                                 radius: 90,
-                                                height: SizeConfig.heightMultiplier * 6.3,
-                                                width: SizeConfig.widthMultiplier * 3.80,
+                                                height: AppHeights.height50,
+                                                width: AppWidths.width150,
                                                 colour: Colors.white,
                                                 title: "Reset (4)",
                                                 textcolour: Colors.black,
@@ -411,8 +411,8 @@ class _StoreSearchState extends State<StoreSearch> {
                                               CustomTextButton(
                                                 callback: () {},
                                                 radius: 90,
-                                                height: SizeConfig.heightMultiplier * 6.3,
-                                                width: SizeConfig.widthMultiplier * 3.80,
+                                                height: AppHeights.height50,
+                                                width: AppWidths.width150,
                                                 colour:
                                                     AppColors.primarylightColor,
                                                 title: "Apply",

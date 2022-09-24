@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/constants/colors.dart';
-
+import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/radius.dart';
 import 'package:ecommerce_app/constants/textsize.dart';
-
+import 'package:ecommerce_app/constants/width.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
@@ -56,10 +56,10 @@ class _DetailCartProductState extends State<DetailCartProduct> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: SizeConfig.heightMultiplier * 1.75,
+                  height: AppHeights.height14,
                 ),
                 Container(
-                  height: SizeConfig.heightMultiplier * 18.8,
+                  height: AppHeights.height151,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     borderRadius:
@@ -69,12 +69,12 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                   child: Center(
                       child: Image.asset(
                     "assets/images/detail_shoe.png",
-                    height: SizeConfig.heightMultiplier * 14.9,
-                    width: SizeConfig.widthMultiplier * 6.58,
+                    height: AppHeights.height120,
+                    width: AppWidths.width258,
                   )),
                 ),
                 SizedBox(
-                  height: SizeConfig.heightMultiplier * 1.75,
+                  height: AppHeights.height14,
                 ),
                 Text(
                   "Jordan 1 Retro High Tie Dye",
@@ -88,7 +88,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                   ),
                 ),
                 SizedBox(
-                  height: SizeConfig.heightMultiplier * 1,
+                  height: AppHeights.height8,
                 ),
                 Text(
                   "Adidas . Grey . 42",
@@ -102,7 +102,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                   ),
                 ),
                 SizedBox(
-                  height: SizeConfig.heightMultiplier * 1.2,
+                  height: AppHeights.height10,
                 ),
                 Row(
                   children: [
@@ -145,7 +145,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                   ],
                 ),
                 SizedBox(
-                  height: SizeConfig.heightMultiplier * 17.3,
+                  height: AppHeights.height139,
                 ),
                 Align(
                   alignment: Alignment.center,
@@ -163,10 +163,10 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                       )),
                 ),
                 SizedBox(
-                  height: SizeConfig.heightMultiplier * 5.95,
+                  height: AppHeights.height48,
                 ),
                 Container(
-                  height: SizeConfig.heightMultiplier * 14.9,
+                  height: AppHeights.height120,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     borderRadius:
@@ -196,7 +196,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
             left: 0,
             right: 0,
             child: Container(
-                height: SizeConfig.heightMultiplier * 13.7,
+                height: AppHeights.height110,
                 width: double.infinity,
                 decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
@@ -210,7 +210,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                   child: Column(
                     children: [
                       SizedBox(
-                        height: SizeConfig.heightMultiplier * 2.5,
+                        height: AppHeights.height20,
                       ),
                       Row(
                         children: [
@@ -241,8 +241,8 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                           CustomTextButton(
                             callback: () {},
                             title: 'CHECK OUT',
-                            height: SizeConfig.heightMultiplier * 6.3,
-                            width: SizeConfig.widthMultiplier * 3.80,
+                            height: AppHeights.height50,
+                            width: AppWidths.width150,
                             radius: AppRadius.radius30,
                             textcolour: Colors.white,
                             fontSize: AppTexts.size14,
