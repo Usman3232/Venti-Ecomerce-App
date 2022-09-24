@@ -2,11 +2,10 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
-
-
-
 import 'package:ecommerce_app/utils/size_config.dart';
-import 'package:ecommerce_app/views/pages/curated%20product%20detail/curated_product_fullimage.dart';
+import 'package:ecommerce_app/views/pages/customize%20gift%20hamper/components/chocolate_list.dart';
+import 'package:ecommerce_app/views/pages/customize%20gift%20hamper/components/cookies_list.dart';
+import 'package:ecommerce_app/views/pages/customize%20gift%20hamper/components/scent_list.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
@@ -22,12 +21,6 @@ class CustomizeGiftHamper extends StatefulWidget {
 }
 
 class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
-  List<String> chocolates = ["White", "Dark", "Milk"];
-  List<String> cookies = ["Chocolate Chip", "Oreos", "Dark "];
-  List<String> scent = ["Crisp and Clean", "Lavender", "Eucalyptus"];
-  int isselectedchocolates = 0;
-  int isselectescookies = 0;
-  int isselectedscent = 0;
   int num = 0;
   @override
   Widget build(BuildContext context) {
@@ -61,7 +54,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                           child: Container(
                             height: SizeConfig.heightMultiplier * 3.8,
                             width: SizeConfig.widthMultiplier * 7.7,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                                 shape: BoxShape.circle, color: Colors.white),
                             child: Padding(
                               padding: EdgeInsets.all(
@@ -73,11 +66,11 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                             ),
                           ),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Container(
                           height: SizeConfig.heightMultiplier * 3.8,
                           width: SizeConfig.widthMultiplier * 7.7,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                               shape: BoxShape.circle, color: Colors.white),
                           child: Icon(
                             Icons.favorite_rounded,
@@ -91,7 +84,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                         Container(
                           height: SizeConfig.heightMultiplier * 3.8,
                           width: SizeConfig.widthMultiplier * 7.7,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                               shape: BoxShape.circle, color: Colors.white),
                           child: Padding(
                             padding: EdgeInsets.all(
@@ -128,7 +121,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
             right: 0,
             child: Container(
                 height: SizeConfig.heightMultiplier * 67,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
                       topRight: Radius.circular(30),
                       topLeft: Radius.circular(30)),
@@ -170,13 +163,13 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                             text: "Organic Products by Eren",
                             size: SizeConfig.textMultiplier * 1.65,
                             fontWeight: FontWeight.w600,
-                            color: Color(0xff2B0806),
+                            color: const Color(0xff2B0806),
                           ),
                           TextView(
                             text: "₹896",
                             size: SizeConfig.textMultiplier * 1.65,
                             fontWeight: FontWeight.w600,
-                            color: Color(0xffFF4D46),
+                            color: const Color(0xffFF4D46),
                             line: TextDecoration.lineThrough,
                           )
                         ],
@@ -202,7 +195,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                             text: "(1045 reviews)",
                             size: SizeConfig.textMultiplier * 1.4,
                             fontWeight: FontWeight.w400,
-                            color: Colors.black26,
+                            color: const Color(0xffB7B7B7),
                           )
                         ],
                       ),
@@ -213,7 +206,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                         text: "Description",
                         size: SizeConfig.textMultiplier * 1.8,
                         fontWeight: FontWeight.w600,
-                        color: Color(0xff2B0806),
+                        color: const Color(0xff2B0806),
                       ),
                       SizedBox(
                         height: SizeConfig.heightMultiplier * 1,
@@ -226,174 +219,13 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                         colorClickableText: AppColors.primarydarkColor,
                         trimExpandedText: 'Read less',
                         moreStyle: TextStyle(
-                            fontSize: 14, fontWeight: FontWeight.bold),
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: AppColors.primarylightColor),
                       ),
-                      SizedBox(
-                        height: SizeConfig.heightMultiplier * 2,
-                      ),
-                      TextView(
-                        text: "Chocolates",
-                        size: SizeConfig.textMultiplier * 1.8,
-                        fontWeight: FontWeight.w600,
-                        color: Color(0xff2B0806),
-                      ),
-                      SizedBox(
-                        height: SizeConfig.heightMultiplier * 1,
-                      ),
-                      Row(
-                        children: [
-                          ...List.generate(
-                              chocolates.length,
-                              (index) => InkWell(
-                                    onTap: () {
-                                      setState(() {
-                                        isselectedchocolates = index;
-                                      });
-                                    },
-                                    child: Padding(
-                                      padding:
-                                          EdgeInsets.symmetric(horizontal: 7),
-                                      child: AnimatedContainer(
-                                        duration: Duration(milliseconds: 200),
-                                        curve: Curves.bounceInOut,
-                                        decoration: BoxDecoration(
-                                            border: Border.all(
-                                                color: Colors.black12),
-                                            borderRadius:
-                                                BorderRadius.circular(100),
-                                            color: isselectedchocolates == index
-                                                ? AppColors.primarylightColor
-                                                : Colors.white),
-                                        child: Padding(
-                                          padding: EdgeInsets.symmetric(
-                                              horizontal: 20, vertical: 8),
-                                          child: TextView(
-                                            text: chocolates[index],
-                                            size: SizeConfig.textMultiplier * 1.8,
-                                            fontWeight: FontWeight.w400,
-                                            color: isselectedchocolates == index
-                                                ? Colors.white
-                                                : Colors.black,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ))
-                        ],
-                      ),
-                      SizedBox(
-                        height: SizeConfig.heightMultiplier * 2,
-                      ),
-                      TextView(
-                        text: "Cookies ",
-                        size: SizeConfig.textMultiplier * 1.8,
-                        fontWeight: FontWeight.w600,
-                        color: Color(0xff2B0806),
-                      ),
-                      SizedBox(
-                        height: SizeConfig.heightMultiplier * 1,
-                      ),
-                      Row(
-                        children: [
-                          ...List.generate(
-                              chocolates.length,
-                              (index) => InkWell(
-                                    onTap: () {
-                                      setState(() {
-                                        isselectescookies = index;
-                                      });
-                                    },
-                                    child: Padding(
-                                      padding:
-                                          EdgeInsets.symmetric(horizontal: 7),
-                                      child: AnimatedContainer(
-                                        duration: Duration(milliseconds: 200),
-                                        curve: Curves.bounceInOut,
-                                        decoration: BoxDecoration(
-                                            border: Border.all(
-                                                color: Colors.black12),
-                                            borderRadius:
-                                                BorderRadius.circular(100),
-                                            color: isselectescookies == index
-                                                ? AppColors.primarylightColor
-                                                : Colors.white),
-                                        child: Padding(
-                                          padding: EdgeInsets.symmetric(
-                                              horizontal: 20, vertical: 8),
-                                          child: TextView(
-                                            text: cookies[index],
-                                            size: SizeConfig.textMultiplier * 1.8,
-                                            fontWeight: FontWeight.w400,
-                                            color: isselectescookies == index
-                                                ? Colors.white
-                                                : Colors.black,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ))
-                        ],
-                      ),
-                      SizedBox(
-                        height: SizeConfig.heightMultiplier * 2,
-                      ),
-                      TextView(
-                        text: "Scent",
-                        size: SizeConfig.textMultiplier * 1.8,
-                        fontWeight: FontWeight.w600,
-                        color: Color(0xff2B0806),
-                      ),
-                      SizedBox(
-                        height: SizeConfig.heightMultiplier * 1,
-                      ),
-                      SingleChildScrollView(
-                        scrollDirection: Axis.horizontal,
-                        physics: BouncingScrollPhysics(),
-                        child: Row(
-                          children: [
-                            ...List.generate(
-                                chocolates.length,
-                                (index) => InkWell(
-                                      onTap: () {
-                                        setState(() {
-                                          isselectedscent = index;
-                                        });
-                                      },
-                                      child: Padding(
-                                        padding:
-                                            EdgeInsets.symmetric(horizontal: 7),
-                                        child: AnimatedContainer(
-                                          duration: Duration(milliseconds: 200),
-                                          curve: Curves.bounceInOut,
-                                          decoration: BoxDecoration(
-                                              border: Border.all(
-                                                  color: Colors.black12),
-                                              borderRadius:
-                                                  BorderRadius.circular(100),
-                                              color: isselectedscent == index
-                                                  ? AppColors.primarylightColor
-                                                  : Colors.white),
-                                          child: Padding(
-                                            padding: EdgeInsets.symmetric(
-                                                horizontal: 20, vertical: 8),
-                                            child: TextView(
-                                              text: scent[index],
-                                              size: SizeConfig.textMultiplier * 1.8,
-                                              fontWeight: FontWeight.w400,
-                                              color: isselectedscent == index
-                                                  ? Colors.white
-                                                  : Colors.black,
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ))
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        height: SizeConfig.heightMultiplier * 5,
-                      ),
+                      ChocolatesList(),
+                      CookiesList(),
+                      ScentList(),
                       Row(
                         children: [
                           InkWell(

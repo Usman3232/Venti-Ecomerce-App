@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
+import 'views/seller panal/OrderTracking/order_status_seller.dart';
+
 void main() => runApp(
 
     //BISMILLAH
@@ -28,6 +30,7 @@ class MyApp extends StatelessWidget {
               ),
               debugShowCheckedModeBanner: false,
               home: SplashPage(),
+              // home: OrderStatusSeller(),
             );
           },
         );

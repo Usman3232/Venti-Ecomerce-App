@@ -1,11 +1,9 @@
 import 'package:ecommerce_app/constants/colors.dart';
-
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../../constants/height.dart';
-
 import '../../../../constants/width.dart';
 import '../../../../models/checkout_model/all_cart_checkout_model.dart';
 import '../../../../utils/size_config.dart';
@@ -87,7 +85,8 @@ class _ViewInvoiceState extends State<ViewInvoice> {
                     return GestureDetector(
                       onTap: () {},
                       child: Padding(
-                        padding: EdgeInsets.only(bottom: SizeConfig.widthMultiplier * 6.13),
+                        padding: EdgeInsets.only(
+                            bottom: SizeConfig.widthMultiplier * 6.13),
                         child: Row(
                           children: [
                             Padding(
@@ -132,7 +131,8 @@ class _ViewInvoiceState extends State<ViewInvoice> {
                                         '${listAllCart[index].company} . ${listAllCart[index].color} . ${listAllCart[index].size}',
                                         style: TextStyle(
                                           color: Colors.grey,
-                                          fontSize: SizeConfig.textMultiplier * 1.53,
+                                          fontSize:
+                                              SizeConfig.textMultiplier * 1.53,
                                           fontWeight: FontWeight.w400,
                                         ),
                                       ),

@@ -1,11 +1,9 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 
-
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'components/order_history_listview_widget.dart';
 
 class OrderHistory extends StatefulWidget {
@@ -31,7 +29,7 @@ class _OrderHistoryState extends State<OrderHistory>
         backgroundColor: Colors.white,
         title: Text(
           'Order History',
-          style: GoogleFonts.poppins(
+          style: TextStyle(
             fontSize: SizeConfig.textMultiplier * 1.8,
             color: AppColors.primarydarkColor,
             fontWeight: FontWeight.w600,

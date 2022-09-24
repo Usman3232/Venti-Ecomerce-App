@@ -1,7 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
-
-
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/live_tracking_model/carousel_model.dart';
 import 'package:ecommerce_app/models/live_tracking_model/live_tracking_cart_model.dart';
@@ -42,7 +40,7 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
         backgroundColor: Colors.white,
         title: Text(
           'Live Tracking',
-          style: GoogleFonts.poppins(
+          style: TextStyle(
             fontSize: SizeConfig.textMultiplier * 1.8,
             color: AppColors.primarydarkColor,
             fontWeight: FontWeight.w600,
@@ -106,7 +104,7 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
                 alignment: Alignment.topLeft,
                 child: Text(
                   'Live Tracking Details',
-                  style: GoogleFonts.poppins(
+                  style: TextStyle(
                     fontSize: SizeConfig.textMultiplier * 2,
                     color: AppColors.primarydarkColor,
                     fontWeight: FontWeight.w600,
@@ -184,14 +182,14 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
                       children: [
                         Text(
                           'Subtotal',
-                          style: GoogleFonts.sourceSansPro(
+                          style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.w600,
                               fontSize: SizeConfig.textMultiplier * 1.8),
                         ),
                         Text(
                           '₹610.19',
-                          style: GoogleFonts.sourceSansPro(
+                          style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.w600,
                               fontSize: SizeConfig.textMultiplier * 1.8),
@@ -206,14 +204,14 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
                       children: [
                         Text(
                           'Shipping costs',
-                          style: GoogleFonts.sourceSansPro(
+                          style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.w600,
                               fontSize: SizeConfig.textMultiplier * 1.8),
                         ),
                         Text(
                           '₹14.09',
-                          style: GoogleFonts.sourceSansPro(
+                          style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.w600,
                               fontSize: SizeConfig.textMultiplier * 1.8),
@@ -228,14 +226,14 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
                       children: [
                         Text(
                           'Voucher',
-                          style: GoogleFonts.sourceSansPro(
+                          style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.w600,
                               fontSize: SizeConfig.textMultiplier * 1.8),
                         ),
                         Text(
                           '-₹10.00',
-                          style: GoogleFonts.sourceSansPro(
+                          style: TextStyle(
                               color: Colors.red,
                               fontWeight: FontWeight.w600,
                               fontSize: SizeConfig.textMultiplier * 1.8),
@@ -250,14 +248,14 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
                       children: [
                         Text(
                           'Total price',
-                          style: GoogleFonts.sourceSansPro(
+                          style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.w600,
                               fontSize: SizeConfig.textMultiplier * 1.8),
                         ),
                         Text(
                           '-₹614.28',
-                          style: GoogleFonts.sourceSansPro(
+                          style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.w700,
                             fontSize: SizeConfig.textMultiplier * 2.85,

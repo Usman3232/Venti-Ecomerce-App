@@ -35,7 +35,7 @@ class PaymentMethodCard extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: GoogleFonts.sourceSansPro(
+                style: TextStyle(
                     color: Colors.white,
                     fontSize: SizeConfig.textMultiplier * 2.04,
                     fontWeight: FontWeight.w700),
@@ -81,7 +81,7 @@ class PaymentMethodCard extends StatelessWidget {
               const Spacer(),
               Text(
                 'Balance',
-                style: GoogleFonts.sourceSansPro(
+                style: TextStyle(
                     color: Colors.white,
                     fontSize: SizeConfig.textMultiplier * 1.53,
                     fontWeight: FontWeight.w600),
@@ -91,7 +91,7 @@ class PaymentMethodCard extends StatelessWidget {
               ),
               Text(
                 '₹ $price',
-                style: GoogleFonts.sourceSansPro(
+                style: TextStyle(
                     color: Colors.white,
                     fontSize: SizeConfig.textMultiplier * 2.55,
                     fontWeight: FontWeight.w700),

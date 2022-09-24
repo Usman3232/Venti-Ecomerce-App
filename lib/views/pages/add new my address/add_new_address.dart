@@ -56,7 +56,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
           backgroundColor: Colors.white,
           title: Text(
             'Add New Address',
-            style: GoogleFonts.poppins(
+            style: TextStyle(
               fontSize: SizeConfig.textMultiplier * 1.8,
               color: AppColors.primarydarkColor,
               fontWeight: FontWeight.w600,
@@ -83,7 +83,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
               children: [
                 Text(
                   'Address title',
-                  style: GoogleFonts.sourceSansPro(
+                  style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w600,
                       fontSize: SizeConfig.textMultiplier * 1.8),
@@ -103,7 +103,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                 ),
                 Text(
                   'Fullname',
-                  style: GoogleFonts.sourceSansPro(
+                  style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w600,
                       fontSize: SizeConfig.textMultiplier * 1.8),
@@ -123,7 +123,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                 ),
                 Text(
                   'Street Address',
-                  style: GoogleFonts.sourceSansPro(
+                  style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.w600,
                     fontSize: SizeConfig.textMultiplier * 1.8,
@@ -144,7 +144,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                 ),
                 Text(
                   'Apt, suite, etc.',
-                  style: GoogleFonts.sourceSansPro(
+                  style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w600,
                       fontSize: SizeConfig.textMultiplier * 1.8),
@@ -172,7 +172,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                         children: [
                           Text(
                             'State',
-                            style: GoogleFonts.sourceSansPro(
+                            style: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w600,
                                 fontSize: SizeConfig.textMultiplier * 1.8),
@@ -215,7 +215,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                           children: [
                             Text(
                               'Zip Code',
-                              style: GoogleFonts.sourceSansPro(
+                              style: TextStyle(
                                   color: Colors.black,
                                   fontWeight: FontWeight.w600,
                                   fontSize: SizeConfig.textMultiplier * 1.8),
@@ -239,7 +239,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                 ),
                 Text(
                   'Mobile Number',
-                  style: GoogleFonts.sourceSansPro(
+                  style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w600,
                       fontSize: SizeConfig.textMultiplier * 1.8),

@@ -1,4 +1,3 @@
-
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/drawer_models/order_history_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -43,7 +42,7 @@ class OrderHistoryListView extends StatelessWidget {
                     children: [
                       Text(
                         listOrderHistory[i].title,
-                        style: GoogleFonts.sourceSansPro(
+                        style: TextStyle(
                           fontSize: SizeConfig.textMultiplier * 2.04,
                           fontWeight: FontWeight.w600,
                         ),
@@ -52,7 +51,7 @@ class OrderHistoryListView extends StatelessWidget {
                         children: [
                           Text(
                             '• ',
-                            style: GoogleFonts.sourceSansPro(
+                            style: TextStyle(
                               fontSize: SizeConfig.textMultiplier * 2,
                               color: const Color(0xffF3AE31),
                               fontWeight: FontWeight.w900,
@@ -60,7 +59,7 @@ class OrderHistoryListView extends StatelessWidget {
                           ),
                           Text(
                             listOrderHistory[i].process,
-                            style: GoogleFonts.sourceSansPro(
+                            style: TextStyle(
                               fontSize: SizeConfig.textMultiplier * 1.53,
                               color: const Color(0xffF3AE31),
                               fontWeight: FontWeight.w400,
@@ -73,7 +72,7 @@ class OrderHistoryListView extends StatelessWidget {
                       ),
                       Text(
                         '${listOrderHistory[i].day} ${listOrderHistory[i].time}',
-                        style: GoogleFonts.sourceSansPro(
+                        style: TextStyle(
                           fontSize: SizeConfig.textMultiplier * 1.5,
                           color: const Color(0xffAE9A99),
                           fontWeight: FontWeight.w400,
@@ -85,7 +84,7 @@ class OrderHistoryListView extends StatelessWidget {
                 const Spacer(),
                 Text(
                   '₹${listOrderHistory[i].price}',
-                  style: GoogleFonts.sourceSansPro(
+                  style: TextStyle(
                     fontSize: SizeConfig.textMultiplier * 2.04,
                     fontWeight: FontWeight.w700,
                   ),

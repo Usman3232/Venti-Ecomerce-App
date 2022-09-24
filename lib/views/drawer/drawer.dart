@@ -87,7 +87,7 @@ class _MyDrawerState extends State<MyDrawer> {
           ),
           Text(
             'Joshuna Gillani',
-            style: GoogleFonts.sourceSansPro(
+            style: TextStyle(
               color: Colors.black,
               fontWeight: FontWeight.w600,
               fontSize: SizeConfig.textMultiplier * 2.04,
@@ -151,7 +151,7 @@ class _MyDrawerState extends State<MyDrawer> {
                   children: [
                     Text(
                       'Buyer',
-                      style: GoogleFonts.sourceSansPro(
+                      style: TextStyle(
                           fontWeight: FontWeight.w600,
                           fontSize: SizeConfig.textMultiplier * 1.8,
                           color: AppColors.primarylightColor),
@@ -188,7 +188,7 @@ class _MyDrawerState extends State<MyDrawer> {
                     ),
                     Text(
                       'Seller',
-                      style: GoogleFonts.sourceSansPro(
+                      style: TextStyle(
                           fontWeight: FontWeight.w600,
                           fontSize: SizeConfig.textMultiplier * 1.8,
                           color: AppColors.primarylightColor),

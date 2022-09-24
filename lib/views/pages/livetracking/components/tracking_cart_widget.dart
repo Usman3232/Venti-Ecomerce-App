@@ -52,7 +52,7 @@ class TrackingCartWidget extends StatelessWidget {
                   children: [
                     Text(
                       title,
-                      style: GoogleFonts.sourceSansPro(
+                      style: TextStyle(
                         fontSize: SizeConfig.textMultiplier * 2.04,
                         fontWeight: FontWeight.w600,
                       ),
@@ -62,7 +62,7 @@ class TrackingCartWidget extends StatelessWidget {
                     ),
                     Text(
                       'Size:$size}',
-                      style: GoogleFonts.sourceSansPro(
+                      style: TextStyle(
                         fontSize: SizeConfig.textMultiplier * 1.53,
                         color: const Color(0xffAE9A99),
                         fontWeight: FontWeight.w400,
@@ -73,7 +73,7 @@ class TrackingCartWidget extends StatelessWidget {
                     ),
                     Text(
                       'Color:$color}',
-                      style: GoogleFonts.sourceSansPro(
+                      style: TextStyle(
                         fontSize: SizeConfig.textMultiplier * 1.53,
                         color: const Color(0xffAE9A99),
                         fontWeight: FontWeight.w400,
@@ -82,7 +82,7 @@ class TrackingCartWidget extends StatelessWidget {
                     SizedBox(height: AppHeights.height8),
                     Text(
                       '₹$price',
-                      style: GoogleFonts.sourceSansPro(
+                      style: TextStyle(
                         fontSize: SizeConfig.textMultiplier * 2.29,
                         fontWeight: FontWeight.w700,
                       ),

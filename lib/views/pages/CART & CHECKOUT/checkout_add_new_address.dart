@@ -144,7 +144,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                         children: [
                           Text(
                             'Expired Date',
-                            style: GoogleFonts.sourceSansPro(
+                            style: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w600,
                                 fontSize: SizeConfig.textMultiplier * 1.8),
@@ -175,7 +175,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                           children: [
                             Text(
                               'CVV/CVV2',
-                              style: GoogleFonts.sourceSansPro(
+                              style: TextStyle(
                                   color: Colors.black,
                                   fontWeight: FontWeight.w600,
                                   fontSize: SizeConfig.textMultiplier * 1.8),
@@ -209,7 +209,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                         children: [
                           Text(
                             'Address',
-                            style: GoogleFonts.sourceSansPro(
+                            style: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w600,
                                 fontSize: SizeConfig.textMultiplier * 1.8),
@@ -241,7 +241,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                           children: [
                             Text(
                               'Zip code',
-                              style: GoogleFonts.sourceSansPro(
+                              style: TextStyle(
                                   color: Colors.black,
                                   fontWeight: FontWeight.w600,
                                   fontSize: SizeConfig.textMultiplier * 1.8),

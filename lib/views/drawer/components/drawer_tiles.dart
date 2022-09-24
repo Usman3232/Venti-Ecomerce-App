@@ -34,7 +34,7 @@ class DrawerTiles extends StatelessWidget {
           ),
           title: Text(
             title,
-            style: GoogleFonts.sourceSansPro(
+            style: TextStyle(
               color: AppColors.primarylightColor,
               fontWeight: FontWeight.w600,
               fontSize: SizeConfig.textMultiplier * 1.8,

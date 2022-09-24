@@ -1,4 +1,4 @@
-class OrdersContent {
+class OrderDeliveredModel {
   String image;
   String title;
   String noofproducts;
@@ -6,12 +6,18 @@ class OrdersContent {
   String date;
   String location;
   String status;
-  OrdersContent({ required this.image,required this.title,required this.noofproducts,
-    required this.price,required this.date,required this.location,required this.status});
+  OrderDeliveredModel(
+      {required this.image,
+      required this.title,
+      required this.noofproducts,
+      required this.price,
+      required this.date,
+      required this.location,
+      required this.status});
 }
 
-List<OrdersContent> listoforder=[
-  OrdersContent(
+List<OrderDeliveredModel> listoforderdelivered = [
+  OrderDeliveredModel(
     image: 'assets/images/Product1.png',
     title: 'Waleed Azhar',
     location: ", Sadiqabad",
@@ -20,7 +26,7 @@ List<OrdersContent> listoforder=[
     date: '9th Nov, 2021',
     status: "Delivered",
   ),
-  OrdersContent(
+  OrderDeliveredModel(
     image: 'assets/images/Product1.png',
     title: 'Zain',
     location: ", Sadiqabad",
@@ -29,6 +35,4 @@ List<OrdersContent> listoforder=[
     date: '9th Dec, 2021',
     status: "Delivered",
   ),
-
-
 ];

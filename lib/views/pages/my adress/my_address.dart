@@ -1,11 +1,7 @@
 import 'dart:async';
-
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-
-
-
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/add%20new%20my%20address/add_new_address.dart';
@@ -43,7 +39,7 @@ class _MyAddressState extends State<MyAddress> {
         backgroundColor: Colors.transparent,
         title: Text(
           'My Address',
-          style: GoogleFonts.poppins(
+          style: TextStyle(
             fontSize: SizeConfig.textMultiplier * 1.8,
             color: AppColors.primarydarkColor,
             fontWeight: FontWeight.w600,
@@ -88,13 +84,14 @@ class _MyAddressState extends State<MyAddress> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 3.9),
+                        padding: EdgeInsets.only(
+                            left: SizeConfig.widthMultiplier * 3.9),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
                               'My home',
-                              style: GoogleFonts.sourceSansPro(
+                              style: TextStyle(
                                 fontSize: SizeConfig.textMultiplier * 1.8,
                                 color: Colors.black,
                                 fontWeight: FontWeight.w600,
@@ -105,7 +102,7 @@ class _MyAddressState extends State<MyAddress> {
                                 onPressed: () {},
                                 child: Text(
                                   'Edit',
-                                  style: GoogleFonts.sourceSansPro(
+                                  style: TextStyle(
                                     fontSize: SizeConfig.textMultiplier * 1.53,
                                     color: const Color(0xff896C6B),
                                     fontWeight: FontWeight.w400,
@@ -129,8 +126,7 @@ class _MyAddressState extends State<MyAddress> {
                                   decoration: BoxDecoration(
                                       color: const Color(0xff7496C2)
                                           .withOpacity(0.2),
-                                      borderRadius: BorderRadius.circular(
-                                          10)),
+                                      borderRadius: BorderRadius.circular(10)),
                                   child: Padding(
                                     padding: EdgeInsets.all(
                                         SizeConfig.widthMultiplier * 1),
@@ -146,8 +142,9 @@ class _MyAddressState extends State<MyAddress> {
                                       'Independence Street No. 27, Sukamulya, Cikembar, Sukabumi, Jawa Barat 43157',
                                       overflow: TextOverflow.ellipsis,
                                       maxLines: 2,
-                                      style: GoogleFonts.sourceSansPro(
-                                          fontSize: SizeConfig.textMultiplier * 1.53,
+                                      style: TextStyle(
+                                          fontSize:
+                                              SizeConfig.textMultiplier * 1.53,
                                           fontWeight: FontWeight.w400),
                                     )),
                               ],
@@ -158,7 +155,7 @@ class _MyAddressState extends State<MyAddress> {
                                   top: SizeConfig.heightMultiplier * 0.5),
                               child: Text(
                                 'Joshua / +62 8888 7777',
-                                style: GoogleFonts.sourceSansPro(
+                                style: TextStyle(
                                     fontSize: SizeConfig.textMultiplier * 1.53,
                                     fontWeight: FontWeight.w400),
                               ),
@@ -191,13 +188,14 @@ class _MyAddressState extends State<MyAddress> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 3.9),
+                        padding: EdgeInsets.only(
+                            left: SizeConfig.widthMultiplier * 3.9),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
                               'My Office',
-                              style: GoogleFonts.sourceSansPro(
+                              style: TextStyle(
                                 fontSize: SizeConfig.textMultiplier * 1.8,
                                 color: Colors.black,
                                 fontWeight: FontWeight.w600,
@@ -208,7 +206,7 @@ class _MyAddressState extends State<MyAddress> {
                                 onPressed: () {},
                                 child: Text(
                                   'Edit',
-                                  style: GoogleFonts.sourceSansPro(
+                                  style: TextStyle(
                                     fontSize: SizeConfig.textMultiplier * 1.53,
                                     color: const Color(0xff896C6B),
                                     fontWeight: FontWeight.w400,
@@ -232,8 +230,7 @@ class _MyAddressState extends State<MyAddress> {
                                   decoration: BoxDecoration(
                                       color: const Color(0xff7496C2)
                                           .withOpacity(0.2),
-                                      borderRadius: BorderRadius.circular(
-                                          10)),
+                                      borderRadius: BorderRadius.circular(10)),
                                   child: Padding(
                                     padding: EdgeInsets.all(
                                         SizeConfig.widthMultiplier * 1),
@@ -249,8 +246,9 @@ class _MyAddressState extends State<MyAddress> {
                                       'R. E. Martadinata Street No.71,Gungparang, Sukabumi, Jawa Barat 43111',
                                       overflow: TextOverflow.ellipsis,
                                       maxLines: 2,
-                                      style: GoogleFonts.sourceSansPro(
-                                          fontSize: SizeConfig.textMultiplier * 1.53,
+                                      style: TextStyle(
+                                          fontSize:
+                                              SizeConfig.textMultiplier * 1.53,
                                           fontWeight: FontWeight.w400),
                                     )),
                               ],
@@ -261,7 +259,7 @@ class _MyAddressState extends State<MyAddress> {
                                   top: SizeConfig.heightMultiplier * 0.5),
                               child: Text(
                                 'Joshua Gillani / +62 8888 7777 /\n(0266) 234567',
-                                style: GoogleFonts.sourceSansPro(
+                                style: TextStyle(
                                     fontSize: SizeConfig.textMultiplier * 1.53,
                                     fontWeight: FontWeight.w400),
                               ),
@@ -282,7 +280,7 @@ class _MyAddressState extends State<MyAddress> {
               children: [
                 Text(
                   'Location',
-                  style: GoogleFonts.sourceSansPro(
+                  style: TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: SizeConfig.textMultiplier * 1.8,
                   ),

@@ -3,9 +3,6 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
-
-
-
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
@@ -126,7 +123,7 @@ class _MyProfileState extends State<MyProfile> {
                             )),
                         Text(
                           'My Profile',
-                          style: GoogleFonts.poppins(
+                          style: TextStyle(
                             fontSize: SizeConfig.textMultiplier * 1.8,
                             color: AppColors.primarydarkColor,
                             fontWeight: FontWeight.w600,
@@ -143,7 +140,8 @@ class _MyProfileState extends State<MyProfile> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
+              padding: EdgeInsets.symmetric(
+                  horizontal: SizeConfig.widthMultiplier * 6.13),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -152,7 +150,7 @@ class _MyProfileState extends State<MyProfile> {
                   ),
                   Text(
                     'Full name',
-                    style: GoogleFonts.sourceSansPro(
+                    style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
                         fontSize: SizeConfig.textMultiplier * 1.8),
@@ -172,7 +170,7 @@ class _MyProfileState extends State<MyProfile> {
                   ),
                   Text(
                     'Date of birth',
-                    style: GoogleFonts.sourceSansPro(
+                    style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
                         fontSize: SizeConfig.textMultiplier * 1.8),
@@ -201,7 +199,7 @@ class _MyProfileState extends State<MyProfile> {
                   ),
                   Text(
                     'Gender',
-                    style: GoogleFonts.sourceSansPro(
+                    style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w600,
                       fontSize: SizeConfig.textMultiplier * 1.8,
@@ -295,7 +293,7 @@ class _MyProfileState extends State<MyProfile> {
                   ),
                   Text(
                     'Email',
-                    style: GoogleFonts.sourceSansPro(
+                    style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
                         fontSize: SizeConfig.textMultiplier * 1.8),
@@ -316,7 +314,7 @@ class _MyProfileState extends State<MyProfile> {
                   ),
                   Text(
                     'Mobile Number',
-                    style: GoogleFonts.sourceSansPro(
+                    style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
                         fontSize: SizeConfig.textMultiplier * 1.8),

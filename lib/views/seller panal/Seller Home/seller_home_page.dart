@@ -6,7 +6,7 @@ import 'package:ecommerce_app/constants/images.dart';
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
-import 'package:ecommerce_app/views/seller%20panal/OrderTracking/orders.dart';
+import 'package:ecommerce_app/views/seller%20panal/OrderTracking/order_delivered.dart';
 import 'package:ecommerce_app/views/seller%20panal/Seller%20Home/choose_seller_profile.dart';
 import 'package:ecommerce_app/views/seller%20panal/Seller%20Home/seller_availability.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';

@@ -59,7 +59,7 @@ class _LiveTrackingMapState extends State<LiveTrackingMap> {
           backgroundColor: Colors.white,
           title: Text(
             'Live Tracking',
-            style: GoogleFonts.poppins(
+            style: TextStyle(
               fontSize: SizeConfig.textMultiplier * 1.92,
               color: AppColors.primarydarkColor,
               fontWeight: FontWeight.w600,

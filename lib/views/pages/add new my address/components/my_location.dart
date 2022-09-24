@@ -30,7 +30,7 @@ class MyLocation extends StatelessWidget {
           children: [
             Text(
               'Location',
-              style: GoogleFonts.sourceSansPro(
+              style: TextStyle(
                 fontWeight: FontWeight.w600,
                 fontSize: SizeConfig.textMultiplier * 1.8,
               ),

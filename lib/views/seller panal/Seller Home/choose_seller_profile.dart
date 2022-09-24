@@ -103,7 +103,7 @@ class _ChooseSellerProfileState extends State<ChooseSellerProfile> {
                           )),
                       Text(
                         'Seller Profile',
-                        style: GoogleFonts.poppins(
+                        style: TextStyle(
                           fontSize: SizeConfig.textMultiplier * 1.8,
                           color: AppColors.primarydarkColor,
                           fontWeight: FontWeight.w600,

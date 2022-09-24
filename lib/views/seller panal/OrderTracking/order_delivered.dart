@@ -2,11 +2,11 @@ import 'package:ecommerce_app/constants/height.dart';
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
+import 'package:ecommerce_app/views/seller%20panal/sellers%20model/order_deliver.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import '../../../../constants/icons.dart';
-import '../sellers model/order_status_seller_model.dart';
 
 class OrdersDelivered extends StatefulWidget {
   const OrdersDelivered({Key? key}) : super(key: key);
@@ -50,7 +50,7 @@ class _OrdersDeliveredState extends State<OrdersDelivered> {
               ),
               ListView.builder(
                   physics: const NeverScrollableScrollPhysics(),
-                  itemCount: listoforder.length,
+                  itemCount: listoforderdelivered.length,
                   shrinkWrap: true,
                   scrollDirection: Axis.vertical,
                   itemBuilder: (BuildContext context, int i) {
@@ -79,7 +79,7 @@ class _OrdersDeliveredState extends State<OrdersDelivered> {
                                 child: Padding(
                                   padding: const EdgeInsets.all(6.0),
                                   child: Image.asset(
-                                    listoforder[i].image,
+                                    listoforderdelivered[i].image,
                                     fit: BoxFit.fill,
                                   ),
                                 ),
@@ -94,7 +94,7 @@ class _OrdersDeliveredState extends State<OrdersDelivered> {
                                   children: [
                                     RichText(
                                       text: TextSpan(
-                                        text: listoforder[i].title,
+                                        text: listoforderdelivered[i].title,
                                         style: TextStyle(
                                             fontSize:
                                                 SizeConfig.textMultiplier * 1.8,
@@ -102,7 +102,8 @@ class _OrdersDeliveredState extends State<OrdersDelivered> {
                                             color: Colors.black),
                                         children: <TextSpan>[
                                           TextSpan(
-                                              text: listoforder[i].location,
+                                              text: listoforderdelivered[i]
+                                                  .location,
                                               style: TextStyle(
                                                   fontWeight: FontWeight.w500,
                                                   fontSize: SizeConfig
@@ -116,7 +117,7 @@ class _OrdersDeliveredState extends State<OrdersDelivered> {
                                           MainAxisAlignment.spaceBetween,
                                       children: [
                                         Text(
-                                          listoforder[i].noofproducts,
+                                          listoforderdelivered[i].noofproducts,
                                           style: TextStyle(
                                             fontSize:
                                                 SizeConfig.textMultiplier *
@@ -126,7 +127,7 @@ class _OrdersDeliveredState extends State<OrdersDelivered> {
                                           ),
                                         ),
                                         Text(
-                                          listoforder[i].price,
+                                          listoforderdelivered[i].price,
                                           style: TextStyle(
                                             fontSize:
                                                 SizeConfig.textMultiplier *
@@ -154,7 +155,7 @@ class _OrdersDeliveredState extends State<OrdersDelivered> {
                                           ),
                                           child: Center(
                                             child: Text(
-                                              listoforder[i].status,
+                                              listoforderdelivered[i].status,
                                               style: const TextStyle(
                                                 fontSize: 7,
                                                 fontWeight: FontWeight.w600,
@@ -164,7 +165,7 @@ class _OrdersDeliveredState extends State<OrdersDelivered> {
                                             ),
                                           ),
                                         ),
-                                        // Text(listoforder[i].date,
+                                        // Text(listoforderdelivered[i].date,
                                         //   style: const TextStyle(
                                         //     fontSize: 10,
                                         //     fontWeight: FontWeight.w500,

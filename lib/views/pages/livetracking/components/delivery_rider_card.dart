@@ -32,7 +32,7 @@ class DliveryRiderCard extends StatelessWidget {
             children: [
               Text(
                 'Delivery Rider’s Details',
-                style: GoogleFonts.sourceSansPro(
+                style: TextStyle(
                   color: AppColors.primarydarkColor,
                   fontWeight: FontWeight.w900,
                   fontSize: SizeConfig.textMultiplier * 1.8,
@@ -43,7 +43,7 @@ class DliveryRiderCard extends StatelessWidget {
               ),
               Text(
                 'Joshua Gillani \n+91 888 888 8888',
-                style: GoogleFonts.sourceSansPro(
+                style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.w400,
                   fontSize: SizeConfig.textMultiplier * 1.65,
@@ -54,7 +54,7 @@ class DliveryRiderCard extends StatelessWidget {
               ),
               Text(
                 'Delivery Address',
-                style: GoogleFonts.sourceSansPro(
+                style: TextStyle(
                   color: AppColors.primarydarkColor,
                   fontWeight: FontWeight.w900,
                   fontSize: SizeConfig.textMultiplier * 1.8,
@@ -65,7 +65,7 @@ class DliveryRiderCard extends StatelessWidget {
               ),
               Text(
                 '27 Independence Street, Sukamulya, Cikembar, Sukabumi, Jawa Barat 43157',
-                style: GoogleFonts.sourceSansPro(
+                style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.w400,
                   fontSize: SizeConfig.textMultiplier * 1.53,
@@ -76,7 +76,7 @@ class DliveryRiderCard extends StatelessWidget {
               ),
               Text(
                 'Joshua Gillani, +91 888 888 8888',
-                style: GoogleFonts.sourceSansPro(
+                style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.w400,
                   fontSize: SizeConfig.textMultiplier * 1.53,

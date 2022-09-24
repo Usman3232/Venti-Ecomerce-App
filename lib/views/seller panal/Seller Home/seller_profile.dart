@@ -56,7 +56,7 @@ class _SellerProfileState extends State<SellerProfile> {
                 children: [
                   Text(
                     'Full name',
-                    style: GoogleFonts.sourceSansPro(
+                    style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
                         fontSize: SizeConfig.textMultiplier * 1.8),
@@ -76,7 +76,7 @@ class _SellerProfileState extends State<SellerProfile> {
                   ),
                   Text(
                     'Category',
-                    style: GoogleFonts.sourceSansPro(
+                    style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
                         fontSize: SizeConfig.textMultiplier * 1.8),
@@ -100,7 +100,7 @@ class _SellerProfileState extends State<SellerProfile> {
                   ),
                   Text(
                     'Description',
-                    style: GoogleFonts.sourceSansPro(
+                    style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
                         fontSize: SizeConfig.textMultiplier * 1.8),
@@ -121,7 +121,7 @@ class _SellerProfileState extends State<SellerProfile> {
                   ),
                   Text(
                     'Website',
-                    style: GoogleFonts.sourceSansPro(
+                    style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
                         fontSize: SizeConfig.textMultiplier * 1.8),
@@ -141,7 +141,7 @@ class _SellerProfileState extends State<SellerProfile> {
                   ),
                   Text(
                     'Social Media Links',
-                    style: GoogleFonts.sourceSansPro(
+                    style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
                         fontSize: SizeConfig.textMultiplier * 1.8),
@@ -161,7 +161,7 @@ class _SellerProfileState extends State<SellerProfile> {
                   ),
                   Text(
                     'GST',
-                    style: GoogleFonts.sourceSansPro(
+                    style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
                         fontSize: SizeConfig.textMultiplier * 1.8),
@@ -181,7 +181,7 @@ class _SellerProfileState extends State<SellerProfile> {
                   ),
                   Text(
                     'Email',
-                    style: GoogleFonts.sourceSansPro(
+                    style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
                         fontSize: SizeConfig.textMultiplier * 1.8),
@@ -202,7 +202,7 @@ class _SellerProfileState extends State<SellerProfile> {
                   ),
                   Text(
                     'Contact Number',
-                    style: GoogleFonts.sourceSansPro(
+                    style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
                         fontSize: SizeConfig.textMultiplier * 1.8),
@@ -310,7 +310,7 @@ class MapUploadButtonWidget extends StatelessWidget {
       children: [
         Text(
           'Upload Pan and Adhaar',
-          style: GoogleFonts.sourceSansPro(
+          style: TextStyle(
             fontWeight: FontWeight.w600,
             fontSize: SizeConfig.textMultiplier * 1.8,
           ),
@@ -341,7 +341,7 @@ class MapUploadButtonWidget extends StatelessWidget {
         ),
         Text(
           'Upload Certificate of Completion',
-          style: GoogleFonts.sourceSansPro(
+          style: TextStyle(
             fontWeight: FontWeight.w600,
             fontSize: SizeConfig.textMultiplier * 1.8,
           ),
@@ -372,7 +372,7 @@ class MapUploadButtonWidget extends StatelessWidget {
         ),
         Text(
           'Location',
-          style: GoogleFonts.sourceSansPro(
+          style: TextStyle(
             fontWeight: FontWeight.w600,
             fontSize: SizeConfig.textMultiplier * 1.8,
           ),
@@ -487,7 +487,7 @@ class LeadingProfileWidget extends StatelessWidget {
                     )),
                 Text(
                   'Seller Profile',
-                  style: GoogleFonts.poppins(
+                  style: TextStyle(
                     fontSize: SizeConfig.textMultiplier * 1.8,
                     color: AppColors.primarydarkColor,
                     fontWeight: FontWeight.w600,

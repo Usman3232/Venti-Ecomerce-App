@@ -2,7 +2,6 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 
-
 import 'package:ecommerce_app/models/live_tracking_model/carousel_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/home/components/anytime_seller_section.dart';
@@ -58,17 +57,21 @@ class _HomePageState extends State<HomePage> {
               },
               child: SvgPicture.asset(AppIcons.drawer)),
         ),
-        title: TextView(
-          text: "VENTI",
-          color: AppColors.primarylightColor,
-          fontWeight: FontWeight.w600,
-          size: SizeConfig.textMultiplier * 1.9,
+        title: Text(
+          "VENTI",
+          style: TextStyle(
+            fontSize: SizeConfig.textMultiplier * 1.8,
+            color: AppColors.primarydarkColor,
+            fontWeight: FontWeight.w600,
+            letterSpacing: 1,
+          ),
         ),
         actions: [
           Stack(children: [
             Padding(
               padding: EdgeInsets.only(
-                  top: SizeConfig.widthMultiplier * 3.9, right: SizeConfig.widthMultiplier * 3.9),
+                  top: SizeConfig.widthMultiplier * 3.9,
+                  right: SizeConfig.widthMultiplier * 3.9),
               child: SvgPicture.asset(AppIcons.cart),
             ),
             Positioned(
@@ -90,8 +93,8 @@ class _HomePageState extends State<HomePage> {
             children: [
               Stories(),
               Padding(
-                padding:
-                    EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 4.55),
+                padding: EdgeInsets.symmetric(
+                    horizontal: SizeConfig.widthMultiplier * 4.55),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -116,8 +119,8 @@ class _HomePageState extends State<HomePage> {
               ),
               CategoriesSection(),
               Padding(
-                padding:
-                    EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 4.55),
+                padding: EdgeInsets.symmetric(
+                    horizontal: SizeConfig.widthMultiplier * 4.55),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -150,7 +153,8 @@ class _HomePageState extends State<HomePage> {
                 height: AppHeights.height21,
               ),
               Padding(
-                padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.13),
+                padding:
+                    EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.13),
                 child: TextView(
                   text: "Special For You",
                   fontWeight: FontWeight.w700,
@@ -167,8 +171,8 @@ class _HomePageState extends State<HomePage> {
                 height: AppHeights.height25,
               ),
               Padding(
-                  padding:
-                      EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
+                  padding: EdgeInsets.symmetric(
+                      horizontal: SizeConfig.widthMultiplier * 6.13),
                   child: SectionTitleAndSeeAll(
                       title: "Service Providers",
                       onpress: () {

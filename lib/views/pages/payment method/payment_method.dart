@@ -1,6 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
-import 'package:ecommerce_app/constants/icons.dart';
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/drawer_models/order_history_model.dart';
@@ -11,7 +10,6 @@ import 'package:ecommerce_app/views/pages/payment%20method/components/payment_ic
 import 'package:ecommerce_app/views/pages/payment%20method/components/payment_method_card_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class PaymentMethod extends StatefulWidget {
@@ -38,7 +36,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
         backgroundColor: Colors.white,
         title: Text(
           'Payment Method',
-          style: GoogleFonts.poppins(
+          style: TextStyle(
             fontSize: SizeConfig.textMultiplier * 1.8,
             color: AppColors.primarydarkColor,
             fontWeight: FontWeight.w600,
@@ -116,7 +114,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
                   SizedBox(height: AppHeights.height27),
                   Text(
                     'Recent transactions',
-                    style: GoogleFonts.sourceSansPro(
+                    style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
                         fontSize: SizeConfig.textMultiplier * 2.04),
@@ -153,8 +151,9 @@ class _PaymentMethodState extends State<PaymentMethod> {
                                   children: [
                                     Text(
                                       listOrderHistory[i].title,
-                                      style: GoogleFonts.sourceSansPro(
-                                        fontSize: SizeConfig.textMultiplier * 1.8,
+                                      style: TextStyle(
+                                        fontSize:
+                                            SizeConfig.textMultiplier * 1.8,
                                         fontWeight: FontWeight.w600,
                                       ),
                                     ),
@@ -163,8 +162,9 @@ class _PaymentMethodState extends State<PaymentMethod> {
                                     ),
                                     Text(
                                       '${listOrderHistory[i].day} ${listOrderHistory[i].time}',
-                                      style: GoogleFonts.sourceSansPro(
-                                        fontSize: SizeConfig.textMultiplier * 1.53,
+                                      style: TextStyle(
+                                        fontSize:
+                                            SizeConfig.textMultiplier * 1.53,
                                         color: const Color(0xffAE9A99),
                                         fontWeight: FontWeight.w400,
                                       ),
@@ -175,7 +175,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
                               const Spacer(),
                               Text(
                                 '-₹${listOrderHistory[i].price}',
-                                style: GoogleFonts.sourceSansPro(
+                                style: TextStyle(
                                   fontSize: SizeConfig.textMultiplier * 2.04,
                                   color: Colors.red,
                                   fontWeight: FontWeight.w700,
