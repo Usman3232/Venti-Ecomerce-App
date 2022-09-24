@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -128,13 +128,13 @@ class _CuratedStorePopularState extends State<CuratedStorePopular> {
                 height: AppHeights.height525,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(AppRadius.radius30),
-                      topLeft: Radius.circular(AppRadius.radius30)),
+                      topRight: Radius.circular(30),
+                      topLeft: Radius.circular(30)),
                   color: Colors.white,
                 ),
                 child: Padding(
                   padding:
-                      EdgeInsets.symmetric(horizontal: AppPaddings.padding17),
+                      EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 4.25),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -161,7 +161,7 @@ class _CuratedStorePopularState extends State<CuratedStorePopular> {
                         width: AppWidths.width325,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(
-                              Radius.circular(AppRadius.radius15)),
+                              Radius.circular(15)),
                           border: Border.all(
                             color: Color(0xffCFCFCF),
                           ),

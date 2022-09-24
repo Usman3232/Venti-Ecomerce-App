@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/checkout_model/all_cart_checkout_model.dart';
@@ -79,7 +79,7 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
           children: [
             Padding(
               padding: EdgeInsets.only(
-                  left: AppPaddings.padding24, top: AppPaddings.padding13),
+                  left: SizeConfig.widthMultiplier * 6.13, top: SizeConfig.heightMultiplier * 1.6),
               child: ListView.builder(
                   physics: const BouncingScrollPhysics(),
                   itemCount: listAllCart.length,
@@ -91,7 +91,7 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                         Get.to(DetailCartProduct());
                       },
                       child: Padding(
-                        padding: EdgeInsets.only(bottom: AppPaddings.padding24),
+                        padding: EdgeInsets.only(bottom: SizeConfig.widthMultiplier * 6.13),
                         child: Slidable(
                           key: const ValueKey(0),
                           endActionPane: ActionPane(
@@ -101,9 +101,9 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                               SlidableAction(
                                 borderRadius: BorderRadius.only(
                                     topLeft:
-                                        Radius.circular(AppRadius.radius20),
+                                        Radius.circular(20),
                                     bottomLeft:
-                                        Radius.circular(AppRadius.radius20)),
+                                        Radius.circular(20)),
                                 onPressed: null,
                                 backgroundColor: const Color(0xffFF4C5E),
                                 foregroundColor: Colors.white,
@@ -120,7 +120,7 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                                   width: AppWidths.width88,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.all(
-                                        Radius.circular(AppRadius.radius20)),
+                                        Radius.circular(20)),
                                     color: AppColors.primarydarkColor
                                         .withOpacity(0.1),
                                   ),
@@ -162,7 +162,7 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                                     ),
                                     Padding(
                                       padding: EdgeInsets.only(
-                                          right: AppPaddings.padding13),
+                                          right: SizeConfig.heightMultiplier * 1.6),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.min,
                                         children: [
@@ -197,7 +197,7 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                                           Padding(
                                             padding: EdgeInsets.symmetric(
                                                 horizontal:
-                                                    AppPaddings.padding8),
+                                                    SizeConfig.heightMultiplier * 1),
                                             child: TextView(
                                               text: listAllCart[index]
                                                   .value
@@ -238,14 +238,14 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                     width: double.infinity,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(AppRadius.radius24),
-                        topRight: Radius.circular(AppRadius.radius24),
+                        topLeft: Radius.circular(24),
+                        topRight: Radius.circular(24),
                       ),
                       color: Colors.white,
                     ),
                     child: Padding(
                         padding: EdgeInsets.symmetric(
-                            horizontal: AppPaddings.padding24),
+                            horizontal: SizeConfig.widthMultiplier * 6.13),
                         child: Column(
                           children: [
                             SizedBox(
@@ -284,7 +284,7 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                                   title: 'CHECK OUT',
                                   height: AppHeights.height50,
                                   width: AppWidths.width150,
-                                  radius: AppRadius.radius30,
+                                  radius: 30,
                                   textcolour: Colors.white,
                                   fontSize: SizeConfig.textMultiplier * 1.8,
                                   colour: AppColors.primarylightColor,

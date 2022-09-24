@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -187,14 +187,14 @@ class _VentiSellerCardWidgetState extends State<VentiSellerCardWidget> {
     return Card(
       elevation: 2,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(Radius.circular(AppRadius.radius10)),
+        borderRadius: BorderRadius.all(Radius.circular(10)),
       ),
       child: ListTile(
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(AppRadius.radius10)),
+            borderRadius: BorderRadius.all(Radius.circular(10)),
           ),
           contentPadding: EdgeInsets.symmetric(
-            horizontal: AppPaddings.padding8,
+            horizontal: SizeConfig.heightMultiplier * 1,
           ),
           tileColor: Colors.white,
           leading: Container(
@@ -249,7 +249,7 @@ class _VentiSellerCardWidgetState extends State<VentiSellerCardWidget> {
                         inactiveToggleColor: AppColors.primarylightColor,
                         toggleSize: SizeConfig.widthMultiplier * 3,
                         value: isStatus,
-                        borderRadius: AppRadius.radius20,
+                        borderRadius: 20,
                         onToggle: (value) {
                           setState(() {
                             isStatus = value;
@@ -269,7 +269,7 @@ class _VentiSellerCardWidgetState extends State<VentiSellerCardWidget> {
                         textcolour: AppColors.primarydarkColor,
                         fontSize: widget.buttonSize,
                         fontWeight: FontWeight.w600,
-                        radius: AppRadius.radius30,
+                        radius: 30,
                       ),
                     ),
                   ],
@@ -282,7 +282,7 @@ class _VentiSellerCardWidgetState extends State<VentiSellerCardWidget> {
                   textcolour: AppColors.primarydarkColor,
                   fontSize: widget.buttonSize,
                   fontWeight: FontWeight.w600,
-                  radius: AppRadius.radius30,
+                  radius: 30,
                 )),
     );
   }

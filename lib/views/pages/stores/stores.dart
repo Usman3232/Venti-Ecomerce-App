@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/padding.dart';
+
 
 import 'package:ecommerce_app/models/curated_store_models/categoriesmodel.dart';
 import 'package:ecommerce_app/models/homemodels/anytimesellermodel.dart';
@@ -67,7 +67,7 @@ class Stores extends StatelessWidget {
               height: SizeConfig.heightMultiplier * 1.5,
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding24),
+              padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
               child: Row(
                 children: [
                   TextView(
@@ -97,7 +97,7 @@ class Stores extends StatelessWidget {
                 physics: BouncingScrollPhysics(),
                 itemBuilder: (context, index) {
                   return Padding(
-                    padding: EdgeInsets.only(left: AppPaddings.padding25),
+                    padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
                     child: CategoriesCard(
                         image: curatedcategories_model[index].image,
                         title: curatedcategories_model[index].title),
@@ -120,7 +120,7 @@ class Stores extends StatelessWidget {
                         crossAxisCount: 2),
                     itemBuilder: (context, index) {
                       return Padding(
-                        padding: EdgeInsets.only(left: AppPaddings.padding25),
+                        padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
                         child: CuratedShopCard(
                           image: curatedshop_model[index].image,
                           title: curatedshop_model[index].title,
@@ -144,8 +144,8 @@ class Stores extends StatelessWidget {
                         itemBuilder: (context, index) {
                           return Padding(
                             padding: EdgeInsets.only(
-                                left: AppPaddings.padding24,
-                                right: AppPaddings.padding24,
+                                left: SizeConfig.widthMultiplier * 6.13,
+                                right: SizeConfig.widthMultiplier * 6.13,
                                 bottom: SizeConfig.heightMultiplier * 2),
                             child: AnyTimeSellerCard(
                                 image: anytimeseller_model[index].image,

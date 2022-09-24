@@ -5,7 +5,7 @@ import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../../constants/height.dart';
-import '../../../../constants/padding.dart';
+
 import '../../../../constants/width.dart';
 import '../../../../models/checkout_model/all_cart_checkout_model.dart';
 import '../../../../utils/size_config.dart';
@@ -73,9 +73,9 @@ class _ViewInvoiceState extends State<ViewInvoice> {
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.only(
-              left: AppPaddings.padding24,
-              top: AppPaddings.padding13,
-              right: AppPaddings.padding24),
+              left: SizeConfig.widthMultiplier * 6.13,
+              top: SizeConfig.heightMultiplier * 1.6,
+              right: SizeConfig.widthMultiplier * 6.13),
           child: Column(
             children: [
               ListView.builder(
@@ -87,7 +87,7 @@ class _ViewInvoiceState extends State<ViewInvoice> {
                     return GestureDetector(
                       onTap: () {},
                       child: Padding(
-                        padding: EdgeInsets.only(bottom: AppPaddings.padding24),
+                        padding: EdgeInsets.only(bottom: SizeConfig.widthMultiplier * 6.13),
                         child: Row(
                           children: [
                             Padding(

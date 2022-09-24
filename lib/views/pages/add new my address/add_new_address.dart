@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:country_picker/country_picker.dart';
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -77,7 +77,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
         ),
         body: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding24),
+            padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -96,7 +96,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                   radius: AppWidths.width15,
                   hintText: 'Title Address',
                   contentpadding: EdgeInsets.all(
-                    AppPaddings.padding15,
+                    SizeConfig.widthMultiplier * 3.9,
                   ),
                   hintSize: SizeConfig.textMultiplier * 1.6,
                   textEditingController: titleController,
@@ -116,7 +116,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                   hintText: 'Full Name',
                   isoutline: true,
                   contentpadding: EdgeInsets.all(
-                    AppPaddings.padding15,
+                    SizeConfig.widthMultiplier * 3.9,
                   ),
                   hintSize: SizeConfig.textMultiplier * 1.6,
                   textEditingController: nameController,
@@ -137,7 +137,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                   radius: AppWidths.width15,
                   hintText: 'Street Address',
                   contentpadding: EdgeInsets.all(
-                    AppPaddings.padding15,
+                    SizeConfig.widthMultiplier * 3.9,
                   ),
                   hintSize: SizeConfig.textMultiplier * 1.6,
                   textEditingController: streetController,
@@ -158,7 +158,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                   hintText: 'B 206',
                   inputType: TextInputType.text,
                   contentpadding: EdgeInsets.all(
-                    AppPaddings.padding15,
+                    SizeConfig.widthMultiplier * 3.9,
                   ),
                   hintSize: SizeConfig.textMultiplier * 1.8,
                   textEditingController: suitController,
@@ -183,7 +183,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                           AuthTextInputField(
                             isoutline: true,
                             contentpadding:
-                                EdgeInsets.all(AppPaddings.padding15),
+                                EdgeInsets.all(SizeConfig.widthMultiplier * 3.9),
                             radius: SizeConfig.widthMultiplier * 4,
                             hintText: 'Indonesia',
                             textEditingController: stateController,
@@ -227,7 +227,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                               isoutline: true,
                               inputType: TextInputType.number,
                               contentpadding:
-                                  EdgeInsets.all(AppPaddings.padding15),
+                                  EdgeInsets.all(SizeConfig.widthMultiplier * 3.9),
                               radius: SizeConfig.widthMultiplier * 4,
                               hintText: "12345",
                             ),
@@ -303,7 +303,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                             left: SizeConfig.widthMultiplier * 3),
                         child: AuthTextInputField(
                           isoutline: true,
-                          contentpadding: EdgeInsets.all(AppPaddings.padding15),
+                          contentpadding: EdgeInsets.all(SizeConfig.widthMultiplier * 3.9),
                           radius: SizeConfig.widthMultiplier * 4,
                           inputAction: TextInputAction.done,
                           hintText: "(+62) 8888 7777",
@@ -324,7 +324,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                     width: SizeConfig.widthMultiplier * 90,
                     textcolour: Colors.white,
                     fontSize: SizeConfig.textMultiplier * 1.8,
-                    radius: AppRadius.radius15,
+                    radius: 15,
                     callback: () {}),
                 SizedBox(
                   height: SizeConfig.heightMultiplier * 12,

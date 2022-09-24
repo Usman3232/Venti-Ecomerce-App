@@ -4,8 +4,8 @@ import 'package:custom_info_window/custom_info_window.dart';
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -76,7 +76,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
               height: SizeConfig.heightMultiplier * 20,
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(AppRadius.radius24),
+                borderRadius: BorderRadius.circular(24),
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -278,7 +278,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                           isScrollControlled: true,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.vertical(
-                                  top: Radius.circular(AppRadius.radius30))),
+                                  top: Radius.circular(30))),
                           context: context,
                           builder: (_) => Container(
                                 height: SizeConfig.heightMultiplier * 44.5,
@@ -286,7 +286,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                     color: const Color(0xffF8F8F8),
                                     borderRadius: BorderRadius.vertical(
                                         top: Radius.circular(
-                                            AppRadius.radius30))),
+                                            30))),
                                 child: StatefulBuilder(builder:
                                     (BuildContext context,
                                         StateSetter setState) {
@@ -294,9 +294,9 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                     children: [
                                       Padding(
                                         padding: EdgeInsets.only(
-                                            left: AppPaddings.padding24,
-                                            right: AppPaddings.padding24,
-                                            top: AppPaddings.padding24),
+                                            left: SizeConfig.widthMultiplier * 6.13,
+                                            right: SizeConfig.widthMultiplier * 6.13,
+                                            top: SizeConfig.widthMultiplier * 6.13),
                                         child: Column(
                                           mainAxisAlignment:
                                               MainAxisAlignment.start,
@@ -385,11 +385,11 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                             color: Colors.white,
                                             borderRadius: BorderRadius.vertical(
                                                 top: Radius.circular(
-                                                    AppRadius.radius30))),
+                                                    30))),
                                         child: Padding(
                                           padding: EdgeInsets.symmetric(
                                               horizontal:
-                                                  AppPaddings.padding24),
+                                                  SizeConfig.widthMultiplier * 6.13),
                                           child: Row(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.spaceBetween,

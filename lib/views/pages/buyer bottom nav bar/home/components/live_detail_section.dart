@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/images.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
 
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/livetracking/live_tracking_map.dart';
@@ -120,7 +120,7 @@ class LiveDetailSection extends StatelessWidget {
                     width: SizeConfig.widthMultiplier * 88,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(AppRadius.radius8),
+                      borderRadius: BorderRadius.circular(8),
                       image: DecorationImage(
                           image: AssetImage(AppImages.googlemap),
                           fit: BoxFit.cover),

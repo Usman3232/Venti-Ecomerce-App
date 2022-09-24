@@ -3,8 +3,8 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -143,7 +143,7 @@ class _MyProfileState extends State<MyProfile> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding24),
+              padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -165,7 +165,7 @@ class _MyProfileState extends State<MyProfile> {
                     hintText: 'Full Name',
                     isoutline: true,
                     contentpadding: EdgeInsets.all(
-                      AppPaddings.padding15,
+                      SizeConfig.widthMultiplier * 3.9,
                     ),
                     hintSize: SizeConfig.textMultiplier * 1.6,
                     textEditingController: nameController,
@@ -194,7 +194,7 @@ class _MyProfileState extends State<MyProfile> {
                       },
                     ),
                     contentpadding: EdgeInsets.all(
-                      AppPaddings.padding15,
+                      SizeConfig.widthMultiplier * 3.9,
                     ),
                     hintSize: SizeConfig.textMultiplier * 1.6,
                     textEditingController: birthController,
@@ -215,7 +215,7 @@ class _MyProfileState extends State<MyProfile> {
                     radius: AppWidths.width15,
                     hintText: 'Select Gender',
                     contentpadding: EdgeInsets.all(
-                      AppPaddings.padding15,
+                      SizeConfig.widthMultiplier * 3.9,
                     ),
                     hintSize: SizeConfig.textMultiplier * 1.6,
                     textEditingController: genderController,
@@ -309,7 +309,7 @@ class _MyProfileState extends State<MyProfile> {
                     hintText: 'john12@gmail.com',
                     inputType: TextInputType.emailAddress,
                     contentpadding: EdgeInsets.all(
-                      AppPaddings.padding15,
+                      SizeConfig.widthMultiplier * 3.9,
                     ),
                     hintSize: SizeConfig.textMultiplier * 1.6,
                     textEditingController: mailController,
@@ -340,8 +340,8 @@ class _MyProfileState extends State<MyProfile> {
                                     50, // Optional. Country list modal height
                                 //Optional. Sets the border radius for the bottomsheet.
                                 borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(AppRadius.radius20),
-                                  topRight: Radius.circular(AppRadius.radius20),
+                                  topLeft: Radius.circular(20),
+                                  topRight: Radius.circular(20),
                                 ),
                                 //Optional. Styles the search field.
                                 inputDecoration: InputDecoration(
@@ -427,7 +427,7 @@ class _MyProfileState extends State<MyProfile> {
                       width: SizeConfig.widthMultiplier * 90,
                       textcolour: Colors.white,
                       fontSize: SizeConfig.textMultiplier * 1.8,
-                      radius: AppRadius.radius15,
+                      radius: 15,
                       callback: () {}),
                 ],
               ),

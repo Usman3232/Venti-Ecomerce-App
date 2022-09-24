@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -41,7 +41,7 @@ class _ServiceProviderCardState extends State<ServiceProviderCard> {
             // width: AppWidths.width150,
             width: SizeConfig.widthMultiplier * 39.5,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(AppRadius.radius20),
+              borderRadius: BorderRadius.circular(20),
               image: DecorationImage(
                   image: AssetImage(widget.image), fit: BoxFit.cover),
             ),

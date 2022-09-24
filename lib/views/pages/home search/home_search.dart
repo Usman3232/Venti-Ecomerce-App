@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/padding.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +22,7 @@ class SearchPage extends StatelessWidget {
             children: [
               Padding(
                 padding:
-                    EdgeInsets.symmetric(horizontal: AppPaddings.padding15),
+                    EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 3.9),
                 child: InkWell(
                     onTap: () {}, child: SvgPicture.asset(AppIcons.back)),
               ),
@@ -31,7 +31,7 @@ class SearchPage extends StatelessWidget {
                       hintText: "What are you looking for?")),
               Padding(
                 padding:
-                    EdgeInsets.symmetric(horizontal: AppPaddings.padding15),
+                    EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 3.9),
                 child: InkWell(
                     onTap: () {}, child: SvgPicture.asset(AppIcons.search)),
               )

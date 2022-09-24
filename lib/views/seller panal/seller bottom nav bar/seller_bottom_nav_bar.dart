@@ -24,8 +24,8 @@ class SellerBottomNavBar extends StatefulWidget {
 class _SellerBottomNavBarState extends State<SellerBottomNavBar> {
   List<Widget> screens = [
     SellerHomePage(),
+    Center(child: Text("2")),
     SettingScreen(),
-    MapLocationPage(),
     Center(child: Text("3")),
   ];
   List images = [

@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/padding.dart';
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -24,7 +24,7 @@ class NegativeStatus extends StatelessWidget {
         elevation: 0,
         centerTitle: true,
         leading: Padding(
-          padding: EdgeInsets.all(AppPaddings.padding19),
+          padding: EdgeInsets.all(SizeConfig.widthMultiplier * 4.75),
           child: InkWell(
               onTap: () {
                 Get.back();
@@ -57,7 +57,7 @@ class NegativeStatus extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding18),
+        padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 4.55),
         child: Column(
           children: [
             SizedBox(

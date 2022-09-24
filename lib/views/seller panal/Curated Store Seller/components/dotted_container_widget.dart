@@ -2,7 +2,7 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/cupertino.dart';
 import '../../../../../constants/colors.dart';
 import '../../../../../constants/height.dart';
-import '../../../../../constants/radius.dart';
+
 
 import '../../../../../utils/size_config.dart';
 import '../../../widgets/TextView.dart';
@@ -16,7 +16,7 @@ class DottedContainerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DottedBorder(
-      radius: Radius.circular(AppRadius.radius20),
+      radius: Radius.circular(20),
       color: AppColors.primarydarkColor,
       borderType: BorderType.RRect,
       dashPattern: const [3, 3],
@@ -24,7 +24,7 @@ class DottedContainerWidget extends StatelessWidget {
         width: SizeConfig.widthMultiplier * 50,
         decoration: BoxDecoration(
           color: AppColors.primarylightColor.withOpacity(0.2),
-          borderRadius: BorderRadius.circular(AppRadius.radius20),
+          borderRadius: BorderRadius.circular(20),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

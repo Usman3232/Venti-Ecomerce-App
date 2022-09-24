@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/models/curated_store_models/productmodel.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -74,8 +74,8 @@ class _AnytimeSellerStoreDetailState extends State<AnytimeSellerStoreDetail> {
                 height: AppHeights.height525,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(AppRadius.radius30),
-                      topLeft: Radius.circular(AppRadius.radius30)),
+                      topRight: Radius.circular(30),
+                      topLeft: Radius.circular(30)),
                   color: Colors.white,
                 ),
                 child: SingleChildScrollView(
@@ -83,8 +83,8 @@ class _AnytimeSellerStoreDetailState extends State<AnytimeSellerStoreDetail> {
                     children: [
                       Padding(
                         padding: EdgeInsets.symmetric(
-                            horizontal: AppPaddings.padding22,
-                            vertical: AppPaddings.padding25),
+                            horizontal: SizeConfig.widthMultiplier * 4.95,
+                            vertical: SizeConfig.widthMultiplier * 6.35),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [

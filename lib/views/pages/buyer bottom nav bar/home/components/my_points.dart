@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -21,7 +21,7 @@ class MyPoints extends StatelessWidget {
       width: SizeConfig.widthMultiplier * 91,
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(AppRadius.radius10),
+        borderRadius: BorderRadius.circular(10),
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.1),
@@ -36,8 +36,8 @@ class MyPoints extends StatelessWidget {
         children: [
           Padding(
             padding: EdgeInsets.symmetric(
-                horizontal: AppPaddings.padding15,
-                vertical: AppPaddings.padding13),
+                horizontal: SizeConfig.widthMultiplier * 3.9,
+                vertical: SizeConfig.heightMultiplier * 1.6),
             child: Container(
               height: AppHeights.height50,
               width: AppWidths.width50,
@@ -70,13 +70,13 @@ class MyPoints extends StatelessWidget {
           ),
           Spacer(),
           Padding(
-            padding: EdgeInsets.all(AppPaddings.padding24),
+            padding: EdgeInsets.all(SizeConfig.widthMultiplier * 6.13),
             child: Container(
               height: SizeConfig.heightMultiplier * 3.4,
               width: AppWidths.width93,
               decoration: BoxDecoration(
                   color: Color(0xffFFF7CC),
-                  borderRadius: BorderRadius.circular(AppRadius.radius30)),
+                  borderRadius: BorderRadius.circular(30)),
               child: Center(
                 child: TextView(
                   text: "ReDEEM",

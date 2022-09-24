@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/constants/padding.dart';
+
 import 'package:ecommerce_app/models/curated_store_models/productmodel.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/curated_store_detail/components/product_card.dart';
@@ -22,7 +22,7 @@ class ServicesTab extends StatelessWidget {
           crossAxisCount: 2),
       itemBuilder: (context, index) {
         return Padding(
-          padding: EdgeInsets.only(left: AppPaddings.padding25),
+          padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
           child: ProductCard(
               image: product_model[index].image,
               title: product_model[index].title,

@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/curated_store_models/productmodel.dart';
@@ -95,8 +95,8 @@ class _CuratedStoreSellerDetailState extends State<CuratedStoreSellerDetail>
               height: AppHeights.height525,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(AppRadius.radius30),
-                    topLeft: Radius.circular(AppRadius.radius30)),
+                    topRight: Radius.circular(30),
+                    topLeft: Radius.circular(30)),
                 color: Colors.white,
               ),
               child: SingleChildScrollView(
@@ -104,8 +104,8 @@ class _CuratedStoreSellerDetailState extends State<CuratedStoreSellerDetail>
                   children: [
                     Padding(
                       padding: EdgeInsets.symmetric(
-                          horizontal: AppPaddings.padding22,
-                          vertical: AppPaddings.padding25),
+                          horizontal: SizeConfig.widthMultiplier * 4.95,
+                          vertical: SizeConfig.widthMultiplier * 6.35),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -183,7 +183,7 @@ class _CuratedStoreSellerDetailState extends State<CuratedStoreSellerDetail>
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: AppPaddings.padding15),
+                      padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 3.9),
                       child: Row(
                         children: [
                           ...List.generate(
@@ -272,7 +272,7 @@ class PopularTab extends StatelessWidget {
           crossAxisCount: 2),
       itemBuilder: (context, index) {
         return Padding(
-          padding: EdgeInsets.only(left: AppPaddings.padding25),
+          padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
           child: index == 0
               ? GestureDetector(
                   onTap: () {
@@ -347,7 +347,7 @@ class PriceDiscount extends StatelessWidget {
                 hintText: 'price',
                 suffixIcon: Container(
                   padding: EdgeInsets.only(top: AppHeights.height14),
-                  margin: EdgeInsets.only(left: AppPaddings.padding25),
+                  margin: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
                   child: Text(
                     '₹',
                     style: TextStyle(
@@ -382,7 +382,7 @@ class PriceDiscount extends StatelessWidget {
                 hintText: 'discount',
                 suffixIcon: Container(
                   padding: EdgeInsets.only(top: AppHeights.height14),
-                  margin: EdgeInsets.only(left: AppPaddings.padding25),
+                  margin: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
                   child: Text(
                     '%',
                     style: TextStyle(
@@ -513,7 +513,7 @@ class _ColorTileState extends State<ColorTile> {
           height: AppHeights.height10,
         ),
         Padding(
-          padding: EdgeInsets.only(left: AppPaddings.padding25),
+          padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
           child: Row(
             children: [
               ...List.generate(
@@ -527,7 +527,7 @@ class _ColorTileState extends State<ColorTile> {
                         child: AnimatedContainer(
                           height: AppHeights.height23,
                           width: AppWidths.width23,
-                          margin: EdgeInsets.only(right: AppPaddings.padding8),
+                          margin: EdgeInsets.only(right: SizeConfig.heightMultiplier * 1),
                           decoration: selectedSize == index
                               ? BoxDecoration(
                                   shape: BoxShape.circle,
@@ -568,7 +568,7 @@ class _ColorTileState extends State<ColorTile> {
           height: AppHeights.height8,
         ),
         Padding(
-          padding: EdgeInsets.only(left: AppPaddings.padding25),
+          padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
           child: Row(
             children: [
               Text(
@@ -587,7 +587,7 @@ class _ColorTileState extends State<ColorTile> {
                 width: AppWidths.width30,
                 decoration: BoxDecoration(
                   borderRadius:
-                      BorderRadius.all(Radius.circular(AppRadius.radius10)),
+                      BorderRadius.all(Radius.circular(10)),
                   color: const Color(0xff7496C2).withOpacity(0.3),
                 ),
                 child: Center(
@@ -609,7 +609,7 @@ class _ColorTileState extends State<ColorTile> {
                 title: 'Remove Size',
                 textcolour: Colors.redAccent,
                 height: AppHeights.height14,
-                radius: AppRadius.radius10,
+                radius: 10,
                 fontSize: 8,
                 colour: const Color(0xffFFE2DF),
               )
@@ -633,7 +633,7 @@ class SelectedImageWidget extends StatelessWidget {
       height: AppHeights.height96,
       width: AppWidths.width93,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(AppRadius.radius10)),
+        borderRadius: BorderRadius.all(Radius.circular(10)),
       ),
       child: Stack(
         children: [
@@ -697,7 +697,7 @@ class _ProductCardState extends State<ProductCard> {
           width: AppWidths.width150,
           decoration: BoxDecoration(
               color: Colors.black,
-              borderRadius: BorderRadius.circular(AppRadius.radius20),
+              borderRadius: BorderRadius.circular(20),
               image: DecorationImage(
                   image: AssetImage(widget.image), fit: BoxFit.cover)),
           child: Center(
@@ -706,7 +706,7 @@ class _ProductCardState extends State<ProductCard> {
               callback: widget.onTap,
               textcolour: Colors.red,
               colour: Colors.white,
-              radius: AppRadius.radius30,
+              radius: 30,
             ),
           ),
         ),

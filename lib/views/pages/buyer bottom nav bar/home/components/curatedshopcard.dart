@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -45,7 +45,7 @@ class _CuratedShopCardState extends State<CuratedShopCard> {
                 width: AppWidths.width150,
                 decoration: BoxDecoration(
                     color: Colors.black,
-                    borderRadius: BorderRadius.circular(AppRadius.radius20),
+                    borderRadius: BorderRadius.circular(20),
                     image: DecorationImage(
                         image: AssetImage(widget.image), fit: BoxFit.cover)),
               ),

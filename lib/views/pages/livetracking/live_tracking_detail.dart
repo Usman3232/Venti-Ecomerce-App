@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
-import 'package:ecommerce_app/constants/padding.dart';
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/live_tracking_model/carousel_model.dart';
@@ -63,7 +63,7 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(
-            horizontal: AppPaddings.padding22,
+            horizontal: SizeConfig.widthMultiplier * 4.95,
             vertical: SizeConfig.heightMultiplier * 1),
         child: SingleChildScrollView(
           physics: const BouncingScrollPhysics(),
@@ -176,7 +176,7 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
                         count: trackingCartList[i].count);
                   }),
               Padding(
-                padding: EdgeInsets.all(AppPaddings.padding13),
+                padding: EdgeInsets.all(SizeConfig.heightMultiplier * 1.6),
                 child: Column(
                   children: [
                     Row(

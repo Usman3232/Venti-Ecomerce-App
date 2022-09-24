@@ -4,7 +4,7 @@ import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../../../../constants/padding.dart';
+
 import '../sellers model/order_status_seller_model.dart';
 
 class OrderStatusSeller extends StatefulWidget {
@@ -34,7 +34,7 @@ class _OrderStatusSellerState extends State<OrderStatusSeller> {
             color: Colors.black,
           ),
           Padding(
-              padding: EdgeInsets.only(right: AppPaddings.padding15),
+              padding: EdgeInsets.only(right: SizeConfig.widthMultiplier * 3.9),
               child: SvgPicture.asset(
                 AppIcons.message,
                 color: Colors.black,
@@ -64,8 +64,8 @@ class _OrderStatusSellerState extends State<OrderStatusSeller> {
                         ),
                         child: Padding(
                           padding: EdgeInsets.symmetric(
-                              horizontal: AppPaddings.padding8,
-                              vertical: AppPaddings.padding15),
+                              horizontal: SizeConfig.heightMultiplier * 1,
+                              vertical: SizeConfig.widthMultiplier * 3.9),
                           child: Row(
                             children: [
                               Container(

@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/images.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -71,7 +71,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
         ],
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding24),
+        padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
         child: Stack(
           children: [
             Column(
@@ -80,7 +80,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                   width: AppWidths.widthFull,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(
-                      Radius.circular(AppRadius.radius15),
+                      Radius.circular(15),
                     ),
                     border: Border.all(color: AppColors.primarydarkColor),
                   ),
@@ -197,7 +197,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                                         style: BorderStyle.none,
                                       ),
                                       borderRadius: BorderRadius.all(
-                                          Radius.circular(AppRadius.radius10))),
+                                          Radius.circular(10))),
                                   primary: AppColors.primarylightColor,
                                 ),
                                 child: Row(
@@ -275,13 +275,13 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                   ],
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(AppRadius.radius10),
-                    topLeft: Radius.circular(AppRadius.radius10),
+                    topRight: Radius.circular(10),
+                    topLeft: Radius.circular(10),
                   ),
                 ),
                 child: Padding(
                   padding:
-                      EdgeInsets.symmetric(horizontal: AppPaddings.padding24),
+                      EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
                   child: Column(
                     children: [
                       SizedBox(
@@ -324,7 +324,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                                     style: BorderStyle.none,
                                   ),
                                   borderRadius: BorderRadius.all(
-                                      Radius.circular(AppRadius.radius30))),
+                                      Radius.circular(30))),
                               primary: AppColors.primarylightColor,
                             ),
                             child: Text(

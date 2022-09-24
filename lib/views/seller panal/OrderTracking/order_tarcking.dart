@@ -8,7 +8,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../../../constants/colors.dart';
 import '../../../../constants/height.dart';
 import '../../../../constants/icons.dart';
-import '../../../../constants/padding.dart';
+
 
 import '../../../../models/live_tracking_model/live_tracking_cart_model.dart';
 import '../../../../utils/size_config.dart';
@@ -37,7 +37,7 @@ class _OrderTrackingState extends State<OrderTracking> {
             )),
         actions: [
           Padding(
-              padding: EdgeInsets.only(right: AppPaddings.padding15),
+              padding: EdgeInsets.only(right: SizeConfig.widthMultiplier * 3.9),
               child: SvgPicture.asset(
                 AppIcons.message,
                 color: Colors.black,
@@ -46,7 +46,7 @@ class _OrderTrackingState extends State<OrderTracking> {
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(
-          horizontal: AppPaddings.padding22,
+          horizontal: SizeConfig.widthMultiplier * 4.95,
         ),
         child: SingleChildScrollView(
           physics: const BouncingScrollPhysics(),

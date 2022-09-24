@@ -2,8 +2,8 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/curated%20product%20detail/curated_product_fullimage.dart';
@@ -130,15 +130,15 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                 height: SizeConfig.heightMultiplier * 67,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(AppRadius.radius30),
-                      topLeft: Radius.circular(AppRadius.radius30)),
+                      topRight: Radius.circular(30),
+                      topLeft: Radius.circular(30)),
                   color: Colors.white,
                 ),
                 child: Padding(
                   padding: EdgeInsets.only(
                       top: SizeConfig.heightMultiplier * 4,
-                      left: AppPaddings.padding17,
-                      right: AppPaddings.padding17),
+                      left: SizeConfig.widthMultiplier * 4.25,
+                      right: SizeConfig.widthMultiplier * 4.25),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,

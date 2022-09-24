@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/curated_store_models/productmodel.dart';
@@ -147,8 +147,8 @@ class _CuratedStoreDetailState extends State<CuratedStoreDetail> {
                 height: AppHeights.height525,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(AppRadius.radius30),
-                      topLeft: Radius.circular(AppRadius.radius30)),
+                      topRight: Radius.circular(30),
+                      topLeft: Radius.circular(30)),
                   color: Colors.white,
                 ),
                 child: SingleChildScrollView(
@@ -156,8 +156,8 @@ class _CuratedStoreDetailState extends State<CuratedStoreDetail> {
                     children: [
                       Padding(
                         padding: EdgeInsets.symmetric(
-                            horizontal: AppPaddings.padding22,
-                            vertical: AppPaddings.padding25),
+                            horizontal: SizeConfig.widthMultiplier * 4.95,
+                            vertical: SizeConfig.widthMultiplier * 6.35),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -336,7 +336,7 @@ class PopularTab extends StatelessWidget {
           crossAxisCount: 2),
       itemBuilder: (context, index) {
         return Padding(
-          padding: EdgeInsets.only(left: AppPaddings.padding25),
+          padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
           child: ProductCard(
               image: product_model[index].image,
               title: product_model[index].title,
@@ -372,7 +372,7 @@ class NewTab extends StatelessWidget {
           crossAxisCount: 2),
       itemBuilder: (context, index) {
         return Padding(
-          padding: EdgeInsets.only(left: AppPaddings.padding25),
+          padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
           child: ProductCard(
               image: product_model[index].image,
               title: product_model[index].title,
@@ -467,7 +467,7 @@ class _ByCategoriesTabState extends State<ByCategoriesTab> {
               crossAxisCount: 2),
           itemBuilder: (context, index) {
             return Padding(
-              padding: EdgeInsets.only(left: AppPaddings.padding25),
+              padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
               child: Column(
                 children: [
                   ProductCard(

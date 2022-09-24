@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
@@ -49,7 +49,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
         ],
       ),
       body: Padding(
-        padding:  EdgeInsets.symmetric(horizontal: AppPaddings.padding15),
+        padding:  EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 3.9),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -201,7 +201,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
                         AppIcons.minuscircle)),
                 Padding(
                   padding: EdgeInsets.symmetric(
-                      horizontal: AppPaddings.padding8),
+                      horizontal: SizeConfig.heightMultiplier * 1),
                   child: TextView(
                     text:val
                         .toString(),

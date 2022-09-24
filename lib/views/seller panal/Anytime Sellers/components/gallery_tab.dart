@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../constants/height.dart';
-import '../../../../../constants/padding.dart';
+
 import '../../../../../constants/width.dart';
 import '../../../../../models/curated_store_models/productmodel.dart';
 import '../../../../../utils/size_config.dart';
@@ -23,14 +23,14 @@ class GalleryTab extends StatelessWidget {
       itemBuilder: (context, index) {
         return index == 0
             ? Padding(
-          padding:  EdgeInsets.only(left: AppPaddings.padding8,right: AppPaddings.padding8),
+          padding:  EdgeInsets.only(left: SizeConfig.heightMultiplier * 1,right: SizeConfig.heightMultiplier * 1),
           child: GestureDetector(
             onTap: () {},
             child:   DottedContainerWidget(text: 'Add Pictures',icon: false,),
           ),
         ) :  Container(
           margin:  EdgeInsets.only(
-              left: AppPaddings.padding8,right: AppPaddings.padding8),
+              left: SizeConfig.heightMultiplier * 1,right: SizeConfig.heightMultiplier * 1),
           height: AppHeights.height151,
           width: AppWidths.width150,
           decoration: BoxDecoration(

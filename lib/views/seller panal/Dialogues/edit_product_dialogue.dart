@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/padding.dart';
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -8,7 +8,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../../constants/height.dart';
-import '../../../../constants/radius.dart';
+
 import '../../widgets/custom_text_button.dart';
 import '../Curated Store Seller/curated_store_seller.dart';
 
@@ -54,7 +54,7 @@ class EditProductDialogue extends StatelessWidget {
                       ),
                       Padding(
                         padding: EdgeInsets.symmetric(
-                            horizontal: AppPaddings.padding25),
+                            horizontal: SizeConfig.widthMultiplier * 6.35),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -82,7 +82,7 @@ class EditProductDialogue extends StatelessWidget {
                                 color: AppColors.primarylightColor
                                     .withOpacity(0.3),
                                 borderRadius:
-                                    BorderRadius.circular(AppRadius.radius10),
+                                    BorderRadius.circular(10),
                               ),
                             ),
                             SizedBox(
@@ -162,7 +162,7 @@ class EditProductDialogue extends StatelessWidget {
                               title: 'SAVE PRODUCT',
                               textcolour: Colors.white,
                               colour: AppColors.primarylightColor,
-                              radius: AppRadius.radius20,
+                              radius: 20,
                               height: AppHeights.height45,
                               width: double.infinity,
                             ),
@@ -174,7 +174,7 @@ class EditProductDialogue extends StatelessWidget {
                               title: 'Remove PRODUCT',
                               textcolour: Colors.white,
                               colour: Colors.redAccent,
-                              radius: AppRadius.radius20,
+                              radius: 20,
                               height: AppHeights.height45,
                               width: double.infinity,
                             ),

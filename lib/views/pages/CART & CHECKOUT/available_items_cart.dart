@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/checkout_model/all_cart_checkout_model.dart';
@@ -77,7 +77,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
           children: [
             Padding(
                 padding: EdgeInsets.only(
-                    left: AppPaddings.padding24, top: AppPaddings.padding13),
+                    left: SizeConfig.widthMultiplier * 6.13, top: SizeConfig.heightMultiplier * 1.6),
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
@@ -89,7 +89,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                           itemBuilder: (BuildContext context, int index) {
                             return Padding(
                               padding: EdgeInsets.only(
-                                  bottom: AppPaddings.padding24),
+                                  bottom: SizeConfig.widthMultiplier * 6.13),
                               child: Slidable(
                                 key: const ValueKey(0),
                                 endActionPane: ActionPane(
@@ -99,9 +99,9 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                     SlidableAction(
                                       borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(
-                                              AppRadius.radius20),
+                                              20),
                                           bottomLeft: Radius.circular(
-                                              AppRadius.radius20)),
+                                              20)),
                                       onPressed: null,
                                       backgroundColor: const Color(0xffFF4C5E),
                                       foregroundColor: Colors.white,
@@ -113,14 +113,14 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                   children: [
                                     Padding(
                                       padding: EdgeInsets.only(
-                                          right: AppPaddings.padding15),
+                                          right: SizeConfig.widthMultiplier * 3.9),
                                       child: Container(
                                         height: AppHeights.height88,
                                         width: AppWidths.width88,
                                         decoration: BoxDecoration(
                                             borderRadius: BorderRadius.all(
                                                 Radius.circular(
-                                                    AppRadius.radius20)),
+                                                    20)),
                                             color: AppColors.primarydarkColor
                                                 .withOpacity(0.1),
                                             image: DecorationImage(
@@ -185,7 +185,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                           ),
                                           Padding(
                                             padding: EdgeInsets.only(
-                                                right: AppPaddings.padding13),
+                                                right: SizeConfig.heightMultiplier * 1.6),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.min,
                                               children: [
@@ -222,7 +222,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                                 Padding(
                                                   padding: EdgeInsets.symmetric(
                                                       horizontal:
-                                                          AppPaddings.padding8),
+                                                          SizeConfig.heightMultiplier * 1),
                                                   child: TextView(
                                                     text: listAllCart[index]
                                                         .value
@@ -269,16 +269,16 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                         height: AppHeights.height50,
                       ),
                       Padding(
-                        padding: EdgeInsets.only(right: AppPaddings.padding24),
+                        padding: EdgeInsets.only(right: SizeConfig.widthMultiplier * 6.13),
                         child: Container(
                           width: AppWidths.widthFull,
                           decoration: BoxDecoration(
                             color: AppColors.primarydarkColor.withOpacity(0.15),
                             borderRadius:
-                                BorderRadius.circular(AppRadius.radius8),
+                                BorderRadius.circular(8),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(AppPaddings.padding8),
+                            padding: EdgeInsets.all(SizeConfig.heightMultiplier * 1),
                             child: Text(
                               "Kindly make the payment once you collect the product from the seller as the order will be collected from the provided address!",
                               textAlign: TextAlign.center,
@@ -316,14 +316,14 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                       ),
                     ],
                     borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(AppRadius.radius24),
-                      topRight: Radius.circular(AppRadius.radius24),
+                      topLeft: Radius.circular(24),
+                      topRight: Radius.circular(24),
                     ),
                     color: Colors.white,
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsets.symmetric(horizontal: AppPaddings.padding24),
+                        EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
                     child: Column(
                       children: [
                         SizedBox(
@@ -362,7 +362,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                               title: 'CHECK OUT',
                               height: AppHeights.height50,
                               width: AppWidths.width150,
-                              radius: AppRadius.radius30,
+                              radius: 30,
                               textcolour: Colors.white,
                               fontSize: SizeConfig.textMultiplier * 1.8,
                               colour: AppColors.primarylightColor,

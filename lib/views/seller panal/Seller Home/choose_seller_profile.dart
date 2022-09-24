@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/constants/height.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/views/seller%20panal/Anytime%20Sellers/any_time_seller_store.dart';
 import 'package:ecommerce_app/views/seller%20panal/Curated%20Store%20Seller/curated_store_seller.dart';
@@ -64,7 +64,7 @@ class _ChooseSellerProfileState extends State<ChooseSellerProfile> {
                             color: AppColors.primarylightColor.withOpacity(0.3),
                             border: Border.all(color: Colors.white, width: 3)),
                         child: Padding(
-                          padding: EdgeInsets.all(AppPaddings.padding22),
+                          padding: EdgeInsets.all(SizeConfig.widthMultiplier * 4.95),
                           child: Image.asset(AppImages.sellerHouse),
                         ),
                       )
@@ -121,8 +121,8 @@ class _ChooseSellerProfileState extends State<ChooseSellerProfile> {
           ),
           Padding(
             padding: EdgeInsets.symmetric(
-                horizontal: AppPaddings.padding24,
-                vertical: AppPaddings.padding8),
+                horizontal: SizeConfig.widthMultiplier * 6.13,
+                vertical: SizeConfig.heightMultiplier * 1),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -138,7 +138,7 @@ class _ChooseSellerProfileState extends State<ChooseSellerProfile> {
                 ...List.generate(
                   buttons.length,
                   (index) => Container(
-                    margin: EdgeInsets.only(bottom: AppPaddings.padding22),
+                    margin: EdgeInsets.only(bottom: SizeConfig.widthMultiplier * 4.95),
                     padding: selected == index ? const EdgeInsets.all(2) : null,
                     decoration: selected == index
                         ? BoxDecoration(
@@ -199,7 +199,7 @@ class ChooseSellerButton extends StatelessWidget {
         height: AppHeights.height52,
         decoration: BoxDecoration(
             color: color,
-            borderRadius: BorderRadius.all(Radius.circular(AppRadius.radius10)),
+            borderRadius: BorderRadius.all(Radius.circular(10)),
             border: Border.all(
               color: Colors.black12,
             )),

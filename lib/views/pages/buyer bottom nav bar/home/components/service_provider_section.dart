@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/constants/height.dart';
-import 'package:ecommerce_app/constants/padding.dart';
+
 import 'package:ecommerce_app/models/homemodels/serviceprovidermodel.dart';
+import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/home/components/serviceprovidercard.dart';
 import 'package:ecommerce_app/views/pages/stores/stores.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +23,7 @@ class ServiceProviderSection extends StatelessWidget {
         physics: BouncingScrollPhysics(),
         itemBuilder: (context, index) {
           return Padding(
-            padding: EdgeInsets.only(left: AppPaddings.padding18),
+            padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 4.55),
             child: ServiceProviderCard(
               image: homeserviceprovider_model[index].image,
               title: homeserviceprovider_model[index].title,

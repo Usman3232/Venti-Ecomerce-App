@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/constants/padding.dart';
+
 import 'package:ecommerce_app/models/curated_store_models/productmodel.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
@@ -31,7 +31,7 @@ class _ProductsTabState extends State<ProductsTab> {
               crossAxisCount: 2),
           itemBuilder: (context, index) {
             return Padding(
-              padding: EdgeInsets.only(left: AppPaddings.padding25),
+              padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
               child: Column(
                 children: [
                   ProductCard(

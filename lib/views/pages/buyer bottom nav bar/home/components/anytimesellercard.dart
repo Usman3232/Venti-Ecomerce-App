@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -45,7 +45,7 @@ class _AnyTimeSellerCardState extends State<AnyTimeSellerCard> {
         decoration: BoxDecoration(
            
             color: Colors.white,
-            borderRadius: BorderRadius.circular(AppRadius.radius15)),
+            borderRadius: BorderRadius.circular(15)),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -56,8 +56,8 @@ class _AnyTimeSellerCardState extends State<AnyTimeSellerCard> {
                   // width: AppWidths.width292,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(AppRadius.radius15),
-                      topRight: Radius.circular(AppRadius.radius15),
+                      topLeft: Radius.circular(15),
+                      topRight: Radius.circular(15),
                     ),
                     image: DecorationImage(
                         image: AssetImage(widget.image), fit: BoxFit.cover),
@@ -93,7 +93,7 @@ class _AnyTimeSellerCardState extends State<AnyTimeSellerCard> {
               ],
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding15),
+              padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 3.9),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

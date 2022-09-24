@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
 
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
@@ -63,7 +63,7 @@ class _OrderHistoryState extends State<OrderHistory>
               indicator: BoxDecoration(
                   shape: BoxShape.rectangle,
                   color: AppColors.primarylightColor,
-                  borderRadius: BorderRadius.circular(AppRadius.radius15)),
+                  borderRadius: BorderRadius.circular(15)),
               tabs: const [
                 Tab(
                   text: 'Ongoing',

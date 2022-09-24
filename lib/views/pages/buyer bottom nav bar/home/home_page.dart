@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/padding.dart';
+
 
 import 'package:ecommerce_app/models/live_tracking_model/carousel_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
         elevation: 0,
         centerTitle: true,
         leading: Padding(
-          padding: EdgeInsets.all(AppPaddings.padding15),
+          padding: EdgeInsets.all(SizeConfig.widthMultiplier * 3.9),
           child: GestureDetector(
               onTap: () {
                 Scaffold.of(context).openDrawer();
@@ -68,7 +68,7 @@ class _HomePageState extends State<HomePage> {
           Stack(children: [
             Padding(
               padding: EdgeInsets.only(
-                  top: AppPaddings.padding15, right: AppPaddings.padding15),
+                  top: SizeConfig.widthMultiplier * 3.9, right: SizeConfig.widthMultiplier * 3.9),
               child: SvgPicture.asset(AppIcons.cart),
             ),
             Positioned(
@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
               Stories(),
               Padding(
                 padding:
-                    EdgeInsets.symmetric(horizontal: AppPaddings.padding18),
+                    EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 4.55),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -117,7 +117,7 @@ class _HomePageState extends State<HomePage> {
               CategoriesSection(),
               Padding(
                 padding:
-                    EdgeInsets.symmetric(horizontal: AppPaddings.padding18),
+                    EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 4.55),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -150,7 +150,7 @@ class _HomePageState extends State<HomePage> {
                 height: AppHeights.height21,
               ),
               Padding(
-                padding: EdgeInsets.only(left: AppPaddings.padding24),
+                padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.13),
                 child: TextView(
                   text: "Special For You",
                   fontWeight: FontWeight.w700,
@@ -168,7 +168,7 @@ class _HomePageState extends State<HomePage> {
               ),
               Padding(
                   padding:
-                      EdgeInsets.symmetric(horizontal: AppPaddings.padding24),
+                      EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
                   child: SectionTitleAndSeeAll(
                       title: "Service Providers",
                       onpress: () {

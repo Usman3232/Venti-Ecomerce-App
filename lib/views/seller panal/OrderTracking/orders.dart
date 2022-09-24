@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/height.dart';
-import 'package:ecommerce_app/constants/padding.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +32,7 @@ class _OrdersDeliveredState extends State<OrdersDelivered> {
             )),
         actions: [
           Padding(
-              padding: EdgeInsets.only(right: AppPaddings.padding15),
+              padding: EdgeInsets.only(right: SizeConfig.widthMultiplier * 3.9),
               child: SvgPicture.asset(
                 AppIcons.message,
                 color: Colors.black,

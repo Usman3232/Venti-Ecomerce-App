@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/constants/padding.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/carousel_card_widget.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +17,7 @@ class ProductAddNew extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding19),
+      padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 4.75),
       child: SizedBox(
         height: SizeConfig.heightMultiplier * 27.1,
         child: Stack(

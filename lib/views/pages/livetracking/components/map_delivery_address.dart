@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
-import 'package:ecommerce_app/constants/padding.dart';
+
 
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/livetracking/live_tracking_detail.dart';
@@ -28,7 +28,7 @@ class MapDeliveryAddress extends StatelessWidget {
                   BorderRadius.circular(SizeConfig.widthMultiplier * 6.6),
             ),
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding13),
+              padding: EdgeInsets.symmetric(horizontal: SizeConfig.heightMultiplier * 1.6),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -58,7 +58,7 @@ class MapDeliveryAddress extends StatelessWidget {
                 borderRadius:
                     BorderRadius.circular(SizeConfig.widthMultiplier * 2)),
             child: Padding(
-              padding: EdgeInsets.all(AppPaddings.padding15),
+              padding: EdgeInsets.all(SizeConfig.widthMultiplier * 3.9),
               child: Row(
                 children: [
                   SizedBox(

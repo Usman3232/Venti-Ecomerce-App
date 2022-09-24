@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
@@ -22,11 +22,11 @@ class DliveryRiderCard extends StatelessWidget {
         color: Colors.white,
         shadowColor: Colors.blueGrey.withOpacity(0.5),
         shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(AppRadius.radius20)),
+            borderRadius: BorderRadius.circular(20)),
         child: Padding(
           padding: EdgeInsets.symmetric(
-              horizontal: AppPaddings.padding22,
-              vertical: AppPaddings.padding13),
+              horizontal: SizeConfig.widthMultiplier * 4.95,
+              vertical: SizeConfig.heightMultiplier * 1.6),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

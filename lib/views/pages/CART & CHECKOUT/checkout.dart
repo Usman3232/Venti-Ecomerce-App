@@ -2,8 +2,8 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -72,7 +72,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
       body: Stack(
         children: [
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding24),
+            padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -97,10 +97,10 @@ class _CheckoutPageState extends State<CheckoutPage> {
                     shadowColor: Colors.blueGrey.withOpacity(0.4),
                     shape: RoundedRectangleBorder(
                         borderRadius:
-                            BorderRadius.circular(AppRadius.radius15)),
+                            BorderRadius.circular(15)),
                     child: Padding(
                       padding: EdgeInsets.symmetric(
-                          horizontal: AppPaddings.padding15),
+                          horizontal: SizeConfig.widthMultiplier * 3.9),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -112,7 +112,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                 decoration: BoxDecoration(
                                   color: Colors.blueGrey.withOpacity(0.1),
                                   borderRadius:
-                                      BorderRadius.circular(AppRadius.radius8),
+                                      BorderRadius.circular(8),
                                 ),
                                 child: Center(
                                   child: SvgPicture.asset(AppIcons.home),
@@ -185,7 +185,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                     shape: RoundedRectangleBorder(
                                         borderRadius: BorderRadius.all(
                                             Radius.circular(
-                                                AppPaddings.padding15))),
+                                                SizeConfig.widthMultiplier * 3.9))),
                                     primary: AppColors.primarylightColor,
                                   ),
                                   child: Text(
@@ -224,8 +224,8 @@ class _CheckoutPageState extends State<CheckoutPage> {
                     maxLine: 2,
                     contentpadding: EdgeInsets.only(
                         bottom: 10,
-                        left: AppPaddings.padding18,
-                        top: AppPaddings.padding18),
+                        left: SizeConfig.widthMultiplier * 4.55,
+                        top: SizeConfig.widthMultiplier * 4.55),
                     hintText: 'e.g: “No Straw” (Optional)',
                     isoutline: true,
                     hintSize: SizeConfig.textMultiplier * 1.6,
@@ -263,7 +263,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           style: ElevatedButton.styleFrom(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.all(
-                                    Radius.circular(AppRadius.radius15))),
+                                    Radius.circular(15))),
                             primary: AppColors.primarylightColor,
                           ),
                           child: Text(
@@ -361,13 +361,13 @@ class _CheckoutPageState extends State<CheckoutPage> {
                 ],
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(AppRadius.radius20),
-                    topRight: Radius.circular(AppRadius.radius20)),
+                    topLeft: Radius.circular(20),
+                    topRight: Radius.circular(20)),
               ),
               child: Padding(
                 padding: EdgeInsets.symmetric(
-                    horizontal: AppPaddings.padding22,
-                    vertical: AppPaddings.padding17),
+                    horizontal: SizeConfig.widthMultiplier * 4.95,
+                    vertical: SizeConfig.widthMultiplier * 4.25),
                 child: Row(
                   children: [
                     Container(
@@ -375,14 +375,14 @@ class _CheckoutPageState extends State<CheckoutPage> {
                         width: SizeConfig.widthMultiplier * 34.5,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.all(
-                                Radius.circular(AppRadius.radius10)),
+                                Radius.circular(10)),
                             color: const Color(0xff7496C2).withOpacity(0.1),
                             image: DecorationImage(
                                 image: AssetImage(AppImages.backgroundVisa))),
                         child: Align(
                           alignment: Alignment.bottomCenter,
                           child: Padding(
-                            padding: EdgeInsets.all(AppPaddings.padding8),
+                            padding: EdgeInsets.all(SizeConfig.heightMultiplier * 1),
                             child: Row(
                               children: [
                                 Text(
@@ -443,7 +443,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           title: 'PLACE ORDER',
                           height: AppHeights.height48,
                           width: AppWidths.width150,
-                          radius: AppRadius.radius30,
+                          radius: 30,
                           textcolour: Colors.white,
                           fontSize: SizeConfig.textMultiplier * 1.8,
                           colour: AppColors.primarylightColor,

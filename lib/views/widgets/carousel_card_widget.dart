@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/constants/radius.dart';
+
 
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -31,7 +31,7 @@ class _CarouselCardState extends State<CarouselCard> {
       decoration: BoxDecoration(
         image:
             DecorationImage(image: AssetImage(widget.image), fit: BoxFit.cover),
-        borderRadius: BorderRadius.circular(AppRadius.radius10),
+        borderRadius: BorderRadius.circular(10),
       ),
       child: Padding(
         padding: EdgeInsets.only(

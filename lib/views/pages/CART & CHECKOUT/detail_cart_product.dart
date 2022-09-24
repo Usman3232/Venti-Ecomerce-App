@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:flutter/material.dart';
@@ -8,7 +8,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 
 import '../../../constants/icons.dart';
-import '../../../constants/padding.dart';
+
 import '../../../utils/size_config.dart';
 import '../../widgets/TextView.dart';
 import '../../widgets/custom_text_button.dart';
@@ -63,7 +63,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                   width: double.infinity,
                   decoration: BoxDecoration(
                     borderRadius:
-                        BorderRadius.all(Radius.circular(AppRadius.radius20)),
+                        BorderRadius.all(Radius.circular(20)),
                     color: const Color(0xff536F95).withOpacity(0.1),
                   ),
                   child: Center(
@@ -128,7 +128,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                         child: SvgPicture.asset(AppIcons.minuscircle)),
                     Padding(
                       padding: EdgeInsets.symmetric(
-                          horizontal: AppPaddings.padding8),
+                          horizontal: SizeConfig.heightMultiplier * 1),
                       child: TextView(
                         text: value.toString(),
                         size: SizeConfig.textMultiplier * 1.8,
@@ -170,11 +170,11 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                   width: double.infinity,
                   decoration: BoxDecoration(
                     borderRadius:
-                        BorderRadius.all(Radius.circular(AppPaddings.padding8)),
+                        BorderRadius.all(Radius.circular(SizeConfig.heightMultiplier * 1)),
                     color: AppColors.primarydarkColor.withOpacity(0.1),
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(AppPaddings.padding8),
+                    padding: EdgeInsets.all(SizeConfig.heightMultiplier * 1),
                     child: Text(
                       "Kindly make the payment once you collect the product from the seller as the order will be colledted from the provided address!",
                       textAlign: TextAlign.center,
@@ -243,7 +243,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                             title: 'CHECK OUT',
                             height: AppHeights.height50,
                             width: AppWidths.width150,
-                            radius: AppRadius.radius30,
+                            radius: 30,
                             textcolour: Colors.white,
                             fontSize: SizeConfig.textMultiplier * 1.8,
                             colour: AppColors.primarylightColor,

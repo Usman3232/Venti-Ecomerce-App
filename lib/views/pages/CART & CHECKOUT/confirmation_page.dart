@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/images.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -121,7 +121,7 @@ class _ConfirmationState extends State<Confirmation> {
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(
-                              Radius.circular(AppRadius.radius30))),
+                              Radius.circular(30))),
                       primary: const Color(0xffFFEDEF),
                     ),
                     child: Text(

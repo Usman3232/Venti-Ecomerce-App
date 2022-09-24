@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -54,7 +54,7 @@ class _StoreSearchState extends State<StoreSearch> {
             children: [
               Padding(
                 padding:
-                    EdgeInsets.symmetric(horizontal: AppPaddings.padding15),
+                    EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 3.9),
                 child: InkWell(
                     onTap: () {
                       Get.back();
@@ -66,14 +66,14 @@ class _StoreSearchState extends State<StoreSearch> {
                       AuthTextInputField(hintText: "Search a curated store")),
               Padding(
                 padding:
-                    EdgeInsets.symmetric(horizontal: AppPaddings.padding15),
+                    EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 3.9),
                 child: GestureDetector(
                     onTap: () {
                       showModalBottomSheet(
                           isScrollControlled: true,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.vertical(
-                                  top: Radius.circular(AppRadius.radius30))),
+                                  top: Radius.circular(30))),
                           context: context,
                           builder: (_) => Container(
                                 // height: SizeConfig.heightMultiplier * 44.5,
@@ -82,7 +82,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                     color: Color(0xffF8F8F8),
                                     borderRadius: BorderRadius.vertical(
                                         top: Radius.circular(
-                                            AppRadius.radius30))),
+                                            30))),
                                 child: StatefulBuilder(builder:
                                     (BuildContext context,
                                         StateSetter setState) {
@@ -92,9 +92,9 @@ class _StoreSearchState extends State<StoreSearch> {
                                     children: [
                                       Padding(
                                         padding: EdgeInsets.only(
-                                            left: AppPaddings.padding24,
-                                            right: AppPaddings.padding24,
-                                            top: AppPaddings.padding24),
+                                            left: SizeConfig.widthMultiplier * 6.13,
+                                            right: SizeConfig.widthMultiplier * 6.13,
+                                            top: SizeConfig.widthMultiplier * 6.13),
                                         child: Column(
                                           mainAxisAlignment:
                                               MainAxisAlignment.start,
@@ -376,11 +376,11 @@ class _StoreSearchState extends State<StoreSearch> {
                                             color: Colors.white,
                                             borderRadius: BorderRadius.vertical(
                                                 top: Radius.circular(
-                                                    AppRadius.radius30))),
+                                                    30))),
                                         child: Padding(
                                           padding: EdgeInsets.symmetric(
                                               horizontal:
-                                                  AppPaddings.padding24),
+                                                  SizeConfig.widthMultiplier * 6.13),
                                           child: Row(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.spaceBetween,
@@ -456,16 +456,16 @@ class _SelectWidgetState extends State<SelectWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: AppPaddings.padding13),
+      padding: EdgeInsets.only(left: SizeConfig.heightMultiplier * 1.6),
       child: InkWell(
         onTap: widget.onPressed,
         child: Container(
-          padding: EdgeInsets.all(AppPaddings.padding13),
+          padding: EdgeInsets.all(SizeConfig.heightMultiplier * 1.6),
           decoration: BoxDecoration(
               color: widget.isfocus
                   ? AppColors.primarylightColor
                   : Color(0xffF8F8F8),
-              borderRadius: BorderRadius.circular(AppRadius.radius30),
+              borderRadius: BorderRadius.circular(30),
               border: Border.all(
                 color: Colors.black12,
               )),

@@ -12,7 +12,7 @@ import 'package:get/get.dart';
 import '../../../../constants/colors.dart';
 import '../../../../constants/height.dart';
 import '../../../../constants/icons.dart';
-import '../../../../constants/padding.dart';
+
 import '../../../../utils/size_config.dart';
 import '../../../widgets/TextView.dart';
 import '../../../widgets/carousel_card_widget.dart';
@@ -47,7 +47,7 @@ class _ProductPageState extends State<ProductPage> {
         elevation: 0,
         centerTitle: true,
         leading: Padding(
-          padding: EdgeInsets.all(AppPaddings.padding15),
+          padding: EdgeInsets.all(SizeConfig.widthMultiplier * 3.9),
           child: GestureDetector(
               onTap: () {
                 Scaffold.of(context).openDrawer();
@@ -64,7 +64,7 @@ class _ProductPageState extends State<ProductPage> {
           Stack(children: [
             Padding(
               padding: EdgeInsets.only(
-                  top: AppPaddings.padding15, right: AppPaddings.padding15),
+                  top: SizeConfig.widthMultiplier * 3.9, right: SizeConfig.widthMultiplier * 3.9),
               child: SvgPicture.asset(AppIcons.cart),
             ),
             Positioned(
@@ -91,7 +91,7 @@ class _ProductPageState extends State<ProductPage> {
               height: AppHeights.height35,
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding24),
+              padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
               child: SectionTitleAndSeeAll(
                 title: "From Our Curated Shops",
                 titlesize: SizeConfig.textMultiplier * 2.55,
@@ -107,7 +107,7 @@ class _ProductPageState extends State<ProductPage> {
               height: AppHeights.height10,
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding24),
+              padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
               child: TextView(
                 text: "Trending",
                 fontWeight: FontWeight.w700,
@@ -122,7 +122,7 @@ class _ProductPageState extends State<ProductPage> {
               height: AppHeights.height21,
             ),
             Padding(
-              padding: EdgeInsets.only(left: AppPaddings.padding24),
+              padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.13),
               child: TextView(
                 text: "Special For You",
                 fontWeight: FontWeight.w700,

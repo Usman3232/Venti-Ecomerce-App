@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:ecommerce_app/constants/height.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -51,7 +51,7 @@ class MyLocation extends StatelessWidget {
           height: SizeConfig.heightMultiplier * 17.6,
           width: AppWidths.widthFull,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadius.radius15),
+            borderRadius: BorderRadius.circular(15),
           ),
           child: GoogleMap(
             zoomControlsEnabled: false,

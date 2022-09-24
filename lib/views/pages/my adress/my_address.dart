@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -64,7 +64,7 @@ class _MyAddressState extends State<MyAddress> {
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(
-          horizontal: AppPaddings.padding24,
+          horizontal: SizeConfig.widthMultiplier * 6.13,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -83,12 +83,12 @@ class _MyAddressState extends State<MyAddress> {
                   elevation: card1 ? 3 : 0,
                   shadowColor: Colors.blueGrey.withOpacity(0.4),
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(AppRadius.radius15)),
+                      borderRadius: BorderRadius.circular(15)),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(left: AppPaddings.padding15),
+                        padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 3.9),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -117,7 +117,7 @@ class _MyAddressState extends State<MyAddress> {
                       ),
                       Padding(
                         padding: EdgeInsets.symmetric(
-                            horizontal: AppPaddings.padding15),
+                            horizontal: SizeConfig.widthMultiplier * 3.9),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -130,7 +130,7 @@ class _MyAddressState extends State<MyAddress> {
                                       color: const Color(0xff7496C2)
                                           .withOpacity(0.2),
                                       borderRadius: BorderRadius.circular(
-                                          AppRadius.radius10)),
+                                          10)),
                                   child: Padding(
                                     padding: EdgeInsets.all(
                                         SizeConfig.widthMultiplier * 1),
@@ -191,7 +191,7 @@ class _MyAddressState extends State<MyAddress> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(left: AppPaddings.padding15),
+                        padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 3.9),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -220,7 +220,7 @@ class _MyAddressState extends State<MyAddress> {
                       ),
                       Padding(
                         padding: EdgeInsets.symmetric(
-                            horizontal: AppPaddings.padding15),
+                            horizontal: SizeConfig.widthMultiplier * 3.9),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -233,7 +233,7 @@ class _MyAddressState extends State<MyAddress> {
                                       color: const Color(0xff7496C2)
                                           .withOpacity(0.2),
                                       borderRadius: BorderRadius.circular(
-                                          AppRadius.radius10)),
+                                          10)),
                                   child: Padding(
                                     padding: EdgeInsets.all(
                                         SizeConfig.widthMultiplier * 1),
@@ -303,7 +303,7 @@ class _MyAddressState extends State<MyAddress> {
               height: AppHeights.height289,
               width: AppWidths.widthFull,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(AppRadius.radius15),
+                borderRadius: BorderRadius.circular(15),
               ),
               child: GoogleMap(
                 zoomControlsEnabled: false,
@@ -324,7 +324,7 @@ class _MyAddressState extends State<MyAddress> {
                 width: SizeConfig.widthMultiplier * 90,
                 textcolour: Colors.white,
                 fontSize: SizeConfig.textMultiplier * 1.8,
-                radius: AppRadius.radius15,
+                radius: 15,
                 callback: () {
                   Get.to(const AddNewAddress());
                 }),

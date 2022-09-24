@@ -1,13 +1,13 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
-import 'package:ecommerce_app/constants/padding.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../constants/radius.dart';
+
 
 import '../../../../utils/size_config.dart';
 
@@ -103,7 +103,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                         width: double.infinity,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(
-                              Radius.circular(AppRadius.radius10)),
+                              Radius.circular(10)),
                           color: const Color(0xff7496C2).withOpacity(0.3),
                         ),
                         child: Center(
@@ -122,7 +122,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                         width: double.infinity,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(
-                              Radius.circular(AppRadius.radius10)),
+                              Radius.circular(10)),
                           color: AppColors.primarylightColor.withOpacity(0.3),
                         ),
                         child: Padding(
@@ -235,7 +235,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                                 width: double.infinity,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.all(
-                                      Radius.circular(AppRadius.radius10)),
+                                      Radius.circular(10)),
                                   color: AppColors.primarylightColor
                                       .withOpacity(0.3),
                                 ),
@@ -325,7 +325,7 @@ class AddItemWidget extends StatelessWidget {
           borderRadius: BorderRadius.all(Radius.circular(10)),
         ),
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding18),
+          padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 4.55),
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -450,7 +450,7 @@ class AddItemWidget extends StatelessWidget {
                                       'assets/images/custominvoicecardimage.png'),
                                   fit: BoxFit.cover),
                               borderRadius:
-                                  BorderRadius.circular(AppRadius.radius10)),
+                                  BorderRadius.circular(10)),
                         ),
                         SizedBox(
                           height: SizeConfig.heightMultiplier * 2,

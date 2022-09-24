@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/height.dart';
-import 'package:ecommerce_app/constants/padding.dart';
+
 
 import 'package:ecommerce_app/models/homemodels/anytimesellermodel.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -28,7 +28,7 @@ class AnyTimeSellerSection extends StatelessWidget {
               ),
               Padding(
                 padding:
-                    EdgeInsets.symmetric(horizontal: AppPaddings.padding24),
+                    EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -64,7 +64,7 @@ class AnyTimeSellerSection extends StatelessWidget {
                   shrinkWrap: true,
                   itemBuilder: (context, index) {
                     return Padding(
-                      padding: EdgeInsets.only(left: AppPaddings.padding19),
+                      padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 4.75),
                       child: AnyTimeSellerCard(
                         image: anytimeseller_model[index].image,
                         favourite: anytimeseller_model[index].favourite,

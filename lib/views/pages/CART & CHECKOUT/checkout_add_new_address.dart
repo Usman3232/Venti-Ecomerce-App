@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/height.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
 import 'package:ecommerce_app/models/checkout_model/add_new_cards.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_multi_formatter/formatters/masked_input_formatter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../constants/colors.dart';
-import '../../../constants/padding.dart';
+
 
 import '../../../constants/width.dart';
 import '../../../utils/size_config.dart';
@@ -79,7 +79,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding25),
+            padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.35),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -100,8 +100,8 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                   hintText: '',
                   inputType: TextInputType.text,
                   contentpadding: EdgeInsets.symmetric(
-                      horizontal: AppPaddings.padding25,
-                      vertical: AppPaddings.padding15),
+                      horizontal: SizeConfig.widthMultiplier * 6.35,
+                      vertical: SizeConfig.widthMultiplier * 3.9),
                   hintSize: SizeConfig.textMultiplier * 1.8,
                   textEditingController: nameController,
                 ),
@@ -119,7 +119,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                   hintText: '',
                   inputType: TextInputType.number,
                   suffixIcon: Padding(
-                    padding: EdgeInsets.all(AppRadius.radius8),
+                    padding: EdgeInsets.all(8),
                     child: Image.asset(
                       'assets/images/card_logo.png',
                       height: AppHeights.height8,
@@ -127,8 +127,8 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                     ),
                   ),
                   contentpadding: EdgeInsets.symmetric(
-                      horizontal: AppPaddings.padding25,
-                      vertical: AppPaddings.padding15),
+                      horizontal: SizeConfig.widthMultiplier * 6.35,
+                      vertical: SizeConfig.widthMultiplier * 3.9),
                   inputformatter: [
                     MaskedInputFormatter('#### #### #### ####'),
                   ],
@@ -155,7 +155,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                           AuthTextInputField(
                             isoutline: true,
                             contentpadding:
-                                EdgeInsets.all(AppPaddings.padding15),
+                                EdgeInsets.all(SizeConfig.widthMultiplier * 3.9),
                             radius: SizeConfig.widthMultiplier * 4,
                             hintText: '',
                             textEditingController: dateController,
@@ -188,8 +188,8 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                               isPassword: true,
                               inputType: TextInputType.number,
                               contentpadding: EdgeInsets.symmetric(
-                                  horizontal: AppPaddings.padding25,
-                                  vertical: AppPaddings.padding15),
+                                  horizontal: SizeConfig.widthMultiplier * 6.35,
+                                  vertical: SizeConfig.widthMultiplier * 3.9),
                               radius: SizeConfig.widthMultiplier * 4,
                               hintText: "",
                               textEditingController: cvvController,
@@ -220,8 +220,8 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                           AuthTextInputField(
                             isoutline: true,
                             contentpadding: EdgeInsets.symmetric(
-                                horizontal: AppPaddings.padding25,
-                                vertical: AppPaddings.padding15),
+                                horizontal: SizeConfig.widthMultiplier * 6.35,
+                                vertical: SizeConfig.widthMultiplier * 3.9),
                             radius: SizeConfig.widthMultiplier * 4,
                             hintText: '',
                             textEditingController: addressController,
@@ -253,8 +253,8 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                               isoutline: true,
                               inputType: TextInputType.number,
                               contentpadding: EdgeInsets.symmetric(
-                                  horizontal: AppPaddings.padding25,
-                                  vertical: AppPaddings.padding15),
+                                  horizontal: SizeConfig.widthMultiplier * 6.35,
+                                  vertical: SizeConfig.widthMultiplier * 3.9),
                               radius: SizeConfig.widthMultiplier * 4,
                               hintText: "12345",
                             ),
@@ -274,7 +274,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                   width: AppWidths.widthFull,
                   title: 'Save',
                   textcolour: Colors.white,
-                  radius: AppRadius.radius30,
+                  radius: 30,
                   fontWeight: FontWeight.w700,
                   fontSize: SizeConfig.textMultiplier * 2.04,
                 )
@@ -301,7 +301,7 @@ class AddNewCardsCarouselWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: AppPaddings.padding25),
+      padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(25),
@@ -315,7 +315,7 @@ class AddNewCardsCarouselWidget extends StatelessWidget {
           image: DecorationImage(image: AssetImage(image), fit: BoxFit.fill),
         ),
         child: Padding(
-          padding: EdgeInsets.only(left: AppPaddings.padding25),
+          padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
           child: Column(
             children: [
               SizedBox(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../../../constants/padding.dart';
+
 import '../../../../../models/curated_store_models/productmodel.dart';
 import '../../../../../utils/size_config.dart';
 import '../../Curated Store Seller/components/dotted_container_widget.dart';
@@ -30,7 +30,7 @@ class ProductsTab extends StatelessWidget {
           crossAxisCount: 2),
       itemBuilder: (context, index) {
         return Padding(
-          padding: EdgeInsets.only(left: AppPaddings.padding25),
+          padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
           child: index == 0
               ? GestureDetector(
                   onTap: () {

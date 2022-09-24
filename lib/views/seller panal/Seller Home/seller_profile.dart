@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:country_picker/country_picker.dart';
 import 'package:ecommerce_app/constants/height.dart';
-import 'package:ecommerce_app/constants/padding.dart';
+
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +13,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import '../../../../constants/colors.dart';
 import '../../../../constants/icons.dart';
 import '../../../../constants/images.dart';
-import '../../../../constants/radius.dart';
+
 
 import '../../../../constants/width.dart';
 import '../../../../utils/size_config.dart';
@@ -49,8 +49,8 @@ class _SellerProfileState extends State<SellerProfile> {
             const LeadingProfileWidget(),
             Padding(
               padding: EdgeInsets.symmetric(
-                  horizontal: AppPaddings.padding24,
-                  vertical: AppPaddings.padding8),
+                  horizontal: SizeConfig.widthMultiplier * 6.13,
+                  vertical: SizeConfig.heightMultiplier * 1),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -69,7 +69,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     hintText: 'Full Name',
                     isoutline: true,
                     contentpadding: EdgeInsets.symmetric(
-                      horizontal: AppPaddings.padding24,
+                      horizontal: SizeConfig.widthMultiplier * 6.13,
                     ),
                     hintSize: SizeConfig.textMultiplier * 1.6,
                     // textEditingController: nameController,
@@ -93,7 +93,7 @@ class _SellerProfileState extends State<SellerProfile> {
                       onPressed: () {},
                     ),
                     contentpadding: EdgeInsets.symmetric(
-                      horizontal: AppPaddings.padding24,
+                      horizontal: SizeConfig.widthMultiplier * 6.13,
                     ),
                     hintSize: SizeConfig.textMultiplier * 1.6,
                     // textEditingController: nameController,
@@ -114,8 +114,8 @@ class _SellerProfileState extends State<SellerProfile> {
                     isoutline: true,
                     maxLine: 4,
                     contentpadding: EdgeInsets.symmetric(
-                        horizontal: AppPaddings.padding24,
-                        vertical: AppPaddings.padding15),
+                        horizontal: SizeConfig.widthMultiplier * 6.13,
+                        vertical: SizeConfig.widthMultiplier * 3.9),
                     hintSize: SizeConfig.textMultiplier * 1.6,
                     // textEditingController: nameController,
                   ),
@@ -134,7 +134,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     hintText: 'Enter your website',
                     isoutline: true,
                     contentpadding: EdgeInsets.symmetric(
-                      horizontal: AppPaddings.padding24,
+                      horizontal: SizeConfig.widthMultiplier * 6.13,
                     ),
                     hintSize: SizeConfig.textMultiplier * 1.6,
                     // textEditingController: nameController,
@@ -154,7 +154,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     hintText: 'Social Media Links',
                     isoutline: true,
                     contentpadding: EdgeInsets.symmetric(
-                      horizontal: AppPaddings.padding24,
+                      horizontal: SizeConfig.widthMultiplier * 6.13,
                     ),
                     hintSize: SizeConfig.textMultiplier * 1.6,
                     // textEditingController: nameController,
@@ -174,7 +174,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     hintText: 'Enter GST',
                     isoutline: true,
                     contentpadding: EdgeInsets.symmetric(
-                      horizontal: AppPaddings.padding24,
+                      horizontal: SizeConfig.widthMultiplier * 6.13,
                     ),
                     hintSize: SizeConfig.textMultiplier * 1.6,
                     // textEditingController: nameController,
@@ -195,7 +195,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     isoutline: true,
                     inputType: TextInputType.emailAddress,
                     contentpadding: EdgeInsets.symmetric(
-                      horizontal: AppPaddings.padding24,
+                      horizontal: SizeConfig.widthMultiplier * 6.13,
                     ),
                     hintSize: SizeConfig.textMultiplier * 1.6,
                     // textEditingController: nameController,
@@ -381,7 +381,7 @@ class MapUploadButtonWidget extends StatelessWidget {
           height: AppHeights.height10,
         ),
         ClipRRect(
-          borderRadius: BorderRadius.all(Radius.circular(AppRadius.radius20)),
+          borderRadius: BorderRadius.all(Radius.circular(20)),
           child: SizedBox(
             height: SizeConfig.heightMultiplier * 12.6,
             width: AppWidths.widthFull,
@@ -403,7 +403,7 @@ class MapUploadButtonWidget extends StatelessWidget {
             width: AppWidths.widthFull,
             textcolour: Colors.white,
             fontSize: SizeConfig.textMultiplier * 1.8,
-            radius: AppRadius.radius15,
+            radius: 15,
             callback: () {}),
         SizedBox(
           height: SizeConfig.heightMultiplier * 20,
@@ -448,7 +448,7 @@ class LeadingProfileWidget extends StatelessWidget {
                       color: AppColors.primarylightColor.withOpacity(0.3),
                       border: Border.all(color: Colors.white, width: 3)),
                   child: Padding(
-                    padding: EdgeInsets.all(AppPaddings.padding22),
+                    padding: EdgeInsets.all(SizeConfig.widthMultiplier * 4.95),
                     child: Image.asset(AppImages.sellerHouse),
                   ),
                 )

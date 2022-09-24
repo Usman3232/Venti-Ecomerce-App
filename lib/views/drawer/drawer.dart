@@ -2,7 +2,7 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
-import 'package:ecommerce_app/constants/padding.dart';
+
 
 import 'package:ecommerce_app/controllers/button_controller.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -97,7 +97,7 @@ class _MyDrawerState extends State<MyDrawer> {
             height: AppHeights.height48,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding13),
+            padding: EdgeInsets.symmetric(horizontal: SizeConfig.heightMultiplier * 1.6),
             child: Column(
               children: [
                 DrawerTiles(

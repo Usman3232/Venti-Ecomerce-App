@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/constants/padding.dart';
+
 import 'package:ecommerce_app/models/homemodels/curatedshopmodel.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/home/components/curatedshopcard.dart';
@@ -22,7 +22,7 @@ class SpecialForYouSection extends StatelessWidget {
         physics: BouncingScrollPhysics(),
         itemBuilder: (context, index) {
           return Padding(
-            padding: EdgeInsets.only(left: AppPaddings.padding24),
+            padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.13),
             child: CuratedShopCard(
                 image: curatedshop_model[index].image,
                 title: curatedshop_model[index].title,

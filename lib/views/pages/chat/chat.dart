@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/images.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/chat_model/chat_model.dart';
@@ -92,7 +92,7 @@ class _ChatState extends State<Chat> {
             ),
           ]),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding25),
+        padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.35),
         child: Container(
             child: Column(
           children: [
@@ -100,7 +100,7 @@ class _ChatState extends State<Chat> {
             isattachment
                 ? Padding(
                     padding: EdgeInsets.only(
-                      bottom: AppPaddings.padding25 * 2,
+                      bottom: SizeConfig.widthMultiplier * 6.35 * 2,
                     ),
                     child: Row(
                       children: [
@@ -110,7 +110,7 @@ class _ChatState extends State<Chat> {
                           decoration: BoxDecoration(
                               color: Color(0xffE3EAF3),
                               borderRadius:
-                                  BorderRadius.circular(AppRadius.radius15),
+                                  BorderRadius.circular(15),
                               border: Border.all(
                                   color: AppColors.primarylightColor)),
                           child: Padding(
@@ -172,12 +172,12 @@ class _ChatState extends State<Chat> {
                       hintcolor: Color(0xffA5A2A2),
                       fillColor: Color(0xffE9E6E6),
                       isoutline: true,
-                      radius: AppRadius.radius30,
+                      radius: 30,
                       bordercolor: Colors.transparent,
                       enabledbordercolor: Colors.transparent,
                       focusedbordercolor: Colors.transparent,
                       contentpadding: EdgeInsets.all(
-                        AppPaddings.padding15,
+                        SizeConfig.widthMultiplier * 3.9,
                       ),
                     ),
                   ),

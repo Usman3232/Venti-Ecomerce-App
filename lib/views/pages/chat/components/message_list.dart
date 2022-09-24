@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/models/chat_model/chat_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -22,7 +22,7 @@ class MessageList extends StatelessWidget {
         itemCount: chat_model.length,
         itemBuilder: (context, index) {
           return Padding(
-            padding: EdgeInsets.only(bottom: AppPaddings.padding15),
+            padding: EdgeInsets.only(bottom: SizeConfig.widthMultiplier * 3.9),
             child: ConstrainedBox(
               constraints: BoxConstraints(
                   maxWidth: MediaQuery.of(context).size.width - 70),
@@ -32,14 +32,14 @@ class MessageList extends StatelessWidget {
                     : Alignment.bottomLeft,
                 child: Container(
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(AppRadius.radius15),
+                      borderRadius: BorderRadius.circular(15),
                       color: chat_model[index].isme
                           ? const Color(0xffE9E6E6)
                           : AppColors.primarylightColor),
                   child: Padding(
                     padding: EdgeInsets.symmetric(
-                        vertical: AppPaddings.padding15,
-                        horizontal: AppPaddings.padding19),
+                        vertical: SizeConfig.widthMultiplier * 3.9,
+                        horizontal: SizeConfig.widthMultiplier * 4.75),
                     child: TextView(
                       text: chat_model[index].message,
                       fontWeight: FontWeight.w400,

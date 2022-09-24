@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/height.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
 
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
@@ -41,7 +41,7 @@ class TrackingCartWidget extends StatelessWidget {
                         image,
                       ),
                       fit: BoxFit.fill),
-                  borderRadius: BorderRadius.circular(AppRadius.radius20),
+                  borderRadius: BorderRadius.circular(20),
                 ),
               ),
               Padding(

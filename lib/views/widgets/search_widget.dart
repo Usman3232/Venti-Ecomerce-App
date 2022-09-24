@@ -1,5 +1,5 @@
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../../utils/size_config.dart';
@@ -17,12 +17,12 @@ class SearchWidget extends StatelessWidget {
       width: SizeConfig.widthMultiplier * 60,
       decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(AppRadius.radius10)),
+          borderRadius: BorderRadius.circular(10)),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Padding(
-              padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding15),
+              padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 3.9),
               child: SvgPicture.asset(
                 'assets/icons/search.svg',
               )),

@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
-import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/radius.dart';
+
+
 
 import 'package:ecommerce_app/controllers/button_controller.dart';
 import 'package:ecommerce_app/utils/root.dart';
@@ -68,12 +68,12 @@ class LoginPage extends StatelessWidget {
                 width: SizeConfig.widthMultiplier * 91.4,
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(AppRadius.radius24),
+                  borderRadius: BorderRadius.circular(24),
                 ),
                 child: Padding(
                   padding: EdgeInsets.symmetric(
-                      horizontal: AppPaddings.padding24,
-                      vertical: AppPaddings.padding24 * 1.2),
+                      horizontal: SizeConfig.widthMultiplier * 6.13,
+                      vertical: SizeConfig.widthMultiplier * 6.13 * 1.2),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
