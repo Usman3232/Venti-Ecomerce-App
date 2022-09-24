@@ -3,7 +3,7 @@ import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/controllers/button_controller.dart';
 import 'package:ecommerce_app/utils/root.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -151,7 +151,7 @@ class LoginPage extends StatelessWidget {
                         title: "LOGIN",
                         textcolour: Colors.white,
                         fontWeight: FontWeight.w700,
-                        fontSize: AppTexts.size13,
+                        fontSize: SizeConfig.textMultiplier * 1.65,
                       ),
                       SizedBox(
                         height: SizeConfig.heightMultiplier * 2,

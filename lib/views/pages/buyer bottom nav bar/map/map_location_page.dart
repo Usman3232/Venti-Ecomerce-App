@@ -6,7 +6,7 @@ import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -194,7 +194,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                       child: Text(
                         'Service Provider',
                         style: GoogleFonts.urbanist(
-                          fontSize: AppTexts.size10,
+                          fontSize: SizeConfig.textMultiplier * 1.28,
                           color: const Color(0xff33D8C0),
                         ),
                       ),
@@ -214,7 +214,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                       child: Text(
                         'ANYTIME SELLER',
                         style: GoogleFonts.urbanist(
-                          fontSize: AppTexts.size10,
+                          fontSize: SizeConfig.textMultiplier * 1.28,
                           color: const Color(0xffFF5974),
                         ),
                       ),
@@ -234,7 +234,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                       child: Text(
                         'CURATED SHOP',
                         style: GoogleFonts.urbanist(
-                          fontSize: AppTexts.size10,
+                          fontSize: SizeConfig.textMultiplier * 1.28,
                           color: const Color(0xffF3AE31),
                         ),
                       ),
@@ -306,7 +306,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                             TextView(
                                               text: "Filters",
                                               fontWeight: FontWeight.w700,
-                                              size: AppTexts.size19,
+                                              size: SizeConfig.textMultiplier * 2.4,
                                             ),
                                             SizedBox(
                                               height: AppHeights.height23,
@@ -316,7 +316,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                                 TextView(
                                                   text: "Distance",
                                                   fontWeight: FontWeight.w600,
-                                                  size: AppTexts.size16,
+                                                  size: SizeConfig.textMultiplier * 2.04,
                                                 ),
                                                 Spacer(),
                                                 InkWell(
@@ -340,7 +340,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                                       value.toString() + " km",
                                                   color: AppColors.textColor,
                                                   fontWeight: FontWeight.w700,
-                                                  size: AppTexts.size14,
+                                                  size: SizeConfig.textMultiplier * 1.8,
                                                 ),
                                                 SizedBox(
                                                   width: SizeConfig
@@ -363,7 +363,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                             TextView(
                                               text: "Type",
                                               fontWeight: FontWeight.w600,
-                                              size: AppTexts.size16,
+                                              size: SizeConfig.textMultiplier * 2.04,
                                             ),
                                             SizedBox(
                                               height: AppHeights.height20,

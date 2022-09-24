@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import '../../../../../constants/colors.dart';
 import '../../../../../constants/height.dart';
 import '../../../../../constants/radius.dart';
-import '../../../../../constants/textsize.dart';
+
 import '../../../../../utils/size_config.dart';
 import '../../../widgets/TextView.dart';
 
@@ -41,7 +41,7 @@ class DottedContainerWidget extends StatelessWidget {
             ),
             TextView(
               text: text,
-              size: AppTexts.size12,
+              size: SizeConfig.textMultiplier * 1.53,
               color: AppColors.primarylightColor,
               fontWeight: FontWeight.w600,
             )

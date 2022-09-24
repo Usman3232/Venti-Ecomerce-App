@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/height.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
@@ -37,7 +37,7 @@ class PaymentMethodCard extends StatelessWidget {
                 title,
                 style: GoogleFonts.sourceSansPro(
                     color: Colors.white,
-                    fontSize: AppTexts.size16,
+                    fontSize: SizeConfig.textMultiplier * 2.04,
                     fontWeight: FontWeight.w700),
               ),
               SizedBox(
@@ -48,7 +48,7 @@ class PaymentMethodCard extends StatelessWidget {
                   Text(
                     '••••',
                     style: TextStyle(
-                        color: Colors.white, fontSize: AppTexts.size30),
+                        color: Colors.white, fontSize: SizeConfig.textMultiplier * 3.8),
                   ),
                   SizedBox(
                     width: AppWidths.width20,
@@ -56,7 +56,7 @@ class PaymentMethodCard extends StatelessWidget {
                   Text(
                     '••••',
                     style: TextStyle(
-                        color: Colors.white, fontSize: AppTexts.size30),
+                        color: Colors.white, fontSize: SizeConfig.textMultiplier * 3.8),
                   ),
                   SizedBox(
                     width: AppWidths.width20,
@@ -64,7 +64,7 @@ class PaymentMethodCard extends StatelessWidget {
                   Text(
                     '••••',
                     style: TextStyle(
-                        color: Colors.white, fontSize: AppTexts.size30),
+                        color: Colors.white, fontSize: SizeConfig.textMultiplier * 3.8),
                   ),
                   SizedBox(
                     width: AppWidths.width20,
@@ -73,7 +73,7 @@ class PaymentMethodCard extends StatelessWidget {
                     num.toString(),
                     style: TextStyle(
                         color: Colors.white,
-                        fontSize: AppTexts.size16,
+                        fontSize: SizeConfig.textMultiplier * 2.04,
                         fontWeight: FontWeight.w700),
                   ),
                 ],
@@ -83,7 +83,7 @@ class PaymentMethodCard extends StatelessWidget {
                 'Balance',
                 style: GoogleFonts.sourceSansPro(
                     color: Colors.white,
-                    fontSize: AppTexts.size12,
+                    fontSize: SizeConfig.textMultiplier * 1.53,
                     fontWeight: FontWeight.w600),
               ),
               SizedBox(
@@ -93,7 +93,7 @@ class PaymentMethodCard extends StatelessWidget {
                 '₹ $price',
                 style: GoogleFonts.sourceSansPro(
                     color: Colors.white,
-                    fontSize: AppTexts.size20,
+                    fontSize: SizeConfig.textMultiplier * 2.55,
                     fontWeight: FontWeight.w700),
               ),
             ],

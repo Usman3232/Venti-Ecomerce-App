@@ -3,7 +3,7 @@ import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -28,7 +28,7 @@ class PositiveStatus extends StatelessWidget {
         title: TextView(
           text: "Order Status",
           color: AppColors.primarydarkColor,
-          size: AppTexts.size15,
+          size: SizeConfig.textMultiplier * 1.92,
           fontWeight: FontWeight.w600,
         ),
         actions: [
@@ -39,7 +39,7 @@ class PositiveStatus extends StatelessWidget {
             child: TextView(
               text: "Store Policy",
               color: AppColors.primarydarkColor,
-              size: AppTexts.size14,
+              size: SizeConfig.textMultiplier * 1.8,
               fontWeight: FontWeight.w400,
             ),
           ),
@@ -60,7 +60,7 @@ class PositiveStatus extends StatelessWidget {
               text: "Congratulations! Your Order has been placed successfully",
               color: AppColors.primarydarkColor,
               fontWeight: FontWeight.w600,
-              size: AppTexts.size20,
+              size: SizeConfig.textMultiplier * 2.55,
             ),
             SizedBox(
               height: AppHeights.height33,
@@ -69,7 +69,7 @@ class PositiveStatus extends StatelessWidget {
               text: "The Estimated Delivery time is 12 hours.",
               color: AppColors.iconColor,
               fontWeight: FontWeight.w400,
-              size: AppTexts.size15,
+              size: SizeConfig.textMultiplier * 1.92,
             ),
             SizedBox(
               height: AppHeights.height50,
@@ -81,7 +81,7 @@ class PositiveStatus extends StatelessWidget {
               width: AppWidths.width284,
               radius: 35,
               title: "Live Track",
-              fontSize: AppTexts.size16,
+              fontSize: SizeConfig.textMultiplier * 2.04,
               textcolour: Colors.white,
               fontWeight: FontWeight.w700,
             )

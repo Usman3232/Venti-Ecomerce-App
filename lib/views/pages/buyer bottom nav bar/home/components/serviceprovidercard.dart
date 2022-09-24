@@ -2,7 +2,7 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -54,7 +54,7 @@ class _ServiceProviderCardState extends State<ServiceProviderCard> {
                   TextView(
                     text: widget.title,
                     fontWeight: FontWeight.w600,
-                    size: AppTexts.size13,
+                    size: SizeConfig.textMultiplier * 1.65,
                     color: Colors.white,
                   ),
                   Row(
@@ -65,7 +65,7 @@ class _ServiceProviderCardState extends State<ServiceProviderCard> {
                       ),
                       TextView(
                         text: widget.rating.toString(),
-                        size: AppTexts.size13,
+                        size: SizeConfig.textMultiplier * 1.65,
                         fontWeight: FontWeight.w700,
                         color: Colors.white,
                       ),
@@ -74,7 +74,7 @@ class _ServiceProviderCardState extends State<ServiceProviderCard> {
                       ),
                       TextView(
                         text: widget.reviews.toString() + "( Reviews)",
-                        size: AppTexts.size13,
+                        size: SizeConfig.textMultiplier * 1.65,
                         fontWeight: FontWeight.w400,
                         color: Color(0xffE9E8E8),
                       ),

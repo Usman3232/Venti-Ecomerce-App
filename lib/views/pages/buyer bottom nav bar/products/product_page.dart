@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/models/live_tracking_model/carousel_model.dart';
 import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/home/components/anytime_seller_section.dart';
 import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/home/components/special_for_you_section.dart';
@@ -94,7 +94,7 @@ class _ProductPageState extends State<ProductPage> {
               padding: EdgeInsets.symmetric(horizontal: AppPaddings.padding24),
               child: SectionTitleAndSeeAll(
                 title: "From Our Curated Shops",
-                titlesize: AppTexts.size20,
+                titlesize: SizeConfig.textMultiplier * 2.55,
                 onpress: () {
                   Get.to(Stores(
                     title: "Curated Stores",
@@ -111,7 +111,7 @@ class _ProductPageState extends State<ProductPage> {
               child: TextView(
                 text: "Trending",
                 fontWeight: FontWeight.w700,
-                size: AppTexts.size16,
+                size: SizeConfig.textMultiplier * 2.04,
               ),
             ),
             SizedBox(
@@ -126,7 +126,7 @@ class _ProductPageState extends State<ProductPage> {
               child: TextView(
                 text: "Special For You",
                 fontWeight: FontWeight.w700,
-                size: AppTexts.size16,
+                size: SizeConfig.textMultiplier * 2.04,
                 color: AppColors.textColor,
               ),
             ),

@@ -1,7 +1,5 @@
+import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
-
-import '../../constants/padding.dart';
-import '../../constants/textsize.dart';
 import 'TextView.dart';
 
 class SectionTitleAndSeeAll extends StatelessWidget {
@@ -29,7 +27,7 @@ class SectionTitleAndSeeAll extends StatelessWidget {
           onTap: onpress,
           child: TextView(
             text: "See ALL",
-            size: AppTexts.size12,
+            size: SizeConfig.textMultiplier * 1.53,
             fontWeight: FontWeight.w600,
             color: Colors.black26,
           ),

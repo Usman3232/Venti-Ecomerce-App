@@ -3,7 +3,7 @@ import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/models/curated_store_models/productmodel.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/all_carts.dart';
@@ -94,7 +94,7 @@ class _AnytimeSellerStoreDetailState extends State<AnytimeSellerStoreDetail> {
                                 TextView(
                                   text: "Organic Products by Eren",
                                   fontWeight: FontWeight.w600,
-                                  size: AppTexts.size20,
+                                  size: SizeConfig.textMultiplier * 2.55,
                                 ),
                                 Container(
                                   height: 32,
@@ -124,7 +124,7 @@ class _AnytimeSellerStoreDetailState extends State<AnytimeSellerStoreDetail> {
                                     TextView(
                                       text: "4.5",
                                       fontWeight: FontWeight.w700,
-                                      size: AppTexts.size11,
+                                      size: SizeConfig.textMultiplier * 1.4,
                                     ),
                                     SizedBox(
                                       width: SizeConfig.widthMultiplier * 1.6,
@@ -132,7 +132,7 @@ class _AnytimeSellerStoreDetailState extends State<AnytimeSellerStoreDetail> {
                                     TextView(
                                       text: "(1045 Reviews)",
                                       fontWeight: FontWeight.w400,
-                                      size: AppTexts.size11,
+                                      size: SizeConfig.textMultiplier * 1.4,
                                       color: Color(0xff7E7C7C),
                                     ),
                                   ],
@@ -150,7 +150,7 @@ class _AnytimeSellerStoreDetailState extends State<AnytimeSellerStoreDetail> {
                               text:
                                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui tristique fames dui integer euismod nec gravida mollis consequat.",
                               fontWeight: FontWeight.w400,
-                              size: AppTexts.size13,
+                              size: SizeConfig.textMultiplier * 1.65,
                             ),
                             SizedBox(
                               height: SizeConfig.heightMultiplier * 2,

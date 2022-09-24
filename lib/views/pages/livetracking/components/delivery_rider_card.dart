@@ -2,7 +2,7 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -35,7 +35,7 @@ class DliveryRiderCard extends StatelessWidget {
                 style: GoogleFonts.sourceSansPro(
                   color: AppColors.primarydarkColor,
                   fontWeight: FontWeight.w900,
-                  fontSize: AppTexts.size14,
+                  fontSize: SizeConfig.textMultiplier * 1.8,
                 ),
               ),
               SizedBox(
@@ -46,7 +46,7 @@ class DliveryRiderCard extends StatelessWidget {
                 style: GoogleFonts.sourceSansPro(
                   color: Colors.black,
                   fontWeight: FontWeight.w400,
-                  fontSize: AppTexts.size13,
+                  fontSize: SizeConfig.textMultiplier * 1.65,
                 ),
               ),
               SizedBox(
@@ -57,7 +57,7 @@ class DliveryRiderCard extends StatelessWidget {
                 style: GoogleFonts.sourceSansPro(
                   color: AppColors.primarydarkColor,
                   fontWeight: FontWeight.w900,
-                  fontSize: AppTexts.size14,
+                  fontSize: SizeConfig.textMultiplier * 1.8,
                 ),
               ),
               SizedBox(
@@ -68,7 +68,7 @@ class DliveryRiderCard extends StatelessWidget {
                 style: GoogleFonts.sourceSansPro(
                   color: Colors.black,
                   fontWeight: FontWeight.w400,
-                  fontSize: AppTexts.size12,
+                  fontSize: SizeConfig.textMultiplier * 1.53,
                 ),
               ),
               SizedBox(
@@ -79,7 +79,7 @@ class DliveryRiderCard extends StatelessWidget {
                 style: GoogleFonts.sourceSansPro(
                   color: Colors.black,
                   fontWeight: FontWeight.w400,
-                  fontSize: AppTexts.size12,
+                  fontSize: SizeConfig.textMultiplier * 1.53,
                 ),
               ),
             ],

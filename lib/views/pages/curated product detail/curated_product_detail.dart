@@ -4,7 +4,7 @@ import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/curated%20product%20detail/curated_product_fullimage.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -195,7 +195,7 @@ class ProductReviews extends StatelessWidget {
               ),
               TextView(
                 text: "Reviews (1045)",
-                size: AppTexts.size16,
+                size: SizeConfig.textMultiplier * 2.04,
                 fontWeight: FontWeight.w600,
               ),
             ],
@@ -222,12 +222,12 @@ class ProductReviews extends StatelessWidget {
                     children: [
                       TextView(
                         text: "Nolan Carder",
-                        size: AppTexts.size13,
+                        size: SizeConfig.textMultiplier * 1.65,
                         fontWeight: FontWeight.w600,
                       ),
                       TextView(
                         text: "Today",
-                        size: AppTexts.size12,
+                        size: SizeConfig.textMultiplier * 1.53,
                         color: Color(0xffB7B7B7),
                         fontWeight: FontWeight.w400,
                       )
@@ -250,7 +250,7 @@ class ProductReviews extends StatelessWidget {
                       TextView(
                         text:
                             "Perfect for keeping your feet dry and warm in damp conditions.",
-                        size: AppTexts.size12,
+                        size: SizeConfig.textMultiplier * 1.53,
                         fontWeight: FontWeight.w400,
                       ),
                     ],
@@ -310,7 +310,7 @@ class _ProductCustomizationState extends State<ProductCustomization> {
                 TextView(
                   text: 'Piqué Polo Shirt',
                   fontWeight: FontWeight.w600,
-                  size: AppTexts.size18,
+                  size: SizeConfig.textMultiplier * 2.29,
                 ),
                 Spacer(),
                 TextView(
@@ -328,13 +328,13 @@ class _ProductCustomizationState extends State<ProductCustomization> {
                 TextView(
                   text: 'Ralph Lauren',
                   fontWeight: FontWeight.w600,
-                  size: AppTexts.size13,
+                  size: SizeConfig.textMultiplier * 1.65,
                   color: Color(0xff2B0806),
                 ),
                 Spacer(),
                 TextView(
                   text: "₹3,896",
-                  size: AppTexts.size13,
+                  size: SizeConfig.textMultiplier * 1.65,
                   fontWeight: FontWeight.w600,
                   line: TextDecoration.lineThrough,
                   color: Color(0xffFF4D46),
@@ -352,7 +352,7 @@ class _ProductCustomizationState extends State<ProductCustomization> {
                 ),
                 TextView(
                   text: widget.rating.toString(),
-                  size: AppTexts.size11,
+                  size: SizeConfig.textMultiplier * 1.4,
                   fontWeight: FontWeight.w700,
                 ),
                 SizedBox(
@@ -362,7 +362,7 @@ class _ProductCustomizationState extends State<ProductCustomization> {
                   onTap: widget.onpressed,
                   child: TextView(
                     text: "(" + widget.reviews.toString() + " reviews)",
-                    size: AppTexts.size11,
+                    size: SizeConfig.textMultiplier * 1.4,
                     fontWeight: FontWeight.w700,
                     color: Colors.black26,
                   ),
@@ -374,7 +374,7 @@ class _ProductCustomizationState extends State<ProductCustomization> {
             ),
             TextView(
               text: "Description",
-              size: AppTexts.size14,
+              size: SizeConfig.textMultiplier * 1.8,
               fontWeight: FontWeight.w600,
               color: Color(0xff2B0806),
             ),
@@ -395,7 +395,7 @@ class _ProductCustomizationState extends State<ProductCustomization> {
             ),
             TextView(
               text: "Color",
-              size: AppTexts.size14,
+              size: SizeConfig.textMultiplier * 1.8,
               fontWeight: FontWeight.w600,
               color: Color(0xff2B0806),
             ),
@@ -440,7 +440,7 @@ class _ProductCustomizationState extends State<ProductCustomization> {
             ),
             TextView(
                 text: "Avaliable Size",
-                size: AppTexts.size14,
+                size: SizeConfig.textMultiplier * 1.8,
                 fontWeight: FontWeight.w600,
                 color: Color(0xff2B0806)),
             SizedBox(
@@ -471,7 +471,7 @@ class _ProductCustomizationState extends State<ProductCustomization> {
                                       selectedsize == index ? 8 : 0),
                                   child: TextView(
                                     text: size[index],
-                                    size: AppTexts.size12,
+                                    size: SizeConfig.textMultiplier * 1.53,
                                     fontWeight: FontWeight.w500,
                                   ),
                                 )),
@@ -498,7 +498,7 @@ class _ProductCustomizationState extends State<ProductCustomization> {
                 SizedBox(width: SizeConfig.widthMultiplier * 3),
                 TextView(
                   text: num.toString(),
-                  size: AppTexts.size12,
+                  size: SizeConfig.textMultiplier * 1.53,
                   fontWeight: FontWeight.w600,
                 ),
                 SizedBox(width: SizeConfig.widthMultiplier * 3),
@@ -518,7 +518,7 @@ class _ProductCustomizationState extends State<ProductCustomization> {
                   height: 52,
                   width: 218,
                   radius: 42,
-                  fontSize: AppTexts.size16,
+                  fontSize: SizeConfig.textMultiplier * 2.04,
                   fontWeight: FontWeight.w500,
                 )
               ],

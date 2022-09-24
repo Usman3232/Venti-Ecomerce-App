@@ -8,7 +8,7 @@ import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../constants/radius.dart';
-import '../../../../constants/textsize.dart';
+
 import '../../../../utils/size_config.dart';
 
 class CustomerInvoiceSeller extends StatefulWidget {
@@ -42,7 +42,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
         title: Text(
           "Create Your Custom Seller Invoice",
           style: TextStyle(
-            fontSize: AppTexts.size15,
+            fontSize: SizeConfig.textMultiplier * 1.92,
             color: Colors.black,
             fontWeight: FontWeight.w600,
           ),
@@ -60,7 +60,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
               Text(
                 "Order ID ",
                 style: TextStyle(
-                  fontSize: AppTexts.size14,
+                  fontSize: SizeConfig.textMultiplier * 1.8,
                   color: Colors.black,
                   fontWeight: FontWeight.w600,
                 ),
@@ -110,7 +110,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                           child: Text(
                             "Add An Item",
                             style: TextStyle(
-                              fontSize: AppTexts.size12,
+                              fontSize: SizeConfig.textMultiplier * 1.53,
                               fontWeight: FontWeight.w600,
                               letterSpacing: 1,
                               color: AppColors.primarylightColor,
@@ -136,7 +136,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                               Text(
                                 "Product Name",
                                 style: TextStyle(
-                                  fontSize: AppTexts.size14,
+                                  fontSize: SizeConfig.textMultiplier * 1.8,
                                   fontWeight: FontWeight.w700,
                                   letterSpacing: 1,
                                 ),
@@ -153,7 +153,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                               Text(
                                 "Description",
                                 style: TextStyle(
-                                  fontSize: AppTexts.size14,
+                                  fontSize: SizeConfig.textMultiplier * 1.8,
                                   fontWeight: FontWeight.w700,
                                   letterSpacing: 1,
                                 ),
@@ -179,7 +179,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                                     Text(
                                       "Price",
                                       style: TextStyle(
-                                        fontSize: AppTexts.size14,
+                                        fontSize: SizeConfig.textMultiplier * 1.8,
                                         fontWeight: FontWeight.w700,
                                         letterSpacing: 1,
                                       ),
@@ -187,7 +187,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                                     Text(
                                       "Shipping Cost",
                                       style: TextStyle(
-                                        fontSize: AppTexts.size14,
+                                        fontSize: SizeConfig.textMultiplier * 1.8,
                                         fontWeight: FontWeight.w700,
                                         letterSpacing: 1,
                                       ),
@@ -243,7 +243,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                                   child: Text(
                                     "Upload Picture",
                                     style: TextStyle(
-                                      fontSize: AppTexts.size12,
+                                      fontSize: SizeConfig.textMultiplier * 1.53,
                                       fontWeight: FontWeight.w600,
                                       letterSpacing: 1,
                                       color: AppColors.primarylightColor,
@@ -332,7 +332,7 @@ class AddItemWidget extends StatelessWidget {
               children: [
                 TextView(
                   text: 'Items',
-                  size: AppTexts.size14,
+                  size: SizeConfig.textMultiplier * 1.8,
                   fontWeight: FontWeight.w600,
                 ),
                 ListView.builder(
@@ -347,13 +347,13 @@ class AddItemWidget extends StatelessWidget {
                           children: [
                             TextView(
                               text: '${index + 1}',
-                              size: AppTexts.size14,
+                              size: SizeConfig.textMultiplier * 1.8,
                               fontWeight: FontWeight.w600,
                               color: Colors.black,
                             ),
                             TextView(
                               text: productName,
-                              size: AppTexts.size14,
+                              size: SizeConfig.textMultiplier * 1.8,
                               fontWeight: FontWeight.w600,
                               color: Colors.black,
                             ),
@@ -363,7 +363,7 @@ class AddItemWidget extends StatelessWidget {
                               child: TextView(
                                 text: 'Edit',
                                 fontWeight: FontWeight.w400,
-                                size: AppTexts.size12,
+                                size: SizeConfig.textMultiplier * 1.53,
                                 line: TextDecoration.underline,
                                 color: Colors.blue,
                               ),
@@ -379,7 +379,7 @@ class AddItemWidget extends StatelessWidget {
                         ),
                         TextView(
                           text: productDescription,
-                          size: AppTexts.size14,
+                          size: SizeConfig.textMultiplier * 1.8,
                           fontWeight: FontWeight.w400,
                           color: Colors.black,
                         ),
@@ -393,14 +393,14 @@ class AddItemWidget extends StatelessWidget {
                               text: 'Price',
                               color: Colors.black,
                               fontWeight: FontWeight.w700,
-                              size: AppTexts.size14,
+                              size: SizeConfig.textMultiplier * 1.8,
                             ),
                             SizedBox(
                               width: SizeConfig.widthMultiplier * 2,
                             ),
                             TextView(
                               text: productPrice.toString(),
-                              size: AppTexts.size14,
+                              size: SizeConfig.textMultiplier * 1.8,
                               fontWeight: FontWeight.w400,
                             ),
                             SizedBox(
@@ -408,14 +408,14 @@ class AddItemWidget extends StatelessWidget {
                             ),
                             TextView(
                               text: '₹',
-                              size: AppTexts.size16,
+                              size: SizeConfig.textMultiplier * 2.04,
                               fontWeight: FontWeight.w600,
                             ),
                             Spacer(),
                             TextView(
                               text: 'Shipping Cost',
                               fontWeight: FontWeight.w700,
-                              size: AppTexts.size14,
+                              size: SizeConfig.textMultiplier * 1.8,
                               color: Colors.black,
                             ),
                             SizedBox(
@@ -425,7 +425,7 @@ class AddItemWidget extends StatelessWidget {
                               text: shippingCost,
                               color: Colors.black,
                               fontWeight: FontWeight.w400,
-                              size: AppTexts.size14,
+                              size: SizeConfig.textMultiplier * 1.8,
                             ),
                             SizedBox(
                               width: SizeConfig.widthMultiplier * 0.5,
@@ -434,7 +434,7 @@ class AddItemWidget extends StatelessWidget {
                               text: '₹',
                               color: Colors.black,
                               fontWeight: FontWeight.w600,
-                              size: AppTexts.size16,
+                              size: SizeConfig.textMultiplier * 2.04,
                             )
                           ],
                         ),

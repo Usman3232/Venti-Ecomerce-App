@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:im_stepper/stepper.dart';
@@ -28,7 +28,7 @@ class LiveTrackingDetailsWidget extends StatelessWidget {
                     '03:30 pm',
                     style: TextStyle(
                         color: const Color(0xffAE9A99),
-                        fontSize: AppTexts.size12),
+                        fontSize: SizeConfig.textMultiplier * 1.53),
                   ),
                   SizedBox(
                     height: SizeConfig.textMultiplier * 1,
@@ -37,7 +37,7 @@ class LiveTrackingDetailsWidget extends StatelessWidget {
                     'Yesterday',
                     style: TextStyle(
                         color: const Color(0xffAE9A99),
-                        fontSize: AppTexts.size10),
+                        fontSize: SizeConfig.textMultiplier * 1.28),
                   ),
                 ],
               ),
@@ -48,7 +48,7 @@ class LiveTrackingDetailsWidget extends StatelessWidget {
                     '04:00 pm',
                     style: TextStyle(
                         color: const Color(0xffAE9A99),
-                        fontSize: AppTexts.size12),
+                        fontSize: SizeConfig.textMultiplier * 1.53),
                   ),
                   SizedBox(
                     height: SizeConfig.textMultiplier * 1,
@@ -57,7 +57,7 @@ class LiveTrackingDetailsWidget extends StatelessWidget {
                     'Yesterday',
                     style: TextStyle(
                         color: const Color(0xffAE9A99),
-                        fontSize: AppTexts.size10),
+                        fontSize: SizeConfig.textMultiplier * 1.28),
                   ),
                 ],
               ),
@@ -68,7 +68,7 @@ class LiveTrackingDetailsWidget extends StatelessWidget {
                     '08:00 am',
                     style: TextStyle(
                         color: const Color(0xffAE9A99),
-                        fontSize: AppTexts.size12),
+                        fontSize: SizeConfig.textMultiplier * 1.53),
                   ),
                   SizedBox(
                     height: SizeConfig.textMultiplier * 1,
@@ -77,7 +77,7 @@ class LiveTrackingDetailsWidget extends StatelessWidget {
                     'Today',
                     style: TextStyle(
                         color: const Color(0xffAE9A99),
-                        fontSize: AppTexts.size10),
+                        fontSize: SizeConfig.textMultiplier * 1.28),
                   ),
                 ],
               ),
@@ -88,7 +88,7 @@ class LiveTrackingDetailsWidget extends StatelessWidget {
                     '01:00 pm',
                     style: TextStyle(
                         color: const Color(0xffAE9A99),
-                        fontSize: AppTexts.size12),
+                        fontSize: SizeConfig.textMultiplier * 1.53),
                   ),
                   SizedBox(
                     height: SizeConfig.textMultiplier * 1,
@@ -97,7 +97,7 @@ class LiveTrackingDetailsWidget extends StatelessWidget {
                     'Today',
                     style: TextStyle(
                         color: const Color(0xffAE9A99),
-                        fontSize: AppTexts.size10),
+                        fontSize: SizeConfig.textMultiplier * 1.28),
                   ),
                 ],
               ),
@@ -146,7 +146,7 @@ class LiveTrackingDetailsWidget extends StatelessWidget {
                     'Your item is being processed',
                     style: TextStyle(
                         color: Colors.black,
-                        fontSize: AppTexts.size12,
+                        fontSize: SizeConfig.textMultiplier * 1.53,
                         fontWeight: FontWeight.w700),
                   ),
                   SizedBox(
@@ -167,7 +167,7 @@ class LiveTrackingDetailsWidget extends StatelessWidget {
                     'Your item has been shipped',
                     style: TextStyle(
                         color: Colors.black,
-                        fontSize: AppTexts.size12,
+                        fontSize: SizeConfig.textMultiplier * 1.53,
                         fontWeight: FontWeight.w700),
                   ),
                   SizedBox(
@@ -188,7 +188,7 @@ class LiveTrackingDetailsWidget extends StatelessWidget {
                     'The goods have arrived in Bandung',
                     style: TextStyle(
                         color: Colors.black,
-                        fontSize: AppTexts.size12,
+                        fontSize: SizeConfig.textMultiplier * 1.53,
                         fontWeight: FontWeight.w700),
                   ),
                   SizedBox(
@@ -210,7 +210,7 @@ class LiveTrackingDetailsWidget extends StatelessWidget {
                     'Arrived at the destination',
                     style: TextStyle(
                         color: Colors.black,
-                        fontSize: AppTexts.size12,
+                        fontSize: SizeConfig.textMultiplier * 1.53,
                         fontWeight: FontWeight.w700),
                   ),
                   SizedBox(

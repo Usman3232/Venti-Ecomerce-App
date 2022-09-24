@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +32,7 @@ class MyLocation extends StatelessWidget {
               'Location',
               style: GoogleFonts.sourceSansPro(
                 fontWeight: FontWeight.w600,
-                fontSize: AppTexts.size14,
+                fontSize: SizeConfig.textMultiplier * 1.8,
               ),
             ),
             IconButton(

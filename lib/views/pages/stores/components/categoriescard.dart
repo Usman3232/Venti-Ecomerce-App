@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -56,7 +56,7 @@ class _CategoriesCardState extends State<CategoriesCard> {
         ),
         TextView(
           text: widget.title,
-          size: AppTexts.size13,
+          size: SizeConfig.textMultiplier * 1.65,
           fontWeight: FontWeight.w600,
         )
       ],

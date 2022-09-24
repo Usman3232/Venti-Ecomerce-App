@@ -1,11 +1,11 @@
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/width.dart';
+import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import '../../../../constants/icons.dart';
-import '../../../../constants/textsize.dart';
 import '../sellers model/order_status_seller_model.dart';
 
 class OrdersDelivered extends StatefulWidget {
@@ -96,7 +96,8 @@ class _OrdersDeliveredState extends State<OrdersDelivered> {
                                       text: TextSpan(
                                         text: listoforder[i].title,
                                         style: TextStyle(
-                                            fontSize: AppTexts.size14,
+                                            fontSize:
+                                                SizeConfig.textMultiplier * 1.8,
                                             fontWeight: FontWeight.w500,
                                             color: Colors.black),
                                         children: <TextSpan>[
@@ -104,7 +105,9 @@ class _OrdersDeliveredState extends State<OrdersDelivered> {
                                               text: listoforder[i].location,
                                               style: TextStyle(
                                                   fontWeight: FontWeight.w500,
-                                                  fontSize: AppTexts.size10)),
+                                                  fontSize: SizeConfig
+                                                          .textMultiplier *
+                                                      1.28)),
                                         ],
                                       ),
                                     ),
@@ -115,7 +118,9 @@ class _OrdersDeliveredState extends State<OrdersDelivered> {
                                         Text(
                                           listoforder[i].noofproducts,
                                           style: TextStyle(
-                                            fontSize: AppTexts.size10,
+                                            fontSize:
+                                                SizeConfig.textMultiplier *
+                                                    1.28,
                                             fontWeight: FontWeight.w500,
                                             letterSpacing: 1,
                                           ),
@@ -123,7 +128,9 @@ class _OrdersDeliveredState extends State<OrdersDelivered> {
                                         Text(
                                           listoforder[i].price,
                                           style: TextStyle(
-                                            fontSize: AppTexts.size12,
+                                            fontSize:
+                                                SizeConfig.textMultiplier *
+                                                    1.53,
                                             fontWeight: FontWeight.w600,
                                             letterSpacing: 1,
                                           ),

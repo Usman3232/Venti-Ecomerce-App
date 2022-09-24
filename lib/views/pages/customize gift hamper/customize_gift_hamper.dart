@@ -4,7 +4,7 @@ import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/curated%20product%20detail/curated_product_fullimage.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -148,13 +148,13 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                         children: [
                           TextView(
                             text: "Customize Your Gift Hamper",
-                            size: AppTexts.size18,
+                            size: SizeConfig.textMultiplier * 2.29,
                             fontWeight: FontWeight.w600,
                             color: Color(0xff2B0806),
                           ),
                           TextView(
                             text: "₹506",
-                            size: AppTexts.size25,
+                            size: SizeConfig.textMultiplier * 2.85,
                             fontWeight: FontWeight.w600,
                             color: Color(0xff2B0806),
                           )
@@ -168,13 +168,13 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                         children: [
                           TextView(
                             text: "Organic Products by Eren",
-                            size: AppTexts.size13,
+                            size: SizeConfig.textMultiplier * 1.65,
                             fontWeight: FontWeight.w600,
                             color: Color(0xff2B0806),
                           ),
                           TextView(
                             text: "₹896",
-                            size: AppTexts.size13,
+                            size: SizeConfig.textMultiplier * 1.65,
                             fontWeight: FontWeight.w600,
                             color: Color(0xffFF4D46),
                             line: TextDecoration.lineThrough,
@@ -192,7 +192,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                           ),
                           TextView(
                             text: "4.5",
-                            size: AppTexts.size11,
+                            size: SizeConfig.textMultiplier * 1.4,
                             fontWeight: FontWeight.w400,
                           ),
                           SizedBox(
@@ -200,7 +200,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                           ),
                           TextView(
                             text: "(1045 reviews)",
-                            size: AppTexts.size11,
+                            size: SizeConfig.textMultiplier * 1.4,
                             fontWeight: FontWeight.w400,
                             color: Colors.black26,
                           )
@@ -211,7 +211,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                       ),
                       TextView(
                         text: "Description",
-                        size: AppTexts.size14,
+                        size: SizeConfig.textMultiplier * 1.8,
                         fontWeight: FontWeight.w600,
                         color: Color(0xff2B0806),
                       ),
@@ -233,7 +233,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                       ),
                       TextView(
                         text: "Chocolates",
-                        size: AppTexts.size14,
+                        size: SizeConfig.textMultiplier * 1.8,
                         fontWeight: FontWeight.w600,
                         color: Color(0xff2B0806),
                       ),
@@ -269,7 +269,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                                               horizontal: 20, vertical: 8),
                                           child: TextView(
                                             text: chocolates[index],
-                                            size: AppTexts.size14,
+                                            size: SizeConfig.textMultiplier * 1.8,
                                             fontWeight: FontWeight.w400,
                                             color: isselectedchocolates == index
                                                 ? Colors.white
@@ -286,7 +286,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                       ),
                       TextView(
                         text: "Cookies ",
-                        size: AppTexts.size14,
+                        size: SizeConfig.textMultiplier * 1.8,
                         fontWeight: FontWeight.w600,
                         color: Color(0xff2B0806),
                       ),
@@ -322,7 +322,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                                               horizontal: 20, vertical: 8),
                                           child: TextView(
                                             text: cookies[index],
-                                            size: AppTexts.size14,
+                                            size: SizeConfig.textMultiplier * 1.8,
                                             fontWeight: FontWeight.w400,
                                             color: isselectescookies == index
                                                 ? Colors.white
@@ -339,7 +339,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                       ),
                       TextView(
                         text: "Scent",
-                        size: AppTexts.size14,
+                        size: SizeConfig.textMultiplier * 1.8,
                         fontWeight: FontWeight.w600,
                         color: Color(0xff2B0806),
                       ),
@@ -378,7 +378,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                                                 horizontal: 20, vertical: 8),
                                             child: TextView(
                                               text: scent[index],
-                                              size: AppTexts.size14,
+                                              size: SizeConfig.textMultiplier * 1.8,
                                               fontWeight: FontWeight.w400,
                                               color: isselectedscent == index
                                                   ? Colors.white
@@ -411,7 +411,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                           SizedBox(width: SizeConfig.widthMultiplier * 3),
                           TextView(
                             text: num.toString(),
-                            size: AppTexts.size12,
+                            size: SizeConfig.textMultiplier * 1.53,
                             fontWeight: FontWeight.w600,
                           ),
                           SizedBox(width: SizeConfig.widthMultiplier * 3),
@@ -431,7 +431,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                             height: 52,
                             width: 218,
                             radius: 42,
-                            fontSize: AppTexts.size16,
+                            fontSize: SizeConfig.textMultiplier * 2.04,
                             fontWeight: FontWeight.w500,
                           )
                         ],

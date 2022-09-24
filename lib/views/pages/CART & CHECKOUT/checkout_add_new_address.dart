@@ -8,7 +8,7 @@ import 'package:flutter_multi_formatter/formatters/masked_input_formatter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../constants/colors.dart';
 import '../../../constants/padding.dart';
-import '../../../constants/textsize.dart';
+
 import '../../../constants/width.dart';
 import '../../../utils/size_config.dart';
 import '../../widgets/auth_input_text_field.dart';
@@ -55,7 +55,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
           style: TextStyle(
             color: AppColors.primarydarkColor,
             fontWeight: FontWeight.w600,
-            fontSize: AppTexts.size15,
+            fontSize: SizeConfig.textMultiplier * 1.92,
           ),
         ),
         centerTitle: true,
@@ -88,7 +88,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                 ),
                 TextView(
                   text: 'Card Holder Name',
-                  size: AppTexts.size14,
+                  size: SizeConfig.textMultiplier * 1.8,
                   fontWeight: FontWeight.w600,
                 ),
                 SizedBox(
@@ -102,12 +102,12 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                   contentpadding: EdgeInsets.symmetric(
                       horizontal: AppPaddings.padding25,
                       vertical: AppPaddings.padding15),
-                  hintSize: AppTexts.size14,
+                  hintSize: SizeConfig.textMultiplier * 1.8,
                   textEditingController: nameController,
                 ),
                 TextView(
                   text: 'Number Card',
-                  size: AppTexts.size14,
+                  size: SizeConfig.textMultiplier * 1.8,
                   fontWeight: FontWeight.w600,
                 ),
                 SizedBox(
@@ -132,7 +132,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                   inputformatter: [
                     MaskedInputFormatter('#### #### #### ####'),
                   ],
-                  hintSize: AppTexts.size14,
+                  hintSize: SizeConfig.textMultiplier * 1.8,
                   textEditingController: nameController,
                 ),
                 Row(
@@ -147,7 +147,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                             style: GoogleFonts.sourceSansPro(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w600,
-                                fontSize: AppTexts.size14),
+                                fontSize: SizeConfig.textMultiplier * 1.8),
                           ),
                           SizedBox(
                             height: SizeConfig.heightMultiplier * 1,
@@ -178,7 +178,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                               style: GoogleFonts.sourceSansPro(
                                   color: Colors.black,
                                   fontWeight: FontWeight.w600,
-                                  fontSize: AppTexts.size14),
+                                  fontSize: SizeConfig.textMultiplier * 1.8),
                             ),
                             SizedBox(
                               height: AppHeights.height8,
@@ -212,7 +212,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                             style: GoogleFonts.sourceSansPro(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w600,
-                                fontSize: AppTexts.size14),
+                                fontSize: SizeConfig.textMultiplier * 1.8),
                           ),
                           SizedBox(
                             height: SizeConfig.heightMultiplier * 1,
@@ -244,7 +244,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                               style: GoogleFonts.sourceSansPro(
                                   color: Colors.black,
                                   fontWeight: FontWeight.w600,
-                                  fontSize: AppTexts.size14),
+                                  fontSize: SizeConfig.textMultiplier * 1.8),
                             ),
                             SizedBox(
                               height: AppHeights.height8,
@@ -276,7 +276,7 @@ class _AddNewAddressCheckOutState extends State<AddNewAddressCheckOut> {
                   textcolour: Colors.white,
                   radius: AppRadius.radius30,
                   fontWeight: FontWeight.w700,
-                  fontSize: AppTexts.size16,
+                  fontSize: SizeConfig.textMultiplier * 2.04,
                 )
               ],
             ),
@@ -326,27 +326,27 @@ class AddNewCardsCarouselWidget extends StatelessWidget {
                   Text(
                     '•••• ',
                     style: TextStyle(
-                        fontSize: AppTexts.size25, color: Colors.white),
+                        fontSize: SizeConfig.textMultiplier * 2.85, color: Colors.white),
                   ),
                   Text(
                     '•••• ',
                     style: TextStyle(
-                        fontSize: AppTexts.size25, color: Colors.white),
+                        fontSize: SizeConfig.textMultiplier * 2.85, color: Colors.white),
                   ),
                   Text(
                     '•••• ',
                     style: TextStyle(
-                        fontSize: AppTexts.size25, color: Colors.white),
+                        fontSize: SizeConfig.textMultiplier * 2.85, color: Colors.white),
                   ),
                   Text(
                     '•••• ',
                     style: TextStyle(
-                        fontSize: AppTexts.size25, color: Colors.white),
+                        fontSize: SizeConfig.textMultiplier * 2.85, color: Colors.white),
                   ),
                   Text(
                     ' $number',
                     style: TextStyle(
-                        fontSize: AppTexts.size12, color: Colors.white),
+                        fontSize: SizeConfig.textMultiplier * 1.53, color: Colors.white),
                   ),
                 ],
               ),
@@ -358,7 +358,7 @@ class AddNewCardsCarouselWidget extends StatelessWidget {
                   Text(
                     title,
                     style: TextStyle(
-                        fontSize: AppTexts.size12, color: Colors.white),
+                        fontSize: SizeConfig.textMultiplier * 1.53, color: Colors.white),
                   ),
                   SizedBox(
                     width: AppWidths.width30,
@@ -366,7 +366,7 @@ class AddNewCardsCarouselWidget extends StatelessWidget {
                   Text(
                     '12/21',
                     style: TextStyle(
-                        fontSize: AppTexts.size12, color: Colors.white),
+                        fontSize: SizeConfig.textMultiplier * 1.53, color: Colors.white),
                   ),
                 ],
               ),

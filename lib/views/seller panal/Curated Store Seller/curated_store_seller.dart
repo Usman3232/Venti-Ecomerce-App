@@ -3,7 +3,7 @@ import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/curated_store_models/productmodel.dart';
 import 'package:ecommerce_app/models/homemodels/curatedshopmodel.dart';
@@ -152,7 +152,7 @@ class _CuratedStoreSellerDetailState extends State<CuratedStoreSellerDetail>
                                   TextView(
                                     text: "4.5",
                                     fontWeight: FontWeight.w700,
-                                    size: AppTexts.size11,
+                                    size: SizeConfig.textMultiplier * 1.4,
                                   ),
                                   SizedBox(
                                     width: SizeConfig.widthMultiplier * 1.6,
@@ -160,7 +160,7 @@ class _CuratedStoreSellerDetailState extends State<CuratedStoreSellerDetail>
                                   TextView(
                                     text: "(1045 Reviews)",
                                     fontWeight: FontWeight.w400,
-                                    size: AppTexts.size11,
+                                    size: SizeConfig.textMultiplier * 1.4,
                                     color: const Color(0xff7E7C7C),
                                   ),
                                 ],
@@ -174,7 +174,7 @@ class _CuratedStoreSellerDetailState extends State<CuratedStoreSellerDetail>
                             text:
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui tristique fames dui integer euismod nec gravida mollis consequat.",
                             fontWeight: FontWeight.w400,
-                            size: AppTexts.size13,
+                            size: SizeConfig.textMultiplier * 1.65,
                           ),
                           SizedBox(
                             height: AppHeights.height8,
@@ -331,7 +331,7 @@ class PriceDiscount extends StatelessWidget {
               "Price",
               style: TextStyle(
                 color: Colors.black,
-                fontSize: AppTexts.size14,
+                fontSize: SizeConfig.textMultiplier * 1.8,
                 fontWeight: FontWeight.w700,
                 letterSpacing: 1,
               ),
@@ -351,7 +351,7 @@ class PriceDiscount extends StatelessWidget {
                   child: Text(
                     '₹',
                     style: TextStyle(
-                        fontSize: AppTexts.size18, fontWeight: FontWeight.w700),
+                        fontSize: SizeConfig.textMultiplier * 2.29, fontWeight: FontWeight.w700),
                   ),
                 ),
               ),
@@ -366,7 +366,7 @@ class PriceDiscount extends StatelessWidget {
               "Discount",
               style: TextStyle(
                 color: Colors.black,
-                fontSize: AppTexts.size14,
+                fontSize: SizeConfig.textMultiplier * 1.8,
                 fontWeight: FontWeight.w700,
                 letterSpacing: 1,
               ),
@@ -386,7 +386,7 @@ class PriceDiscount extends StatelessWidget {
                   child: Text(
                     '%',
                     style: TextStyle(
-                        fontSize: AppTexts.size18, fontWeight: FontWeight.w700),
+                        fontSize: SizeConfig.textMultiplier * 2.29, fontWeight: FontWeight.w700),
                   ),
                 ),
               ),
@@ -411,7 +411,7 @@ class CustomColorWidget extends StatelessWidget {
         Text(
           "Colors",
           style: TextStyle(
-            fontSize: AppTexts.size14,
+            fontSize: SizeConfig.textMultiplier * 1.8,
             fontWeight: FontWeight.w700,
             letterSpacing: 1,
           ),
@@ -440,7 +440,7 @@ class CustomColorWidget extends StatelessWidget {
             Text(
               "Add New Color",
               style: TextStyle(
-                fontSize: AppTexts.size12,
+                fontSize: SizeConfig.textMultiplier * 1.53,
                 fontWeight: FontWeight.w600,
                 letterSpacing: 1,
                 color: const Color(0xff7496C2),
@@ -495,7 +495,7 @@ class _ColorTileState extends State<ColorTile> {
         widget.title,
         style: TextStyle(
           fontWeight: FontWeight.w400,
-          fontSize: AppTexts.size14,
+          fontSize: SizeConfig.textMultiplier * 1.8,
           letterSpacing: 1,
           color: Colors.black,
         ),
@@ -504,7 +504,7 @@ class _ColorTileState extends State<ColorTile> {
         Text(
           "Select each size to view respective quantities",
           style: TextStyle(
-            fontSize: AppTexts.size10,
+            fontSize: SizeConfig.textMultiplier * 1.28,
             fontWeight: FontWeight.w400,
             letterSpacing: 1,
           ),
@@ -540,7 +540,7 @@ class _ColorTileState extends State<ColorTile> {
                             child: Text(
                               size[index],
                               style: TextStyle(
-                                fontSize: AppTexts.size10,
+                                fontSize: SizeConfig.textMultiplier * 1.28,
                                 fontWeight: FontWeight.w500,
                                 color: Colors.black,
                               ),
@@ -574,7 +574,7 @@ class _ColorTileState extends State<ColorTile> {
               Text(
                 "QTY:",
                 style: TextStyle(
-                  fontSize: AppTexts.size10,
+                  fontSize: SizeConfig.textMultiplier * 1.28,
                   fontWeight: FontWeight.w600,
                   color: Colors.black,
                 ),
@@ -594,7 +594,7 @@ class _ColorTileState extends State<ColorTile> {
                   child: Text(
                     "200",
                     style: TextStyle(
-                      fontSize: AppTexts.size10,
+                      fontSize: SizeConfig.textMultiplier * 1.28,
                       fontWeight: FontWeight.w400,
                       color: Colors.black,
                     ),
@@ -716,7 +716,7 @@ class _ProductCardState extends State<ProductCard> {
         TextView(
           text: widget.title,
           fontWeight: FontWeight.w600,
-          size: AppTexts.size12,
+          size: SizeConfig.textMultiplier * 1.53,
         ),
         SizedBox(
           height: SizeConfig.heightMultiplier * 1,
@@ -724,7 +724,7 @@ class _ProductCardState extends State<ProductCard> {
         TextView(
           text: widget.location,
           fontWeight: FontWeight.w400,
-          size: AppTexts.size10,
+          size: SizeConfig.textMultiplier * 1.28,
           color: AppColors.primarylightColor,
         ),
         SizedBox(
@@ -739,7 +739,7 @@ class _ProductCardState extends State<ProductCard> {
             TextView(
               text: widget.rating.toString(),
               fontWeight: FontWeight.w700,
-              size: AppTexts.size11,
+              size: SizeConfig.textMultiplier * 1.4,
             ),
             SizedBox(
               width: SizeConfig.widthMultiplier * 1.6,
@@ -747,7 +747,7 @@ class _ProductCardState extends State<ProductCard> {
             TextView(
               text: "(${widget.reviews} Reviews)",
               fontWeight: FontWeight.w400,
-              size: AppTexts.size11,
+              size: SizeConfig.textMultiplier * 1.4,
               color: const Color(0xff7E7C7C),
             ),
           ],
@@ -758,7 +758,7 @@ class _ProductCardState extends State<ProductCard> {
         TextView(
           text: "₹${widget.price}",
           fontWeight: FontWeight.w700,
-          size: AppTexts.size14,
+          size: SizeConfig.textMultiplier * 1.8,
         )
       ],
     );

@@ -3,7 +3,7 @@ import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -104,7 +104,7 @@ class _AnyTimeSellerCardState extends State<AnyTimeSellerCard> {
                     children: [
                       TextView(
                         text: widget.title,
-                        size: AppTexts.size16,
+                        size: SizeConfig.textMultiplier * 2.04,
                         fontWeight: FontWeight.w500,
                       ),
                       Spacer(),
@@ -129,7 +129,7 @@ class _AnyTimeSellerCardState extends State<AnyTimeSellerCard> {
                   ),
                   TextView(
                     text: widget.location,
-                    size: AppTexts.size12,
+                    size: SizeConfig.textMultiplier * 1.53,
                     fontWeight: FontWeight.w400,
                     color: AppColors.primarylightColor,
                   ),
@@ -144,7 +144,7 @@ class _AnyTimeSellerCardState extends State<AnyTimeSellerCard> {
                       ),
                       TextView(
                         text: widget.rating.toString(),
-                        size: AppTexts.size13,
+                        size: SizeConfig.textMultiplier * 1.65,
                         fontWeight: FontWeight.w700,
                       ),
                       SizedBox(
@@ -152,7 +152,7 @@ class _AnyTimeSellerCardState extends State<AnyTimeSellerCard> {
                       ),
                       TextView(
                         text: widget.reviews.toString() + "( Reviews)",
-                        size: AppTexts.size13,
+                        size: SizeConfig.textMultiplier * 1.65,
                         fontWeight: FontWeight.w400,
                         color: Color(0xff7E7C7C),
                       ),
@@ -163,13 +163,13 @@ class _AnyTimeSellerCardState extends State<AnyTimeSellerCard> {
                             TextSpan(
                                 text: 'Open till ',
                                 style: TextStyle(
-                                    fontSize: AppTexts.size13,
+                                    fontSize: SizeConfig.textMultiplier * 1.65,
                                     fontWeight: FontWeight.w700,
                                     color: AppColors.textColor)),
                             TextSpan(
                                 text: widget.time,
                                 style: TextStyle(
-                                    fontSize: AppTexts.size13,
+                                    fontSize: SizeConfig.textMultiplier * 1.65,
                                     fontWeight: FontWeight.w700,
                                     color: AppColors.primarylightColor)),
                           ],

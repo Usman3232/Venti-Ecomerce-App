@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -32,7 +32,7 @@ class _OrderHistoryState extends State<OrderHistory>
         title: Text(
           'Order History',
           style: GoogleFonts.poppins(
-            fontSize: AppTexts.size14,
+            fontSize: SizeConfig.textMultiplier * 1.8,
             color: AppColors.primarydarkColor,
             fontWeight: FontWeight.w600,
             letterSpacing: 1,

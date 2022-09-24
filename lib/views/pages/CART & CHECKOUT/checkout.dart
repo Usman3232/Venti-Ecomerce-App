@@ -4,7 +4,7 @@ import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/curated%20store%20popular/curatedstorepopular.dart';
@@ -45,7 +45,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
           style: TextStyle(
             color: AppColors.primarydarkColor,
             fontWeight: FontWeight.w600,
-            fontSize: AppTexts.size15,
+            fontSize: SizeConfig.textMultiplier * 1.92,
           ),
         ),
         actions: [
@@ -62,7 +62,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                 style: TextStyle(
                   color: AppColors.primarylightColor,
                   fontWeight: FontWeight.w400,
-                  fontSize: AppTexts.size14,
+                  fontSize: SizeConfig.textMultiplier * 1.8,
                 ),
               ),
             ),
@@ -83,7 +83,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                   "Shipping Address",
                   style: TextStyle(
                       color: Colors.black,
-                      fontSize: AppTexts.size14,
+                      fontSize: SizeConfig.textMultiplier * 1.8,
                       fontWeight: FontWeight.w600),
                 ),
                 SizedBox(
@@ -124,7 +124,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                               Text(
                                 'My home',
                                 style: TextStyle(
-                                  fontSize: AppTexts.size14,
+                                  fontSize: SizeConfig.textMultiplier * 1.8,
                                   color: Colors.black,
                                   fontWeight: FontWeight.w600,
                                   letterSpacing: 1,
@@ -136,7 +136,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                   child: Text(
                                     'Edit',
                                     style: TextStyle(
-                                      fontSize: AppTexts.size12,
+                                      fontSize: SizeConfig.textMultiplier * 1.53,
                                       color: Colors.black,
                                       fontWeight: FontWeight.w400,
                                       letterSpacing: 1,
@@ -147,7 +147,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           Text(
                             "Joshua Gillani",
                             style: TextStyle(
-                              fontSize: AppTexts.size12,
+                              fontSize: SizeConfig.textMultiplier * 1.53,
                               fontWeight: FontWeight.w400,
                             ),
                           ),
@@ -157,7 +157,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           Text(
                             "+62 8888 7777",
                             style: TextStyle(
-                              fontSize: AppTexts.size12,
+                              fontSize: SizeConfig.textMultiplier * 1.53,
                               fontWeight: FontWeight.w400,
                             ),
                           ),
@@ -167,7 +167,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           Text(
                             "27 Independence Street, Sukamulya, Cikembar, Sukabumi, Jawa Barat 43157",
                             style: TextStyle(
-                              fontSize: AppTexts.size12,
+                              fontSize: SizeConfig.textMultiplier * 1.53,
                               fontWeight: FontWeight.w400,
                             ),
                           ),
@@ -192,7 +192,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                     'Choose another address',
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: AppTexts.size14,
+                                      fontSize: SizeConfig.textMultiplier * 1.8,
                                       fontWeight: FontWeight.w600,
                                     ),
                                   )),
@@ -210,7 +210,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                   "Special Intruction",
                   style: TextStyle(
                       color: Colors.black,
-                      fontSize: AppTexts.size14,
+                      fontSize: SizeConfig.textMultiplier * 1.8,
                       fontWeight: FontWeight.w600),
                 ),
                 SizedBox(
@@ -235,7 +235,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                   "Voucher",
                   style: TextStyle(
                       color: Colors.black,
-                      fontSize: AppTexts.size14,
+                      fontSize: SizeConfig.textMultiplier * 1.8,
                       fontWeight: FontWeight.w600),
                 ),
                 SizedBox(
@@ -270,7 +270,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             'Use',
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: AppTexts.size14,
+                              fontSize: SizeConfig.textMultiplier * 1.8,
                               fontWeight: FontWeight.w600,
                             ),
                           )),
@@ -283,7 +283,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       "Subtotal",
                       style: TextStyle(
                           color: Colors.black,
-                          fontSize: AppTexts.size14,
+                          fontSize: SizeConfig.textMultiplier * 1.8,
                           fontWeight: FontWeight.w600),
                     ),
                     const Spacer(),
@@ -291,7 +291,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       "\$610.19",
                       style: TextStyle(
                           color: Colors.black,
-                          fontSize: AppTexts.size14,
+                          fontSize: SizeConfig.textMultiplier * 1.8,
                           fontWeight: FontWeight.w600),
                     ),
                   ],
@@ -305,7 +305,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       "Shipping costs",
                       style: TextStyle(
                           color: Colors.black,
-                          fontSize: AppTexts.size14,
+                          fontSize: SizeConfig.textMultiplier * 1.8,
                           fontWeight: FontWeight.w600),
                     ),
                     const Spacer(),
@@ -313,7 +313,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       "\$14.09",
                       style: TextStyle(
                           color: Colors.black,
-                          fontSize: AppTexts.size14,
+                          fontSize: SizeConfig.textMultiplier * 1.8,
                           fontWeight: FontWeight.w600),
                     ),
                   ],
@@ -327,7 +327,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       "Voucher",
                       style: TextStyle(
                           color: Colors.black,
-                          fontSize: AppTexts.size14,
+                          fontSize: SizeConfig.textMultiplier * 1.8,
                           fontWeight: FontWeight.w600),
                     ),
                     const Spacer(),
@@ -335,7 +335,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       "\$10.00",
                       style: TextStyle(
                           color: AppColors.primarylightColor,
-                          fontSize: AppTexts.size14,
+                          fontSize: SizeConfig.textMultiplier * 1.8,
                           fontWeight: FontWeight.w600),
                     ),
                   ],
@@ -388,7 +388,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                 Text(
                                   'Last 4 digits : ',
                                   style: TextStyle(
-                                      fontSize: AppTexts.size10,
+                                      fontSize: SizeConfig.textMultiplier * 1.28,
                                       color: Colors.black),
                                 ),
                                 Text(
@@ -396,7 +396,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                   style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.w600,
-                                      fontSize: AppTexts.size12),
+                                      fontSize: SizeConfig.textMultiplier * 1.53),
                                 )
                               ],
                             ),
@@ -414,7 +414,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                               "Grand Total",
                               style: TextStyle(
                                 color: AppColors.primarylightColor,
-                                fontSize: AppTexts.size12,
+                                fontSize: SizeConfig.textMultiplier * 1.53,
                                 fontWeight: FontWeight.w400,
                                 letterSpacing: 1,
                               ),
@@ -426,7 +426,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                               "\$705.00",
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: AppTexts.size20,
+                                fontSize: SizeConfig.textMultiplier * 2.55,
                                 fontWeight: FontWeight.w700,
                                 letterSpacing: 1,
                               ),
@@ -445,7 +445,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           width: AppWidths.width150,
                           radius: AppRadius.radius30,
                           textcolour: Colors.white,
-                          fontSize: AppTexts.size14,
+                          fontSize: SizeConfig.textMultiplier * 1.8,
                           colour: AppColors.primarylightColor,
                           fontWeight: FontWeight.w700,
                         ),

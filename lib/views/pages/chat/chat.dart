@@ -3,7 +3,7 @@ import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/chat_model/chat_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -55,7 +55,7 @@ class _ChatState extends State<Chat> {
                   TextView(
                     text: "Ralph Lauren",
                     fontWeight: FontWeight.w600,
-                    size: AppTexts.size16,
+                    size: SizeConfig.textMultiplier * 2.04,
                     color: Color(0xff2B0806),
                   ),
                   SizedBox(
@@ -73,7 +73,7 @@ class _ChatState extends State<Chat> {
                       TextView(
                         text: "Online",
                         fontWeight: FontWeight.w400,
-                        size: AppTexts.size12,
+                        size: SizeConfig.textMultiplier * 1.53,
                         color: Color(0xff896C6B),
                       ),
                     ],
@@ -128,7 +128,7 @@ class _ChatState extends State<Chat> {
                                     TextView(
                                       text: "Invoice -",
                                       fontWeight: FontWeight.w400,
-                                      size: AppTexts.size20,
+                                      size: SizeConfig.textMultiplier * 2.55,
                                       color: AppColors.primarylightColor,
                                     ),
                                   ],
@@ -147,7 +147,7 @@ class _ChatState extends State<Chat> {
                           child: TextView(
                             text: "Click to\nview",
                             fontWeight: FontWeight.w400,
-                            size: AppTexts.size10,
+                            size: SizeConfig.textMultiplier * 1.28,
                           ),
                         )
                       ],
@@ -168,7 +168,7 @@ class _ChatState extends State<Chat> {
                           icon:
                               SvgPicture.asset("assets/icons/attachment.svg")),
                       hintText: "Type a message",
-                      hintSize: AppTexts.size14,
+                      hintSize: SizeConfig.textMultiplier * 1.8,
                       hintcolor: Color(0xffA5A2A2),
                       fillColor: Color(0xffE9E6E6),
                       isoutline: true,

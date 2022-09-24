@@ -14,7 +14,7 @@ import '../../../../constants/colors.dart';
 import '../../../../constants/icons.dart';
 import '../../../../constants/images.dart';
 import '../../../../constants/radius.dart';
-import '../../../../constants/textsize.dart';
+
 import '../../../../constants/width.dart';
 import '../../../../utils/size_config.dart';
 
@@ -59,7 +59,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     style: GoogleFonts.sourceSansPro(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
-                        fontSize: AppTexts.size14),
+                        fontSize: SizeConfig.textMultiplier * 1.8),
                   ),
                   SizedBox(
                     height: SizeConfig.heightMultiplier * 1,
@@ -79,7 +79,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     style: GoogleFonts.sourceSansPro(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
-                        fontSize: AppTexts.size14),
+                        fontSize: SizeConfig.textMultiplier * 1.8),
                   ),
                   SizedBox(
                     height: SizeConfig.heightMultiplier * 1,
@@ -103,7 +103,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     style: GoogleFonts.sourceSansPro(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
-                        fontSize: AppTexts.size14),
+                        fontSize: SizeConfig.textMultiplier * 1.8),
                   ),
                   SizedBox(
                     height: SizeConfig.heightMultiplier * 1,
@@ -124,7 +124,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     style: GoogleFonts.sourceSansPro(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
-                        fontSize: AppTexts.size14),
+                        fontSize: SizeConfig.textMultiplier * 1.8),
                   ),
                   SizedBox(
                     height: SizeConfig.heightMultiplier * 1,
@@ -144,7 +144,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     style: GoogleFonts.sourceSansPro(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
-                        fontSize: AppTexts.size14),
+                        fontSize: SizeConfig.textMultiplier * 1.8),
                   ),
                   SizedBox(
                     height: SizeConfig.heightMultiplier * 1,
@@ -164,7 +164,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     style: GoogleFonts.sourceSansPro(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
-                        fontSize: AppTexts.size14),
+                        fontSize: SizeConfig.textMultiplier * 1.8),
                   ),
                   SizedBox(
                     height: SizeConfig.heightMultiplier * 1,
@@ -184,7 +184,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     style: GoogleFonts.sourceSansPro(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
-                        fontSize: AppTexts.size14),
+                        fontSize: SizeConfig.textMultiplier * 1.8),
                   ),
                   SizedBox(
                     height: SizeConfig.heightMultiplier * 1,
@@ -205,7 +205,7 @@ class _SellerProfileState extends State<SellerProfile> {
                     style: GoogleFonts.sourceSansPro(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
-                        fontSize: AppTexts.size14),
+                        fontSize: SizeConfig.textMultiplier * 1.8),
                   ),
                   SizedBox(
                     height: SizeConfig.heightMultiplier * 2,
@@ -312,7 +312,7 @@ class MapUploadButtonWidget extends StatelessWidget {
           'Upload Pan and Adhaar',
           style: GoogleFonts.sourceSansPro(
             fontWeight: FontWeight.w600,
-            fontSize: AppTexts.size14,
+            fontSize: SizeConfig.textMultiplier * 1.8,
           ),
         ),
         SizedBox(
@@ -343,7 +343,7 @@ class MapUploadButtonWidget extends StatelessWidget {
           'Upload Certificate of Completion',
           style: GoogleFonts.sourceSansPro(
             fontWeight: FontWeight.w600,
-            fontSize: AppTexts.size14,
+            fontSize: SizeConfig.textMultiplier * 1.8,
           ),
         ),
         SizedBox(
@@ -374,7 +374,7 @@ class MapUploadButtonWidget extends StatelessWidget {
           'Location',
           style: GoogleFonts.sourceSansPro(
             fontWeight: FontWeight.w600,
-            fontSize: AppTexts.size14,
+            fontSize: SizeConfig.textMultiplier * 1.8,
           ),
         ),
         SizedBox(
@@ -402,7 +402,7 @@ class MapUploadButtonWidget extends StatelessWidget {
             height: AppHeights.height57,
             width: AppWidths.widthFull,
             textcolour: Colors.white,
-            fontSize: AppTexts.size14,
+            fontSize: SizeConfig.textMultiplier * 1.8,
             radius: AppRadius.radius15,
             callback: () {}),
         SizedBox(
@@ -488,7 +488,7 @@ class LeadingProfileWidget extends StatelessWidget {
                 Text(
                   'Seller Profile',
                   style: GoogleFonts.poppins(
-                    fontSize: AppTexts.size14,
+                    fontSize: SizeConfig.textMultiplier * 1.8,
                     color: AppColors.primarydarkColor,
                     fontWeight: FontWeight.w600,
                     letterSpacing: 1,

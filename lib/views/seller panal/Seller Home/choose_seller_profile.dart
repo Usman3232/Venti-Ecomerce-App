@@ -13,7 +13,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../../../constants/colors.dart';
 import '../../../../constants/icons.dart';
 import '../../../../constants/images.dart';
-import '../../../../constants/textsize.dart';
+
 import '../../../../utils/size_config.dart';
 
 class ChooseSellerProfile extends StatefulWidget {
@@ -104,7 +104,7 @@ class _ChooseSellerProfileState extends State<ChooseSellerProfile> {
                       Text(
                         'Seller Profile',
                         style: GoogleFonts.poppins(
-                          fontSize: AppTexts.size14,
+                          fontSize: SizeConfig.textMultiplier * 1.8,
                           color: AppColors.primarydarkColor,
                           fontWeight: FontWeight.w600,
                           letterSpacing: 1,
@@ -129,7 +129,7 @@ class _ChooseSellerProfileState extends State<ChooseSellerProfile> {
                 TextView(
                   text: 'Choose Your Seller Profile',
                   color: Colors.black,
-                  size: AppTexts.size13,
+                  size: SizeConfig.textMultiplier * 1.65,
                   fontWeight: FontWeight.w600,
                 ),
                 SizedBox(
@@ -207,7 +207,7 @@ class ChooseSellerButton extends StatelessWidget {
           child: TextView(
             text: text,
             color: textColor,
-            size: AppTexts.size12,
+            size: SizeConfig.textMultiplier * 1.53,
           ),
         ),
       ),

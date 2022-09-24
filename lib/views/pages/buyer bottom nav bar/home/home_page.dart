@@ -2,7 +2,7 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/models/live_tracking_model/carousel_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/home/components/anytime_seller_section.dart';
@@ -109,7 +109,7 @@ class _HomePageState extends State<HomePage> {
                     SectionTitleAndSeeAll(
                         title: "Categories",
                         onpress: () {},
-                        titlesize: AppTexts.size16),
+                        titlesize: SizeConfig.textMultiplier * 2.04),
                     SizedBox(height: AppHeights.height20),
                   ],
                 ),
@@ -129,7 +129,7 @@ class _HomePageState extends State<HomePage> {
                     TextView(
                       text: "Curated Stores",
                       fontWeight: FontWeight.w700,
-                      size: AppTexts.size20,
+                      size: SizeConfig.textMultiplier * 2.55,
                     ),
                     SizedBox(
                       height: AppHeights.height8,
@@ -137,7 +137,7 @@ class _HomePageState extends State<HomePage> {
                     TextView(
                       text: "Trending",
                       fontWeight: FontWeight.w700,
-                      size: AppTexts.size16,
+                      size: SizeConfig.textMultiplier * 2.04,
                     ),
                     SizedBox(
                       height: AppHeights.height18,
@@ -154,7 +154,7 @@ class _HomePageState extends State<HomePage> {
                 child: TextView(
                   text: "Special For You",
                   fontWeight: FontWeight.w700,
-                  size: AppTexts.size16,
+                  size: SizeConfig.textMultiplier * 2.04,
                   color: AppColors.textColor,
                 ),
               ),
@@ -175,7 +175,7 @@ class _HomePageState extends State<HomePage> {
                         Get.to(Stores(
                             title: "AnyTime Seller", isstore: "isanytime"));
                       },
-                      titlesize: AppTexts.size20)),
+                      titlesize: SizeConfig.textMultiplier * 2.55)),
               SizedBox(
                 height: AppHeights.height21,
               ),

@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/live_tracking_model/carousel_model.dart';
 import 'package:ecommerce_app/models/live_tracking_model/live_tracking_cart_model.dart';
@@ -43,7 +43,7 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
         title: Text(
           'Live Tracking',
           style: GoogleFonts.poppins(
-            fontSize: AppTexts.size14,
+            fontSize: SizeConfig.textMultiplier * 1.8,
             color: AppColors.primarydarkColor,
             fontWeight: FontWeight.w600,
             letterSpacing: 1,
@@ -139,7 +139,7 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
                         'Your item is being processed',
                         style: TextStyle(
                             color: Colors.black12,
-                            fontSize: AppTexts.size12,
+                            fontSize: SizeConfig.textMultiplier * 1.53,
                             fontWeight: FontWeight.w700),
                       ),
                       SizedBox(
@@ -187,14 +187,14 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
                           style: GoogleFonts.sourceSansPro(
                               color: Colors.black,
                               fontWeight: FontWeight.w600,
-                              fontSize: AppTexts.size14),
+                              fontSize: SizeConfig.textMultiplier * 1.8),
                         ),
                         Text(
                           '₹610.19',
                           style: GoogleFonts.sourceSansPro(
                               color: Colors.black,
                               fontWeight: FontWeight.w600,
-                              fontSize: AppTexts.size14),
+                              fontSize: SizeConfig.textMultiplier * 1.8),
                         ),
                       ],
                     ),
@@ -209,14 +209,14 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
                           style: GoogleFonts.sourceSansPro(
                               color: Colors.black,
                               fontWeight: FontWeight.w600,
-                              fontSize: AppTexts.size14),
+                              fontSize: SizeConfig.textMultiplier * 1.8),
                         ),
                         Text(
                           '₹14.09',
                           style: GoogleFonts.sourceSansPro(
                               color: Colors.black,
                               fontWeight: FontWeight.w600,
-                              fontSize: AppTexts.size14),
+                              fontSize: SizeConfig.textMultiplier * 1.8),
                         ),
                       ],
                     ),
@@ -231,14 +231,14 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
                           style: GoogleFonts.sourceSansPro(
                               color: Colors.black,
                               fontWeight: FontWeight.w600,
-                              fontSize: AppTexts.size14),
+                              fontSize: SizeConfig.textMultiplier * 1.8),
                         ),
                         Text(
                           '-₹10.00',
                           style: GoogleFonts.sourceSansPro(
                               color: Colors.red,
                               fontWeight: FontWeight.w600,
-                              fontSize: AppTexts.size14),
+                              fontSize: SizeConfig.textMultiplier * 1.8),
                         ),
                       ],
                     ),
@@ -253,14 +253,14 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
                           style: GoogleFonts.sourceSansPro(
                               color: Colors.black,
                               fontWeight: FontWeight.w600,
-                              fontSize: AppTexts.size14),
+                              fontSize: SizeConfig.textMultiplier * 1.8),
                         ),
                         Text(
                           '-₹614.28',
                           style: GoogleFonts.sourceSansPro(
                             color: Colors.black,
                             fontWeight: FontWeight.w700,
-                            fontSize: AppTexts.size25,
+                            fontSize: SizeConfig.textMultiplier * 2.85,
                           ),
                         ),
                       ],

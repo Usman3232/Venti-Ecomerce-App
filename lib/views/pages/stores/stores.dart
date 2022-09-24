@@ -2,7 +2,7 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/models/curated_store_models/categoriesmodel.dart';
 import 'package:ecommerce_app/models/homemodels/anytimesellermodel.dart';
 import 'package:ecommerce_app/models/homemodels/curatedshopmodel.dart';
@@ -42,7 +42,7 @@ class Stores extends StatelessWidget {
         ),
         title: TextView(
           text: title,
-          size: AppTexts.size15,
+          size: SizeConfig.textMultiplier * 1.92,
           fontWeight: FontWeight.w600,
           color: AppColors.primarydarkColor,
         ),
@@ -73,7 +73,7 @@ class Stores extends StatelessWidget {
                   TextView(
                     text: "Categories",
                     fontWeight: FontWeight.w600,
-                    size: AppTexts.size13,
+                    size: SizeConfig.textMultiplier * 1.65,
                     color: AppColors.textColor,
                   ),
                   Spacer(),

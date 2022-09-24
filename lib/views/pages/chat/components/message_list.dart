@@ -1,8 +1,9 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/models/chat_model/chat_model.dart';
+import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:flutter/material.dart';
 
@@ -42,7 +43,7 @@ class MessageList extends StatelessWidget {
                     child: TextView(
                       text: chat_model[index].message,
                       fontWeight: FontWeight.w400,
-                      size: AppTexts.size14,
+                      size: SizeConfig.textMultiplier * 1.8,
                       color:
                           chat_model[index].isme ? Colors.black : Colors.white,
                     ),

@@ -3,7 +3,7 @@ import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -104,7 +104,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                             TextView(
                                               text: "Filters",
                                               fontWeight: FontWeight.w700,
-                                              size: AppTexts.size19,
+                                              size: SizeConfig.textMultiplier * 2.4,
                                             ),
                                             SizedBox(
                                               height: AppHeights.height14,
@@ -112,7 +112,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                             TextView(
                                               text: "Price Range",
                                               fontWeight: FontWeight.w600,
-                                              size: AppTexts.size16,
+                                              size: SizeConfig.textMultiplier * 2.04,
                                             ),
                                             Container(
                                               margin: EdgeInsets.only(
@@ -155,14 +155,14 @@ class _StoreSearchState extends State<StoreSearch> {
                                               children: [
                                                 TextView(
                                                   text: "₹0",
-                                                  size: AppTexts.size12,
+                                                  size: SizeConfig.textMultiplier * 1.53,
                                                   fontWeight: FontWeight.w700,
                                                   color: Color(0xffAAAAAA),
                                                 ),
                                                 Spacer(),
                                                 TextView(
                                                   text: "₹9,750",
-                                                  size: AppTexts.size12,
+                                                  size: SizeConfig.textMultiplier * 1.53,
                                                   fontWeight: FontWeight.w700,
                                                   color: Color(0xffAAAAAA),
                                                 ),
@@ -176,7 +176,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                             TextView(
                                               text: "Sort By",
                                               fontWeight: FontWeight.w600,
-                                              size: AppTexts.size16,
+                                              size: SizeConfig.textMultiplier * 2.04,
                                             ),
                                             SizedBox(
                                               height: AppHeights.height20,
@@ -252,7 +252,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                       TextView(
                                         text: "Gender",
                                         fontWeight: FontWeight.w600,
-                                        size: AppTexts.size16,
+                                        size: SizeConfig.textMultiplier * 2.04,
                                       ),
                                       SizedBox(
                                         height: AppHeights.height20,
@@ -306,7 +306,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                       TextView(
                                         text: "Categories",
                                         fontWeight: FontWeight.w600,
-                                        size: AppTexts.size16,
+                                        size: SizeConfig.textMultiplier * 2.04,
                                       ),
                                       SizedBox(
                                         height: AppHeights.height20,
@@ -471,7 +471,7 @@ class _SelectWidgetState extends State<SelectWidget> {
               )),
           child: TextView(
             text: widget.title,
-            size: AppTexts.size16,
+            size: SizeConfig.textMultiplier * 2.04,
             color: widget.isfocus ? Colors.white : Colors.black,
             fontWeight: FontWeight.w600,
           ),

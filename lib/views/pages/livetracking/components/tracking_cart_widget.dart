@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -53,7 +53,7 @@ class TrackingCartWidget extends StatelessWidget {
                     Text(
                       title,
                       style: GoogleFonts.sourceSansPro(
-                        fontSize: AppTexts.size16,
+                        fontSize: SizeConfig.textMultiplier * 2.04,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -63,7 +63,7 @@ class TrackingCartWidget extends StatelessWidget {
                     Text(
                       'Size:$size}',
                       style: GoogleFonts.sourceSansPro(
-                        fontSize: AppTexts.size12,
+                        fontSize: SizeConfig.textMultiplier * 1.53,
                         color: const Color(0xffAE9A99),
                         fontWeight: FontWeight.w400,
                       ),
@@ -74,7 +74,7 @@ class TrackingCartWidget extends StatelessWidget {
                     Text(
                       'Color:$color}',
                       style: GoogleFonts.sourceSansPro(
-                        fontSize: AppTexts.size12,
+                        fontSize: SizeConfig.textMultiplier * 1.53,
                         color: const Color(0xffAE9A99),
                         fontWeight: FontWeight.w400,
                       ),
@@ -83,7 +83,7 @@ class TrackingCartWidget extends StatelessWidget {
                     Text(
                       '₹$price',
                       style: GoogleFonts.sourceSansPro(
-                        fontSize: AppTexts.size18,
+                        fontSize: SizeConfig.textMultiplier * 2.29,
                         fontWeight: FontWeight.w700,
                       ),
                     ),

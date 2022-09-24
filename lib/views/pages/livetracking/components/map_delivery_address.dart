@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/livetracking/live_tracking_detail.dart';
 import 'package:flutter/material.dart';
@@ -35,7 +35,7 @@ class MapDeliveryAddress extends StatelessWidget {
                   Text(
                     'Call delivery Rider',
                     style: GoogleFonts.sourceSansPro(
-                        fontSize: AppTexts.size14,
+                        fontSize: SizeConfig.textMultiplier * 1.8,
                         color: Colors.black,
                         fontWeight: FontWeight.w600),
                   ),
@@ -69,7 +69,7 @@ class MapDeliveryAddress extends StatelessWidget {
                         Text(
                           'Delivery Address',
                           style: GoogleFonts.sourceSansPro(
-                              fontSize: AppTexts.size14,
+                              fontSize: SizeConfig.textMultiplier * 1.8,
                               color: Colors.black,
                               fontWeight: FontWeight.w600),
                         ),
@@ -79,7 +79,7 @@ class MapDeliveryAddress extends StatelessWidget {
                         Text(
                           '27 Independence Street, Sukamulya, Cikembar, Sukabumi, Jawa Barat 43157',
                           style: GoogleFonts.sourceSansPro(
-                              fontSize: AppTexts.size12,
+                              fontSize: SizeConfig.textMultiplier * 1.53,
                               color: const Color(0xffAE9A99),
                               fontWeight: FontWeight.w400),
                         ),
@@ -89,7 +89,7 @@ class MapDeliveryAddress extends StatelessWidget {
                         Text(
                           'Expected Delivery Time: 8:50 PM',
                           style: GoogleFonts.sourceSansPro(
-                              fontSize: AppTexts.size12,
+                              fontSize: SizeConfig.textMultiplier * 1.53,
                               color: Colors.black,
                               fontWeight: FontWeight.w400),
                         ),
@@ -99,7 +99,7 @@ class MapDeliveryAddress extends StatelessWidget {
                         Text(
                           '₹3500',
                           style: GoogleFonts.sourceSansPro(
-                              fontSize: AppTexts.size20,
+                              fontSize: SizeConfig.textMultiplier * 2.55,
                               color: Colors.black,
                               fontWeight: FontWeight.w700),
                         ),
@@ -124,7 +124,7 @@ class MapDeliveryAddress extends StatelessWidget {
                           style: GoogleFonts.sourceSansPro(
                               fontWeight: FontWeight.w600,
                               color: AppColors.primarylightColor,
-                              fontSize: AppTexts.size12),
+                              fontSize: SizeConfig.textMultiplier * 1.53),
                         )),
                   )
                 ],

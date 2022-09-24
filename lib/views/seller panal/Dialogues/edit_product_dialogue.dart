@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
@@ -66,7 +66,7 @@ class EditProductDialogue extends StatelessWidget {
                               child: Text(
                                 " Edit Product",
                                 style: TextStyle(
-                                  fontSize: AppTexts.size20,
+                                  fontSize: SizeConfig.textMultiplier * 2.55,
                                   fontWeight: FontWeight.w600,
                                   letterSpacing: 1,
                                 ),
@@ -92,7 +92,7 @@ class EditProductDialogue extends StatelessWidget {
                               "Name of Product",
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: AppTexts.size14,
+                                fontSize: SizeConfig.textMultiplier * 1.8,
                                 fontWeight: FontWeight.w700,
                                 letterSpacing: 1,
                               ),
@@ -116,7 +116,7 @@ class EditProductDialogue extends StatelessWidget {
                             Text(
                               "Category",
                               style: TextStyle(
-                                fontSize: AppTexts.size14,
+                                fontSize: SizeConfig.textMultiplier * 1.8,
                                 fontWeight: FontWeight.w700,
                                 letterSpacing: 1,
                               ),
@@ -131,7 +131,7 @@ class EditProductDialogue extends StatelessWidget {
                                   "Glasses",
                                   style: TextStyle(
                                     fontWeight: FontWeight.w400,
-                                    fontSize: AppTexts.size14,
+                                    fontSize: SizeConfig.textMultiplier * 1.8,
                                     letterSpacing: 1,
                                     color: Colors.black,
                                   ),
@@ -141,7 +141,7 @@ class EditProductDialogue extends StatelessWidget {
                             ),
                             Text("Discription",
                                 style: TextStyle(
-                                  fontSize: AppTexts.size14,
+                                  fontSize: SizeConfig.textMultiplier * 1.8,
                                   fontWeight: FontWeight.w700,
                                   letterSpacing: 1,
                                 )),

@@ -3,7 +3,7 @@ import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/checkout_model/all_cart_checkout_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -47,7 +47,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
           style: TextStyle(
             color: AppColors.primarydarkColor,
             fontWeight: FontWeight.w600,
-            fontSize: AppTexts.size15,
+            fontSize: SizeConfig.textMultiplier * 1.92,
           ),
         ),
         actions: [
@@ -64,7 +64,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                 style: TextStyle(
                   color: AppColors.primarydarkColor,
                   fontWeight: FontWeight.w400,
-                  fontSize: AppTexts.size14,
+                  fontSize: SizeConfig.textMultiplier * 1.8,
                 ),
               ),
             ),
@@ -163,7 +163,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                             maxLines: 1,
                                             style: TextStyle(
                                               color: Colors.black,
-                                              fontSize: AppTexts.size14,
+                                              fontSize: SizeConfig.textMultiplier * 1.8,
                                               fontWeight: FontWeight.w600,
                                             ),
                                           ),
@@ -176,7 +176,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                             '${listAllCart[index].company} . ${listAllCart[index].color} . ${listAllCart[index].size}',
                                             style: TextStyle(
                                               color: Colors.grey,
-                                              fontSize: AppTexts.size12,
+                                              fontSize: SizeConfig.textMultiplier * 1.53,
                                               fontWeight: FontWeight.w400,
                                             ),
                                           ),
@@ -193,7 +193,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                                   '\$${listAllCart[index].price}',
                                                   style: TextStyle(
                                                     color: Colors.black,
-                                                    fontSize: AppTexts.size14,
+                                                    fontSize: SizeConfig.textMultiplier * 1.8,
                                                     fontWeight: FontWeight.w700,
                                                   ),
                                                 ),
@@ -227,7 +227,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                                     text: listAllCart[index]
                                                         .value
                                                         .toString(),
-                                                    size: AppTexts.size14,
+                                                    size: SizeConfig.textMultiplier * 1.8,
                                                     fontWeight: FontWeight.w700,
                                                   ),
                                                 ),
@@ -261,7 +261,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                         "All Item(s) are available",
                         style: TextStyle(
                           color: const Color(0xff4CD964),
-                          fontSize: AppTexts.size15,
+                          fontSize: SizeConfig.textMultiplier * 1.92,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -284,7 +284,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 color: AppColors.primarydarkColor,
-                                fontSize: AppTexts.size14,
+                                fontSize: SizeConfig.textMultiplier * 1.8,
                                 fontWeight: FontWeight.w400,
                                 letterSpacing: 1,
                                 height: 2,
@@ -337,7 +337,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                   "Grand Total",
                                   style: TextStyle(
                                     color: Colors.grey,
-                                    fontSize: AppTexts.size12,
+                                    fontSize: SizeConfig.textMultiplier * 1.53,
                                     fontWeight: FontWeight.w400,
                                   ),
                                 ),
@@ -348,7 +348,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                                   "\$705.00",
                                   style: TextStyle(
                                     color: Colors.grey,
-                                    fontSize: AppTexts.size20,
+                                    fontSize: SizeConfig.textMultiplier * 2.55,
                                     fontWeight: FontWeight.w700,
                                   ),
                                 ),
@@ -364,7 +364,7 @@ class _AvailableCartCheckoutState extends State<AvailableCartCheckout> {
                               width: AppWidths.width150,
                               radius: AppRadius.radius30,
                               textcolour: Colors.white,
-                              fontSize: AppTexts.size14,
+                              fontSize: SizeConfig.textMultiplier * 1.8,
                               colour: AppColors.primarylightColor,
                               fontWeight: FontWeight.w700,
                             ),

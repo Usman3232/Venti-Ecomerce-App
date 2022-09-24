@@ -5,7 +5,7 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
@@ -57,7 +57,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
           title: Text(
             'Add New Address',
             style: GoogleFonts.poppins(
-              fontSize: AppTexts.size14,
+              fontSize: SizeConfig.textMultiplier * 1.8,
               color: AppColors.primarydarkColor,
               fontWeight: FontWeight.w600,
               letterSpacing: 1,
@@ -86,7 +86,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                   style: GoogleFonts.sourceSansPro(
                       color: Colors.black,
                       fontWeight: FontWeight.w600,
-                      fontSize: AppTexts.size14),
+                      fontSize: SizeConfig.textMultiplier * 1.8),
                 ),
                 SizedBox(
                   height: SizeConfig.heightMultiplier * 1,
@@ -106,7 +106,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                   style: GoogleFonts.sourceSansPro(
                       color: Colors.black,
                       fontWeight: FontWeight.w600,
-                      fontSize: AppTexts.size14),
+                      fontSize: SizeConfig.textMultiplier * 1.8),
                 ),
                 SizedBox(
                   height: SizeConfig.heightMultiplier * 1,
@@ -126,7 +126,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                   style: GoogleFonts.sourceSansPro(
                     color: Colors.black,
                     fontWeight: FontWeight.w600,
-                    fontSize: AppTexts.size14,
+                    fontSize: SizeConfig.textMultiplier * 1.8,
                   ),
                 ),
                 SizedBox(
@@ -147,7 +147,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                   style: GoogleFonts.sourceSansPro(
                       color: Colors.black,
                       fontWeight: FontWeight.w600,
-                      fontSize: AppTexts.size14),
+                      fontSize: SizeConfig.textMultiplier * 1.8),
                 ),
                 SizedBox(
                   height: SizeConfig.heightMultiplier * 1,
@@ -160,7 +160,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                   contentpadding: EdgeInsets.all(
                     AppPaddings.padding15,
                   ),
-                  hintSize: AppTexts.size14,
+                  hintSize: SizeConfig.textMultiplier * 1.8,
                   textEditingController: suitController,
                 ),
                 Row(
@@ -175,7 +175,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                             style: GoogleFonts.sourceSansPro(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w600,
-                                fontSize: AppTexts.size14),
+                                fontSize: SizeConfig.textMultiplier * 1.8),
                           ),
                           SizedBox(
                             height: SizeConfig.heightMultiplier * 1,
@@ -218,7 +218,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                               style: GoogleFonts.sourceSansPro(
                                   color: Colors.black,
                                   fontWeight: FontWeight.w600,
-                                  fontSize: AppTexts.size14),
+                                  fontSize: SizeConfig.textMultiplier * 1.8),
                             ),
                             SizedBox(
                               height: AppHeights.height8,
@@ -242,7 +242,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                   style: GoogleFonts.sourceSansPro(
                       color: Colors.black,
                       fontWeight: FontWeight.w600,
-                      fontSize: AppTexts.size14),
+                      fontSize: SizeConfig.textMultiplier * 1.8),
                 ),
                 SizedBox(
                   height: SizeConfig.heightMultiplier * 1.5,
@@ -323,7 +323,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                     height: SizeConfig.heightMultiplier * 7,
                     width: SizeConfig.widthMultiplier * 90,
                     textcolour: Colors.white,
-                    fontSize: AppTexts.size14,
+                    fontSize: SizeConfig.textMultiplier * 1.8,
                     radius: AppRadius.radius15,
                     callback: () {}),
                 SizedBox(

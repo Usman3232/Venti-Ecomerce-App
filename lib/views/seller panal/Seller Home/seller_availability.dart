@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_switch/flutter_switch.dart';
 
-import '../../../constants/textsize.dart';
+
 import '../../widgets/TextView.dart';
 
 
@@ -36,7 +36,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
         title:  Text("VENTI - Seller AVAILABILITY",
           style: TextStyle(
             color: AppColors.primarydarkColor,
-            fontSize: AppTexts.size14,
+            fontSize: SizeConfig.textMultiplier * 1.8,
             fontWeight: FontWeight.w600,
             letterSpacing: 2,
           ),
@@ -63,7 +63,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
                   child: Text("Turn Your Shop On and Make Your Sales ",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: AppTexts.size16,
+                      fontSize: SizeConfig.textMultiplier * 2.04,
                       fontWeight: FontWeight.w600,
                       letterSpacing: 1,
                     ),
@@ -96,7 +96,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
             Text("Set your availabilty schedule",
               style: TextStyle(
                 color: Colors.black,
-                fontSize: AppTexts.size16,
+                fontSize: SizeConfig.textMultiplier * 2.04,
                 fontWeight: FontWeight.w600,
                 letterSpacing: 1,
               ),
@@ -123,7 +123,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
                 Text("Set this store timing availabilty for everyday",
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: AppTexts.size11,
+                    fontSize: SizeConfig.textMultiplier * 1.4,
                     fontWeight: FontWeight.w500,
                     letterSpacing: 1,
                   ),
@@ -138,7 +138,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
                 Text("Turn Your Distance Settings",
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: AppTexts.size15,
+                    fontSize: SizeConfig.textMultiplier * 1.92,
                     fontWeight: FontWeight.w500,
                     letterSpacing: 1,
                   ),
@@ -172,7 +172,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
                 Text("Distance (Radius)",
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: AppTexts.size16,
+                    fontSize: SizeConfig.textMultiplier * 2.04,
                     fontWeight: FontWeight.w600,
                     letterSpacing: 1,
                   ),
@@ -205,7 +205,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
                   child: TextView(
                     text:val
                         .toString(),
-                    size: AppTexts.size14,
+                    size: SizeConfig.textMultiplier * 1.8,
                     fontWeight: FontWeight.w700,
                   ),
                 ),

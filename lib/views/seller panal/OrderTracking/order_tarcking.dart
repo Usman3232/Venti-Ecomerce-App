@@ -9,7 +9,7 @@ import '../../../../constants/colors.dart';
 import '../../../../constants/height.dart';
 import '../../../../constants/icons.dart';
 import '../../../../constants/padding.dart';
-import '../../../../constants/textsize.dart';
+
 import '../../../../models/live_tracking_model/live_tracking_cart_model.dart';
 import '../../../../utils/size_config.dart';
 import '../../pages/livetracking/components/delivery_rider_card.dart';
@@ -76,7 +76,7 @@ class _OrderTrackingState extends State<OrderTracking> {
                         'Your item is being processed',
                         style: TextStyle(
                             color: Colors.black12,
-                            fontSize: AppTexts.size12,
+                            fontSize: SizeConfig.textMultiplier * 1.53,
                             fontWeight: FontWeight.w700),
                       ),
                       SizedBox(

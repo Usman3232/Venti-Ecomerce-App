@@ -2,7 +2,7 @@ import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -58,13 +58,13 @@ class MyPoints extends StatelessWidget {
               TextView(
                 text: "My Points",
                 fontWeight: FontWeight.w600,
-                size: AppTexts.size17,
+                size: SizeConfig.textMultiplier * 2.17,
               ),
               TextView(
                 text: "7800",
                 fontWeight: FontWeight.w800,
                 color: Colors.black12,
-                size: AppTexts.size15,
+                size: SizeConfig.textMultiplier * 1.92,
               )
             ],
           ),
@@ -82,7 +82,7 @@ class MyPoints extends StatelessWidget {
                   text: "ReDEEM",
                   color: Color(0xffF2CF06),
                   fontWeight: FontWeight.w600,
-                  size: AppTexts.size12,
+                  size: SizeConfig.textMultiplier * 1.53,
                 ),
               ),
             ),

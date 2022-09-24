@@ -5,7 +5,7 @@ import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/add%20new%20my%20address/add_new_address.dart';
@@ -44,7 +44,7 @@ class _MyAddressState extends State<MyAddress> {
         title: Text(
           'My Address',
           style: GoogleFonts.poppins(
-            fontSize: AppTexts.size14,
+            fontSize: SizeConfig.textMultiplier * 1.8,
             color: AppColors.primarydarkColor,
             fontWeight: FontWeight.w600,
             letterSpacing: 1,
@@ -95,7 +95,7 @@ class _MyAddressState extends State<MyAddress> {
                             Text(
                               'My home',
                               style: GoogleFonts.sourceSansPro(
-                                fontSize: AppTexts.size14,
+                                fontSize: SizeConfig.textMultiplier * 1.8,
                                 color: Colors.black,
                                 fontWeight: FontWeight.w600,
                                 letterSpacing: 1,
@@ -106,7 +106,7 @@ class _MyAddressState extends State<MyAddress> {
                                 child: Text(
                                   'Edit',
                                   style: GoogleFonts.sourceSansPro(
-                                    fontSize: AppTexts.size12,
+                                    fontSize: SizeConfig.textMultiplier * 1.53,
                                     color: const Color(0xff896C6B),
                                     fontWeight: FontWeight.w400,
                                     letterSpacing: 1,
@@ -147,7 +147,7 @@ class _MyAddressState extends State<MyAddress> {
                                       overflow: TextOverflow.ellipsis,
                                       maxLines: 2,
                                       style: GoogleFonts.sourceSansPro(
-                                          fontSize: AppTexts.size12,
+                                          fontSize: SizeConfig.textMultiplier * 1.53,
                                           fontWeight: FontWeight.w400),
                                     )),
                               ],
@@ -159,7 +159,7 @@ class _MyAddressState extends State<MyAddress> {
                               child: Text(
                                 'Joshua / +62 8888 7777',
                                 style: GoogleFonts.sourceSansPro(
-                                    fontSize: AppTexts.size12,
+                                    fontSize: SizeConfig.textMultiplier * 1.53,
                                     fontWeight: FontWeight.w400),
                               ),
                             ),
@@ -198,7 +198,7 @@ class _MyAddressState extends State<MyAddress> {
                             Text(
                               'My Office',
                               style: GoogleFonts.sourceSansPro(
-                                fontSize: AppTexts.size14,
+                                fontSize: SizeConfig.textMultiplier * 1.8,
                                 color: Colors.black,
                                 fontWeight: FontWeight.w600,
                                 letterSpacing: 1,
@@ -209,7 +209,7 @@ class _MyAddressState extends State<MyAddress> {
                                 child: Text(
                                   'Edit',
                                   style: GoogleFonts.sourceSansPro(
-                                    fontSize: AppTexts.size12,
+                                    fontSize: SizeConfig.textMultiplier * 1.53,
                                     color: const Color(0xff896C6B),
                                     fontWeight: FontWeight.w400,
                                     letterSpacing: 1,
@@ -250,7 +250,7 @@ class _MyAddressState extends State<MyAddress> {
                                       overflow: TextOverflow.ellipsis,
                                       maxLines: 2,
                                       style: GoogleFonts.sourceSansPro(
-                                          fontSize: AppTexts.size12,
+                                          fontSize: SizeConfig.textMultiplier * 1.53,
                                           fontWeight: FontWeight.w400),
                                     )),
                               ],
@@ -262,7 +262,7 @@ class _MyAddressState extends State<MyAddress> {
                               child: Text(
                                 'Joshua Gillani / +62 8888 7777 /\n(0266) 234567',
                                 style: GoogleFonts.sourceSansPro(
-                                    fontSize: AppTexts.size12,
+                                    fontSize: SizeConfig.textMultiplier * 1.53,
                                     fontWeight: FontWeight.w400),
                               ),
                             ),
@@ -284,7 +284,7 @@ class _MyAddressState extends State<MyAddress> {
                   'Location',
                   style: GoogleFonts.sourceSansPro(
                     fontWeight: FontWeight.w600,
-                    fontSize: AppTexts.size14,
+                    fontSize: SizeConfig.textMultiplier * 1.8,
                   ),
                 ),
                 IconButton(
@@ -323,7 +323,7 @@ class _MyAddressState extends State<MyAddress> {
                 height: SizeConfig.heightMultiplier * 7,
                 width: SizeConfig.widthMultiplier * 90,
                 textcolour: Colors.white,
-                fontSize: AppTexts.size14,
+                fontSize: SizeConfig.textMultiplier * 1.8,
                 radius: AppRadius.radius15,
                 callback: () {
                   Get.to(const AddNewAddress());

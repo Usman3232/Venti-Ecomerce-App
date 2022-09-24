@@ -2,7 +2,7 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -99,7 +99,7 @@ class _ProductCardState extends State<ProductCard> {
         TextView(
           text: widget.title,
           fontWeight: FontWeight.w600,
-          size: AppTexts.size12,
+          size: SizeConfig.textMultiplier * 1.53,
         ),
         SizedBox(
           height: SizeConfig.heightMultiplier * .4,
@@ -107,7 +107,7 @@ class _ProductCardState extends State<ProductCard> {
         TextView(
           text: widget.location,
           fontWeight: FontWeight.w400,
-          size: AppTexts.size10,
+          size: SizeConfig.textMultiplier * 1.28,
           color: AppColors.primarylightColor,
         ),
         SizedBox(
@@ -122,7 +122,7 @@ class _ProductCardState extends State<ProductCard> {
             TextView(
               text: widget.rating.toString(),
               fontWeight: FontWeight.w700,
-              size: AppTexts.size11,
+              size: SizeConfig.textMultiplier * 1.4,
             ),
             SizedBox(
               width: SizeConfig.widthMultiplier * 1.6,
@@ -130,7 +130,7 @@ class _ProductCardState extends State<ProductCard> {
             TextView(
               text: "(" + widget.reviews.toString() + " Reviews)",
               fontWeight: FontWeight.w400,
-              size: AppTexts.size11,
+              size: SizeConfig.textMultiplier * 1.4,
               color: Color(0xff7E7C7C),
             ),
           ],
@@ -139,7 +139,7 @@ class _ProductCardState extends State<ProductCard> {
         TextView(
           text: "₹" + widget.price,
           fontWeight: FontWeight.w700,
-          size: AppTexts.size14,
+          size: SizeConfig.textMultiplier * 1.8,
         )
       ],
     );

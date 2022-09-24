@@ -3,7 +3,7 @@ import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/seller%20panal/OrderTracking/orders.dart';
@@ -35,13 +35,13 @@ class _SellerHomePageState extends State<SellerHomePage> {
         leading: Icon(
           Icons.menu,
           color: Colors.black,
-          size: AppTexts.size20,
+          size: SizeConfig.textMultiplier * 2.55,
         ),
         title: Text(
           "VENTI - SELLER",
           style: TextStyle(
             color: AppColors.primarydarkColor,
-            fontSize: AppTexts.size15,
+            fontSize: SizeConfig.textMultiplier * 1.92,
             fontWeight: FontWeight.w600,
             letterSpacing: 4,
           ),
@@ -216,7 +216,7 @@ class _VentiSellerCardWidgetState extends State<VentiSellerCardWidget> {
           title: Text(
             widget.title,
             style: TextStyle(
-              fontSize: AppTexts.size14,
+              fontSize: SizeConfig.textMultiplier * 1.8,
               fontWeight: FontWeight.w600,
               letterSpacing: 1,
               color: Colors.black,
@@ -226,7 +226,7 @@ class _VentiSellerCardWidgetState extends State<VentiSellerCardWidget> {
               ? Text(
                   widget.subtitle,
                   style: TextStyle(
-                    fontSize: AppTexts.size10,
+                    fontSize: SizeConfig.textMultiplier * 1.28,
                     fontWeight: FontWeight.w600,
                     color: widget.subtitleColor,
                   ),

@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/drawer_models/order_history_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
@@ -44,7 +44,7 @@ class OrderHistoryListView extends StatelessWidget {
                       Text(
                         listOrderHistory[i].title,
                         style: GoogleFonts.sourceSansPro(
-                          fontSize: AppTexts.size16,
+                          fontSize: SizeConfig.textMultiplier * 2.04,
                           fontWeight: FontWeight.w600,
                         ),
                       ),
@@ -61,7 +61,7 @@ class OrderHistoryListView extends StatelessWidget {
                           Text(
                             listOrderHistory[i].process,
                             style: GoogleFonts.sourceSansPro(
-                              fontSize: AppTexts.size12,
+                              fontSize: SizeConfig.textMultiplier * 1.53,
                               color: const Color(0xffF3AE31),
                               fontWeight: FontWeight.w400,
                             ),
@@ -86,7 +86,7 @@ class OrderHistoryListView extends StatelessWidget {
                 Text(
                   '₹${listOrderHistory[i].price}',
                   style: GoogleFonts.sourceSansPro(
-                    fontSize: AppTexts.size16,
+                    fontSize: SizeConfig.textMultiplier * 2.04,
                     fontWeight: FontWeight.w700,
                   ),
                 ),

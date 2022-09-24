@@ -3,7 +3,7 @@ import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/checkout_add_new_address.dart';
@@ -45,7 +45,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
           "Payment",
           style: TextStyle(
             color: AppColors.primarydarkColor,
-            fontSize: AppTexts.size15,
+            fontSize: SizeConfig.textMultiplier * 1.92,
             fontWeight: FontWeight.w600,
           ),
         ),
@@ -62,7 +62,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                 "Store Policy",
                 style: TextStyle(
                   color: AppColors.primarylightColor,
-                  fontSize: AppTexts.size14,
+                  fontSize: SizeConfig.textMultiplier * 1.8,
                   fontWeight: FontWeight.w400,
                 ),
               ),
@@ -89,7 +89,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                       'Credit Card ',
                       style: TextStyle(
                         color: const Color(0xff2B0806).withOpacity(0.8),
-                        fontSize: AppTexts.size14,
+                        fontSize: SizeConfig.textMultiplier * 1.8,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -109,7 +109,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                               " ****  ****  ****  4567",
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: AppTexts.size12,
+                                fontSize: SizeConfig.textMultiplier * 1.53,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -136,7 +136,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                               " ****  ****  ****  4567",
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: AppTexts.size12,
+                                fontSize: SizeConfig.textMultiplier * 1.53,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -163,7 +163,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                               " ****  ****  ****  4567",
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: AppTexts.size12,
+                                fontSize: SizeConfig.textMultiplier * 1.53,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -214,7 +214,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                                       'Add new card',
                                       style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: AppTexts.size12,
+                                        fontSize: SizeConfig.textMultiplier * 1.53,
                                         fontWeight: FontWeight.w400,
                                       ),
                                     ),
@@ -294,7 +294,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                             'Total Price',
                             style: TextStyle(
                               color: Colors.black,
-                              fontSize: AppTexts.size14,
+                              fontSize: SizeConfig.textMultiplier * 1.8,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
@@ -302,7 +302,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                             '\$550.69',
                             style: TextStyle(
                               color: Colors.black,
-                              fontSize: AppTexts.size25,
+                              fontSize: SizeConfig.textMultiplier * 2.85,
                               fontWeight: FontWeight.w700,
                             ),
                           ),
@@ -331,7 +331,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                               'PAY NOW',
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: AppTexts.size16,
+                                fontSize: SizeConfig.textMultiplier * 2.04,
                                 fontWeight: FontWeight.w700,
                               ),
                             )),

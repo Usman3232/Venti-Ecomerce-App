@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
@@ -37,7 +37,7 @@ class DrawerTiles extends StatelessWidget {
             style: GoogleFonts.sourceSansPro(
               color: AppColors.primarylightColor,
               fontWeight: FontWeight.w600,
-              fontSize: AppTexts.size14,
+              fontSize: SizeConfig.textMultiplier * 1.8,
             ),
           ),
           trailing: Icon(

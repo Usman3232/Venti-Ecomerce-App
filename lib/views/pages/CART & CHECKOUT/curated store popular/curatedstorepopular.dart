@@ -3,7 +3,7 @@ import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -143,7 +143,7 @@ class _CuratedStorePopularState extends State<CuratedStorePopular> {
                       ),
                       TextView(
                         text: "Ralph Lauren",
-                        size: AppTexts.size20,
+                        size: SizeConfig.textMultiplier * 2.55,
                         fontWeight: FontWeight.w600,
                       ),
                       SizedBox(
@@ -151,7 +151,7 @@ class _CuratedStorePopularState extends State<CuratedStorePopular> {
                       ),
                       TextView(
                         text: "Store Policy",
-                        size: AppTexts.size16,
+                        size: SizeConfig.textMultiplier * 2.04,
                         fontWeight: FontWeight.w400,
                       ),
                       SizedBox(
@@ -173,7 +173,7 @@ class _CuratedStorePopularState extends State<CuratedStorePopular> {
                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique amet, maecenas sed vitae pretium. Nulla mattis et tortor, viverra mauris lacus. Tristique amet, maecenas sed vitae pretium. Nulla mattis et tortor",
                             style: TextStyle(
                               color: Colors.black,
-                              fontSize: AppTexts.size10,
+                              fontSize: SizeConfig.textMultiplier * 1.28,
                               fontWeight: FontWeight.w400,
                             ),
                           ),

@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -82,7 +82,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: AppTexts.size16,
+                    fontSize: SizeConfig.textMultiplier * 2.04,
                     fontWeight: FontWeight.w600,
                     letterSpacing: 1,
                   ),
@@ -96,7 +96,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     color: const Color(0xff666666),
-                    fontSize: AppTexts.size12,
+                    fontSize: SizeConfig.textMultiplier * 1.53,
                     fontWeight: FontWeight.w400,
                     letterSpacing: 1,
                   ),
@@ -110,7 +110,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                       '\$235,00',
                       style: TextStyle(
                         color: Colors.black,
-                        fontSize: AppTexts.size14,
+                        fontSize: SizeConfig.textMultiplier * 1.8,
                         fontWeight: FontWeight.w700,
                       ),
                     ),
@@ -131,7 +131,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                           horizontal: AppPaddings.padding8),
                       child: TextView(
                         text: value.toString(),
-                        size: AppTexts.size14,
+                        size: SizeConfig.textMultiplier * 1.8,
                         fontWeight: FontWeight.w700,
                       ),
                     ),
@@ -180,7 +180,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: AppColors.primarydarkColor,
-                        fontSize: AppTexts.size12,
+                        fontSize: SizeConfig.textMultiplier * 1.53,
                         height: 2,
                         fontWeight: FontWeight.w500,
                         letterSpacing: 1,
@@ -220,7 +220,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                                 "Grand Total",
                                 style: TextStyle(
                                   color: Colors.grey,
-                                  fontSize: AppTexts.size12,
+                                  fontSize: SizeConfig.textMultiplier * 1.53,
                                   fontWeight: FontWeight.w400,
                                 ),
                               ),
@@ -231,7 +231,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                                 "\$705.00",
                                 style: TextStyle(
                                   color: Colors.grey,
-                                  fontSize: AppTexts.size20,
+                                  fontSize: SizeConfig.textMultiplier * 2.55,
                                   fontWeight: FontWeight.w700,
                                 ),
                               ),
@@ -245,7 +245,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                             width: AppWidths.width150,
                             radius: AppRadius.radius30,
                             textcolour: Colors.white,
-                            fontSize: AppTexts.size14,
+                            fontSize: SizeConfig.textMultiplier * 1.8,
                             colour: AppColors.primarylightColor,
                             fontWeight: FontWeight.w700,
                           ),

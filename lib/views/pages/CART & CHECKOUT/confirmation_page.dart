@@ -2,7 +2,7 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
@@ -38,7 +38,7 @@ class _ConfirmationState extends State<Confirmation> {
             style: TextStyle(
               color: AppColors.primarydarkColor,
               fontWeight: FontWeight.w600,
-              fontSize: AppTexts.size15,
+              fontSize: SizeConfig.textMultiplier * 1.92,
             ),
           ),
           actions: [
@@ -51,7 +51,7 @@ class _ConfirmationState extends State<Confirmation> {
                 style: TextStyle(
                   color: AppColors.primarylightColor,
                   fontWeight: FontWeight.w400,
-                  fontSize: AppTexts.size14,
+                  fontSize: SizeConfig.textMultiplier * 1.8,
                 ),
               ),
             ),
@@ -71,7 +71,7 @@ class _ConfirmationState extends State<Confirmation> {
                 style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.w400,
-                  fontSize: AppTexts.size15,
+                  fontSize: SizeConfig.textMultiplier * 1.92,
                   letterSpacing: 1,
                 ),
               ),
@@ -91,7 +91,7 @@ class _ConfirmationState extends State<Confirmation> {
                 child: Text(
                   "Confirmation Time",
                   style: TextStyle(
-                    fontSize: AppTexts.size15,
+                    fontSize: SizeConfig.textMultiplier * 1.92,
                     fontWeight: FontWeight.w600,
                     letterSpacing: 1,
                     color: AppColors.primarylightColor,
@@ -105,7 +105,7 @@ class _ConfirmationState extends State<Confirmation> {
                 "02:39",
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: AppTexts.size20,
+                  fontSize: SizeConfig.textMultiplier * 2.55,
                   fontWeight: FontWeight.w700,
                   letterSpacing: 1,
                 ),
@@ -128,7 +128,7 @@ class _ConfirmationState extends State<Confirmation> {
                       'Cancel',
                       style: TextStyle(
                         color: const Color(0xffFF4C5E),
-                        fontSize: AppTexts.size14,
+                        fontSize: SizeConfig.textMultiplier * 1.8,
                         fontWeight: FontWeight.w700,
                         letterSpacing: 1,
                       ),

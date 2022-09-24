@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -60,7 +60,7 @@ class _LiveTrackingMapState extends State<LiveTrackingMap> {
           title: Text(
             'Live Tracking',
             style: GoogleFonts.poppins(
-              fontSize: AppTexts.size15,
+              fontSize: SizeConfig.textMultiplier * 1.92,
               color: AppColors.primarydarkColor,
               fontWeight: FontWeight.w600,
               letterSpacing: 1,

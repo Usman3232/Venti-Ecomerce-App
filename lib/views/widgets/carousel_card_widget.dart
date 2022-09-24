@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:flutter/material.dart';
@@ -59,7 +59,7 @@ class _CarouselCardState extends State<CarouselCard> {
                     child: TextView(
                       text: "NEW",
                       fontWeight: FontWeight.w700,
-                      size: AppTexts.size12,
+                      size: SizeConfig.textMultiplier * 1.53,
                       color: Colors.white,
                     )),
               ),
@@ -69,7 +69,7 @@ class _CarouselCardState extends State<CarouselCard> {
               TextView(
                 text: widget.title,
                 fontWeight: FontWeight.w700,
-                size: AppTexts.size20,
+                size: SizeConfig.textMultiplier * 2.55,
                 color: widget.titleColor,
               ),
               SizedBox(
@@ -78,7 +78,7 @@ class _CarouselCardState extends State<CarouselCard> {
               TextView(
                 text: '₹ ${widget.price}',
                 fontWeight: FontWeight.w700,
-                size: AppTexts.size12,
+                size: SizeConfig.textMultiplier * 1.53,
                 color: widget.titleColor,
               ),
             ],

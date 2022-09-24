@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/constants/width.dart';
+import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../../../../constants/padding.dart';
@@ -97,14 +97,18 @@ class _OrderStatusSellerState extends State<OrderStatusSeller> {
                                         Text(
                                           listoforder[i].title,
                                           style: TextStyle(
-                                              fontSize: AppTexts.size12,
+                                              fontSize:
+                                                  SizeConfig.textMultiplier *
+                                                      1.53,
                                               fontWeight: FontWeight.w500,
                                               color: Colors.black),
                                         ),
                                         Text(
                                           listoforder[i].price,
                                           style: TextStyle(
-                                            fontSize: AppTexts.size12,
+                                            fontSize:
+                                                SizeConfig.textMultiplier *
+                                                    1.53,
                                             fontWeight: FontWeight.w600,
                                             letterSpacing: 1,
                                           ),

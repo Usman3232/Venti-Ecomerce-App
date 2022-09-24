@@ -1,7 +1,7 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -68,7 +68,7 @@ class AddProductDialogue extends StatelessWidget {
                               child: Text(
                                 "Add New Product",
                                 style: TextStyle(
-                                  fontSize: AppTexts.size20,
+                                  fontSize: SizeConfig.textMultiplier * 2.55,
                                   fontWeight: FontWeight.w600,
                                   letterSpacing: 1,
                                 ),
@@ -94,7 +94,7 @@ class AddProductDialogue extends StatelessWidget {
                                   child: TextView(
                                     text: 'Add Pictures',
                                     color: AppColors.primarylightColor,
-                                    size: AppTexts.size14,
+                                    size: SizeConfig.textMultiplier * 1.8,
                                     fontWeight: FontWeight.w600,
                                   ),
                                 ),
@@ -107,7 +107,7 @@ class AddProductDialogue extends StatelessWidget {
                               "Name of Product",
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: AppTexts.size14,
+                                fontSize: SizeConfig.textMultiplier * 1.8,
                                 fontWeight: FontWeight.w700,
                                 letterSpacing: 1,
                               ),
@@ -132,7 +132,7 @@ class AddProductDialogue extends StatelessWidget {
                                       "Price",
                                       style: TextStyle(
                                         color: Colors.black,
-                                        fontSize: AppTexts.size14,
+                                        fontSize: SizeConfig.textMultiplier * 1.8,
                                         fontWeight: FontWeight.w700,
                                         letterSpacing: 1,
                                       ),
@@ -154,7 +154,7 @@ class AddProductDialogue extends StatelessWidget {
                                           child: Text(
                                             '₹',
                                             style: TextStyle(
-                                                fontSize: AppTexts.size18,
+                                                fontSize: SizeConfig.textMultiplier * 2.29,
                                                 fontWeight: FontWeight.w700),
                                           ),
                                         ),
@@ -170,7 +170,7 @@ class AddProductDialogue extends StatelessWidget {
                                       "Discount",
                                       style: TextStyle(
                                         color: Colors.black,
-                                        fontSize: AppTexts.size14,
+                                        fontSize: SizeConfig.textMultiplier * 1.8,
                                         fontWeight: FontWeight.w700,
                                         letterSpacing: 1,
                                       ),
@@ -193,7 +193,7 @@ class AddProductDialogue extends StatelessWidget {
                                           child: Text(
                                             '%',
                                             style: TextStyle(
-                                                fontSize: AppTexts.size18,
+                                                fontSize: SizeConfig.textMultiplier * 2.29,
                                                 fontWeight: FontWeight.w700),
                                           ),
                                         ),
@@ -209,7 +209,7 @@ class AddProductDialogue extends StatelessWidget {
                             Text(
                               "Category",
                               style: TextStyle(
-                                fontSize: AppTexts.size14,
+                                fontSize: SizeConfig.textMultiplier * 1.8,
                                 fontWeight: FontWeight.w700,
                                 letterSpacing: 1,
                               ),
@@ -224,7 +224,7 @@ class AddProductDialogue extends StatelessWidget {
                                   "Glasses",
                                   style: TextStyle(
                                     fontWeight: FontWeight.w400,
-                                    fontSize: AppTexts.size14,
+                                    fontSize: SizeConfig.textMultiplier * 1.8,
                                     letterSpacing: 1,
                                     color: Colors.black,
                                   ),
@@ -234,7 +234,7 @@ class AddProductDialogue extends StatelessWidget {
                             ),
                             Text("Discription",
                                 style: TextStyle(
-                                  fontSize: AppTexts.size14,
+                                  fontSize: SizeConfig.textMultiplier * 1.8,
                                   fontWeight: FontWeight.w700,
                                   letterSpacing: 1,
                                 )),

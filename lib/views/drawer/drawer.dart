@@ -3,7 +3,7 @@ import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/controllers/button_controller.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/profile/my_profile.dart';
@@ -90,7 +90,7 @@ class _MyDrawerState extends State<MyDrawer> {
             style: GoogleFonts.sourceSansPro(
               color: Colors.black,
               fontWeight: FontWeight.w600,
-              fontSize: AppTexts.size16,
+              fontSize: SizeConfig.textMultiplier * 2.04,
             ),
           ),
           SizedBox(
@@ -153,7 +153,7 @@ class _MyDrawerState extends State<MyDrawer> {
                       'Buyer',
                       style: GoogleFonts.sourceSansPro(
                           fontWeight: FontWeight.w600,
-                          fontSize: AppTexts.size14,
+                          fontSize: SizeConfig.textMultiplier * 1.8,
                           color: AppColors.primarylightColor),
                     ),
                     SizedBox(
@@ -190,7 +190,7 @@ class _MyDrawerState extends State<MyDrawer> {
                       'Seller',
                       style: GoogleFonts.sourceSansPro(
                           fontWeight: FontWeight.w600,
-                          fontSize: AppTexts.size14,
+                          fontSize: SizeConfig.textMultiplier * 1.8,
                           color: AppColors.primarylightColor),
                     ),
                   ],

@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/constants/colors.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
@@ -66,7 +66,7 @@ class _ViewInvoiceState extends State<ViewInvoice> {
         title: TextView(
           text: 'Invoice',
           color: AppColors.primarydarkColor,
-          size: AppTexts.size15,
+          size: SizeConfig.textMultiplier * 1.92,
           fontWeight: FontWeight.w600,
         ),
       ),
@@ -119,7 +119,7 @@ class _ViewInvoiceState extends State<ViewInvoice> {
                                     maxLines: 1,
                                     style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: AppTexts.size14,
+                                      fontSize: SizeConfig.textMultiplier * 1.8,
                                       fontWeight: FontWeight.w600,
                                     ),
                                   ),
@@ -132,7 +132,7 @@ class _ViewInvoiceState extends State<ViewInvoice> {
                                         '${listAllCart[index].company} . ${listAllCart[index].color} . ${listAllCart[index].size}',
                                         style: TextStyle(
                                           color: Colors.grey,
-                                          fontSize: AppTexts.size12,
+                                          fontSize: SizeConfig.textMultiplier * 1.53,
                                           fontWeight: FontWeight.w400,
                                         ),
                                       ),
@@ -151,7 +151,7 @@ class _ViewInvoiceState extends State<ViewInvoice> {
                                     '\$${listAllCart[index].price}',
                                     style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: AppTexts.size14,
+                                      fontSize: SizeConfig.textMultiplier * 1.8,
                                       fontWeight: FontWeight.w700,
                                     ),
                                   )
@@ -171,12 +171,12 @@ class _ViewInvoiceState extends State<ViewInvoice> {
                 children: [
                   TextView(
                     text: "Subtotal",
-                    size: AppTexts.size14,
+                    size: SizeConfig.textMultiplier * 1.8,
                     fontWeight: FontWeight.w600,
                   ),
                   TextView(
                     text: "\$610.19",
-                    size: AppTexts.size14,
+                    size: SizeConfig.textMultiplier * 1.8,
                     fontWeight: FontWeight.w600,
                   )
                 ],
@@ -187,12 +187,12 @@ class _ViewInvoiceState extends State<ViewInvoice> {
                 children: [
                   TextView(
                     text: "Shipping costs",
-                    size: AppTexts.size14,
+                    size: SizeConfig.textMultiplier * 1.8,
                     fontWeight: FontWeight.w600,
                   ),
                   TextView(
                     text: "\$14.09",
-                    size: AppTexts.size14,
+                    size: SizeConfig.textMultiplier * 1.8,
                     fontWeight: FontWeight.w600,
                   )
                 ],
@@ -203,12 +203,12 @@ class _ViewInvoiceState extends State<ViewInvoice> {
                 children: [
                   TextView(
                     text: "Voucher",
-                    size: AppTexts.size14,
+                    size: SizeConfig.textMultiplier * 1.8,
                     fontWeight: FontWeight.w600,
                   ),
                   TextView(
                     text: "-\$10.00",
-                    size: AppTexts.size14,
+                    size: SizeConfig.textMultiplier * 1.8,
                     fontWeight: FontWeight.w600,
                     color: AppColors.primarylightColor,
                   )
@@ -220,12 +220,12 @@ class _ViewInvoiceState extends State<ViewInvoice> {
                 children: [
                   TextView(
                     text: "Grand Total",
-                    size: AppTexts.size17,
+                    size: SizeConfig.textMultiplier * 2.17,
                     fontWeight: FontWeight.w600,
                   ),
                   TextView(
                     text: "\$705.00",
-                    size: AppTexts.size20,
+                    size: SizeConfig.textMultiplier * 2.55,
                     fontWeight: FontWeight.w700,
                   )
                 ],

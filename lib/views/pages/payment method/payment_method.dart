@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/drawer_models/order_history_model.dart';
 import 'package:ecommerce_app/models/drawer_models/payment_method_card_model.dart';
@@ -39,7 +39,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
         title: Text(
           'Payment Method',
           style: GoogleFonts.poppins(
-            fontSize: AppTexts.size14,
+            fontSize: SizeConfig.textMultiplier * 1.8,
             color: AppColors.primarydarkColor,
             fontWeight: FontWeight.w600,
             letterSpacing: 1,
@@ -119,7 +119,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
                     style: GoogleFonts.sourceSansPro(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
-                        fontSize: AppTexts.size16),
+                        fontSize: SizeConfig.textMultiplier * 2.04),
                   ),
                   ListView.builder(
                       shrinkWrap: true,
@@ -154,7 +154,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
                                     Text(
                                       listOrderHistory[i].title,
                                       style: GoogleFonts.sourceSansPro(
-                                        fontSize: AppTexts.size14,
+                                        fontSize: SizeConfig.textMultiplier * 1.8,
                                         fontWeight: FontWeight.w600,
                                       ),
                                     ),
@@ -164,7 +164,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
                                     Text(
                                       '${listOrderHistory[i].day} ${listOrderHistory[i].time}',
                                       style: GoogleFonts.sourceSansPro(
-                                        fontSize: AppTexts.size12,
+                                        fontSize: SizeConfig.textMultiplier * 1.53,
                                         color: const Color(0xffAE9A99),
                                         fontWeight: FontWeight.w400,
                                       ),
@@ -176,7 +176,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
                               Text(
                                 '-₹${listOrderHistory[i].price}',
                                 style: GoogleFonts.sourceSansPro(
-                                  fontSize: AppTexts.size16,
+                                  fontSize: SizeConfig.textMultiplier * 2.04,
                                   color: Colors.red,
                                   fontWeight: FontWeight.w700,
                                 ),

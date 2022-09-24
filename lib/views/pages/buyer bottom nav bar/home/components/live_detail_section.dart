@@ -2,7 +2,7 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/radius.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/livetracking/live_tracking_map.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -23,7 +23,7 @@ class LiveDetailSection extends StatelessWidget {
           text: "Live Tracking",
           color: AppColors.textColor,
           fontWeight: FontWeight.w700,
-          size: AppTexts.size20,
+          size: SizeConfig.textMultiplier * 2.55,
         ),
         SizedBox(
           height: AppHeights.height8,
@@ -62,7 +62,7 @@ class LiveDetailSection extends StatelessWidget {
                                 children: [
                                   TextView(
                                     text: "8:50 PM",
-                                    size: AppTexts.size12,
+                                    size: SizeConfig.textMultiplier * 1.53,
                                     fontWeight: FontWeight.w700,
                                   ),
                                   SizedBox(
@@ -70,7 +70,7 @@ class LiveDetailSection extends StatelessWidget {
                                   ),
                                   TextView(
                                     text: "Delivery Time",
-                                    size: AppTexts.size12,
+                                    size: SizeConfig.textMultiplier * 1.53,
                                     fontWeight: FontWeight.w500,
                                   ),
                                 ],
@@ -95,7 +95,7 @@ class LiveDetailSection extends StatelessWidget {
                                 children: [
                                   TextView(
                                     text: "Gaur City",
-                                    size: AppTexts.size12,
+                                    size: SizeConfig.textMultiplier * 1.53,
                                     fontWeight: FontWeight.w700,
                                   ),
                                   SizedBox(
@@ -103,7 +103,7 @@ class LiveDetailSection extends StatelessWidget {
                                   ),
                                   TextView(
                                     text: "Delivery Place",
-                                    size: AppTexts.size12,
+                                    size: SizeConfig.textMultiplier * 1.53,
                                     fontWeight: FontWeight.w500,
                                   ),
                                 ],

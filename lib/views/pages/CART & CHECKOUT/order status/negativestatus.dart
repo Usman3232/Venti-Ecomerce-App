@@ -2,7 +2,7 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/all_carts.dart';
@@ -34,7 +34,7 @@ class NegativeStatus extends StatelessWidget {
         title: TextView(
           text: "Order Status",
           color: AppColors.primarydarkColor,
-          size: AppTexts.size15,
+          size: SizeConfig.textMultiplier * 1.92,
           fontWeight: FontWeight.w600,
         ),
         actions: [
@@ -49,7 +49,7 @@ class NegativeStatus extends StatelessWidget {
               child: TextView(
                 text: "Store Policy",
                 color: AppColors.primarydarkColor,
-                size: AppTexts.size14,
+                size: SizeConfig.textMultiplier * 1.8,
                 fontWeight: FontWeight.w400,
               ),
             ),
@@ -71,7 +71,7 @@ class NegativeStatus extends StatelessWidget {
               text: "Oops!",
               color: AppColors.primarydarkColor,
               fontWeight: FontWeight.w600,
-              size: AppTexts.size20,
+              size: SizeConfig.textMultiplier * 2.55,
             ),
             SizedBox(height: AppHeights.height40),
             TextView(
@@ -79,7 +79,7 @@ class NegativeStatus extends StatelessWidget {
                   "Sorry your order has been cancelled because of failure of payment!",
               color: AppColors.iconColor,
               fontWeight: FontWeight.w400,
-              size: AppTexts.size15,
+              size: SizeConfig.textMultiplier * 1.92,
             ),
             SizedBox(
               height: AppHeights.height50,
@@ -93,7 +93,7 @@ class NegativeStatus extends StatelessWidget {
               width: AppWidths.width284,
               radius: 35,
               title: "Return to Cart",
-              fontSize: AppTexts.size16,
+              fontSize: SizeConfig.textMultiplier * 2.04,
               textcolour: Colors.white,
               fontWeight: FontWeight.w700,
             )

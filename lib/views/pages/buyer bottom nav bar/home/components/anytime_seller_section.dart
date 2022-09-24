@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/padding.dart';
-import 'package:ecommerce_app/constants/textsize.dart';
+
 import 'package:ecommerce_app/models/homemodels/anytimesellermodel.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/home/components/anytimesellercard.dart';
@@ -34,7 +34,7 @@ class AnyTimeSellerSection extends StatelessWidget {
                   children: [
                     TextView(
                       text: "AnyTime Sellers",
-                      size: AppTexts.size20,
+                      size: SizeConfig.textMultiplier * 2.55,
                       fontWeight: FontWeight.w700,
                     ),
                     InkWell(
@@ -44,7 +44,7 @@ class AnyTimeSellerSection extends StatelessWidget {
                       },
                       child: TextView(
                         text: "See ALL",
-                        size: AppTexts.size12,
+                        size: SizeConfig.textMultiplier * 1.53,
                         fontWeight: FontWeight.w600,
                         color: Colors.black26,
                       ),
