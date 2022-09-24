@@ -16,6 +16,8 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
+import 'components/my_location.dart';
+
 class AddNewAddress extends StatefulWidget {
   const AddNewAddress({Key? key}) : super(key: key);
 
@@ -313,43 +315,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                     ),
                   ],
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      'Location',
-                      style: GoogleFonts.sourceSansPro(
-                        fontWeight: FontWeight.w600,
-                        fontSize: AppTexts.size14,
-                      ),
-                    ),
-                    IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.more_horiz,
-                          color: Colors.black38,
-                          size: SizeConfig.imageSizeMultiplier * 8,
-                        ))
-                  ],
-                ),
-                SizedBox(
-                  height: AppHeights.height10,
-                ),
-                Container(
-                  height: SizeConfig.heightMultiplier * 17.6,
-                  width: AppWidths.widthFull,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(AppRadius.radius15),
-                  ),
-                  child: GoogleMap(
-                    zoomControlsEnabled: false,
-                    onMapCreated: (GoogleMapController controller) {
-                      _controller.complete(controller);
-                    },
-                    initialCameraPosition: _kGooglePlex,
-                    mapType: MapType.normal,
-                  ),
-                ),
+                MyLocation(controller: _controller, kGooglePlex: _kGooglePlex),
                 SizedBox(height: AppHeights.height27),
                 CustomTextButton(
                     title: 'Save',

@@ -7,10 +7,13 @@ import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/models/curated_store_models/productmodel.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/all_carts.dart';
-import 'package:ecommerce_app/views/pages/curated%20product%20detail/curated_product_detail.dart';
-import 'package:ecommerce_app/views/pages/chat/chat.dart';
+import 'package:ecommerce_app/views/pages/anytime%20seller%20store%20detail/components/anytime_appbar.dart';
+import 'package:ecommerce_app/views/pages/anytime%20seller%20store%20detail/components/gallery_tab.dart';
+import 'package:ecommerce_app/views/pages/anytime%20seller%20store%20detail/components/product_tab.dart';
+import 'package:ecommerce_app/views/pages/anytime%20seller%20store%20detail/components/tag_list.dart';
 import 'package:ecommerce_app/views/pages/curated_store_detail/components/product_card.dart';
 import 'package:ecommerce_app/views/pages/customize%20gift%20hamper/customize_gift_hamper.dart';
+import 'package:ecommerce_app/views/seller%20panal/Anytime%20Sellers/components/services_tab.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -53,79 +56,7 @@ class _AnytimeSellerStoreDetailState extends State<AnytimeSellerStoreDetail> {
                       SizedBox(
                         height: AppHeights.height66,
                       ),
-                      Row(
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              Get.back();
-                            },
-                            child: Container(
-                              height: SizeConfig.heightMultiplier * 3.8,
-                              width: SizeConfig.widthMultiplier * 7.7,
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle, color: Colors.white),
-                              child: Padding(
-                                padding: EdgeInsets.all(
-                                    SizeConfig.widthMultiplier * 1.8),
-                                child: SvgPicture.asset(
-                                  AppIcons.back,
-                                  color: AppColors.primarylightColor,
-                                ),
-                              ),
-                            ),
-                          ),
-                          Spacer(),
-                          GestureDetector(
-                            onTap: () {},
-                            child: Container(
-                              height: SizeConfig.heightMultiplier * 3.8,
-                              width: SizeConfig.widthMultiplier * 7.7,
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle, color: Colors.white),
-                              child: Icon(
-                                Icons.favorite_rounded,
-                                color: AppColors.primarylightColor,
-                                size: SizeConfig.imageSizeMultiplier * 5.5,
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            width: SizeConfig.widthMultiplier * 1.7,
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              Get.to(AllCartsCheckOut());
-                            },
-                            child: Container(
-                              height: SizeConfig.heightMultiplier * 3.8,
-                              width: SizeConfig.widthMultiplier * 7.7,
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle, color: Colors.white),
-                              child: Padding(
-                                padding: EdgeInsets.all(
-                                    SizeConfig.widthMultiplier * 1.6),
-                                child: Stack(
-                                  children: [
-                                    SvgPicture.asset(
-                                      AppIcons.cart,
-                                      color: AppColors.primarylightColor,
-                                    ),
-                                    Positioned(
-                                      right: 0,
-                                      top: 0,
-                                      child: CircleAvatar(
-                                        backgroundColor:
-                                            AppColors.primarylightColor,
-                                        radius: SizeConfig.widthMultiplier * 1,
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      )
+                      AnytimeAppBar()
                     ],
                   ),
                 ),
@@ -209,41 +140,7 @@ class _AnytimeSellerStoreDetailState extends State<AnytimeSellerStoreDetail> {
                                 SizedBox(
                                   width: SizeConfig.widthMultiplier * 3,
                                 ),
-                                Row(
-                                  children: [
-                                    ...List.generate(
-                                        tags.length,
-                                        (index) => Container(
-                                              decoration: BoxDecoration(
-                                                  color: AppColors
-                                                      .primarylightColor
-                                                      .withOpacity(.3),
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          100)),
-                                              padding: EdgeInsets.symmetric(
-                                                  horizontal: SizeConfig
-                                                          .widthMultiplier *
-                                                      3,
-                                                  vertical: SizeConfig
-                                                          .heightMultiplier *
-                                                      .6),
-                                              margin: EdgeInsets.only(
-                                                  right: SizeConfig
-                                                          .widthMultiplier *
-                                                      2),
-                                              child: TextView(
-                                                text: tags[index],
-                                                fontWeight: FontWeight.w500,
-                                                size:
-                                                    SizeConfig.textMultiplier *
-                                                        1.2,
-                                                color:
-                                                    AppColors.primarydarkColor,
-                                              ),
-                                            ))
-                                  ],
-                                ),
+                                Tags_List(tags: tags),
                               ],
                             ),
                             SizedBox(
@@ -326,122 +223,6 @@ class _AnytimeSellerStoreDetailState extends State<AnytimeSellerStoreDetail> {
           ],
         ),
       ),
-    );
-  }
-}
-
-class GalleryTab extends StatelessWidget {
-  const GalleryTab({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return GridView.builder(
-      physics: NeverScrollableScrollPhysics(),
-      shrinkWrap: true,
-      itemCount: product_model.length,
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          childAspectRatio: SizeConfig.heightMultiplier * .11,
-          mainAxisSpacing: SizeConfig.heightMultiplier * 2,
-          // crossAxisSpacing: SizeConfig.widthMultiplier * 1,
-          crossAxisCount: 2),
-      itemBuilder: (context, index) {
-        return Padding(
-          padding: EdgeInsets.only(left: AppPaddings.padding25),
-          child: ProductCard(
-              image: product_model[index].image,
-              title: product_model[index].title,
-              location: product_model[index].location,
-              reviews: product_model[index].reviews,
-              rating: product_model[index].rating,
-              price: product_model[index].price,
-              onTap: () {
-                Get.to(CustomizeGiftHamper());
-              },
-              favourite: product_model[index].favourite),
-        );
-      },
-    );
-  }
-}
-
-class ServicesTab extends StatelessWidget {
-  const ServicesTab({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return GridView.builder(
-      physics: NeverScrollableScrollPhysics(),
-      shrinkWrap: true,
-      itemCount: product_model.length,
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          childAspectRatio: SizeConfig.heightMultiplier * .11,
-          mainAxisSpacing: SizeConfig.heightMultiplier * 2,
-          // crossAxisSpacing: SizeConfig.widthMultiplier * 1,
-          crossAxisCount: 2),
-      itemBuilder: (context, index) {
-        return Padding(
-          padding: EdgeInsets.only(left: AppPaddings.padding25),
-          child: ProductCard(
-              image: product_model[index].image,
-              title: product_model[index].title,
-              location: product_model[index].location,
-              reviews: product_model[index].reviews,
-              rating: product_model[index].rating,
-              price: product_model[index].price,
-              onTap: () {
-                Get.to(CustomizeGiftHamper());
-              },
-              favourite: product_model[index].favourite),
-        );
-      },
-    );
-  }
-}
-
-class ProductsTab extends StatefulWidget {
-  const ProductsTab({Key? key}) : super(key: key);
-
-  @override
-  State<ProductsTab> createState() => _ProductsTabState();
-}
-
-class _ProductsTabState extends State<ProductsTab> {
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        GridView.builder(
-          physics: NeverScrollableScrollPhysics(),
-          shrinkWrap: true,
-          padding: EdgeInsets.only(top: SizeConfig.heightMultiplier * 2),
-          itemCount: product_model.length,
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              childAspectRatio: SizeConfig.heightMultiplier * .11,
-              mainAxisSpacing: SizeConfig.heightMultiplier * 2,
-              // crossAxisSpacing: SizeConfig.widthMultiplier * 1,
-              crossAxisCount: 2),
-          itemBuilder: (context, index) {
-            return Padding(
-              padding: EdgeInsets.only(left: AppPaddings.padding25),
-              child: Column(
-                children: [
-                  ProductCard(
-                      image: product_model[index].image,
-                      title: product_model[index].title,
-                      location: product_model[index].location,
-                      reviews: product_model[index].reviews,
-                      rating: product_model[index].rating,
-                      price: product_model[index].price,
-                      onTap: () {
-                        Get.to(CustomizeGiftHamper());
-                      },
-                      favourite: product_model[index].favourite),
-                ],
-              ),
-            );
-          },
-        ),
-      ],
     );
   }
 }

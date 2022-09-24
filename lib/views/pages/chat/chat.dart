@@ -7,6 +7,7 @@ import 'package:ecommerce_app/constants/textsize.dart';
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/chat_model/chat_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
+import 'package:ecommerce_app/views/pages/chat/components/message_list.dart';
 import 'package:ecommerce_app/views/pages/view%20invoice/view_invoice.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
@@ -95,49 +96,7 @@ class _ChatState extends State<Chat> {
         child: Container(
             child: Column(
           children: [
-            Expanded(
-              child: ListView.builder(
-                reverse: true,
-                shrinkWrap: true,
-                physics: BouncingScrollPhysics(),
-                itemCount: chat_model.length,
-                itemBuilder: (context, index) {
-                  return Padding(
-                    padding: EdgeInsets.only(bottom: AppPaddings.padding15),
-                    child: ConstrainedBox(
-                      constraints: BoxConstraints(
-                          maxWidth: MediaQuery.of(context).size.width - 70),
-                      child: Align(
-                        alignment: chat_model[index].isme
-                            ? Alignment.bottomRight
-                            : Alignment.bottomLeft,
-                        child: Container(
-                          decoration: BoxDecoration(
-                              borderRadius:
-                                  BorderRadius.circular(AppRadius.radius15),
-                              color: chat_model[index].isme
-                                  ? Color(0xffE9E6E6)
-                                  : AppColors.primarylightColor),
-                          child: Padding(
-                            padding: EdgeInsets.symmetric(
-                                vertical: AppPaddings.padding15,
-                                horizontal: AppPaddings.padding19),
-                            child: TextView(
-                              text: chat_model[index].message,
-                              fontWeight: FontWeight.w400,
-                              size: AppTexts.size14,
-                              color: chat_model[index].isme
-                                  ? Colors.black
-                                  : Colors.white,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  );
-                },
-              ),
-            ),
+            MessageList(),
             isattachment
                 ? Padding(
                     padding: EdgeInsets.only(

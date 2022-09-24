@@ -283,7 +283,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                           builder: (_) => Container(
                                 height: SizeConfig.heightMultiplier * 44.5,
                                 decoration: BoxDecoration(
-                                    color: Color(0xffF8F8F8),
+                                    color: const Color(0xffF8F8F8),
                                     borderRadius: BorderRadius.vertical(
                                         top: Radius.circular(
                                             AppRadius.radius30))),
@@ -373,63 +373,12 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                       ),
                                       SingleChildScrollView(
                                         scrollDirection: Axis.horizontal,
-                                        physics: BouncingScrollPhysics(),
-                                        child: Container(
-                                          child: Row(
-                                            children: [
-                                              SelectWidget(
-                                                title: 'Service Providers',
-                                                isfocus: isfocus,
-                                                onPressed: () {
-                                                  setState(() {
-                                                    isfocus = !isfocus;
-                                                    isfocus2 = false;
-                                                    isfocus3 = false;
-                                                    isfocus4 = false;
-                                                  });
-                                                },
-                                              ),
-                                              SelectWidget(
-                                                title: 'Curated Shops',
-                                                isfocus: isfocus2,
-                                                onPressed: () {
-                                                  setState(() {
-                                                    isfocus = false;
-                                                    isfocus2 = !isfocus2;
-                                                    isfocus3 = false;
-                                                    isfocus4 = false;
-                                                  });
-                                                },
-                                              ),
-                                              SelectWidget(
-                                                title: 'Home Service',
-                                                isfocus: isfocus3,
-                                                onPressed: () {
-                                                  setState(() {
-                                                    isfocus = false;
-                                                    isfocus2 = false;
-                                                    isfocus3 = !isfocus3;
-                                                    isfocus4 = false;
-                                                  });
-                                                },
-                                              ),
-                                              SelectWidget(
-                                                title: 'Conditioning',
-                                                isfocus: isfocus4,
-                                                onPressed: () {
-                                                  setState(() {
-                                                    isfocus = false;
-                                                    isfocus2 = false;
-                                                    isfocus3 = false;
-                                                    isfocus4 = !isfocus4;
-                                                  });
-                                                },
-                                              ),
-                                            ],
-                                          ),
+                                        physics: const BouncingScrollPhysics(),
+                                        child: Row(
+                                          children: [],
                                         ),
                                       ),
-                                      Spacer(),
+                                      const Spacer(),
                                       Container(
                                         height: AppHeights.height50 * 2,
                                         decoration: BoxDecoration(
@@ -448,12 +397,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                               CustomTextButton(
                                                 callback: () {
                                                   setState(() {
-                                                    isfocus = false;
-                                                    isfocus2 = false;
-                                                    isfocus3 = false;
-                                                    isfocus4 = false;
                                                     value = 0;
-                                                    print("sdfs00");
                                                   });
                                                 },
                                                 radius: 90,
@@ -501,50 +445,6 @@ class _MapLocationPageState extends State<MapLocationPage> {
             ),
           )
         ],
-      ),
-    );
-  }
-}
-
-class SelectWidget extends StatefulWidget {
-  const SelectWidget({
-    Key? key,
-    required this.title,
-    required this.onPressed,
-    required this.isfocus,
-  }) : super(key: key);
-  final String title;
-  final VoidCallback onPressed;
-  final bool isfocus;
-
-  @override
-  State<SelectWidget> createState() => _SelectWidgetState();
-}
-
-class _SelectWidgetState extends State<SelectWidget> {
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(left: AppPaddings.padding13),
-      child: InkWell(
-        onTap: widget.onPressed,
-        child: Container(
-          padding: EdgeInsets.all(AppPaddings.padding13),
-          decoration: BoxDecoration(
-              color: widget.isfocus
-                  ? AppColors.primarylightColor
-                  : Color(0xffF8F8F8),
-              borderRadius: BorderRadius.circular(AppRadius.radius30),
-              border: Border.all(
-                color: Colors.black12,
-              )),
-          child: TextView(
-            text: widget.title,
-            size: AppTexts.size16,
-            color: widget.isfocus ? Colors.white : Colors.black,
-            fontWeight: FontWeight.w600,
-          ),
-        ),
       ),
     );
   }
