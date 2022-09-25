@@ -209,7 +209,8 @@ class _CuratedStoreDetailState extends State<CuratedStoreDetail> {
                     ),
                     Divider(
                       height: 0,
-                      color: Color(0xffEDEDED),
+                      // color: Color(0xffEDEDED),
+                      color: Colors.black,
                     ),
                     SizedBox(
                       height: SizeConfig.heightMultiplier * 2,

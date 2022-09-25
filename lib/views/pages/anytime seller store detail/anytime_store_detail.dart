@@ -201,7 +201,7 @@ class _AnytimeSellerStoreDetailState extends State<AnytimeSellerStoreDetail> {
                       ),
                       Divider(
                         height: 0,
-                        color: Colors.black,
+                        color: Color(0xffEDEDED),
                       ),
                       SizedBox(
                           height: SizeConfig.heightMultiplier * 150,

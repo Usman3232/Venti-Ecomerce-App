@@ -22,7 +22,7 @@ class _ProductsTabState extends State<ProductsTab> {
         GridView.builder(
           physics: NeverScrollableScrollPhysics(),
           shrinkWrap: true,
-          padding: EdgeInsets.only(top: SizeConfig.heightMultiplier * 2),
+          // padding: EdgeInsets.only(top: SizeConfig.heightMultiplier * 2),
           itemCount: product_model.length,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               childAspectRatio: SizeConfig.heightMultiplier * .10,

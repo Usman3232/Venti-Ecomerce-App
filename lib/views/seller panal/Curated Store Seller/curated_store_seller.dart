@@ -1,14 +1,9 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-
-
-
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/models/curated_store_models/productmodel.dart';
-import 'package:ecommerce_app/models/homemodels/curatedshopmodel.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
-import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/all_carts.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
@@ -183,7 +178,8 @@ class _CuratedStoreSellerDetailState extends State<CuratedStoreSellerDetail>
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 3.9),
+                      padding: EdgeInsets.only(
+                          left: SizeConfig.widthMultiplier * 3.9),
                       child: Row(
                         children: [
                           ...List.generate(
@@ -234,7 +230,7 @@ class _CuratedStoreSellerDetailState extends State<CuratedStoreSellerDetail>
                     ),
                     const Divider(
                       height: 0,
-                      color: Colors.black38,
+                      color: Color(0xffEDEDED),
                     ),
                     SizedBox(
                         width: SizeConfig.widthMultiplier * 100,
@@ -347,11 +343,13 @@ class PriceDiscount extends StatelessWidget {
                 hintText: 'price',
                 suffixIcon: Container(
                   padding: EdgeInsets.only(top: AppHeights.height14),
-                  margin: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
+                  margin:
+                      EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
                   child: Text(
                     '₹',
                     style: TextStyle(
-                        fontSize: SizeConfig.textMultiplier * 2.29, fontWeight: FontWeight.w600),
+                        fontSize: SizeConfig.textMultiplier * 2.29,
+                        fontWeight: FontWeight.w600),
                   ),
                 ),
               ),
@@ -382,11 +380,13 @@ class PriceDiscount extends StatelessWidget {
                 hintText: 'discount',
                 suffixIcon: Container(
                   padding: EdgeInsets.only(top: AppHeights.height14),
-                  margin: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
+                  margin:
+                      EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
                   child: Text(
                     '%',
                     style: TextStyle(
-                        fontSize: SizeConfig.textMultiplier * 2.29, fontWeight: FontWeight.w600),
+                        fontSize: SizeConfig.textMultiplier * 2.29,
+                        fontWeight: FontWeight.w600),
                   ),
                 ),
               ),
@@ -527,7 +527,8 @@ class _ColorTileState extends State<ColorTile> {
                         child: AnimatedContainer(
                           height: AppHeights.height23,
                           width: AppWidths.width23,
-                          margin: EdgeInsets.only(right: SizeConfig.heightMultiplier * 1),
+                          margin: EdgeInsets.only(
+                              right: SizeConfig.heightMultiplier * 1),
                           decoration: selectedSize == index
                               ? BoxDecoration(
                                   shape: BoxShape.circle,
@@ -586,8 +587,7 @@ class _ColorTileState extends State<ColorTile> {
                 height: AppHeights.height14,
                 width: AppWidths.width30,
                 decoration: BoxDecoration(
-                  borderRadius:
-                      BorderRadius.all(Radius.circular(10)),
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
                   color: const Color(0xff7496C2).withOpacity(0.3),
                 ),
                 child: Center(
