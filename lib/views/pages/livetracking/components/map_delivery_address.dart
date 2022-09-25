@@ -6,7 +6,6 @@ import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/livetracking/live_tracking_detail.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class MapDeliveryAddress extends StatelessWidget {
   const MapDeliveryAddress({
@@ -51,7 +50,8 @@ class MapDeliveryAddress extends StatelessWidget {
           ),
           SizedBox(height: AppHeights.height10),
           Container(
-            height: 154,
+            // height: 154,
+            height: SizeConfig.heightMultiplier*20,
             width: SizeConfig.widthMultiplier * double.infinity,
             decoration: BoxDecoration(
                 color: Colors.white,
@@ -79,12 +79,12 @@ class MapDeliveryAddress extends StatelessWidget {
                         Text(
                           '27 Independence Street, Sukamulya, Cikembar, Sukabumi, Jawa Barat 43157',
                           style: TextStyle(
-                              fontSize: SizeConfig.textMultiplier * 1.53,
+                              fontSize: SizeConfig.textMultiplier * 1.5,
                               color: const Color(0xffAE9A99),
                               fontWeight: FontWeight.w400),
                         ),
                         SizedBox(
-                          height: AppHeights.height8,
+                          height: SizeConfig.heightMultiplier*1,
                         ),
                         Text(
                           'Expected Delivery Time: 8:50 PM',

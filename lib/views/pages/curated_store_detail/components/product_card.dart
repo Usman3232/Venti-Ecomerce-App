@@ -2,7 +2,6 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 
-
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -121,7 +120,7 @@ class _ProductCardState extends State<ProductCard> {
             ),
             TextView(
               text: widget.rating.toString(),
-              fontWeight: FontWeight.w700,
+              fontWeight: FontWeight.w600,
               size: SizeConfig.textMultiplier * 1.4,
             ),
             SizedBox(
@@ -138,7 +137,7 @@ class _ProductCardState extends State<ProductCard> {
         // SizedBox(height: SizeConfig.heightMultiplier*.5,),
         TextView(
           text: "₹" + widget.price,
-          fontWeight: FontWeight.w700,
+          fontWeight: FontWeight.w600,
           size: SizeConfig.textMultiplier * 1.8,
         )
       ],

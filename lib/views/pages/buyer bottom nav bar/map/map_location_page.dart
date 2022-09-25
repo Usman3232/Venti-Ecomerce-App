@@ -4,9 +4,6 @@ import 'package:custom_info_window/custom_info_window.dart';
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-
-
-
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -123,7 +120,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                         const Text(
                           '4.5',
                           style: TextStyle(
-                              color: Colors.black, fontWeight: FontWeight.w700),
+                              color: Colors.black, fontWeight: FontWeight.w600),
                         ),
                         SizedBox(
                           width: SizeConfig.widthMultiplier * 1,
@@ -285,8 +282,7 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                 decoration: BoxDecoration(
                                     color: const Color(0xffF8F8F8),
                                     borderRadius: BorderRadius.vertical(
-                                        top: Radius.circular(
-                                            30))),
+                                        top: Radius.circular(30))),
                                 child: StatefulBuilder(builder:
                                     (BuildContext context,
                                         StateSetter setState) {
@@ -294,9 +290,12 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                     children: [
                                       Padding(
                                         padding: EdgeInsets.only(
-                                            left: SizeConfig.widthMultiplier * 6.13,
-                                            right: SizeConfig.widthMultiplier * 6.13,
-                                            top: SizeConfig.widthMultiplier * 6.13),
+                                            left: SizeConfig.widthMultiplier *
+                                                6.13,
+                                            right: SizeConfig.widthMultiplier *
+                                                6.13,
+                                            top: SizeConfig.widthMultiplier *
+                                                6.13),
                                         child: Column(
                                           mainAxisAlignment:
                                               MainAxisAlignment.start,
@@ -305,8 +304,9 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                           children: [
                                             TextView(
                                               text: "Filters",
-                                              fontWeight: FontWeight.w700,
-                                              size: SizeConfig.textMultiplier * 2.4,
+                                              fontWeight: FontWeight.w600,
+                                              size: SizeConfig.textMultiplier *
+                                                  2.4,
                                             ),
                                             SizedBox(
                                               height: AppHeights.height23,
@@ -316,7 +316,9 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                                 TextView(
                                                   text: "Distance",
                                                   fontWeight: FontWeight.w600,
-                                                  size: SizeConfig.textMultiplier * 2.04,
+                                                  size: SizeConfig
+                                                          .textMultiplier *
+                                                      2.04,
                                                 ),
                                                 Spacer(),
                                                 InkWell(
@@ -339,8 +341,10 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                                   text:
                                                       value.toString() + " km",
                                                   color: AppColors.textColor,
-                                                  fontWeight: FontWeight.w700,
-                                                  size: SizeConfig.textMultiplier * 1.8,
+                                                  fontWeight: FontWeight.w600,
+                                                  size: SizeConfig
+                                                          .textMultiplier *
+                                                      1.8,
                                                 ),
                                                 SizedBox(
                                                   width: SizeConfig
@@ -363,7 +367,8 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                             TextView(
                                               text: "Type",
                                               fontWeight: FontWeight.w600,
-                                              size: SizeConfig.textMultiplier * 2.04,
+                                              size: SizeConfig.textMultiplier *
+                                                  2.04,
                                             ),
                                             SizedBox(
                                               height: AppHeights.height20,
@@ -384,12 +389,12 @@ class _MapLocationPageState extends State<MapLocationPage> {
                                         decoration: BoxDecoration(
                                             color: Colors.white,
                                             borderRadius: BorderRadius.vertical(
-                                                top: Radius.circular(
-                                                    30))),
+                                                top: Radius.circular(30))),
                                         child: Padding(
                                           padding: EdgeInsets.symmetric(
                                               horizontal:
-                                                  SizeConfig.widthMultiplier * 6.13),
+                                                  SizeConfig.widthMultiplier *
+                                                      6.13),
                                           child: Row(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.spaceBetween,

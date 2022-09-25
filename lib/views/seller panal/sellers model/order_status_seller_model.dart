@@ -6,11 +6,17 @@ class OrdersContent {
   String time;
   String location;
   String status;
-  OrdersContent({ required this.image,required this.title,required this.noofproducts,
-    required this.price,required this.time,required this.location,required this.status});
+  OrdersContent(
+      {required this.image,
+      required this.title,
+      required this.noofproducts,
+      required this.price,
+      required this.time,
+      required this.location,
+      required this.status});
 }
 
-List<OrdersContent> listoforder=[
+List<OrdersContent> listoforder = [
   OrdersContent(
     image: 'assets/images/Product1.png',
     title: 'Waleed Azhar',
@@ -65,5 +71,4 @@ List<OrdersContent> listoforder=[
     time: '3:39',
     status: "Pending",
   ),
-
 ];

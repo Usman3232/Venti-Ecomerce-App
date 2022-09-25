@@ -303,7 +303,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: SizeConfig.textMultiplier * 2.85,
-                              fontWeight: FontWeight.w700,
+                              fontWeight: FontWeight.w600,
                             ),
                           ),
                         ],
@@ -332,7 +332,7 @@ class _PaymentCheckOutState extends State<PaymentCheckOut> {
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: SizeConfig.textMultiplier * 2.04,
-                                fontWeight: FontWeight.w700,
+                                fontWeight: FontWeight.w600,
                               ),
                             )),
                       ),

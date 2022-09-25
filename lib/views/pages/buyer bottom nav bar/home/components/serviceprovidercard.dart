@@ -66,7 +66,7 @@ class _ServiceProviderCardState extends State<ServiceProviderCard> {
                       TextView(
                         text: widget.rating.toString(),
                         size: SizeConfig.textMultiplier * 1.65,
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w600,
                         color: Colors.white,
                       ),
                       SizedBox(

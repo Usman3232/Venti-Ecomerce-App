@@ -427,7 +427,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                               style: TextStyle(
                                 color: Colors.black,
                                 fontSize: SizeConfig.textMultiplier * 2.55,
-                                fontWeight: FontWeight.w700,
+                                fontWeight: FontWeight.w600,
                                 letterSpacing: 1,
                               ),
                             ),
@@ -447,7 +447,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           textcolour: Colors.white,
                           fontSize: SizeConfig.textMultiplier * 1.8,
                           colour: AppColors.primarylightColor,
-                          fontWeight: FontWeight.w700,
+                          fontWeight: FontWeight.w600,
                         ),
                       ],
                     ),

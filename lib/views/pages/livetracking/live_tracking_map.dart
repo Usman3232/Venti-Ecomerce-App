@@ -1,11 +1,9 @@
 import 'dart:async';
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
-
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'components/map_delivery_address.dart';
 
@@ -94,7 +92,7 @@ class _LiveTrackingMapState extends State<LiveTrackingMap> {
               bottom: AppHeights.height24,
               left: 0,
               right: 0,
-              child: const MapDeliveryAddress(),
+              child:  MapDeliveryAddress(),
             )
           ],
         ));

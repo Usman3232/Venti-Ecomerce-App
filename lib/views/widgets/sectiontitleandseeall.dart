@@ -21,7 +21,7 @@ class SectionTitleAndSeeAll extends StatelessWidget {
         TextView(
           text: title,
           size: titlesize,
-          fontWeight: FontWeight.w700,
+          fontWeight: FontWeight.w600,
         ),
         InkWell(
           onTap: onpress,

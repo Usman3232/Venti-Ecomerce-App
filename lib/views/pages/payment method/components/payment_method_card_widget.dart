@@ -38,7 +38,7 @@ class PaymentMethodCard extends StatelessWidget {
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: SizeConfig.textMultiplier * 2.04,
-                    fontWeight: FontWeight.w700),
+                    fontWeight: FontWeight.w600),
               ),
               SizedBox(
                 height: AppHeights.height27,
@@ -74,7 +74,7 @@ class PaymentMethodCard extends StatelessWidget {
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: SizeConfig.textMultiplier * 2.04,
-                        fontWeight: FontWeight.w700),
+                        fontWeight: FontWeight.w600),
                   ),
                 ],
               ),
@@ -94,7 +94,7 @@ class PaymentMethodCard extends StatelessWidget {
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: SizeConfig.textMultiplier * 2.55,
-                    fontWeight: FontWeight.w700),
+                    fontWeight: FontWeight.w600),
               ),
             ],
           ),

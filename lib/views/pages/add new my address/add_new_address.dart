@@ -1,11 +1,7 @@
 import 'dart:async';
-
 import 'package:country_picker/country_picker.dart';
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
-
-
-
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/auth_input_text_field.dart';
@@ -13,7 +9,6 @@ import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_multi_formatter/formatters/masked_input_formatter.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 import 'components/my_location.dart';
@@ -77,7 +72,8 @@ class _AddNewAddressState extends State<AddNewAddress> {
         ),
         body: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
+            padding: EdgeInsets.symmetric(
+                horizontal: SizeConfig.widthMultiplier * 6.13),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -182,8 +178,8 @@ class _AddNewAddressState extends State<AddNewAddress> {
                           ),
                           AuthTextInputField(
                             isoutline: true,
-                            contentpadding:
-                                EdgeInsets.all(SizeConfig.widthMultiplier * 3.9),
+                            contentpadding: EdgeInsets.all(
+                                SizeConfig.widthMultiplier * 3.9),
                             radius: SizeConfig.widthMultiplier * 4,
                             hintText: 'Indonesia',
                             textEditingController: stateController,
@@ -226,8 +222,8 @@ class _AddNewAddressState extends State<AddNewAddress> {
                             AuthTextInputField(
                               isoutline: true,
                               inputType: TextInputType.number,
-                              contentpadding:
-                                  EdgeInsets.all(SizeConfig.widthMultiplier * 3.9),
+                              contentpadding: EdgeInsets.all(
+                                  SizeConfig.widthMultiplier * 3.9),
                               radius: SizeConfig.widthMultiplier * 4,
                               hintText: "12345",
                             ),
@@ -303,7 +299,8 @@ class _AddNewAddressState extends State<AddNewAddress> {
                             left: SizeConfig.widthMultiplier * 3),
                         child: AuthTextInputField(
                           isoutline: true,
-                          contentpadding: EdgeInsets.all(SizeConfig.widthMultiplier * 3.9),
+                          contentpadding:
+                              EdgeInsets.all(SizeConfig.widthMultiplier * 3.9),
                           radius: SizeConfig.widthMultiplier * 4,
                           inputAction: TextInputAction.done,
                           hintText: "(+62) 8888 7777",

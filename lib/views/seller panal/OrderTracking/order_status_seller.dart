@@ -1,10 +1,11 @@
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
+import 'package:ecommerce_app/constants/images.dart';
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
+import 'package:get/get.dart';
 import '../sellers model/order_status_seller_model.dart';
 
 class OrderStatusSeller extends StatefulWidget {
@@ -21,8 +22,10 @@ class _OrderStatusSellerState extends State<OrderStatusSeller> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: IconButton(
-            onPressed: () {},
+        leading: IconButton(
+            onPressed: () {
+              Get.back();
+            },
             icon: const Icon(
               Icons.arrow_back_ios,
               color: Colors.black,
@@ -43,12 +46,12 @@ class _OrderStatusSellerState extends State<OrderStatusSeller> {
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 21.0),
-        child: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              ListView.builder(
-                  physics: const NeverScrollableScrollPhysics(),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              child: ListView.builder(
+                  physics:  BouncingScrollPhysics(),
                   itemCount: listoforder.length,
                   shrinkWrap: true,
                   scrollDirection: Axis.vertical,
@@ -56,7 +59,8 @@ class _OrderStatusSellerState extends State<OrderStatusSeller> {
                     return Padding(
                       padding: const EdgeInsets.symmetric(vertical: 8.0),
                       child: Container(
-                        height: AppHeights.height88,
+                        // height: AppHeights.height88,
+                        height: SizeConfig.heightMultiplier * 12.5,
                         width: double.infinity,
                         decoration: const BoxDecoration(
                           color: Colors.white,
@@ -132,7 +136,7 @@ class _OrderStatusSellerState extends State<OrderStatusSeller> {
                                                 listoforder[i].time,
                                                 style: const TextStyle(
                                                     fontSize: 9,
-                                                    fontWeight: FontWeight.w700,
+                                                    fontWeight: FontWeight.w600,
                                                     color: Colors.black),
                                               )
                                             : const Text(''),
@@ -187,7 +191,7 @@ class _OrderStatusSellerState extends State<OrderStatusSeller> {
                                         ),
                                         listoforder[i].status == "Pending"
                                             ? Image.asset(
-                                                "assets/images/time.png",
+                                                AppImages.confirmationtime,
                                                 height: 21,
                                                 width: 21,
                                                 fit: BoxFit.fill,
@@ -204,11 +208,11 @@ class _OrderStatusSellerState extends State<OrderStatusSeller> {
                       ),
                     );
                   }),
-              SizedBox(
-                height: AppHeights.height8,
-              ),
-            ],
-          ),
+            ),
+            SizedBox(
+              height: AppHeights.height8,
+            ),
+          ],
         ),
       ),
     );

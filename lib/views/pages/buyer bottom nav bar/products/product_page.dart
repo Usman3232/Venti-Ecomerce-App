@@ -110,7 +110,7 @@ class _ProductPageState extends State<ProductPage> {
               padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.13),
               child: TextView(
                 text: "Trending",
-                fontWeight: FontWeight.w700,
+                fontWeight: FontWeight.w600,
                 size: SizeConfig.textMultiplier * 2.04,
               ),
             ),
@@ -125,7 +125,7 @@ class _ProductPageState extends State<ProductPage> {
               padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.13),
               child: TextView(
                 text: "Special For You",
-                fontWeight: FontWeight.w700,
+                fontWeight: FontWeight.w600,
                 size: SizeConfig.textMultiplier * 2.04,
                 color: AppColors.textColor,
               ),

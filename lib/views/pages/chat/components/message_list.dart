@@ -1,7 +1,4 @@
 import 'package:ecommerce_app/constants/colors.dart';
-
-
-
 import 'package:ecommerce_app/models/chat_model/chat_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
@@ -25,7 +22,7 @@ class MessageList extends StatelessWidget {
             padding: EdgeInsets.only(bottom: SizeConfig.widthMultiplier * 3.9),
             child: ConstrainedBox(
               constraints: BoxConstraints(
-                  maxWidth: MediaQuery.of(context).size.width - 70),
+                  maxWidth: MediaQuery.of(context).size.width - 50),
               child: Align(
                 alignment: chat_model[index].isme
                     ? Alignment.bottomRight

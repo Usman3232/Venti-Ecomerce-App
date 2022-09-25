@@ -76,7 +76,7 @@ class _ByCategoriesTabState extends State<ByCategoriesTab> {
           padding: EdgeInsets.only(top: SizeConfig.heightMultiplier * 2),
           itemCount: product_model.length,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              childAspectRatio: SizeConfig.heightMultiplier * .11,
+              childAspectRatio: SizeConfig.heightMultiplier * .10,
               mainAxisSpacing: SizeConfig.heightMultiplier * 2,
               // crossAxisSpacing: SizeConfig.widthMultiplier * 1,
               crossAxisCount: 2),

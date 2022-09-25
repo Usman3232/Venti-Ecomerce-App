@@ -1,23 +1,15 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
-
-
-
-import 'package:ecommerce_app/models/curated_store_models/productmodel.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
-import 'package:ecommerce_app/views/pages/CART%20&%20CHECKOUT/all_carts.dart';
 import 'package:ecommerce_app/views/pages/anytime%20seller%20store%20detail/components/anytime_appbar.dart';
 import 'package:ecommerce_app/views/pages/anytime%20seller%20store%20detail/components/gallery_tab.dart';
 import 'package:ecommerce_app/views/pages/anytime%20seller%20store%20detail/components/product_tab.dart';
+import 'package:ecommerce_app/views/pages/anytime%20seller%20store%20detail/components/service_tab.dart';
 import 'package:ecommerce_app/views/pages/anytime%20seller%20store%20detail/components/tag_list.dart';
-import 'package:ecommerce_app/views/pages/curated_store_detail/components/product_card.dart';
-import 'package:ecommerce_app/views/pages/customize%20gift%20hamper/customize_gift_hamper.dart';
-import 'package:ecommerce_app/views/seller%20panal/Anytime%20Sellers/components/services_tab.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:get/get.dart';
 
 class AnytimeSellerStoreDetail extends StatefulWidget {
   const AnytimeSellerStoreDetail({Key? key}) : super(key: key);
@@ -123,7 +115,7 @@ class _AnytimeSellerStoreDetailState extends State<AnytimeSellerStoreDetail> {
                                     ),
                                     TextView(
                                       text: "4.5",
-                                      fontWeight: FontWeight.w700,
+                                      fontWeight: FontWeight.w600,
                                       size: SizeConfig.textMultiplier * 1.4,
                                     ),
                                     SizedBox(
@@ -133,7 +125,7 @@ class _AnytimeSellerStoreDetailState extends State<AnytimeSellerStoreDetail> {
                                       text: "(1045 Reviews)",
                                       fontWeight: FontWeight.w400,
                                       size: SizeConfig.textMultiplier * 1.4,
-                                      color: Color(0xff7E7C7C),
+                                      color: Color(0xffB7B7B7),
                                     ),
                                   ],
                                 ),

@@ -86,7 +86,7 @@ class OrderHistoryListView extends StatelessWidget {
                   '₹${listOrderHistory[i].price}',
                   style: TextStyle(
                     fontSize: SizeConfig.textMultiplier * 2.04,
-                    fontWeight: FontWeight.w700,
+                    fontWeight: FontWeight.w600,
                   ),
                 ),
               ],

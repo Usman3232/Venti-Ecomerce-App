@@ -64,7 +64,7 @@ class _ProductCustomizationState extends State<ProductCustomization> {
               ],
             ),
             SizedBox(
-              height: SizeConfig.heightMultiplier * 1,
+              height: SizeConfig.heightMultiplier * .2,
             ),
             Row(
               children: [
@@ -74,7 +74,7 @@ class _ProductCustomizationState extends State<ProductCustomization> {
                   size: SizeConfig.textMultiplier * 1.65,
                   color: const Color(0xff2B0806),
                 ),
-                Spacer(),
+                const Spacer(),
                 TextView(
                   text: "₹3,896",
                   size: SizeConfig.textMultiplier * 1.65,
@@ -85,7 +85,7 @@ class _ProductCustomizationState extends State<ProductCustomization> {
               ],
             ),
             SizedBox(
-              height: SizeConfig.heightMultiplier * 1.5,
+              height: SizeConfig.heightMultiplier * 1,
             ),
             Row(
               children: [
@@ -96,7 +96,7 @@ class _ProductCustomizationState extends State<ProductCustomization> {
                 TextView(
                   text: widget.rating.toString(),
                   size: SizeConfig.textMultiplier * 1.4,
-                  fontWeight: FontWeight.w700,
+                  fontWeight: FontWeight.w400,
                 ),
                 SizedBox(
                   width: SizeConfig.widthMultiplier * .5,
@@ -106,14 +106,14 @@ class _ProductCustomizationState extends State<ProductCustomization> {
                   child: TextView(
                     text: "(" + widget.reviews.toString() + " reviews)",
                     size: SizeConfig.textMultiplier * 1.4,
-                    fontWeight: FontWeight.w700,
+                    fontWeight: FontWeight.w400,
                     color: Color(0xffB7B7B7),
                   ),
                 ),
               ],
             ),
             SizedBox(
-              height: SizeConfig.heightMultiplier * 1.5,
+              height: SizeConfig.heightMultiplier * 1,
             ),
             TextView(
               text: "Description",
@@ -122,11 +122,12 @@ class _ProductCustomizationState extends State<ProductCustomization> {
               color: Color(0xff2B0806),
             ),
             SizedBox(
-              height: SizeConfig.heightMultiplier * 1,
+              height: SizeConfig.heightMultiplier * .5,
             ),
             ReadMoreText(
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique amet, maecenas sed vitae pretium. Nulla mattis et tortor, viverra mauris lacus. Tristique amet, maecenas sed vitae pretium. Nulla mattis et tortor, viverra mauris lacusTristique amet, maecenas sed vitae pretium. Tristique amet, maecenas.Tristique amet, maecenas sed vitae pretium. Nulla mattis et tortor, viverra mauris lacus.',
               trimLines: 3,
+              style: TextStyle(fontSize: SizeConfig.textMultiplier * 1.5),
               trimMode: TrimMode.Line,
               trimCollapsedText: 'Read more',
               colorClickableText: AppColors.primarydarkColor,
@@ -134,10 +135,10 @@ class _ProductCustomizationState extends State<ProductCustomization> {
               moreStyle: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.bold,
-                  color: AppColors.primarylightColor),
+                  color: Color(0xff0080FF)),
             ),
             SizedBox(
-              height: AppHeights.height10,
+              height: AppHeights.height8,
             ),
             TextView(
               text: "Color",
@@ -146,7 +147,7 @@ class _ProductCustomizationState extends State<ProductCustomization> {
               color: Color(0xff2B0806),
             ),
             SizedBox(
-              height: SizeConfig.heightMultiplier * 1,
+              height: SizeConfig.heightMultiplier * .5,
             ),
             Row(
               children: [
@@ -182,7 +183,7 @@ class _ProductCustomizationState extends State<ProductCustomization> {
               ],
             ),
             SizedBox(
-              height: SizeConfig.heightMultiplier * 2,
+              height: SizeConfig.heightMultiplier * 1.5,
             ),
             TextView(
                 text: "Avaliable Size",
@@ -190,7 +191,7 @@ class _ProductCustomizationState extends State<ProductCustomization> {
                 fontWeight: FontWeight.w600,
                 color: Color(0xff2B0806)),
             SizedBox(
-              height: SizeConfig.heightMultiplier * 2,
+              height: SizeConfig.heightMultiplier * 1.5,
             ),
             Row(
               children: [
@@ -226,7 +227,7 @@ class _ProductCustomizationState extends State<ProductCustomization> {
               ],
             ),
             SizedBox(
-              height: SizeConfig.heightMultiplier * 5,
+              height: SizeConfig.heightMultiplier * 3.2,
             ),
             Row(
               children: [

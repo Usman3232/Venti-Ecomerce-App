@@ -9,7 +9,6 @@ import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class MyAddress extends StatefulWidget {
@@ -73,7 +72,8 @@ class _MyAddressState extends State<MyAddress> {
                 });
               },
               child: SizedBox(
-                height: AppHeights.height120,
+                // height: AppHeights.height120,
+                height: SizeConfig.heightMultiplier * 15.5,
                 child: Card(
                   color: Colors.white,
                   elevation: card1 ? 3 : 0,
@@ -176,7 +176,7 @@ class _MyAddressState extends State<MyAddress> {
                 });
               },
               child: SizedBox(
-                height: SizeConfig.heightMultiplier * 16,
+                height: SizeConfig.heightMultiplier * 17,
                 child: Card(
                   color: Colors.white,
                   elevation: card2 ? 3 : 0,
@@ -311,9 +311,6 @@ class _MyAddressState extends State<MyAddress> {
                 initialCameraPosition: _kGooglePlex,
                 mapType: MapType.normal,
               ),
-            ),
-            SizedBox(
-              height: AppHeights.height24,
             ),
             CustomTextButton(
                 title: 'Add new address',

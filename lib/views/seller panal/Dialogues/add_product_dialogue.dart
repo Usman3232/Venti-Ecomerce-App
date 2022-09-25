@@ -108,7 +108,7 @@ class AddProductDialogue extends StatelessWidget {
                               style: TextStyle(
                                 color: Colors.black,
                                 fontSize: SizeConfig.textMultiplier * 1.8,
-                                fontWeight: FontWeight.w700,
+                                fontWeight: FontWeight.w600,
                                 letterSpacing: 1,
                               ),
                             ),
@@ -133,7 +133,7 @@ class AddProductDialogue extends StatelessWidget {
                                       style: TextStyle(
                                         color: Colors.black,
                                         fontSize: SizeConfig.textMultiplier * 1.8,
-                                        fontWeight: FontWeight.w700,
+                                        fontWeight: FontWeight.w600,
                                         letterSpacing: 1,
                                       ),
                                     ),
@@ -155,7 +155,7 @@ class AddProductDialogue extends StatelessWidget {
                                             '₹',
                                             style: TextStyle(
                                                 fontSize: SizeConfig.textMultiplier * 2.29,
-                                                fontWeight: FontWeight.w700),
+                                                fontWeight: FontWeight.w600),
                                           ),
                                         ),
                                       ),
@@ -171,7 +171,7 @@ class AddProductDialogue extends StatelessWidget {
                                       style: TextStyle(
                                         color: Colors.black,
                                         fontSize: SizeConfig.textMultiplier * 1.8,
-                                        fontWeight: FontWeight.w700,
+                                        fontWeight: FontWeight.w600,
                                         letterSpacing: 1,
                                       ),
                                     ),
@@ -194,7 +194,7 @@ class AddProductDialogue extends StatelessWidget {
                                             '%',
                                             style: TextStyle(
                                                 fontSize: SizeConfig.textMultiplier * 2.29,
-                                                fontWeight: FontWeight.w700),
+                                                fontWeight: FontWeight.w600),
                                           ),
                                         ),
                                       ),
@@ -210,7 +210,7 @@ class AddProductDialogue extends StatelessWidget {
                               "Category",
                               style: TextStyle(
                                 fontSize: SizeConfig.textMultiplier * 1.8,
-                                fontWeight: FontWeight.w700,
+                                fontWeight: FontWeight.w600,
                                 letterSpacing: 1,
                               ),
                             ),
@@ -235,7 +235,7 @@ class AddProductDialogue extends StatelessWidget {
                             Text("Discription",
                                 style: TextStyle(
                                   fontSize: SizeConfig.textMultiplier * 1.8,
-                                  fontWeight: FontWeight.w700,
+                                  fontWeight: FontWeight.w600,
                                   letterSpacing: 1,
                                 )),
                             SizedBox(

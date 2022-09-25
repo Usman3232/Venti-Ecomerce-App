@@ -172,7 +172,7 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                                               fontSize:
                                                   SizeConfig.textMultiplier *
                                                       1.8,
-                                              fontWeight: FontWeight.w700,
+                                              fontWeight: FontWeight.w600,
                                             ),
                                           ),
                                           const Spacer(),
@@ -206,7 +206,7 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                                                   .toString(),
                                               size: SizeConfig.textMultiplier *
                                                   1.8,
-                                              fontWeight: FontWeight.w700,
+                                              fontWeight: FontWeight.w600,
                                             ),
                                           ),
                                           InkWell(
@@ -276,7 +276,7 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                                         color: Colors.grey,
                                         fontSize:
                                             SizeConfig.textMultiplier * 2.55,
-                                        fontWeight: FontWeight.w700,
+                                        fontWeight: FontWeight.w600,
                                       ),
                                     ),
                                   ],
@@ -293,7 +293,7 @@ class _AllCartsCheckOutState extends State<AllCartsCheckOut> {
                                   textcolour: Colors.white,
                                   fontSize: SizeConfig.textMultiplier * 1.8,
                                   colour: AppColors.primarylightColor,
-                                  fontWeight: FontWeight.w700,
+                                  fontWeight: FontWeight.w600,
                                 ),
                               ],
                             ),

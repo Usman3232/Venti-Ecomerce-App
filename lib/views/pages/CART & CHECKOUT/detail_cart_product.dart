@@ -107,7 +107,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: SizeConfig.textMultiplier * 1.8,
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
                     const Spacer(),
@@ -128,7 +128,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                       child: TextView(
                         text: value.toString(),
                         size: SizeConfig.textMultiplier * 1.8,
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
                     InkWell(
@@ -228,7 +228,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                                 style: TextStyle(
                                   color: Colors.grey,
                                   fontSize: SizeConfig.textMultiplier * 2.55,
-                                  fontWeight: FontWeight.w700,
+                                  fontWeight: FontWeight.w600,
                                 ),
                               ),
                             ],
@@ -243,7 +243,7 @@ class _DetailCartProductState extends State<DetailCartProduct> {
                             textcolour: Colors.white,
                             fontSize: SizeConfig.textMultiplier * 1.8,
                             colour: AppColors.primarylightColor,
-                            fontWeight: FontWeight.w700,
+                            fontWeight: FontWeight.w600,
                           ),
                         ],
                       ),

@@ -44,7 +44,7 @@ class LoginPage extends StatelessWidget {
                   TextView(
                     text: "Login",
                     color: Colors.white,
-                    fontWeight: FontWeight.w700,
+                    fontWeight: FontWeight.w600,
                     size: SizeConfig.textMultiplier * 3.8,
                   ),
                   SizedBox(
@@ -81,7 +81,7 @@ class LoginPage extends StatelessWidget {
                         text: "Email",
                         color: AppColors.textColor,
                         size: SizeConfig.textMultiplier * 1.8,
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w600,
                       ),
                       SizedBox(
                         height: SizeConfig.heightMultiplier * 1.5,
@@ -98,7 +98,7 @@ class LoginPage extends StatelessWidget {
                         text: "Password",
                         color: AppColors.textColor,
                         size: SizeConfig.textMultiplier * 1.8,
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w600,
                       ),
                       SizedBox(
                         height: SizeConfig.heightMultiplier * 1.5,
@@ -150,7 +150,7 @@ class LoginPage extends StatelessWidget {
                         colour: const Color(0xff7496C2),
                         title: "LOGIN",
                         textcolour: Colors.white,
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w600,
                         fontSize: SizeConfig.textMultiplier * 1.65,
                       ),
                       SizedBox(

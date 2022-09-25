@@ -147,7 +147,7 @@ class LiveTrackingDetailsWidget extends StatelessWidget {
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: SizeConfig.textMultiplier * 1.53,
-                        fontWeight: FontWeight.w700),
+                        fontWeight: FontWeight.w600),
                   ),
                   SizedBox(
                     height: SizeConfig.textMultiplier * 1,
@@ -168,7 +168,7 @@ class LiveTrackingDetailsWidget extends StatelessWidget {
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: SizeConfig.textMultiplier * 1.53,
-                        fontWeight: FontWeight.w700),
+                        fontWeight: FontWeight.w600),
                   ),
                   SizedBox(
                     height: SizeConfig.textMultiplier * 1,
@@ -189,7 +189,7 @@ class LiveTrackingDetailsWidget extends StatelessWidget {
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: SizeConfig.textMultiplier * 1.53,
-                        fontWeight: FontWeight.w700),
+                        fontWeight: FontWeight.w600),
                   ),
                   SizedBox(
                     height: SizeConfig.textMultiplier * 1,
@@ -211,7 +211,7 @@ class LiveTrackingDetailsWidget extends StatelessWidget {
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: SizeConfig.textMultiplier * 1.53,
-                        fontWeight: FontWeight.w700),
+                        fontWeight: FontWeight.w600),
                   ),
                   SizedBox(
                     height: SizeConfig.textMultiplier * 1,

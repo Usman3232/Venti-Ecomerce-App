@@ -129,7 +129,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                 ),
                 child: Padding(
                   padding: EdgeInsets.only(
-                      top: SizeConfig.heightMultiplier * 4,
+                      top: SizeConfig.heightMultiplier * 3.5,
                       left: SizeConfig.widthMultiplier * 4.25,
                       right: SizeConfig.widthMultiplier * 4.25),
                   child: Column(
@@ -154,7 +154,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                         ],
                       ),
                       SizedBox(
-                        height: SizeConfig.heightMultiplier * 1,
+                        height: SizeConfig.heightMultiplier * .3,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -175,7 +175,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                         ],
                       ),
                       SizedBox(
-                        height: SizeConfig.heightMultiplier * 2,
+                        height: SizeConfig.heightMultiplier * 1.2,
                       ),
                       Row(
                         children: [
@@ -200,7 +200,7 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                         ],
                       ),
                       SizedBox(
-                        height: SizeConfig.heightMultiplier * 2,
+                        height: SizeConfig.heightMultiplier * 1.2,
                       ),
                       TextView(
                         text: "Description",
@@ -215,13 +215,14 @@ class _CustomizeGiftHamperState extends State<CustomizeGiftHamper> {
                         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique amet, maecenas sed vitae pretium. Nulla mattis et tortor, viverra mauris lacus. Tristique amet, maecenas sed vitae pretium. Nulla mattis et tortor, viverra mauris lacusTristique amet, maecenas sed vitae pretium. Tristique amet, maecenas.Tristique amet, maecenas sed vitae pretium. Nulla mattis et tortor, viverra mauris lacus.',
                         trimLines: 3,
                         trimMode: TrimMode.Line,
+                        style: TextStyle(color: Color(0xff896C6B),fontSize: SizeConfig.textMultiplier*1.6),
                         trimCollapsedText: 'Read more',
                         colorClickableText: AppColors.primarydarkColor,
                         trimExpandedText: 'Read less',
                         moreStyle: TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.bold,
-                            color: AppColors.primarylightColor),
+                            color: Color(0xff0080FF)),
                       ),
                       ChocolatesList(),
                       CookiesList(),

@@ -145,28 +145,26 @@ class _MyProfileState extends State<MyProfile> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(
-                    height: SizeConfig.heightMultiplier * 1.8,
-                  ),
                   Text(
                     'Full name',
                     style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w600,
-                        fontSize: SizeConfig.textMultiplier * 1.8),
+                      color: Colors.black,
+                      fontWeight: FontWeight.w600,
+                      fontSize: SizeConfig.textMultiplier * 1.8,
+                    ),
                   ),
                   SizedBox(
                     height: SizeConfig.heightMultiplier * 0.8,
                   ),
-                  AuthTextInputField(
-                    radius: AppWidths.width15,
-                    hintText: 'Full Name',
-                    isoutline: true,
-                    contentpadding: EdgeInsets.all(
-                      SizeConfig.widthMultiplier * 3.9,
+                  SizedBox(
+                    height: SizeConfig.heightMultiplier * 9.5,
+                    child: AuthTextInputField(
+                      radius: AppWidths.width15,
+                      hintText: 'Full Name',
+                      isoutline: true,
+                      hintSize: SizeConfig.textMultiplier * 1.6,
+                      textEditingController: nameController,
                     ),
-                    hintSize: SizeConfig.textMultiplier * 1.6,
-                    textEditingController: nameController,
                   ),
                   Text(
                     'Date of birth',
@@ -178,24 +176,24 @@ class _MyProfileState extends State<MyProfile> {
                   SizedBox(
                     height: SizeConfig.heightMultiplier * 0.8,
                   ),
-                  AuthTextInputField(
-                    isoutline: true,
-                    radius: AppWidths.width15,
-                    hintText: 'Date of birth',
-                    suffixIcon: IconButton(
-                      icon: const Icon(
-                        Icons.keyboard_arrow_down_sharp,
-                        color: Colors.black,
+                  SizedBox(
+                    height: SizeConfig.heightMultiplier * 9.5,
+                    child: AuthTextInputField(
+                      isoutline: true,
+                      radius: AppWidths.width15,
+                      hintText: 'Date of birth',
+                      suffixIcon: IconButton(
+                        icon: const Icon(
+                          Icons.keyboard_arrow_down_sharp,
+                          color: Colors.black,
+                        ),
+                        onPressed: () {
+                          _pickDateDialog();
+                        },
                       ),
-                      onPressed: () {
-                        _pickDateDialog();
-                      },
+                      hintSize: SizeConfig.textMultiplier * 1.6,
+                      textEditingController: birthController,
                     ),
-                    contentpadding: EdgeInsets.all(
-                      SizeConfig.widthMultiplier * 3.9,
-                    ),
-                    hintSize: SizeConfig.textMultiplier * 1.6,
-                    textEditingController: birthController,
                   ),
                   Text(
                     'Gender',
@@ -208,87 +206,87 @@ class _MyProfileState extends State<MyProfile> {
                   SizedBox(
                     height: SizeConfig.heightMultiplier * 0.8,
                   ),
-                  AuthTextInputField(
-                    isoutline: true,
-                    radius: AppWidths.width15,
-                    hintText: 'Select Gender',
-                    contentpadding: EdgeInsets.all(
-                      SizeConfig.widthMultiplier * 3.9,
-                    ),
-                    hintSize: SizeConfig.textMultiplier * 1.6,
-                    textEditingController: genderController,
-                    suffixIcon: IconButton(
-                      icon: const Icon(
-                        Icons.keyboard_arrow_down_sharp,
-                        color: Colors.black,
-                      ),
-                      onPressed: () {
-                        Get.dialog(
-                          Center(
-                            child: Container(
-                              height: 200,
-                              width: 200,
-                              color: Colors.white,
-                              child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
-                                children: [
-                                  TextButton(
-                                      onPressed: () {
-                                        setState(() {
-                                          choose = 'Male';
-                                          genderController.text = choose;
-                                        });
-                                        Get.back();
-                                      },
-                                      child: Text(
-                                        'Male',
-                                        style: GoogleFonts.urbanist(
-                                            color: AppColors.primarydarkColor,
-                                            fontSize:
-                                                SizeConfig.textMultiplier * 2,
-                                            fontWeight: FontWeight.w600),
-                                      )),
-                                  const Divider(),
-                                  TextButton(
-                                      onPressed: () {
-                                        setState(() {
-                                          choose = 'Female';
-                                          genderController.text = choose;
-                                        });
-                                        Get.back();
-                                      },
-                                      child: Text(
-                                        'Female',
-                                        style: GoogleFonts.urbanist(
-                                            color: AppColors.primarydarkColor,
-                                            fontSize:
-                                                SizeConfig.textMultiplier * 2,
-                                            fontWeight: FontWeight.w600),
-                                      )),
-                                  const Divider(),
-                                  TextButton(
-                                      onPressed: () {
-                                        setState(() {
-                                          choose = 'Other';
-                                          genderController.text = choose;
-                                        });
-                                        Get.back();
-                                      },
-                                      child: Text(
-                                        'Other',
-                                        style: GoogleFonts.urbanist(
-                                            color: AppColors.primarydarkColor,
-                                            fontSize:
-                                                SizeConfig.textMultiplier * 2,
-                                            fontWeight: FontWeight.w600),
-                                      ))
-                                ],
+                  SizedBox(
+                    height: SizeConfig.heightMultiplier * 9.5,
+                    child: AuthTextInputField(
+                      isoutline: true,
+                      radius: AppWidths.width15,
+                      hintText: 'Select Gender',
+                      hintSize: SizeConfig.textMultiplier * 1.6,
+                      textEditingController: genderController,
+                      suffixIcon: IconButton(
+                        icon: const Icon(
+                          Icons.keyboard_arrow_down_sharp,
+                          color: Colors.black,
+                        ),
+                        onPressed: () {
+                          Get.dialog(
+                            Center(
+                              child: Container(
+                                height: 200,
+                                width: 200,
+                                color: Colors.white,
+                                child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    TextButton(
+                                        onPressed: () {
+                                          setState(() {
+                                            choose = 'Male';
+                                            genderController.text = choose;
+                                          });
+                                          Get.back();
+                                        },
+                                        child: Text(
+                                          'Male',
+                                          style: GoogleFonts.urbanist(
+                                              color: AppColors.primarydarkColor,
+                                              fontSize:
+                                                  SizeConfig.textMultiplier * 2,
+                                              fontWeight: FontWeight.w600),
+                                        )),
+                                    const Divider(),
+                                    TextButton(
+                                        onPressed: () {
+                                          setState(() {
+                                            choose = 'Female';
+                                            genderController.text = choose;
+                                          });
+                                          Get.back();
+                                        },
+                                        child: Text(
+                                          'Female',
+                                          style: GoogleFonts.urbanist(
+                                              color: AppColors.primarydarkColor,
+                                              fontSize:
+                                                  SizeConfig.textMultiplier * 2,
+                                              fontWeight: FontWeight.w600),
+                                        )),
+                                    const Divider(),
+                                    TextButton(
+                                        onPressed: () {
+                                          setState(() {
+                                            choose = 'Other';
+                                            genderController.text = choose;
+                                          });
+                                          Get.back();
+                                        },
+                                        child: Text(
+                                          'Other',
+                                          style: GoogleFonts.urbanist(
+                                              color: AppColors.primarydarkColor,
+                                              fontSize:
+                                                  SizeConfig.textMultiplier * 2,
+                                              fontWeight: FontWeight.w600),
+                                        ))
+                                  ],
+                                ),
                               ),
                             ),
-                          ),
-                        );
-                      },
+                          );
+                        },
+                      ),
                     ),
                   ),
                   Text(
@@ -301,16 +299,19 @@ class _MyProfileState extends State<MyProfile> {
                   SizedBox(
                     height: SizeConfig.heightMultiplier * 0.8,
                   ),
-                  AuthTextInputField(
-                    isoutline: true,
-                    radius: AppWidths.width15,
-                    hintText: 'john12@gmail.com',
-                    inputType: TextInputType.emailAddress,
-                    contentpadding: EdgeInsets.all(
-                      SizeConfig.widthMultiplier * 3.9,
+                  SizedBox(
+                    height: SizeConfig.heightMultiplier * 9.5,
+                    child: AuthTextInputField(
+                      isoutline: true,
+                      radius: AppWidths.width15,
+                      hintText: 'john12@gmail.com',
+                      inputType: TextInputType.emailAddress,
+                      contentpadding: EdgeInsets.all(
+                        SizeConfig.widthMultiplier * 3.9,
+                      ),
+                      hintSize: SizeConfig.textMultiplier * 1.6,
+                      textEditingController: mailController,
                     ),
-                    hintSize: SizeConfig.textMultiplier * 1.6,
-                    textEditingController: mailController,
                   ),
                   Text(
                     'Mobile Number',
@@ -320,7 +321,7 @@ class _MyProfileState extends State<MyProfile> {
                         fontSize: SizeConfig.textMultiplier * 1.8),
                   ),
                   SizedBox(
-                    height: SizeConfig.heightMultiplier * 1.8,
+                    height: SizeConfig.heightMultiplier * 1.2,
                   ),
                   Row(
                     children: [
@@ -417,7 +418,6 @@ class _MyProfileState extends State<MyProfile> {
                       ),
                     ],
                   ),
-                  SizedBox(height: SizeConfig.heightMultiplier * 3),
                   CustomTextButton(
                       title: 'Save',
                       colour: AppColors.primarylightColor,

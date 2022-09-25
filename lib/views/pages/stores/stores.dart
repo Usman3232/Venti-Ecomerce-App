@@ -115,7 +115,7 @@ class Stores extends StatelessWidget {
                     shrinkWrap: true,
                     itemCount: curatedshop_model.length,
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        childAspectRatio: SizeConfig.heightMultiplier * .11,
+                        childAspectRatio: SizeConfig.heightMultiplier * .10,
                         mainAxisSpacing: SizeConfig.heightMultiplier * 2,
                         crossAxisCount: 2),
                     itemBuilder: (context, index) {

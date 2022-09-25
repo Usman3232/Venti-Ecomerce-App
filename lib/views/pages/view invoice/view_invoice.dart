@@ -152,7 +152,7 @@ class _ViewInvoiceState extends State<ViewInvoice> {
                                     style: TextStyle(
                                       color: Colors.black,
                                       fontSize: SizeConfig.textMultiplier * 1.8,
-                                      fontWeight: FontWeight.w700,
+                                      fontWeight: FontWeight.w600,
                                     ),
                                   )
                                 ],
@@ -226,7 +226,7 @@ class _ViewInvoiceState extends State<ViewInvoice> {
                   TextView(
                     text: "\$705.00",
                     size: SizeConfig.textMultiplier * 2.55,
-                    fontWeight: FontWeight.w700,
+                    fontWeight: FontWeight.w600,
                   )
                 ],
               ),

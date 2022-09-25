@@ -5,10 +5,10 @@ import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/controllers/button_controller.dart';
 import 'package:ecommerce_app/views/drawer/drawer.dart';
+import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/favourite/favourite.dart';
 import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/home/home_page.dart';
 import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/map/map_location_page.dart';
 import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/products/product_page.dart';
-import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/settings/settingscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -22,9 +22,12 @@ class BuyerBottomNavBar extends StatefulWidget {
 class _BuyerBottomNavBarState extends State<BuyerBottomNavBar> {
   List<Widget> screens = [
     ProductPage(),
-    SettingScreen(),
+    // Messages(),
+    Center(
+      child: Text("121"),
+    ),
     MapLocationPage(),
-    Center(child: Text("3")),
+    Favourite(),
     HomePage(),
   ];
   List images = [

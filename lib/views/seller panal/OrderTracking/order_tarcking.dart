@@ -77,7 +77,7 @@ class _OrderTrackingState extends State<OrderTracking> {
                         style: TextStyle(
                             color: Colors.black12,
                             fontSize: SizeConfig.textMultiplier * 1.53,
-                            fontWeight: FontWeight.w700),
+                            fontWeight: FontWeight.w600),
                       ),
                       SizedBox(
                         height: SizeConfig.textMultiplier * 1,

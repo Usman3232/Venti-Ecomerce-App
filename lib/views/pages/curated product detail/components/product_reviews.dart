@@ -47,7 +47,7 @@ class ProductReviews extends StatelessWidget {
               shrinkWrap: true,
               itemBuilder: (context, index) {
                 return ListTile(
-                  minVerticalPadding: 15,
+                  minVerticalPadding: 16,
                   leading: Container(
                     height: 40,
                     width: 40,
@@ -90,7 +90,7 @@ class ProductReviews extends StatelessWidget {
                       TextView(
                         text:
                             "Perfect for keeping your feet dry and warm in damp conditions.",
-                        size: SizeConfig.textMultiplier * 1.53,
+                        size: SizeConfig.textMultiplier * 1.5,
                         fontWeight: FontWeight.w400,
                       ),
                     ],

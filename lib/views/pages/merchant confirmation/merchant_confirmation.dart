@@ -104,7 +104,7 @@ class _MerchantConfirmationState extends State<MerchantConfirmation> {
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: SizeConfig.textMultiplier * 2.55,
-                  fontWeight: FontWeight.w700,
+                  fontWeight: FontWeight.w600,
                   letterSpacing: 1,
                 ),
               ),
@@ -126,7 +126,7 @@ class _MerchantConfirmationState extends State<MerchantConfirmation> {
                       style: TextStyle(
                         color: const Color(0xffFF4C5E),
                         fontSize: SizeConfig.textMultiplier * 1.8,
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w600,
                         letterSpacing: 1,
                       ),
                     )),

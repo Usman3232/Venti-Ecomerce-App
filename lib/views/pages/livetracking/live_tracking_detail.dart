@@ -138,7 +138,7 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
                         style: TextStyle(
                             color: Colors.black12,
                             fontSize: SizeConfig.textMultiplier * 1.53,
-                            fontWeight: FontWeight.w700),
+                            fontWeight: FontWeight.w600),
                       ),
                       SizedBox(
                         height: SizeConfig.textMultiplier * 1,
@@ -156,7 +156,7 @@ class _LiveTrackingDetailState extends State<LiveTrackingDetail> {
               SizedBox(
                 height: AppHeights.height52,
               ),
-              const DliveryRiderCard(),
+               DliveryRiderCard(),
               SizedBox(
                 height: AppHeights.height38,
               ),

@@ -15,10 +15,10 @@ class DliveryRiderCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: AppHeights.height227,
+      height: SizeConfig.heightMultiplier*30,
       width: SizeConfig.widthMultiplier * 100,
       child: Card(
-        elevation: 3,
+        elevation: 1,
         color: Colors.white,
         shadowColor: Colors.blueGrey.withOpacity(0.5),
         shape: RoundedRectangleBorder(

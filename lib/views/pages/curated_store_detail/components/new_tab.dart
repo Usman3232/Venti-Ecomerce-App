@@ -15,7 +15,7 @@ class NewTab extends StatelessWidget {
       shrinkWrap: true,
       itemCount: product_model.length,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          childAspectRatio: SizeConfig.heightMultiplier * .11,
+          childAspectRatio: SizeConfig.heightMultiplier * .10,
           mainAxisSpacing: SizeConfig.heightMultiplier * 2,
           // crossAxisSpacing: SizeConfig.widthMultiplier * 1,
           crossAxisCount: 2),

@@ -151,7 +151,7 @@ class _CuratedStoreSellerDetailState extends State<CuratedStoreSellerDetail>
                                   ),
                                   TextView(
                                     text: "4.5",
-                                    fontWeight: FontWeight.w700,
+                                    fontWeight: FontWeight.w600,
                                     size: SizeConfig.textMultiplier * 1.4,
                                   ),
                                   SizedBox(
@@ -332,7 +332,7 @@ class PriceDiscount extends StatelessWidget {
               style: TextStyle(
                 color: Colors.black,
                 fontSize: SizeConfig.textMultiplier * 1.8,
-                fontWeight: FontWeight.w700,
+                fontWeight: FontWeight.w600,
                 letterSpacing: 1,
               ),
             ),
@@ -351,7 +351,7 @@ class PriceDiscount extends StatelessWidget {
                   child: Text(
                     '₹',
                     style: TextStyle(
-                        fontSize: SizeConfig.textMultiplier * 2.29, fontWeight: FontWeight.w700),
+                        fontSize: SizeConfig.textMultiplier * 2.29, fontWeight: FontWeight.w600),
                   ),
                 ),
               ),
@@ -367,7 +367,7 @@ class PriceDiscount extends StatelessWidget {
               style: TextStyle(
                 color: Colors.black,
                 fontSize: SizeConfig.textMultiplier * 1.8,
-                fontWeight: FontWeight.w700,
+                fontWeight: FontWeight.w600,
                 letterSpacing: 1,
               ),
             ),
@@ -386,7 +386,7 @@ class PriceDiscount extends StatelessWidget {
                   child: Text(
                     '%',
                     style: TextStyle(
-                        fontSize: SizeConfig.textMultiplier * 2.29, fontWeight: FontWeight.w700),
+                        fontSize: SizeConfig.textMultiplier * 2.29, fontWeight: FontWeight.w600),
                   ),
                 ),
               ),
@@ -412,7 +412,7 @@ class CustomColorWidget extends StatelessWidget {
           "Colors",
           style: TextStyle(
             fontSize: SizeConfig.textMultiplier * 1.8,
-            fontWeight: FontWeight.w700,
+            fontWeight: FontWeight.w600,
             letterSpacing: 1,
           ),
         ),
@@ -738,7 +738,7 @@ class _ProductCardState extends State<ProductCard> {
             ),
             TextView(
               text: widget.rating.toString(),
-              fontWeight: FontWeight.w700,
+              fontWeight: FontWeight.w600,
               size: SizeConfig.textMultiplier * 1.4,
             ),
             SizedBox(
@@ -757,7 +757,7 @@ class _ProductCardState extends State<ProductCard> {
         ),
         TextView(
           text: "₹${widget.price}",
-          fontWeight: FontWeight.w700,
+          fontWeight: FontWeight.w600,
           size: SizeConfig.textMultiplier * 1.8,
         )
       ],

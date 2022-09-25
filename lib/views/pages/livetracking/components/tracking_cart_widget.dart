@@ -84,7 +84,7 @@ class TrackingCartWidget extends StatelessWidget {
                       '₹$price',
                       style: TextStyle(
                         fontSize: SizeConfig.textMultiplier * 2.29,
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
                   ],

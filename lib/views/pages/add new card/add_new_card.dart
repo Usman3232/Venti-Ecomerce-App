@@ -1,9 +1,11 @@
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/models/checkout_model/add_new_cards.dart';
+import 'package:ecommerce_app/views/pages/add%20new%20card/components/add_new_card_crausal.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:ecommerce_app/views/widgets/custom_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_multi_formatter/formatters/masked_input_formatter.dart';
+import 'package:get/get.dart';
 import '../../../constants/colors.dart';
 import '../../../constants/width.dart';
 import '../../../utils/size_config.dart';
@@ -39,7 +41,9 @@ class _AddNewCardState extends State<AddNewCard> {
         backgroundColor: Colors.white,
         elevation: 0,
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Get.back();
+          },
           icon: Icon(
             Icons.arrow_back_ios,
             size: SizeConfig.imageSizeMultiplier * 5,
@@ -60,7 +64,7 @@ class _AddNewCardState extends State<AddNewCard> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            height: AppHeights.height8,
+            height: SizeConfig.heightMultiplier * .5,
           ),
           SizedBox(
             height: SizeConfig.heightMultiplier * 22,
@@ -81,7 +85,7 @@ class _AddNewCardState extends State<AddNewCard> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: AppHeights.height35,
+                  height: SizeConfig.heightMultiplier * 3.5,
                 ),
                 TextView(
                   text: 'Card Holder Name',
@@ -89,18 +93,21 @@ class _AddNewCardState extends State<AddNewCard> {
                   fontWeight: FontWeight.w600,
                 ),
                 SizedBox(
-                  height: AppHeights.height8,
+                  height: SizeConfig.heightMultiplier * .5,
                 ),
-                AuthTextInputField(
-                  isoutline: true,
-                  radius: AppWidths.width15,
-                  hintText: '',
-                  inputType: TextInputType.text,
-                  contentpadding: EdgeInsets.symmetric(
-                      horizontal: SizeConfig.widthMultiplier * 6.35,
-                      vertical: SizeConfig.widthMultiplier * 3.9),
-                  hintSize: SizeConfig.textMultiplier * 1.8,
-                  textEditingController: nameController,
+                SizedBox(
+                  height: SizeConfig.heightMultiplier * 9.5,
+                  child: AuthTextInputField(
+                    isoutline: true,
+                    radius: AppWidths.width15,
+                    hintText: '',
+                    inputType: TextInputType.text,
+                    contentpadding: EdgeInsets.symmetric(
+                        horizontal: SizeConfig.widthMultiplier * 6.35,
+                        vertical: SizeConfig.widthMultiplier * 3.9),
+                    hintSize: SizeConfig.textMultiplier * 1.8,
+                    textEditingController: nameController,
+                  ),
                 ),
                 TextView(
                   text: 'Number Card',
@@ -108,29 +115,32 @@ class _AddNewCardState extends State<AddNewCard> {
                   fontWeight: FontWeight.w600,
                 ),
                 SizedBox(
-                  height: AppHeights.height8,
+                  height: SizeConfig.heightMultiplier * .5,
                 ),
-                AuthTextInputField(
-                  isoutline: true,
-                  radius: AppWidths.width15,
-                  hintText: '',
-                  inputType: TextInputType.number,
-                  suffixIcon: Padding(
-                    padding: EdgeInsets.all(8),
-                    child: Image.asset(
-                      'assets/images/card_logo.png',
-                      height: AppHeights.height8,
-                      width: AppWidths.width15,
+                SizedBox(
+                  height: SizeConfig.heightMultiplier * 9.5,
+                  child: AuthTextInputField(
+                    isoutline: true,
+                    radius: AppWidths.width15,
+                    hintText: '',
+                    inputType: TextInputType.number,
+                    suffixIcon: Padding(
+                      padding: EdgeInsets.all(8),
+                      child: Image.asset(
+                        'assets/images/card_logo.png',
+                        height: AppHeights.height8,
+                        width: AppWidths.width15,
+                      ),
                     ),
+                    contentpadding: EdgeInsets.symmetric(
+                        horizontal: SizeConfig.widthMultiplier * 6.35,
+                        vertical: SizeConfig.widthMultiplier * 3.9),
+                    inputformatter: [
+                      MaskedInputFormatter('#### #### #### ####'),
+                    ],
+                    hintSize: SizeConfig.textMultiplier * 1.8,
+                    textEditingController: nameController,
                   ),
-                  contentpadding: EdgeInsets.symmetric(
-                      horizontal: SizeConfig.widthMultiplier * 6.35,
-                      vertical: SizeConfig.widthMultiplier * 3.9),
-                  inputformatter: [
-                    MaskedInputFormatter('#### #### #### ####'),
-                  ],
-                  hintSize: SizeConfig.textMultiplier * 1.8,
-                  textEditingController: nameController,
                 ),
                 Row(
                   children: [
@@ -149,13 +159,16 @@ class _AddNewCardState extends State<AddNewCard> {
                           SizedBox(
                             height: SizeConfig.heightMultiplier * 1,
                           ),
-                          AuthTextInputField(
-                            isoutline: true,
-                            contentpadding: EdgeInsets.all(
-                                SizeConfig.widthMultiplier * 3.9),
-                            radius: SizeConfig.widthMultiplier * 4,
-                            hintText: '',
-                            textEditingController: dateController,
+                          SizedBox(
+                            height: SizeConfig.heightMultiplier * 9.5,
+                            child: AuthTextInputField(
+                              isoutline: true,
+                              contentpadding: EdgeInsets.all(
+                                  SizeConfig.widthMultiplier * 3.9),
+                              radius: SizeConfig.widthMultiplier * 4,
+                              hintText: '',
+                              textEditingController: dateController,
+                            ),
                           ),
                         ],
                       ),
@@ -178,18 +191,22 @@ class _AddNewCardState extends State<AddNewCard> {
                                   fontSize: SizeConfig.textMultiplier * 1.8),
                             ),
                             SizedBox(
-                              height: AppHeights.height8,
+                              height: SizeConfig.heightMultiplier * .5,
                             ),
-                            AuthTextInputField(
-                              isoutline: true,
-                              isPassword: true,
-                              inputType: TextInputType.number,
-                              contentpadding: EdgeInsets.symmetric(
-                                  horizontal: SizeConfig.widthMultiplier * 6.35,
-                                  vertical: SizeConfig.widthMultiplier * 3.9),
-                              radius: SizeConfig.widthMultiplier * 4,
-                              hintText: "",
-                              textEditingController: cvvController,
+                            SizedBox(
+                              height: SizeConfig.heightMultiplier * 9.5,
+                              child: AuthTextInputField(
+                                isoutline: true,
+                                // isPassword: true,
+                                inputType: TextInputType.number,
+                                contentpadding: EdgeInsets.symmetric(
+                                    horizontal:
+                                        SizeConfig.widthMultiplier * 6.35,
+                                    vertical: SizeConfig.widthMultiplier * 3.9),
+                                radius: SizeConfig.widthMultiplier * 4,
+                                hintText: "",
+                                textEditingController: cvvController,
+                              ),
                             ),
                           ],
                         ),
@@ -212,16 +229,19 @@ class _AddNewCardState extends State<AddNewCard> {
                                 fontSize: SizeConfig.textMultiplier * 1.8),
                           ),
                           SizedBox(
-                            height: SizeConfig.heightMultiplier * 1,
+                            height: SizeConfig.heightMultiplier * .5,
                           ),
-                          AuthTextInputField(
-                            isoutline: true,
-                            contentpadding: EdgeInsets.symmetric(
-                                horizontal: SizeConfig.widthMultiplier * 6.35,
-                                vertical: SizeConfig.widthMultiplier * 3.9),
-                            radius: SizeConfig.widthMultiplier * 4,
-                            hintText: '',
-                            textEditingController: addressController,
+                          SizedBox(
+                            height: SizeConfig.heightMultiplier * 9.5,
+                            child: AuthTextInputField(
+                              isoutline: true,
+                              contentpadding: EdgeInsets.symmetric(
+                                  horizontal: SizeConfig.widthMultiplier * 6.35,
+                                  vertical: SizeConfig.widthMultiplier * 3.9),
+                              radius: SizeConfig.widthMultiplier * 4,
+                              hintText: '',
+                              textEditingController: addressController,
+                            ),
                           ),
                         ],
                       ),
@@ -244,25 +264,26 @@ class _AddNewCardState extends State<AddNewCard> {
                                   fontSize: SizeConfig.textMultiplier * 1.8),
                             ),
                             SizedBox(
-                              height: AppHeights.height8,
+                              height: SizeConfig.heightMultiplier * .5,
                             ),
-                            AuthTextInputField(
-                              isoutline: true,
-                              inputType: TextInputType.number,
-                              contentpadding: EdgeInsets.symmetric(
-                                  horizontal: SizeConfig.widthMultiplier * 6.35,
-                                  vertical: SizeConfig.widthMultiplier * 3.9),
-                              radius: SizeConfig.widthMultiplier * 4,
-                              hintText: "12345",
+                            SizedBox(
+                              height: SizeConfig.heightMultiplier * 9.5,
+                              child: AuthTextInputField(
+                                isoutline: true,
+                                inputType: TextInputType.number,
+                                contentpadding: EdgeInsets.symmetric(
+                                    horizontal:
+                                        SizeConfig.widthMultiplier * 6.35,
+                                    vertical: SizeConfig.widthMultiplier * 3.9),
+                                radius: SizeConfig.widthMultiplier * 4,
+                                hintText: "12345",
+                              ),
                             ),
                           ],
                         ),
                       ),
                     ),
                   ],
-                ),
-                SizedBox(
-                  height: AppHeights.height21,
                 ),
                 CustomTextButton(
                   callback: () {},
@@ -272,111 +293,13 @@ class _AddNewCardState extends State<AddNewCard> {
                   title: 'Save',
                   textcolour: Colors.white,
                   radius: 30,
-                  fontWeight: FontWeight.w700,
+                  fontWeight: FontWeight.w600,
                   fontSize: SizeConfig.textMultiplier * 2.04,
                 )
               ],
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class AddNewCardsCarouselWidget extends StatelessWidget {
-  final String image;
-  final int number;
-  final String title;
-  const AddNewCardsCarouselWidget({
-    Key? key,
-    required this.image,
-    required this.number,
-    required this.title,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(25),
-          boxShadow: [
-            BoxShadow(
-                color: Colors.grey.withOpacity(0.1),
-                offset: const Offset(0, 4),
-                blurRadius: 2,
-                spreadRadius: 3),
-          ],
-          image: DecorationImage(image: AssetImage(image), fit: BoxFit.fill),
-        ),
-        child: Padding(
-          padding: EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.35),
-          child: Column(
-            children: [
-              SizedBox(
-                height: AppHeights.height88,
-              ),
-              Row(
-                children: [
-                  Text(
-                    '•••• ',
-                    style: TextStyle(
-                        fontSize: SizeConfig.textMultiplier * 2.85,
-                        color: Colors.white),
-                  ),
-                  Text(
-                    '•••• ',
-                    style: TextStyle(
-                        fontSize: SizeConfig.textMultiplier * 2.85,
-                        color: Colors.white),
-                  ),
-                  Text(
-                    '•••• ',
-                    style: TextStyle(
-                        fontSize: SizeConfig.textMultiplier * 2.85,
-                        color: Colors.white),
-                  ),
-                  Text(
-                    '•••• ',
-                    style: TextStyle(
-                        fontSize: SizeConfig.textMultiplier * 2.85,
-                        color: Colors.white),
-                  ),
-                  Text(
-                    ' $number',
-                    style: TextStyle(
-                        fontSize: SizeConfig.textMultiplier * 1.53,
-                        color: Colors.white),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: AppHeights.height25,
-              ),
-              Row(
-                children: [
-                  Text(
-                    title,
-                    style: TextStyle(
-                        fontSize: SizeConfig.textMultiplier * 1.53,
-                        color: Colors.white),
-                  ),
-                  SizedBox(
-                    width: AppWidths.width30,
-                  ),
-                  Text(
-                    '12/21',
-                    style: TextStyle(
-                        fontSize: SizeConfig.textMultiplier * 1.53,
-                        color: Colors.white),
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
       ),
     );
   }

@@ -106,7 +106,7 @@ class _CuratedShopCardState extends State<CuratedShopCard> {
               ),
               TextView(
                 text: widget.rating.toString(),
-                fontWeight: FontWeight.w700,
+                fontWeight: FontWeight.w600,
                 size: SizeConfig.textMultiplier * 1.4,
               ),
               SizedBox(

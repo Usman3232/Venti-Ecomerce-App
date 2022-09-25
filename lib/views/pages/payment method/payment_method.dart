@@ -178,7 +178,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
                                 style: TextStyle(
                                   fontSize: SizeConfig.textMultiplier * 2.04,
                                   color: Colors.red,
-                                  fontWeight: FontWeight.w700,
+                                  fontWeight: FontWeight.w600,
                                 ),
                               ),
                             ],

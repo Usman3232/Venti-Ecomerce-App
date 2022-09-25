@@ -17,7 +17,7 @@ class GalleryTab extends StatelessWidget {
       shrinkWrap: true,
       itemCount: product_model.length,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          childAspectRatio: SizeConfig.heightMultiplier * .11,
+          childAspectRatio: SizeConfig.heightMultiplier * .10,
           mainAxisSpacing: SizeConfig.heightMultiplier * 2,
           crossAxisCount: 2),
       itemBuilder: (context, index) {

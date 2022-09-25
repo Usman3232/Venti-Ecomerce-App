@@ -35,7 +35,7 @@ class AnyTimeSellerSection extends StatelessWidget {
                     TextView(
                       text: "AnyTime Sellers",
                       size: SizeConfig.textMultiplier * 2.55,
-                      fontWeight: FontWeight.w700,
+                      fontWeight: FontWeight.w600,
                     ),
                     InkWell(
                       onTap: () {
@@ -56,7 +56,7 @@ class AnyTimeSellerSection extends StatelessWidget {
                 height: AppHeights.height26,
               ),
               SizedBox(
-                height: AppHeights.height236,
+                height: SizeConfig.heightMultiplier*30,
                 child: ListView.builder(
                   itemCount: anytimeseller_model.length,
                   scrollDirection: Axis.horizontal,

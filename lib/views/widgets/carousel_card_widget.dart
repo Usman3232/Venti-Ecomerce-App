@@ -58,7 +58,7 @@ class _CarouselCardState extends State<CarouselCard> {
                         vertical: SizeConfig.heightMultiplier * 0.3),
                     child: TextView(
                       text: "NEW",
-                      fontWeight: FontWeight.w700,
+                      fontWeight: FontWeight.w600,
                       size: SizeConfig.textMultiplier * 1.53,
                       color: Colors.white,
                     )),
@@ -68,7 +68,7 @@ class _CarouselCardState extends State<CarouselCard> {
               ),
               TextView(
                 text: widget.title,
-                fontWeight: FontWeight.w700,
+                fontWeight: FontWeight.w600,
                 size: SizeConfig.textMultiplier * 2.55,
                 color: widget.titleColor,
               ),
@@ -77,7 +77,7 @@ class _CarouselCardState extends State<CarouselCard> {
               ),
               TextView(
                 text: '₹ ${widget.price}',
-                fontWeight: FontWeight.w700,
+                fontWeight: FontWeight.w600,
                 size: SizeConfig.textMultiplier * 1.53,
                 color: widget.titleColor,
               ),

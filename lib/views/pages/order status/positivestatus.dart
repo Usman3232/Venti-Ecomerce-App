@@ -83,7 +83,7 @@ class PositiveStatus extends StatelessWidget {
               title: "Live Track",
               fontSize: SizeConfig.textMultiplier * 2.04,
               textcolour: Colors.white,
-              fontWeight: FontWeight.w700,
+              fontWeight: FontWeight.w600,
             )
           ],
         ),

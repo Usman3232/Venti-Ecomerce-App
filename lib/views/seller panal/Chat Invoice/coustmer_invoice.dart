@@ -137,7 +137,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                                 "Product Name",
                                 style: TextStyle(
                                   fontSize: SizeConfig.textMultiplier * 1.8,
-                                  fontWeight: FontWeight.w700,
+                                  fontWeight: FontWeight.w600,
                                   letterSpacing: 1,
                                 ),
                               ),
@@ -154,7 +154,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                                 "Description",
                                 style: TextStyle(
                                   fontSize: SizeConfig.textMultiplier * 1.8,
-                                  fontWeight: FontWeight.w700,
+                                  fontWeight: FontWeight.w600,
                                   letterSpacing: 1,
                                 ),
                               ),
@@ -180,7 +180,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                                       "Price",
                                       style: TextStyle(
                                         fontSize: SizeConfig.textMultiplier * 1.8,
-                                        fontWeight: FontWeight.w700,
+                                        fontWeight: FontWeight.w600,
                                         letterSpacing: 1,
                                       ),
                                     ),
@@ -188,7 +188,7 @@ class _CustomerInvoiceSellerState extends State<CustomerInvoiceSeller> {
                                       "Shipping Cost",
                                       style: TextStyle(
                                         fontSize: SizeConfig.textMultiplier * 1.8,
-                                        fontWeight: FontWeight.w700,
+                                        fontWeight: FontWeight.w600,
                                         letterSpacing: 1,
                                       ),
                                     ),
@@ -392,7 +392,7 @@ class AddItemWidget extends StatelessWidget {
                             TextView(
                               text: 'Price',
                               color: Colors.black,
-                              fontWeight: FontWeight.w700,
+                              fontWeight: FontWeight.w600,
                               size: SizeConfig.textMultiplier * 1.8,
                             ),
                             SizedBox(
@@ -414,7 +414,7 @@ class AddItemWidget extends StatelessWidget {
                             Spacer(),
                             TextView(
                               text: 'Shipping Cost',
-                              fontWeight: FontWeight.w700,
+                              fontWeight: FontWeight.w600,
                               size: SizeConfig.textMultiplier * 1.8,
                               color: Colors.black,
                             ),

@@ -11,7 +11,7 @@ class CategoriesSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: SizeConfig.heightMultiplier * 12,
+      height: SizeConfig.heightMultiplier * 13,
       child: ListView.builder(
         itemCount: homecategories_model.length,
         physics: BouncingScrollPhysics(),

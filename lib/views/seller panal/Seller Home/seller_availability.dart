@@ -206,7 +206,7 @@ class _SellerAvailabilityState extends State<SellerAvailability> {
                     text:val
                         .toString(),
                     size: SizeConfig.textMultiplier * 1.8,
-                    fontWeight: FontWeight.w700,
+                    fontWeight: FontWeight.w600,
                   ),
                 ),
                 InkWell(

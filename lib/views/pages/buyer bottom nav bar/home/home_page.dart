@@ -131,7 +131,7 @@ class _HomePageState extends State<HomePage> {
                     SizedBox(height: AppHeights.height35),
                     TextView(
                       text: "Curated Stores",
-                      fontWeight: FontWeight.w700,
+                      fontWeight: FontWeight.w600,
                       size: SizeConfig.textMultiplier * 2.55,
                     ),
                     SizedBox(
@@ -139,7 +139,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     TextView(
                       text: "Trending",
-                      fontWeight: FontWeight.w700,
+                      fontWeight: FontWeight.w600,
                       size: SizeConfig.textMultiplier * 2.04,
                     ),
                     SizedBox(
@@ -157,7 +157,7 @@ class _HomePageState extends State<HomePage> {
                     EdgeInsets.only(left: SizeConfig.widthMultiplier * 6.13),
                 child: TextView(
                   text: "Special For You",
-                  fontWeight: FontWeight.w700,
+                  fontWeight: FontWeight.w600,
                   size: SizeConfig.textMultiplier * 2.04,
                   color: AppColors.textColor,
                 ),

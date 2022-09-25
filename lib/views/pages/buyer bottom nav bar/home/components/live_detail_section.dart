@@ -22,7 +22,7 @@ class LiveDetailSection extends StatelessWidget {
         TextView(
           text: "Live Tracking",
           color: AppColors.textColor,
-          fontWeight: FontWeight.w700,
+          fontWeight: FontWeight.w600,
           size: SizeConfig.textMultiplier * 2.55,
         ),
         SizedBox(
@@ -63,7 +63,7 @@ class LiveDetailSection extends StatelessWidget {
                                   TextView(
                                     text: "8:50 PM",
                                     size: SizeConfig.textMultiplier * 1.53,
-                                    fontWeight: FontWeight.w700,
+                                    fontWeight: FontWeight.w600,
                                   ),
                                   SizedBox(
                                     height: SizeConfig.heightMultiplier * .5,
@@ -96,7 +96,7 @@ class LiveDetailSection extends StatelessWidget {
                                   TextView(
                                     text: "Gaur City",
                                     size: SizeConfig.textMultiplier * 1.53,
-                                    fontWeight: FontWeight.w700,
+                                    fontWeight: FontWeight.w600,
                                   ),
                                   SizedBox(
                                     height: SizeConfig.heightMultiplier * .5,

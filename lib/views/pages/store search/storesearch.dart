@@ -103,7 +103,7 @@ class _StoreSearchState extends State<StoreSearch> {
                                           children: [
                                             TextView(
                                               text: "Filters",
-                                              fontWeight: FontWeight.w700,
+                                              fontWeight: FontWeight.w600,
                                               size: SizeConfig.textMultiplier * 2.4,
                                             ),
                                             SizedBox(
@@ -156,14 +156,14 @@ class _StoreSearchState extends State<StoreSearch> {
                                                 TextView(
                                                   text: "₹0",
                                                   size: SizeConfig.textMultiplier * 1.53,
-                                                  fontWeight: FontWeight.w700,
+                                                  fontWeight: FontWeight.w600,
                                                   color: Color(0xffAAAAAA),
                                                 ),
                                                 Spacer(),
                                                 TextView(
                                                   text: "₹9,750",
                                                   size: SizeConfig.textMultiplier * 1.53,
-                                                  fontWeight: FontWeight.w700,
+                                                  fontWeight: FontWeight.w600,
                                                   color: Color(0xffAAAAAA),
                                                 ),
                                               ],

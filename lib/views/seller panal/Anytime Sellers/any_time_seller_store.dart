@@ -2,16 +2,14 @@ import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 
-
-
 import 'package:ecommerce_app/utils/size_config.dart';
+import 'package:ecommerce_app/views/seller%20panal/Anytime%20Sellers/components/services_tab.dart';
 import 'package:ecommerce_app/views/widgets/TextView.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../Curated Store Seller/components/edit_clothes_widget.dart';
 import 'components/gallery_tab.dart';
 import 'components/products_tab.dart';
-import 'components/services_tab.dart';
 
 class AnyTimeSellerStoreDetail extends StatefulWidget {
   const AnyTimeSellerStoreDetail({
@@ -93,7 +91,7 @@ class _AnyTimeSellerStoreDetailState extends State<AnyTimeSellerStoreDetail>
                               ),
                               TextView(
                                 text: "4.5",
-                                fontWeight: FontWeight.w700,
+                                fontWeight: FontWeight.w600,
                                 size: SizeConfig.textMultiplier * 1.4,
                               ),
                               SizedBox(

@@ -94,7 +94,7 @@ class NegativeStatus extends StatelessWidget {
               title: "Return to Cart",
               fontSize: SizeConfig.textMultiplier * 2.04,
               textcolour: Colors.white,
-              fontWeight: FontWeight.w700,
+              fontWeight: FontWeight.w600,
             )
           ],
         ),

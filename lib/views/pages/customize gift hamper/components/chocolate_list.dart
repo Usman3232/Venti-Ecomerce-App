@@ -20,7 +20,7 @@ class _ChocolatesListState extends State<ChocolatesList> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(
-          height: SizeConfig.heightMultiplier * 2,
+          height: SizeConfig.heightMultiplier * 1.5,
         ),
         TextView(
           text: "Chocolates",
@@ -42,7 +42,7 @@ class _ChocolatesListState extends State<ChocolatesList> {
                         });
                       },
                       child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 7),
+                        padding: EdgeInsets.symmetric(horizontal: 5),
                         child: AnimatedContainer(
                           duration: Duration(milliseconds: 200),
                           curve: Curves.bounceInOut,
@@ -54,10 +54,10 @@ class _ChocolatesListState extends State<ChocolatesList> {
                                   : Colors.white),
                           child: Padding(
                             padding: EdgeInsets.symmetric(
-                                horizontal: 20, vertical: 8),
+                                horizontal: 16, vertical: 5),
                             child: TextView(
                               text: chocolates[index],
-                              size: SizeConfig.textMultiplier * 1.8,
+                              size: SizeConfig.textMultiplier * 1.6,
                               fontWeight: FontWeight.w400,
                               color: isselectedchocolates == index
                                   ? Colors.white

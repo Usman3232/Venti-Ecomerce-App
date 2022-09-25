@@ -1,11 +1,7 @@
 import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/images.dart';
-
-
-
 import 'package:ecommerce_app/constants/width.dart';
-import 'package:ecommerce_app/models/chat_model/chat_model.dart';
 import 'package:ecommerce_app/utils/size_config.dart';
 import 'package:ecommerce_app/views/pages/chat/components/message_list.dart';
 import 'package:ecommerce_app/views/pages/view%20invoice/view_invoice.dart';
@@ -16,7 +12,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
 class Chat extends StatefulWidget {
-  const Chat({Key? key}) : super(key: key);
+  const Chat({
+    Key? key,
+  }) : super(key: key);
 
   @override
   State<Chat> createState() => _ChatState();
@@ -92,9 +90,9 @@ class _ChatState extends State<Chat> {
             ),
           ]),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.35),
-        child: Container(
-            child: Column(
+        padding:
+            EdgeInsets.symmetric(horizontal: SizeConfig.widthMultiplier * 6.35),
+        child: Column(
           children: [
             MessageList(),
             isattachment
@@ -109,8 +107,7 @@ class _ChatState extends State<Chat> {
                           width: AppWidths.width284,
                           decoration: BoxDecoration(
                               color: Color(0xffE3EAF3),
-                              borderRadius:
-                                  BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(15),
                               border: Border.all(
                                   color: AppColors.primarylightColor)),
                           child: Padding(
@@ -148,6 +145,7 @@ class _ChatState extends State<Chat> {
                             text: "Click to\nview",
                             fontWeight: FontWeight.w400,
                             size: SizeConfig.textMultiplier * 1.28,
+                            color: Color(0xffA1A1AA),
                           ),
                         )
                       ],
@@ -206,7 +204,7 @@ class _ChatState extends State<Chat> {
               ],
             )
           ],
-        )),
+        ),
       ),
     );
   }

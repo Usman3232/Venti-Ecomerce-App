@@ -32,4 +32,7 @@ class AppImages {
 
   static String sellerAlarm = 'assets/images/sellerAlarm.png';
   static String sellerHouse = 'assets/images/sellerHouse.png';
+  static String confirmationtime = 'assets/images/confirmattiontime.png';
+
+
 }

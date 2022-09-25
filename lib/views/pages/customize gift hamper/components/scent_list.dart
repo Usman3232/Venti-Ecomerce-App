@@ -45,7 +45,7 @@ class _ScentListState extends State<ScentList> {
                           });
                         },
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 7),
+                          padding: EdgeInsets.symmetric(horizontal: 5),
                           child: AnimatedContainer(
                             duration: Duration(milliseconds: 200),
                             curve: Curves.bounceInOut,
@@ -57,10 +57,10 @@ class _ScentListState extends State<ScentList> {
                                     : Colors.white),
                             child: Padding(
                               padding: EdgeInsets.symmetric(
-                                  horizontal: 20, vertical: 8),
+                                  horizontal: 16, vertical: 5),
                               child: TextView(
                                 text: scent[index],
-                                size: SizeConfig.textMultiplier * 1.8,
+                                size: SizeConfig.textMultiplier * 1.6,
                                 fontWeight: FontWeight.w400,
                                 color: isselectedscent == index
                                     ? Colors.white
@@ -74,7 +74,7 @@ class _ScentListState extends State<ScentList> {
           ),
         ),
         SizedBox(
-          height: SizeConfig.heightMultiplier * 5,
+          height: SizeConfig.heightMultiplier * 3,
         ),
       ],
     );

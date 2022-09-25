@@ -93,7 +93,7 @@ class EditProductDialogue extends StatelessWidget {
                               style: TextStyle(
                                 color: Colors.black,
                                 fontSize: SizeConfig.textMultiplier * 1.8,
-                                fontWeight: FontWeight.w700,
+                                fontWeight: FontWeight.w600,
                                 letterSpacing: 1,
                               ),
                             ),
@@ -117,7 +117,7 @@ class EditProductDialogue extends StatelessWidget {
                               "Category",
                               style: TextStyle(
                                 fontSize: SizeConfig.textMultiplier * 1.8,
-                                fontWeight: FontWeight.w700,
+                                fontWeight: FontWeight.w600,
                                 letterSpacing: 1,
                               ),
                             ),
@@ -142,7 +142,7 @@ class EditProductDialogue extends StatelessWidget {
                             Text("Discription",
                                 style: TextStyle(
                                   fontSize: SizeConfig.textMultiplier * 1.8,
-                                  fontWeight: FontWeight.w700,
+                                  fontWeight: FontWeight.w600,
                                   letterSpacing: 1,
                                 )),
                             SizedBox(

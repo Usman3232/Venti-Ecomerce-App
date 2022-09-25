@@ -1,14 +1,11 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
-import 'package:ecommerce_app/constants/colors.dart';
 import 'package:ecommerce_app/constants/height.dart';
 import 'package:ecommerce_app/constants/icons.dart';
 import 'package:ecommerce_app/constants/width.dart';
 import 'package:ecommerce_app/controllers/button_controller.dart';
-import 'package:ecommerce_app/views/drawer/drawer.dart';
-import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/home/home_page.dart';
-import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/map/map_location_page.dart';
-import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/products/product_page.dart';
-import 'package:ecommerce_app/views/pages/buyer%20bottom%20nav%20bar/settings/settingscreen.dart';
+import 'package:ecommerce_app/views/seller%20panal/OrderTracking/new_coming_order.dart';
+import 'package:ecommerce_app/views/seller%20panal/seller%20bottom%20nav%20bar/messages/messages.dart';
+import 'package:ecommerce_app/views/seller%20panal/seller%20bottom%20nav%20bar/wallet/wallet.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -24,9 +21,9 @@ class SellerBottomNavBar extends StatefulWidget {
 class _SellerBottomNavBarState extends State<SellerBottomNavBar> {
   List<Widget> screens = [
     SellerHomePage(),
-    Center(child: Text("2")),
-    SettingScreen(),
-    Center(child: Text("3")),
+    Wallet(),
+    NewInComingOrder(),
+    Messages()
   ];
   List images = [
     AppIcons.sellerbottomhome,
@@ -40,12 +37,11 @@ class _SellerBottomNavBarState extends State<SellerBottomNavBar> {
     AppIcons.sellerbottomcomponents,
     AppIcons.sellerbottomlocate,
   ];
-  int currentindex = 3;
+  int currentindex = 0;
   final buttonCont = Get.find<ButtonsController>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: const MyDrawer(),
       extendBodyBehindAppBar: true,
       body: screens[currentindex],
       bottomNavigationBar: AnimatedBottomNavigationBar.builder(
